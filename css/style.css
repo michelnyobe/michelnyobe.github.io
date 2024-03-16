@@ -1,25 +1,23 @@
+body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: black; /* Fond noir */
+        color: white; /* Texte blanc */ 
+        padding: 20px; /* Espacement autour du contenu */
+        cursor: url('../images/cursors.png'), auto;
+    }
+    
 .title-text{
     text-align: center;
 }
-.name {
-    margin: 200px 0 0 100px;
-    font-size: 25px;
-    font-weight: 600; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-}
+
 hr {
     width: 300px;
     margin: 0 0 0 100px;
     border: 1px solid black;
 }
-.work {
-    margin: 5px 0 0 150px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 
-}
 .font_icon{
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 40px;
     margin-top: 100px;
 }
@@ -33,4 +31,48 @@ footer{
 }
 li:hover{
     color: orange;
+    
 }
+.prompt {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+  
+  
+    padding: 10px;
+  }
+  
+  .prompt-header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+  
+  }
+  
+  .prompt-body {
+    padding: 10px;
+  }
+  
+  .input-line {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prompt-symbol {
+    color: #0f0;
+    margin-right: 5px;
+  }
+  
+  .command {
+    animation: fadeOut 2s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

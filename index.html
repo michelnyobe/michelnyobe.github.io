@@ -1,47 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link href="css/brands.css" rel="stylesheet" />
+    <link href="css/solid.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="css/fontawesome.css" rel="stylesheet">
-  <link href="css/brands.css" rel="stylesheet">
-  <link href="css/solid.css" rel="stylesheet">
-</head>
+  <body>
+    <!-- l'entete  -->
+    <nav class="">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <a href="#" class="text-white text-2xl font-bold">N.M</a>
+        </div>
+        <div class="hidden md:block">
+          <a href="#" class="text-white mr-4"><i class="fa-solid fa-house p-1"></i>Home</a>
+          <a href="#" class="text-white mr-4"><i class="fa-regular fa-address-card p-1"></i>A-propos</a>
+          <a href="#" class="text-white mr-4"><i class="fa-solid fa-diagram-project p-1"></i>Projet</a>
+          <a href="#" class="text-white mr-4"><i class="fa-solid fa-blog p-1"></i>blog</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menuButton" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-<body class="mt-6 mr-28 ml-28">
-  <!-- l'entete  -->
-  <div class="flex justify-between mt-6">
-    <div class="left-div">
-      <h1 class="text-2xl font-bold">N.M</h1>
+    <!-- Menu mobile -->
+    <div id="mobileMenu" class="hidden md:hidden">
+      <a href="#" class="block py-2 px-4 text-white"><i class="fa-solid fa-house p-1"></i>Home</a>
+      <a href="#" class="block py-2 px-4 text-white"><i class="fa-regular fa-address-card p-1"></i>A-propos</a>
+      <a href="#" class="block py-2 px-4 text-white"><i class="fa-solid fa-diagram-project p-1"></i>Projet</a>
+      <a href="#" class="block py-2 px-4 text-white"><i class="fa-solid fa-blog p-1"></i>blog</a>
     </div>
-    <div class="right-div">
-      <ul class="flex ml-52">
-        <li class="mr-5"><a href="index.html"><i class="fa-solid fa-house p-1"></i>Home</a></li>
-        <li class="mr-5"><a href="about.html"><i class="fa-regular fa-address-card p-1"></i>A-propos</a></li>
-        <li class="mr-5"><a href="projects.html"><i class="fa-solid fa-diagram-project p-1"></i>Projet</a></li>
-        <li class="mr-5"><a href="blog.html"><i class="fa-solid fa-blog p-1"></i>blog</a></li>
-        <li class="mr-5"><a href="services.html"><i class="fa-solid fa-address-book p-1"></i>services</a></li>
-      </ul>
+    <!-- le corps de la page -->
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center">
+      <h1 class="mt-10 md:mt-20 text-xl">Michel NYOBE ( larass0x04) </h1>
+      <hr class="w-20 md:w-40 border-t border-gray-500 my-3">
+      <p class="work">Etudiant en <strong>Cybersécurité</strong></p>
     </div>
+    
   </div>
-  <!-- le corps de la page -->
-  <h1 class="name">Michel NYOBE</h1>
-  <hr>
-  <p class="work">Analyste en <strong>Cybersécurité</strong></p>
-  <div class="">
-    <ul class="flex justify-center">
-      <li><i class="fa-brands fa-linkedin font_icon"></i></li>
-      <li><i class="fa-brands fa-github font_icon"></i></li>
-      <li><i class="fa-brands fa-twitter font_icon"></i></li>
-      <li><i class="fa-brands fa-youtube font_icon"></i></li>
-    </ul>
-  </div>
-  <footer>
-<p>copyright 2023 , Designer by Michel nyobe</p>
-  </footer>
-</body>
+  <div class="prompt">
+    <div class="prompt-body" id="promptBody">
+      <div class="input-line">
+        <span class="prompt-symbol">user@machine:~$</span>
+        <p id="output"></p>
+      </div>
+    </div>
+    
+    <a href="CV_Alternance_Nyobe_Michel.pdf" class="download-link" download>Télécharger mon CV</a>
+  
+
+    
+
+  <div class="mx-auto">
+    <div class="lg:flex lg:justify-center">
+        <ul class="flex flex-wrap items-center justify-center">
+            <li class="m-1 sm:auto md:w-auto">
+              <a href="https://www.linkedin.com/in/nyobe-mandeng-michel-918147162" target="_blank" ><i class="fab fa-linkedin fa-lg font_icon"></i></a> 
+            </li>
+            <li class="m-1 sm:w-auto md:w-auto">
+              <a href="https://github.com/michelnyobe" title="cybersecurity"target="_blank" ><i class="fab fa-github fa-lg font_icon"></i></a> 
+            </li>
+            <li class="m-1 sm:w-full md:w-auto">
+              <a href="https://twitter.com/larass0x04" target="_blank" ><i class="fab fa-twitter fa-lg font_icon"></i></a>  
+            </li>
+            <li class="m-1 sm:w-full md:w-auto">
+              <a href="https://www.hackthebox.eu/home/users/profile/585835" target="_blank" ><img src="images/hachthebox.png"  alt="hackthebox" width="100px"/></a>
+            </li>
+            <li class="m-1 sm:w-full md:w-auto">
+              <a href="https://tryhackme.com/p/nyobe" target="_blank" ><img src="images/try.png"  alt="tryhackme" width="100px"/></a>
+            </li>
+            <li class="m-1 sm:w-full md:w-auto">
+              <a href="https://www.youtube.com/@nyobemichel" target="_blank" ><i class="fab fa-youtube fa-lg font_icon"></i></a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+  <p>copyright 2024 , Designer by Michel nyobe</p>
+    </footer>
+  </body>
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+  const output = document.getElementById('output');
+  const text = "Bienvenue sur ma page personnelle !";
+  let index = 0;
+  let isTyping = true;
+
+  // Function to display text letter by letter
+  function typeText() {
+    output.textContent += text[index];
+    index++;
+    if (index < text.length) {
+      setTimeout(typeText, 20); // Adjust speed (milliseconds per letter)
+    } else {
+      setTimeout(clearText, 5000); // Wait 5 seconds before clearing text
+    }
+  }
+
+  // Function to clear text
+  function clearText() {
+    isTyping = false;
+    const interval = setInterval(() => {
+      const content = output.textContent;
+      if (content.length === 0) {
+        clearInterval(interval);
+        setTimeout(() => {
+          isTyping = true;
+          typeText();
+        }, 5000); // Wait 5 seconds before typing again
+      } else {
+        output.textContent = content.slice(0, -1);
+      }
+    }, 100); // Adjust speed (milliseconds per letter)
+  }
+
+  // Start typing text
+  typeText();
+});
+  </script>
 </html>
