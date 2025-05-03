@@ -1,6 +1,8 @@
 title: PaperMod
 copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 theme: [PaperMod]
+baseURL: "https://nyobemichel.me/"
+languageCode: "fr-fr"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
