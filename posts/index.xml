@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on larass0x04</title>
+    <link>https://nyobemichel.me/posts/</link>
+    <description>Recent content in Posts on larass0x04</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <copyright>© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)</copyright>
+    <lastBuildDate>Tue, 22 Apr 2025 20:00:00 +0200</lastBuildDate>
+    <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bienvenue sur mon premier article</title>
+      <link>https://nyobemichel.me/posts/example/</link>
+      <pubDate>Tue, 22 Apr 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/example/</guid>
+      <description>Ceci est un exemple de post pour tester Hugo avec le thème PaperMod.</description>
+    </item>
+  </channel>
+</rss>
