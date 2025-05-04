@@ -12,8 +12,29 @@
     <generator>Hugo -- 0.146.6</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Tue, 22 Apr 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 03 May 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hackthebox</title>
+      <link>https://nyobemichel.me/tags/hackthebox/</link>
+      <pubDate>Sat, 03 May 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/hackthebox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSTI</title>
+      <link>https://nyobemichel.me/tags/ssti/</link>
+      <pubDate>Sat, 03 May 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/ssti/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Writeup</title>
+      <link>https://nyobemichel.me/tags/writeup/</link>
+      <pubDate>Sat, 03 May 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/writeup/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Exemple</title>
       <link>https://nyobemichel.me/tags/exemple/</link>

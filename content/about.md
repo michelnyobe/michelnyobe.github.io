@@ -4,16 +4,14 @@ date: 2025-05-04
 ---
 <div style="font-size: 13px;">
 
-# Michel NYOBE
+**Michel NYOBE** | Pentester & Cloud Security Enthusiast  
+📍 Paris, France | 📧 michelnyobe87@gmail.com | 🔐 
 
-**Pentester & Cloud Security Enthusiast**  
-Paris, France  
-michelnyobe87@gmail.com
 ---
 
 ## Profil
 
-Passionné par la cybersécurité offensive, le je me spécialise dans les attaques Active Directory, le pentesting d’environnements cloud (Azure & AWS), et la sécurité des identités. En formation continue et à la recherche d’un poste/apprentissage en Red Team ou pentest.
+Passionné par la **cybersécurité offensive**, le je me spécialise dans les attaques **Active Directory**, le pentesting d’environnements cloud (Azure & AWS), et la sécurité des identités. En formation continue et à la recherche d’un poste/apprentissage en Red Team ou pentest.
 
 ---
 
@@ -21,8 +19,8 @@ Passionné par la cybersécurité offensive, le je me spécialise dans les attaq
 
 - Active Directory Lab (6 VM) automatisé sur Azure  
 - Plateformes : 
-    - TryHackMe
-    - HackTheBox
+    - TryHackMe  
+    - [HackTheBox](/tags/hackthebox/)
     - Root-Me  
 - Défis réguliers : 
     - Pro Labs
@@ -47,19 +45,19 @@ Passionné par la cybersécurité offensive, le je me spécialise dans les attaq
 
 ## Expériences
 
-### 🛡️ Développeur Logiciels de Sécurité – **ENIX** (07/2023 – 01/2024)
+#### 🛡️ Développeur Logiciels de Sécurité – **ENIX** (07/2023 – 01/2024)
 - Développement de scripts (Next.js, GraphQL)
 - Administration d’Active Directory, Wazuh, PowerShell
 
-### 🔐 DevSecOps – **TDR Consulting** (05/2022 – 07/2023)
+#### 🔐 DevSecOps – **TDR Consulting** (05/2022 – 07/2023)
 - Sécurisation des chaînes CI/CD : Docker, Kubernetes, Jenkins
 - Projets : [Uptiimum.tech](https://uptiimum.tech), [IFPCE Africa](https://e-learning.ifpce-africa.tech)
 
-### 🧠 Ingénieur Sécurité (Stage) – **Backbone Corp** (08/2021 – 10/2021)
+#### 🧠 Ingénieur Sécurité (Stage) – **Backbone Corp** (08/2021 – 10/2021)
 - Configuration de serveurs, sauvegarde (Zabbix, Bacula)
 - Python, documentation technique
 
-### 💻 Technicien Support Informatique (Stage) – **ENEO** (07/2019 – 10/2019)
+#### 💻 Technicien Support Informatique (Stage) – **ENEO** (07/2019 – 10/2019)
 - Administration réseau (Cisco), Active Directory
 - Virtualisation : VMware, Proxmox
 
@@ -68,17 +66,17 @@ Passionné par la cybersécurité offensive, le je me spécialise dans les attaq
 
 ---
 
-### 🔍 Tests d’Intrusion Active Directory
+#### 🔍 Tests d’Intrusion Active Directory
 
 Les tests d’intrusion AD simulent des attaques ciblant des environnements Windows d’entreprise.
 
-#### 🏁 Reconnaissance Active Directory
+##### 🏁 Reconnaissance Active Directory
 - Enumération LDAP : `ldapsearch`, `ADFind`, `SharpHound`
 - Cartographie des relations d’accès avec **BloodHound** (Neo4j)
 - Enumération DNS interne : `nslookup`, `dig`, `dnscmd`
 - Enumération des partages et services : `smbclient`, `smbmap`, `rpcclient`, `CrackMapExec`
 
-#### 🔐 Techniques d’authentification
+##### 🔐 Techniques d’authentification
 - **AS-REP Roasting** : utilisateurs avec `DONT_REQ_PREAUTH`
 - **Kerberoasting** : extraction de tickets TGS
 - **Pass-the-Hash** : utilisation de hash NTLM pour l’authentification
@@ -86,72 +84,63 @@ Les tests d’intrusion AD simulent des attaques ciblant des environnements Wind
 - **Overpass-the-Hash** / **Pass-the-Key** : création de TGT
 - **NTLM Relay** : `ntlmrelayx`, `mitm6`
 
-#### 🧬 Exploitation des délégations
+##### 🧬 Exploitation des délégations
 - **Délégation non contrainte** : extraction TGT depuis les services
 - **Délégation contrainte (S4U2Self / S4U2Proxy)** : abus via `Rubeus`
 - **RBCD (Resource-Based Constrained Delegation)** : `Powermad`, `Rubeus`
 
-#### 🛠️ Vulnérabilités spécifiques
+##### 🛠️ Vulnérabilités spécifiques
 - **Zerologon (CVE-2020-1472)** : élévation via Netlogon
 - **PetitPotam** : coercion NTLM via MS-EFSRPC
 - **PrintNightmare (CVE-2021-34527)** : RCE via spouleur
 - **Shadow Credentials** : ajout de clé dans AD
 - **LAPS** et **GPP Passwords** : extraction dans SYSVOL
 
-#### 🧑‍💻 Mouvement latéral & persistance
+##### 🧑‍💻 Mouvement latéral & persistance
 - **DCSync**, **DCShadow**
 - **Golden Ticket**, **Silver Ticket**
 - **Skeleton Key**, **SIDHistory abuse**
 - Credential Dumping : `Mimikatz`, `LaZagne`, `Rubeus`, `SharpDPAPI`
 
----
-
 ### 💥 Exploitation de Vulnérabilités
 
-#### 🔎 Scanning & Enumeration
+##### 🔎 Scanning & Enumeration
 - **Nmap**, **Nessus**, **OpenVAS**, **Nikto**, **LinPEAS**, **WinPEAS**
 - Recherche de failles : `searchsploit`, `exploit-db`, `CVE.sh`, VulnHub
-
-#### ⚙️ Techniques
+##### ⚙️ Techniques
 - Buffer Overflow, SEH, DEP/ASLR bypass
 - Injections : SQLi, Commande, XXE, XSS, LFI/RFI
 - **Escalade locale** : kernel exploits, SUID abuse, ACL
 - **Reverse Engineering** : `Ghidra`, `strings`, `radare2`
-
-#### 📡 Outils
+##### 📡 Outils
 - `Metasploit`, `Impacket`, `Responder`, `CrackMapExec`, `Evil-WinRM`
 - Post-exploitation : `Chisel`, `Ligolo`, `Pupy`, `PowerView`, `Empire`
 
----
 
 ### 🌐 Attaques Web
 
-#### 🔍 Reconnaissance
+##### 🔍 Reconnaissance
 - Fuzzing & découverte : `FFUF`, `Gobuster`, `Dirsearch`
 - Interception & Analyse : `Burp Suite`, `ZAP`, `Postman`
 - Analyse JS, robots.txt, cookies, headers HTTP
-
-#### 💉 Vulnérabilités Web
+##### 💉 Vulnérabilités Web
 - **SQLi**, **XSS (Reflected, Stored, DOM)**
 - **Command Injection**, **SSRF**, **XXE**
 - **File Inclusion** (LFI/RFI)
 - **File Upload** bypass (extension, MIME)
 - **CSRF**, **Broken Access Control (IDOR, path traversal)**
 - **Auth bypass**, **Brute force**, **JWT cracking**
-
 #### 🧪 Post-exploitation
 - **Reverse shells** en PHP, Python, Bash
 - **Webshells** : C99, WSO, China Chopper
 - **SSRF vers metadata AWS**, **Pivoting via intranet**
-
-#### 🔧 Outils Web
+##### 🔧 Outils Web
 - `Burp Suite`, `SQLmap`, `WFuzz`, `XSStrike`, `Commix`, `JWT Tool`
 
----
 
 ### 🔐 Cloud Security
 
-#### ☁️ Microsoft Azure & Azure AD
+##### ☁️ Microsoft Azure & Azure AD
 - **IAM & Sécurité** :
   - RBAC, PIM, Conditional Access, Identity Protection
 - **Microsoft Defender (Cloud, Endpoint)** :
@@ -159,14 +148,12 @@ Les tests d’intrusion AD simulent des attaques ciblant des environnements Wind
 - **Microsoft Sentinel (SIEM)** :
   - KQL, alertes, playbooks, détection MITRE
 - **Outils** : `Az`, `AzureHound`, `Stormspotter`, `ROADtools`, `AADInternals`
-
-#### ☁️ AWS Security
+##### ☁️ AWS Security
 - IAM (Roles, Policies, MFA, SCP)
 - Logging & audit : CloudTrail, Config, CloudWatch
 - Détection & alertes : GuardDuty, Security Hub, Macie
 - Outils Red Team : `Pacu`, `enumerate-iam`, `cloudsplaining`, `ScoutSuite`
 
----
 
 ### 📊 SIEM
 
@@ -179,26 +166,20 @@ Les tests d’intrusion AD simulent des attaques ciblant des environnements Wind
 - Analyse de logs AD, GPO, accès privilégiés
 - Threat Hunting MITRE ATT&CK
 
----
-
-### ⚙️ SOAR
+#### ⚙️ SOAR
 
 - **Cortex XSOAR** :
   - Playbooks automatisés : enrichissement IOC, blocage IP
   - Intégration avec EDR, SIEM, antivirus, email
   - Cas d’usage : phishing, quarantaine automatique, sandbox analyse
 
----
-
-### 🧪 Analyse de Logs & Réponse à Incident
+#### 🧪 Analyse de Logs & Réponse à Incident
 
 - Journaux : Syslog, Event Viewer, Apache/Nginx, Firewall, AV/EDR
 - Techniques de **Threat Hunting** (MITRE, hypothesis-based)
 - Outils : YARA, Sigma, Sysmon, KAPE, Velociraptor
 
----
-
-### 📈 Vulnerability Management
+#### 📈 Vulnerability Management
 
 - **Outils** : Nessus, OpenVAS, CVE.sh
 - **Processus** :
@@ -206,44 +187,36 @@ Les tests d’intrusion AD simulent des attaques ciblant des environnements Wind
   - Patch management, hardening, benchmark CIS/STIG
 - **Reporting** : priorisation, KPI, plans de remédiation
 
----
+#### 🧰 Outils Techniques
 
-### 🧰 Outils Techniques
-
-#### Offensive
+##### Offensive
 - **Burp Suite**, **Nmap**, **Metasploit**, **Wireshark**
 - **Impacket**, **CrackMapExec**, **BloodHound**
 - **Responder**, **Rubeus**, **PowerView**, **Mimikatz**
 - **Tools Web** : `SQLmap`, `FFUF`, `Dirsearch`, `ZAP`
 
-#### Reverse & Post-exploitation
+##### Reverse & Post-exploitation
 - **Ghidra**, `strings`, `radare2`, `Powershell Empire`, `Covenant`
 
----
-
-### 🤖 Automatisation & Scripting
+##### 🤖 Automatisation & Scripting
 
 - **Bash** : durcissement Linux, audits, automatisation
 - **PowerShell** : scripts d’audit AD, post-exploitation Windows
 - **Python** : scrapers, outils offensifs, parsing, APIs
 - Frameworks : `Requests`, `Paramiko`, `Nmap`, `Shodan`, `Flask`, `PyInstaller`
 
----
-
-### 🚀 CI/CD & DevSecOps
+##### 🚀 CI/CD & DevSecOps
 
 - **GitHub Actions**, **Azure DevOps** : CI/CD, linters, scan SAST
 - **Docker** : images sécurisées, vulnérabilité scan (`Trivy`, `Snyk`)
 - **Kubernetes (base)** : RBAC, secrets, pods, monitoring
 - Intégration des outils de sécurité dans les pipelines (DevSecOps)
 
----
-
-### 💻 Langages de Programmation
+#### 💻 Langages de Programmation
 
 - **Python** : outils de pentest, détection de vulnérabilités
 - **PHP** : développement Web (Laravel), injections
 - **C / C++** : exploitation mémoire, reverse engineering
-- **JavaScript** : XSS, CSRF, injections DOM, développement web
+- **JavaScript** :  développement web
 
 

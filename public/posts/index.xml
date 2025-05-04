@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.146.6</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Tue, 22 Apr 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 03 May 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devvortex -HTB</title>
+      <link>https://nyobemichel.me/posts/devvortex/</link>
+      <pubDate>Sat, 03 May 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/devvortex/</guid>
+      <description>Difficulte : esay</description>
+    </item>
     <item>
       <title>Bienvenue sur mon premier article</title>
       <link>https://nyobemichel.me/posts/example/</link>
