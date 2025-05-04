@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "2232c1fb8317a511",
+    "type": "split",
+    "children": [
+      {
+        "id": "de295744fa0053e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65770c30a8c11b5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/GoodGame.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "GoodGame"
+            }
+          },
+          {
+            "id": "6ce63321e07f1778",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/devvortex.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "devvortex"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "faed92a15052d138",
+    "type": "split",
+    "children": [
+      {
+        "id": "bacbb11f0c7d002d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3469436e6fc019a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "8d503b41fa0639e2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "f201da0891c284a2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7514ae3409a36094",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb88df4a1cd276c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fa7b6d19a1dbfd1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/posts/GoodGame.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour GoodGame"
+            }
+          },
+          {
+            "id": "35f7e7f81e3521a9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/posts/GoodGame.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de GoodGame"
+            }
+          },
+          {
+            "id": "8e40d27ac0d1f018",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "6b3c20b724f496d3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/posts/GoodGame.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de GoodGame"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "65770c30a8c11b5e",
+  "lastOpenFiles": [
+    "static/images/20250421135957.png",
+    "static/images/20250421140123.png",
+    "static/images/20250421140207.png",
+    "static/images/20250421141229.png",
+    "static/images/20250421141957.png",
+    "static/images/20250421142430.png",
+    "static/images/20250421142826.png",
+    "static/images/20250421143838.png",
+    "static/images/20250421144659.png",
+    "static/images/20250421145143.png",
+    "static/images/20250421145245.png",
+    "content/posts/devvortex.md",
+    "content/posts/GoodGame.md"
+  ]
+}
