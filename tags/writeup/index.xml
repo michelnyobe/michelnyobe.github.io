@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on larass0x04</title>
-    <link>https://nyobemichel.me/posts/</link>
-    <description>Recent content in Posts on larass0x04</description>
+    <title>Writeup on larass0x04</title>
+    <link>https://nyobemichel.me/tags/writeup/</link>
+    <description>Recent content in Writeup on larass0x04</description>
     <image>
       <title>larass0x04</title>
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
@@ -13,20 +13,13 @@
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Sat, 03 May 2025 20:00:00 +0200</lastBuildDate>
-    <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nyobemichel.me/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devvortex -HTB</title>
       <link>https://nyobemichel.me/posts/devvortex/</link>
       <pubDate>Sat, 03 May 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/devvortex/</guid>
       <description>Difficulte : esay</description>
-    </item>
-    <item>
-      <title>Bienvenue sur mon premier article</title>
-      <link>https://nyobemichel.me/posts/example/</link>
-      <pubDate>Tue, 22 Apr 2025 20:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/example/</guid>
-      <description>Ceci est un exemple de post pour tester Hugo avec le thème PaperMod.</description>
     </item>
   </channel>
 </rss>

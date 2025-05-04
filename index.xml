@@ -20,12 +20,11 @@
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/about/</guid>
       <description>&lt;div style=&#34;font-size: 13px;&#34;&gt;
-&lt;h1 id=&#34;michel-nyobe&#34;&gt;Michel NYOBE&lt;/h1&gt;
-&lt;h2&gt;&lt;strong&gt;Pentester &amp;amp; Cloud Security Enthusiast&lt;/strong&gt;&lt;br&gt;
-Paris, France&lt;br&gt;
-&lt;a href=&#34;mailto:michelnyobe87@gmail.com&#34;&gt;michelnyobe87@gmail.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Michel NYOBE&lt;/strong&gt; | Pentester &amp;amp; Cloud Security Enthusiast&lt;br&gt;
+📍 Paris, France | 📧 &lt;a href=&#34;mailto:michelnyobe87@gmail.com&#34;&gt;michelnyobe87@gmail.com&lt;/a&gt; | 🔐&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;profil&#34;&gt;Profil&lt;/h2&gt;
-&lt;p&gt;Passionné par la cybersécurité offensive, le je me spécialise dans les attaques Active Directory, le pentesting d’environnements cloud (Azure &amp;amp; AWS), et la sécurité des identités. En formation continue et à la recherche d’un poste/apprentissage en Red Team ou pentest.&lt;/p&gt;
+&lt;p&gt;Passionné par la &lt;strong&gt;cybersécurité offensive&lt;/strong&gt;, le je me spécialise dans les attaques &lt;strong&gt;Active Directory&lt;/strong&gt;, le pentesting d’environnements cloud (Azure &amp;amp; AWS), et la sécurité des identités. En formation continue et à la recherche d’un poste/apprentissage en Red Team ou pentest.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;labs-et-environnements&#34;&gt;Labs et Environnements&lt;/h2&gt;
 &lt;ul&gt;
@@ -33,7 +32,7 @@ Paris, France&lt;br&gt;
 &lt;li&gt;Plateformes :
 &lt;ul&gt;
 &lt;li&gt;TryHackMe&lt;/li&gt;
-&lt;li&gt;HackTheBox&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nyobemichel.me/tags/hackthebox/&#34;&gt;HackTheBox&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Root-Me&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -64,22 +63,22 @@ Paris, France&lt;br&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;expériences&#34;&gt;Expériences&lt;/h2&gt;
-&lt;h3 id=&#34;-développeur-logiciels-de-sécurité--enix-072023--012024&#34;&gt;🛡️ Développeur Logiciels de Sécurité – &lt;strong&gt;ENIX&lt;/strong&gt; (07/2023 – 01/2024)&lt;/h3&gt;
+&lt;h4 id=&#34;-développeur-logiciels-de-sécurité--enix-072023--012024&#34;&gt;🛡️ Développeur Logiciels de Sécurité – &lt;strong&gt;ENIX&lt;/strong&gt; (07/2023 – 01/2024)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Développement de scripts (Next.js, GraphQL)&lt;/li&gt;
 &lt;li&gt;Administration d’Active Directory, Wazuh, PowerShell&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;-devsecops--tdr-consulting-052022--072023&#34;&gt;🔐 DevSecOps – &lt;strong&gt;TDR Consulting&lt;/strong&gt; (05/2022 – 07/2023)&lt;/h3&gt;
+&lt;h4 id=&#34;-devsecops--tdr-consulting-052022--072023&#34;&gt;🔐 DevSecOps – &lt;strong&gt;TDR Consulting&lt;/strong&gt; (05/2022 – 07/2023)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Sécurisation des chaînes CI/CD : Docker, Kubernetes, Jenkins&lt;/li&gt;
 &lt;li&gt;Projets : &lt;a href=&#34;https://uptiimum.tech&#34;&gt;Uptiimum.tech&lt;/a&gt;, &lt;a href=&#34;https://e-learning.ifpce-africa.tech&#34;&gt;IFPCE Africa&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;-ingénieur-sécurité-stage--backbone-corp-082021--102021&#34;&gt;🧠 Ingénieur Sécurité (Stage) – &lt;strong&gt;Backbone Corp&lt;/strong&gt; (08/2021 – 10/2021)&lt;/h3&gt;
+&lt;h4 id=&#34;-ingénieur-sécurité-stage--backbone-corp-082021--102021&#34;&gt;🧠 Ingénieur Sécurité (Stage) – &lt;strong&gt;Backbone Corp&lt;/strong&gt; (08/2021 – 10/2021)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Configuration de serveurs, sauvegarde (Zabbix, Bacula)&lt;/li&gt;
 &lt;li&gt;Python, documentation technique&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;-technicien-support-informatique-stage--eneo-072019--102019&#34;&gt;💻 Technicien Support Informatique (Stage) – &lt;strong&gt;ENEO&lt;/strong&gt; (07/2019 – 10/2019)&lt;/h3&gt;
+&lt;h4 id=&#34;-technicien-support-informatique-stage--eneo-072019--102019&#34;&gt;💻 Technicien Support Informatique (Stage) – &lt;strong&gt;ENEO&lt;/strong&gt; (07/2019 – 10/2019)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Administration réseau (Cisco), Active Directory&lt;/li&gt;
 &lt;li&gt;Virtualisation : VMware, Proxmox&lt;/li&gt;
@@ -87,8 +86,15 @@ Paris, France&lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-compétences-techniques-en-cybersécurité&#34;&gt;🛡️ Compétences Techniques en Cybersécurité&lt;/h2&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;-tests-dintrusion-active-directory&#34;&gt;🔍 Tests d’Intrusion Active Directory&lt;/h3&gt;
+&lt;h4 id=&#34;-tests-dintrusion-active-directory&#34;&gt;🔍 Tests d’Intrusion Active Directory&lt;/h4&gt;
 &lt;p&gt;Les tests d’intrusion AD simulent des attaques ciblant des environnements Windows d’entreprise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Devvortex -HTB</title>
+      <link>https://nyobemichel.me/posts/devvortex/</link>
+      <pubDate>Sat, 03 May 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/devvortex/</guid>
+      <description>Difficulte : esay</description>
     </item>
     <item>
       <title>Bienvenue sur mon premier article</title>
