@@ -3,6 +3,7 @@ copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-Pap
 theme: [PaperMod]
 baseURL: "https://nyobemichel.me/"
 languageCode: "fr-fr"
+googleAnalytics: G-S1YCLX5573
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
