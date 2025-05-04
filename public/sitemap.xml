@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/about/</loc>
+    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/posts/example/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
@@ -17,9 +23,6 @@
     <loc>https://nyobemichel.me/tags/hugo/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-04-22T20:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/papermod/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
@@ -28,8 +31,6 @@
   </url><url>
     <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/about/</loc>
   </url><url>
     <loc>https://nyobemichel.me/archives/</loc>
   </url><url>

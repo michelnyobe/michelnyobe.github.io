@@ -52,7 +52,7 @@ languages:
       languageAltTitle: French
       profileMode:
         enabled: true
-        title: Michel Nyobe
+        title: ING.{ Michel Nyobe }
         imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
         imageTitle: ProfileMode image
         subtitle: "☄️ Active Directory Attack And Defense  | ☁️ Cloud Hacking | IAM  | 📱 Offensive security "
@@ -60,7 +60,7 @@ languages:
           - name: Blog
             url: posts
           - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+            url: https://github.com/michelnyobe
 
 outputs:
   home:
@@ -104,23 +104,23 @@ params:
 
   socialIcons:
     - name: github
-      title: View Source on Github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
+      title: Voir la source sur Github
+      url: "https://github.com/michelnyobe"
     - name: Discord
-      title: Join discord community
-      url: "https://discord.gg/ahpmTvhVmp"
+      title: Rejoignez la communauté Discord
+      url: "https://discord.gg/TbqtHywJ"
     - name: X
-      title: Share PaperMod on X/Twitter
+      title: Rejoignez-moi sur X
       url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
     - name: Instagram
-      title: Follow me on Instagram
+      title: Suivez moi sur Instagram
       url: "https://www.instagram.com/adityatelange/"
     - name: LinkedIn
-      title: Connect with me on LinkedIn
-      url: "https://www.linkedin.com/in/adityatelange/"
+      title: Connectez-vous avec moi sur LinkedIn
+      url: "http://www.linkedin.com/in/nyobemichel"
     - name: YouTube
-      title: Subscribe to my YouTube channel
-      url: "https://www.youtube.com/c/adityatelange"
+      title: Abonnez-vous à ma chaîne YouTube
+      url: "http://www.youtube.com/@Larass0x04"
 
   editPost:
     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
