@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Eureka.md",
+                "file": "content/posts/SID ( Identificateurs de sécurité ).md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Eureka"
+              "title": "SID ( Identificateurs de sécurité )"
             }
           },
           {
@@ -184,6 +184,9 @@
   },
   "active": "65770c30a8c11b5e",
   "lastOpenFiles": [
+    "content/posts/Enumeration Active Directory.md",
+    "content/posts/SID ( Identificateurs de sécurité ).md",
+    "content/posts/Kerberoasting.md",
     "content/posts/devvortex.md",
     "content/posts/Eureka.md",
     "static/images/20250429111659.png",

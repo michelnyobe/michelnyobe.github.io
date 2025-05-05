@@ -72,10 +72,11 @@ outputs:
 params:
   env: production
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  author: ""
 
   defaultTheme: auto
   ShowShareButtons: true
+  hideFooter: true
   ShowReadingTime: true
   displayFullLangName: true
   ShowPostNavLinks: true
@@ -112,21 +113,13 @@ params:
       url: "https://discord.gg/TbqtHywJ"
     - name: X
       title: Rejoignez-moi sur X
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
-    - name: Instagram
-      title: Suivez moi sur Instagram
-      url: "https://www.instagram.com/adityatelange/"
+      url: "https://x.com/larass0x04"
     - name: LinkedIn
       title: Connectez-vous avec moi sur LinkedIn
       url: "http://www.linkedin.com/in/nyobemichel"
     - name: YouTube
       title: Abonnez-vous à ma chaîne YouTube
       url: "http://www.youtube.com/@Larass0x04"
-
-  editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
 
   assets:
     disableHLJS: true
