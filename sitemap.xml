@@ -2,14 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nyobemichel.me/categories/active-directory/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/active-directory/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/attaques/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/blog/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/kerberoasting/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/kerberos/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pentest/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/sid/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/sid--identificateurs-de-s%C3%A9curit%C3%A9-/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/windows/</loc>
+    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/active/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/crtp/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/cybersecurity/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/directory/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/powerview/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/reconnaissance/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration-active-directory/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/red-team/</loc>
+    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/about/</loc>
     <lastmod>2025-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/categories/</loc>
-    <lastmod>2025-05-03T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/devvortex/</loc>
     <lastmod>2025-05-03T20:00:00+02:00</lastmod>
@@ -20,13 +80,7 @@
     <loc>https://nyobemichel.me/tags/hackthebox/</loc>
     <lastmod>2025-05-03T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2025-05-03T20:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/ssti/</loc>
-    <lastmod>2025-05-03T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-05-03T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/writeup/</loc>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Attaques on larass0x04</title>
+    <link>https://nyobemichel.me/tags/attaques/</link>
+    <description>Recent content in Attaques on larass0x04</description>
+    <image>
+      <title>larass0x04</title>
+      <url>https://nyobemichel.me/images/papermod-cover.png</url>
+      <link>https://nyobemichel.me/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.1</generator>
+    <language>fr</language>
+    <copyright>PaperMod Contributors</copyright>
+    <lastBuildDate>Mon, 05 May 2025 19:00:00 +0200</lastBuildDate>
+    <atom:link href="https://nyobemichel.me/tags/attaques/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kerberoasting : Attaque d&#39;Active Directory via Kerberos</title>
+      <link>https://nyobemichel.me/posts/kerberoasting/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/kerberoasting/</guid>
+      <description>Une attaque redoutable post-exploitation qui cible les services Kerberos dans les environnements Active Directory. Décryptons ensemble la méthode, les outils et les moyens de défense.</description>
+    </item>
+    <item>
+      <title>SID ( Identificateurs de sécurité )</title>
+      <link>https://nyobemichel.me/posts/sid--identificateurs-de-s%C3%A9curit%C3%A9-/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/sid--identificateurs-de-s%C3%A9curit%C3%A9-/</guid>
+      <description>Un identificateur de sécurité (SID) est essentiel dans la gestion des accès et de la sécurité dans les systèmes Windows. Découvrez comment il fonctionne, son rôle dans l&amp;rsquo;authentification et sa structure binaire.</description>
+    </item>
+  </channel>
+</rss>

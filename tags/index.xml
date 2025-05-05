@@ -12,8 +12,92 @@
     <generator>Hugo -- 0.147.1</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Sat, 03 May 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 19:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Directory</title>
+      <link>https://nyobemichel.me/tags/active-directory/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Attaques</title>
+      <link>https://nyobemichel.me/tags/attaques/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/attaques/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>https://nyobemichel.me/tags/blog/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kerberos</title>
+      <link>https://nyobemichel.me/tags/kerberos/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/kerberos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pentest</title>
+      <link>https://nyobemichel.me/tags/pentest/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/pentest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SID</title>
+      <link>https://nyobemichel.me/tags/sid/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/sid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://nyobemichel.me/tags/windows/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Active</title>
+      <link>https://nyobemichel.me/tags/active/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/active/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CRTP</title>
+      <link>https://nyobemichel.me/tags/crtp/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/crtp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Directory</title>
+      <link>https://nyobemichel.me/tags/directory/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerView</title>
+      <link>https://nyobemichel.me/tags/powerview/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/powerview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reconnaissance</title>
+      <link>https://nyobemichel.me/tags/reconnaissance/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/reconnaissance/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hackthebox</title>
       <link>https://nyobemichel.me/tags/hackthebox/</link>
