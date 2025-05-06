@@ -6,9 +6,6 @@ draft: false
 tags: ["blog", "attaques", "Pentester"]
 categories: ["Methodologie"]
 summary: "Un aperçu des phases lors d'un test d’intrusion "
-cover:
-  image: "images/"
-  alt: "test de penetration"
 showToc: true
 tocOpen: true
 ---

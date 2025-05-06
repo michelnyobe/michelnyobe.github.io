@@ -5,9 +5,6 @@ draft: false
 tags: ["Active Directory", "blog", "Kerberos", "attaques", "pentest"]
 categories: ["Active Directory"]
 summary: "Une attaque redoutable post-exploitation qui cible les services Kerberos dans les environnements Active Directory. Décryptons ensemble la méthode, les outils et les moyens de défense."
-cover:
-  image: "images/kerberoasting-cover.png"
-  alt: "Kerberoasting - attaque Kerberos"
 showToc: true
 tocOpen: true
 ---

@@ -5,10 +5,6 @@ draft: false
 tags: ["hackthebox", "writeup", "SSTI"]
 categories: ["writeup"]
 summary: "Difficulte : esay"
-cover:
-  image: "images/devvortex.png" # Mets une image ici si tu veux une couverture
-  alt: "devvortex"
-  caption: "Devvortex"
 showToc: true
 tocOpen: true
 ---

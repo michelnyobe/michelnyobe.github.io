@@ -5,10 +5,6 @@ draft: false
 tags: ["exemple", "hugo", "papermod"]
 categories: ["blog"]
 summary: "Ceci est un exemple de post pour tester Hugo avec le thème PaperMod."
-cover:
-  image: "images/cover-example.jpg" # Mets une image ici si tu veux une couverture
-  alt: "Image de couverture"
-  caption: "Une belle image"
 showToc: true
 tocOpen: true
 ---

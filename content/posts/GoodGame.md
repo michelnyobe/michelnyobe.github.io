@@ -5,9 +5,6 @@ draft: false
 tags: ["hackthebox", "writeup",]
 categories: ["writeup"]
 summary: "Difficulte : esay"
-cover:
-  image: "images/"
-  alt: "goodgame"
 showToc: true
 tocOpen: true
 ---

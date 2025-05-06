@@ -5,10 +5,6 @@ draft: false
 tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
 categories: ["Red Team", "Methodologie", "pentester"]
 summary: "Une vue d'ensemble structurée des prérequis et méthodologies à maîtriser avant de réaliser un test d’intrusion."
-cover:
-  image: "images/"
-  alt: ""
-  
 showToc: true
 tocOpen: true
 ---

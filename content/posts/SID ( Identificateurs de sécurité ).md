@@ -5,9 +5,6 @@ draft: false
 tags: ["Active Directory", "blog", "SID", "attaques", "windows"]
 categories: ["Active Directory"]
 summary: "Un identificateur de sécurité (SID) est essentiel dans la gestion des accès et de la sécurité dans les systèmes Windows. Découvrez comment il fonctionne, son rôle dans l'authentification et sa structure binaire."
-cover:
-  image: "images/"
-  alt: "SID"
 showToc: true
 tocOpen: true
 ---

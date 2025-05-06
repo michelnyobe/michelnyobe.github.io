@@ -7,8 +7,7 @@ categories: ["Tryhackme", "Challenge"]
 summary: "tryhackme "
 cover:
   image: "images/20250422222347.png"
-  alt: "THM Publisher"
-  
+  alt: "THM Publisher"  
 showToc: true
 tocOpen: true
 ---

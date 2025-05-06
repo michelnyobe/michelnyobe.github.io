@@ -5,10 +5,6 @@ draft: false
 tags: ["hackthebox", "writeup"]
 categories: ["writeup"]
 summary: "Difficulte : esay"
-cover:
-  image: "images/" # Mets une image ici si tu veux une couverture
-  alt: "eureka"
-  caption: "eureka"
 showToc: true
 tocOpen: true
 ---
