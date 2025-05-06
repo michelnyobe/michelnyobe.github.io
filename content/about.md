@@ -21,6 +21,7 @@ Passionné par la **cybersécurité offensive**, le je me spécialise dans les a
 - Plateformes : 
     - TryHackMe  
     - [HackTheBox](/tags/hackthebox/)
+
     - Root-Me  
 - Défis réguliers : 
     - Pro Labs
@@ -29,6 +30,16 @@ Passionné par la **cybersécurité offensive**, le je me spécialise dans les a
 
 ---
 
+![profil_htb](/images/20250506164239.png)
+
+
+![rootme](/images/20250506164745.png)
+https://www.root-me.org/vladimirlarass
+
+
+![tryhackme](/images/20250506165505.png)
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1717193" style='border:none;'></iframe>
+---
 ## Formations & Certifications
 
 - **CRTP (A jour)** — Certified Red Team Professional  
@@ -71,6 +82,7 @@ Passionné par la **cybersécurité offensive**, le je me spécialise dans les a
 Les tests d’intrusion AD simulent des attaques ciblant des environnements Windows d’entreprise.
 
 ##### 🏁 Reconnaissance Active Directory
+- - [**Enumération Active Directory**](https://nyobemichel.me/posts/enumeration-active-directory/)
 - Enumération LDAP : `ldapsearch`, `ADFind`, `SharpHound`
 - Cartographie des relations d’accès avec **BloodHound** (Neo4j)
 - Enumération DNS interne : `nslookup`, `dig`, `dnscmd`
@@ -78,7 +90,7 @@ Les tests d’intrusion AD simulent des attaques ciblant des environnements Wind
 
 ##### 🔐 Techniques d’authentification
 - **AS-REP Roasting** : utilisateurs avec `DONT_REQ_PREAUTH`
-- **Kerberoasting** : extraction de tickets TGS
+- [**Kerberoasting** : extraction de tickets TGS](https://nyobemichel.me/posts/kerberoasting/)
 - **Pass-the-Hash** : utilisation de hash NTLM pour l’authentification
 - **Pass-the-Ticket** : réutilisation de tickets Kerberos
 - **Overpass-the-Hash** / **Pass-the-Key** : création de TGT
@@ -99,7 +111,7 @@ Les tests d’intrusion AD simulent des attaques ciblant des environnements Wind
 ##### 🧑‍💻 Mouvement latéral & persistance
 - **DCSync**, **DCShadow**
 - **Golden Ticket**, **Silver Ticket**
-- **Skeleton Key**, **SIDHistory abuse**
+- **Skeleton Key**, **SIDHistory abuse** , - [**SID** : Identificateurs de sécurité](https://nyobemichel.me/posts/sid--identificateurs-de-s%C3%A9curit%C3%A9-/)
 - Credential Dumping : `Mimikatz`, `LaZagne`, `Rubeus`, `SharpDPAPI`
 
 ### 💥 Exploitation de Vulnérabilités
