@@ -3,7 +3,7 @@
 title: "structure test penetration"
 date: 2025-05-06T15:00:00+02:00
 draft: false
-tags: [, "blog", "attaques", "Pentester"]
+tags: ["blog", "attaques", "Pentester"]
 categories: ["Methodologie"]
 summary: "Un aperçu des phases lors d'un test d’intrusion "
 cover:
