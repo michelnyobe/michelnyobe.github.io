@@ -9,11 +9,18 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.1</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Mon, 05 May 2025 19:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 15:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>structure test penetration</title>
+      <link>https://nyobemichel.me/posts/structure-test-penetration/</link>
+      <pubDate>Tue, 06 May 2025 15:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/structure-test-penetration/</guid>
+      <description>Un aperçu des phases lors d&amp;rsquo;un test d’intrusion</description>
+    </item>
     <item>
       <title>Kerberoasting : Attaque d&#39;Active Directory via Kerberos</title>
       <link>https://nyobemichel.me/posts/kerberoasting/</link>

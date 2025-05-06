@@ -9,11 +9,18 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.1</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Mon, 05 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 10:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/powerview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prérequis pour un test de pénétration part1</title>
+      <link>https://nyobemichel.me/posts/pr%C3%A9requis-pour-un-test-de-p%C3%A9n%C3%A9tration/</link>
+      <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/pr%C3%A9requis-pour-un-test-de-p%C3%A9n%C3%A9tration/</guid>
+      <description>Une vue d&amp;rsquo;ensemble structurée des prérequis et méthodologies à maîtriser avant de réaliser un test d’intrusion.</description>
+    </item>
     <item>
       <title>Reconnaissance Active Directory avec PowerView</title>
       <link>https://nyobemichel.me/posts/enumeration-active-directory/</link>
