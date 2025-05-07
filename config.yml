@@ -43,7 +43,7 @@ languages:
         - name: Categories
           url: categories
           weight: 10
-        - name: Tous les articles
+        - name: Articles
           url: posts/
           weight: 3
         - name: Search
