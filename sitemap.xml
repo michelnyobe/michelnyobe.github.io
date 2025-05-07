@@ -2,31 +2,151 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nyobemichel.me/posts/outils/bloodhound/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/bloodyad/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/chisel/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/crackmapexec/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/curl/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/evil-winrm/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/ffuf/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/getnpusers.py/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/gobuster/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/guacamole/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/hascat/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/hydra/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/kerbrute/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/linpeas/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/netexec/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/nishang/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/nmap/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/outils/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/outils/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pentester/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/powerups/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/poweview/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/proxychains/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/psexec-v2.43/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/responder/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/rubeus/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/runascs/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/sqlmap/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/sshuttle/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/username-anarchypublic/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/wpscan/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/enumeration/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/enumeration/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration---ftp/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration---nfs/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration---smb/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/ftp/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/nfs/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/smb/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/smtp/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/tags/attaques/</loc>
     <lastmod>2025-05-06T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/blog/</loc>
     <lastmod>2025-05-06T15:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/</loc>
-    <lastmod>2025-05-06T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-05-06T15:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/categories/methodologie/</loc>
     <lastmod>2025-05-06T15:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/tags/pentester/</loc>
-    <lastmod>2025-05-06T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2025-05-06T15:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/posts/structure-test-penetration/</loc>
-    <lastmod>2025-05-06T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-05-06T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/active-directory/</loc>

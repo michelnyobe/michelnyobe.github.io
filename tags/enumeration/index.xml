@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Enumeration on larass0x04</title>
+    <link>https://nyobemichel.me/tags/enumeration/</link>
+    <description>Recent content in Enumeration on larass0x04</description>
+    <image>
+      <title>larass0x04</title>
+      <url>https://nyobemichel.me/images/papermod-cover.png</url>
+      <link>https://nyobemichel.me/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>fr</language>
+    <copyright>PaperMod Contributors</copyright>
+    <lastBuildDate>Wed, 07 May 2025 10:00:00 +0200</lastBuildDate>
+    <atom:link href="https://nyobemichel.me/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enumeration - FTP</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---ftp/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---ftp/</guid>
+      <description>FTP</description>
+    </item>
+    <item>
+      <title>Enumeration - NFS</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---nfs/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---nfs/</guid>
+      <description>NFS</description>
+    </item>
+    <item>
+      <title>Enumeration - SMB</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---smb/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---smb/</guid>
+      <description>SMB</description>
+    </item>
+    <item>
+      <title>Enumeration - SMTP</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</guid>
+      <description>SMTP</description>
+    </item>
+  </channel>
+</rss>

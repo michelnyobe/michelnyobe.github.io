@@ -12,8 +12,57 @@
     <generator>Hugo -- 0.147.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Tue, 06 May 2025 15:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 15:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outils</title>
+      <link>https://nyobemichel.me/tags/outils/</link>
+      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/outils/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pentester</title>
+      <link>https://nyobemichel.me/tags/pentester/</link>
+      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/pentester/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enumeration</title>
+      <link>https://nyobemichel.me/tags/enumeration/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/enumeration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FTP</title>
+      <link>https://nyobemichel.me/tags/ftp/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/ftp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NFS</title>
+      <link>https://nyobemichel.me/tags/nfs/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/nfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SMB</title>
+      <link>https://nyobemichel.me/tags/smb/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/smb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SMTP</title>
+      <link>https://nyobemichel.me/tags/smtp/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/smtp/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Attaques</title>
       <link>https://nyobemichel.me/tags/attaques/</link>
@@ -26,13 +75,6 @@
       <link>https://nyobemichel.me/tags/blog/</link>
       <pubDate>Tue, 06 May 2025 15:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pentester</title>
-      <link>https://nyobemichel.me/tags/pentester/</link>
-      <pubDate>Tue, 06 May 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/pentester/</guid>
       <description></description>
     </item>
     <item>
