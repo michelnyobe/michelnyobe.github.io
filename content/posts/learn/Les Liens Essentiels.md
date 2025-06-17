@@ -1,0 +1,83 @@
+---
+title: "Les Liens Essentiels"
+date: 2025-06-20T20:00:00+02:00
+draft: false
+tags: ["resources", "lien", "autoapprentissage"]
+categories: ["resources"]
+summary: "annuaire complet de ressources en cybersécurité"
+showToc: true
+tocOpen: true
+---
+
+Bienvenue dans cet **annuaire complet de ressources en cybersécurité, cloud, DevOps, administration système, réseau, conteneurisation (Docker/Kubernetes), Red Team et Blue Team**. Que vous soyez étudiant, professionnel en reconversion, passionné autodidacte ou ingénieur confirmé, ce guide regroupe des **liens vers des plateformes gratuites et payantes** pour apprendre, pratiquer, expérimenter et se certifier dans les domaines clés de la sécurité informatique et de l'administration des systèmes modernes.
+
+La cybersécurité est un domaine en constante évolution. Il ne suffit plus d’apprendre en théorie : il faut pratiquer sur des environnements réalistes, se mesurer à des défis techniques, et découvrir les bonnes pratiques du monde réel. C’est dans cette optique que cet annuaire a été conçu : **rassembler les meilleurs Labs interactifs, plateformes d'entraînement et simulateurs cloud accessibles sur Internet**, tout en vous évitant de perdre du temps à chercher.
+
+- [Hack The Box (HTB)](https://hackthebox.com)
+- [Hack The Box Academy](https://academy.hackthebox.com)
+- [TryHackMe](https://tryhackme.com)
+- [PentesterLab](https://pentesterlab.com)
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- [Cyber Learning](https://cyber-learning.fr/)
+- [Red Labs - Altered Security](https://redlabs.enterprisesecurity.io/)
+- [Root Me](https://www.root-me.org/)
+- [VulnHub](https://www.vulnhub.com/)
+- [VulnMachines](https://www.vulnmachines.com/)
+- [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
+- [Damn Vulnerable Web App (DVWA)](https://www.dvwa.co.uk/)
+- [HackSplaining](https://www.hacksplaining.com/)
+- [HackThisSite](https://hbh.sh/home)
+- [HackerTest](https://www.hackertest.net/)
+- [SEED Security Labs](https://seedsecuritylabs.org/Labs_20.04/)
+- [pwnable.kr](https://pwnable.kr/play.php)
+- [ZenK-Security](https://www.zenk-security.com/)
+- [Hacker101 CTF](https://ctf.hacker101.com/)
+- [White-box pentesting (GitHub)](https://github.com/TROUBLE-1/White-box-pentesting)
+- [Damn Vulnerable GraphQL App (GitHub)](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)
+- [Generic University (GitHub)](https://github.com/InsiderPhD/Generic-University)
+- [API Sandbox (GitHub)](https://github.com/API-Security/APISandbox)
+- [OWASP Docker Compose Top 10](https://application.security/free/docker-compose-top-10)
+- [OWASP Top 10 Labs](https://application.security/free/owasp-top-10)
+- [Blue Team Labs Online](https://blueteamlabs.online)
+- [RangeForce](https://rangeforce.com)
+- [LetsDefend](https://letsdefend.io)
+- [Security Blue Team](https://securityblue.team)
+- [Cyber Defenders](https://cyberdefenders.org/blueteam-ctf-challenges/)
+- [Splunk Security Essentials](https://splunkbase.splunk.com/app/3435/)
+- [Microsoft Applied Skills](https://learn.microsoft.com/)
+- [AWS Skill Builder](https://skillbuilder.aws)
+- [Google Cloud Skills Boost](https://cloudskillsboost.google)
+- [CloudGoat - AWS (GitHub)](https://github.com/RhinoSecurityLabs/cloudgoat)
+- [AzureGoat (GitHub)](https://github.com/ine-labs/AzureGoat)
+- [AWSGoat (GitHub)](https://github.com/ine-labs/AWSGoat)
+- [TerraGoat (GitHub)](https://github.com/bridgecrewio/terragoat?tab=readme-ov-file)
+- [Flaws.cloud](http://flaws.cloud/)
+- [Flaws2.cloud](http://flaws2.cloud/)
+- [BigIAM Challenge](https://bigiamchallenge.com/challenge/1)
+- [Serverless CTF (SANS CloudWars)](https://attack-defend-serverless.sanscloudwars.com/)
+- [BadZure (GitHub)](https://github.com/mvelazc0/BadZure)
+- [BustaKube](https://www.bustakube.com/)
+- [SadServers](https://sadservers.com/)
+- [KodeKloud Labs Gratuits](https://kodekloud.com/free-labs)
+- [LabEx](https://labex.io/learn)
+- [Iximiuz Labs](https://labs.iximiuz.com/)
+- [Play with Docker](https://labs.play-with-docker.com/)
+- [Linux Survival](https://linuxsurvival.com/)
+- [Bandit Wargame](https://overthewire.org/wargames/bandit/bandit0.html)
+- [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs/)
+- [Kubernetes Goat (GitHub)](https://github.com/madhuakula/kubernetes-goat)
+- [CI/CD Goat (GitHub)](https://github.com/cider-security-research/cicd-goat)
+- [Atomic Red Team (GitHub)](https://github.com/redcanaryco/atomic-red-team)
+- [SQL Murder Mystery](https://mystery.knightlab.com/)
+- [SQL Squid Game](https://datalemur.com/sql-game)
+- [VIM Adventures](https://vim-adventures.com/)
+- [Pwn College](https://pwn.college/)
+- [Pwn Tunisia](https://pwn.tn/)
+- [247CTF](https://247ctf.com/)
+- [Crypto Challenge – Mystery Twister](https://mysterytwister.org/)
+- [VulnLab](https://www.vulnlab.com/subscribe)
+- [Immersive Labs](https://www.immersivelabs.com/products/cyber-ranges)
+- [Red Team Attack Lab (GitHub)](https://github.com/Marshall-Hallenbeck/red_team_attack_lab?tab=readme-ov-file)
+- [ADSecurity](https://adsecurity.org/)
+- [Harmj0y's Blog](https://www.harmj0y.net/blog/)
+- [GOAD (GitHub)](https://github.com/Orange-Cyberdefense/GOAD)

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Outils/Bloodhound.md",
-                "mode": "source",
+                "file": "content/posts/learn/Les Liens Essentiels.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Bloodhound"
+              "title": "Les Liens Essentiels"
             }
           }
         ],
@@ -59,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -175,24 +175,34 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "fd79f136b93ae329",
   "lastOpenFiles": [
+    "content/posts/devvortex.md",
+    "content/posts/learn/Les Liens Essentiels.md",
+    "content/posts/learn/Entra ID.md",
+    "content/posts/learn/l’accès conditionnel.md",
+    "content/posts/learn/Zero Trust.md",
+    "content/posts/Kerberoasting.md",
+    "content/posts/Untitled.md",
+    "content/posts/learn",
+    "content/about.md",
+    "content/search.md",
+    "content/archives.fr.md",
+    "content/archives.md",
+    "content/posts/Outils/Bloodhound.md",
     "content/posts/Outils/Curl.md",
     "content/posts/Outils/Crackmapexec.md",
     "content/posts/Outils/chisel.md",
-    "content/posts/Outils/Bloodhound.md",
     "content/posts/Outils/BloodyAD.md",
     "content/posts/Outils/Evil-WinRM.md",
-    "content/about.md",
-    "content/posts/devvortex.md",
     "content/posts/Outils/ffuf.md",
     "content/posts/Enumeration/Enumeration - FTP.md",
     "content/posts/Outils/GetNPUsers.py.md",
@@ -202,15 +212,6 @@
     "content/posts/Outils/SQLMAp.md",
     "content/posts/Outils/Runascs.md",
     "content/posts/Outils/Rubeus.md",
-    "content/posts/Outils/Responder.md",
-    "content/posts/Outils/PsExec v2.43.md",
-    "content/posts/Outils/Proxychains.md",
-    "content/posts/Outils/Poweview.md",
-    "content/posts/Outils/PowerUps.md",
-    "content/posts/Outils/Nmap.md",
-    "content/posts/Outils/Nishang.md",
-    "content/posts/Outils/NetExec.md",
-    "content/posts/Outils/linPeas.md",
     "content/posts/Enumeration",
     "content/posts/Outils",
     "static/images/20250423001854.png",
