@@ -8,32 +8,24 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-          submodules: true
+            submodules: true # ⬅️ pour télécharger le thème
+            fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
 
-      - name: Build site
+      - name: Build
         run: hugo --minify
 
-      - name: Cleanup git config and credentials
-        run: |
-          git remote remove origin || true
-          git remote add origin https://github.com/michelnyobe/michelnyobe.github.io.git
-          git config --global --unset credential.helper || true
-          rm -f ~/.git-credentials || true
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_DEPLOY_TOKEN }}
+          personal_token: ${{ secrets.GH_DEPLOY_TOKEN_NEW }}
           publish_dir: ./public
-          publish_branch: gh-pages
+          publish_branch: gh-pages  
