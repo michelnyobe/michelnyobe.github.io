@@ -58,7 +58,7 @@ https://www.root-me.org/vladimirlarass
 
 #### 🛡️ Développeur Logiciels de Sécurité – **ENIX** (07/2023 – 01/2024)
 - Développement de scripts (Next.js, GraphQL)
-- Administration d’Active Directory, Wazuh, PowerShell
+- Administration d’Active Directory, Wazuh, [**PowerShell**](https://nyobemichel.me/Articles/Powershell/)
 
 #### 🔐 DevSecOps – **TDR Consulting** (05/2022 – 07/2023)
 - Sécurisation des chaînes CI/CD : Docker, Kubernetes, Jenkins

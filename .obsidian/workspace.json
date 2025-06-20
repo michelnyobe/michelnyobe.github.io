@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "devvortex"
             }
-          },
-          {
-            "id": "fd79f136b93ae329",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/Outils/Bloodhound.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Bloodhound"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,18 +168,23 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "fd79f136b93ae329",
+  "active": "3469436e6fc019a5",
   "lastOpenFiles": [
+    "content/posts/Articles/PowerShell.md",
+    "content/posts/Articles/Cyber kill chain.md",
+    "content/posts/structure test penetration.md",
+    "content/posts/Outils/mimikatz.md",
+    "content/about.md",
+    "content/posts/Enumeration/Enumeration - FTP.md",
+    "content/posts/Outils/Bloodhound.md",
+    "content/posts/Articles",
     "content/posts/Outils/Curl.md",
     "content/posts/Outils/Crackmapexec.md",
     "content/posts/Outils/chisel.md",
-    "content/posts/Outils/Bloodhound.md",
     "content/posts/Outils/BloodyAD.md",
     "content/posts/Outils/Evil-WinRM.md",
-    "content/about.md",
     "content/posts/devvortex.md",
     "content/posts/Outils/ffuf.md",
-    "content/posts/Enumeration/Enumeration - FTP.md",
     "content/posts/Outils/GetNPUsers.py.md",
     "content/posts/Outils/WPscan.md",
     "content/posts/Outils/username-anarchyPublic.md",
@@ -207,10 +197,6 @@
     "content/posts/Outils/Proxychains.md",
     "content/posts/Outils/Poweview.md",
     "content/posts/Outils/PowerUps.md",
-    "content/posts/Outils/Nmap.md",
-    "content/posts/Outils/Nishang.md",
-    "content/posts/Outils/NetExec.md",
-    "content/posts/Outils/linPeas.md",
     "content/posts/Enumeration",
     "content/posts/Outils",
     "static/images/20250423001854.png",
