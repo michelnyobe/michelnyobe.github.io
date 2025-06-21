@@ -9,11 +9,25 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 07 May 2025 15:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les Liens Essentiels</title>
+      <link>https://nyobemichel.me/posts/learn/les-liens-essentiels/</link>
+      <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/les-liens-essentiels/</guid>
+      <description>annuaire complet de ressources en cybersécurité</description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>https://nyobemichel.me/posts/articles/powershell/</link>
+      <pubDate>Mon, 12 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/articles/powershell/</guid>
+      <description>PowerShell</description>
+    </item>
     <item>
       <title>Bloodhound</title>
       <link>https://nyobemichel.me/posts/outils/bloodhound/</link>
@@ -393,6 +407,28 @@
       <pubDate>Tue, 22 Apr 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/example/</guid>
       <description>Ceci est un exemple de post pour tester Hugo avec le thème PaperMod.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/zero-trust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/zero-trust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/mimikatz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/mimikatz/</guid>
+      <description>&lt;p&gt;Mimikatz est un outil de post-exploitation très populaire et puissant, le plus souvent utilisé pour vider les informations d&amp;rsquo;identification des utilisateurs à l&amp;rsquo;intérieur d&amp;rsquo;un réseau d&amp;rsquo;annuaire actif. Cependant, nous utiliserons Mimikatz afin de créer un ticket argenté.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ParrotSec/mimikatz&#34;&gt;https://github.com/ParrotSec/mimikatz&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

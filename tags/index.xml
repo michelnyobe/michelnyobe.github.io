@@ -9,11 +9,46 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.2</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 07 May 2025 15:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autoapprentissage</title>
+      <link>https://nyobemichel.me/tags/autoapprentissage/</link>
+      <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/autoapprentissage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lien</title>
+      <link>https://nyobemichel.me/tags/lien/</link>
+      <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/lien/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resources</title>
+      <link>https://nyobemichel.me/tags/resources/</link>
+      <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/resources/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>https://nyobemichel.me/tags/powershell/</link>
+      <pubDate>Mon, 12 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://nyobemichel.me/tags/windows/</link>
+      <pubDate>Mon, 12 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/windows/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Outils</title>
       <link>https://nyobemichel.me/tags/outils/</link>
@@ -145,13 +180,6 @@
       <link>https://nyobemichel.me/tags/sid/</link>
       <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/sid/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Windows</title>
-      <link>https://nyobemichel.me/tags/windows/</link>
-      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/windows/</guid>
       <description></description>
     </item>
     <item>
