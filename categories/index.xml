@@ -12,13 +12,20 @@
     <generator>Hugo -- 0.147.8</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 20 Jun 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resources</title>
       <link>https://nyobemichel.me/categories/resources/</link>
-      <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
+      <pubDate>Sat, 21 Jun 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/categories/resources/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enumeration</title>
+      <link>https://nyobemichel.me/categories/enumeration/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/enumeration/</guid>
       <description></description>
     </item>
     <item>
@@ -33,13 +40,6 @@
       <link>https://nyobemichel.me/categories/outils/</link>
       <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/categories/outils/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Enumeration</title>
-      <link>https://nyobemichel.me/categories/enumeration/</link>
-      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/categories/enumeration/</guid>
       <description></description>
     </item>
     <item>

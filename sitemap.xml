@@ -2,32 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/learn/entra-id/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/lien/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
-    <lastmod>2025-06-20T20:00:00+02:00</lastmod>
+    <loc>https://nyobemichel.me/categories/resources/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/</loc>
-    <lastmod>2025-06-20T20:00:00+02:00</lastmod>
+    <loc>https://nyobemichel.me/tags/resources/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/enumeration/</loc>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/enumeration/</loc>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</loc>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/imap/</loc>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pop3/</loc>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/les-liens-essentiels/</loc>
     <lastmod>2025-06-20T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/tags/lien/</loc>
-    <lastmod>2025-06-20T20:00:00+02:00</lastmod>
+    <loc>https://nyobemichel.me/tags/active-directory/</loc>
+    <lastmod>2025-05-22T10:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/resources/</loc>
-    <lastmod>2025-06-20T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/resources/</loc>
-    <lastmod>2025-06-20T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
-    <lastmod>2025-06-20T20:00:00+02:00</lastmod>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</loc>
+    <lastmod>2025-05-22T10:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/blog/</loc>
     <lastmod>2025-05-12T10:00:00+02:00</lastmod>
@@ -134,12 +158,6 @@
     <loc>https://nyobemichel.me/posts/outils/wpscan/</loc>
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/enumeration/</loc>
-    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/enumeration/</loc>
-    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---ftp/</loc>
     <lastmod>2025-05-07T10:00:00+02:00</lastmod>
   </url><url>
@@ -150,6 +168,9 @@
     <lastmod>2025-05-07T10:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</loc>
+    <lastmod>2025-05-07T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</loc>
     <lastmod>2025-05-07T10:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/ftp/</loc>
@@ -175,9 +196,6 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/structure-test-penetration/</loc>
     <lastmod>2025-05-06T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/active-directory/</loc>
-    <lastmod>2025-05-06T10:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/challenge/</loc>
     <lastmod>2025-05-06T10:00:00+02:00</lastmod>
@@ -281,9 +299,13 @@
     <loc>https://nyobemichel.me/tags/papermod/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/zero-trust/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/crunch/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/mimikatz/</loc>
   </url><url>

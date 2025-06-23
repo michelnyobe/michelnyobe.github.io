@@ -12,14 +12,35 @@
     <generator>Hugo -- 0.147.8</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 20 Jun 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entra ID</title>
+      <link>https://nyobemichel.me/posts/learn/entra-id/</link>
+      <pubDate>Sat, 21 Jun 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/entra-id/</guid>
+      <description>Entra ID</description>
+    </item>
+    <item>
+      <title>Enumeration IMAP - POP3</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</guid>
+      <description>IMAP/POP3</description>
+    </item>
     <item>
       <title>Les Liens Essentiels</title>
       <link>https://nyobemichel.me/posts/learn/les-liens-essentiels/</link>
       <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/learn/les-liens-essentiels/</guid>
       <description>annuaire complet de ressources en cybersécurité</description>
+    </item>
+    <item>
+      <title>Enumeration AD - Interne</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</link>
+      <pubDate>Thu, 22 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</guid>
+      <description>SMTP</description>
     </item>
     <item>
       <title>PowerShell</title>
@@ -253,6 +274,13 @@
       <description>SMTP</description>
     </item>
     <item>
+      <title>Enumeration - SMTP</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</guid>
+      <description>SMTP</description>
+    </item>
+    <item>
       <title>structure test penetration</title>
       <link>https://nyobemichel.me/posts/structure-test-penetration/</link>
       <pubDate>Tue, 06 May 2025 15:00:00 +0200</pubDate>
@@ -410,6 +438,19 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Simple Network Management Protocol&lt;/code&gt; SNMP a été créé pour surveiller les périphériques réseau. Ce protocole permet également de gérer les tâches de configuration et de modifier les paramètres à distance.&lt;/p&gt;
+&lt;p&gt;Pour l&amp;rsquo;empreinte SNMP, nous pouvons utiliser des outils tels que &lt;code&gt;snmpwalk&lt;/code&gt;, &lt;code&gt;onesixtyone&lt;/code&gt;et &lt;code&gt;braa&lt;/code&gt;. &lt;code&gt;Snmpwalk&lt;/code&gt;Il permet d&amp;rsquo;interroger les OID avec leurs informations.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;snmpwalk -v2c -c public 10.129.14.128
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install onesixtyone
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;onesixtyone -c /opt/useful/seclists/Discovery/SNMP/snmp.txt 10.129.14.128
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;utiliser avec &lt;a href=&#34;https://github.com/mteg/braa&#34;&gt;braa&lt;/a&gt; pour forcer les OID individuels et énumérer les informations qui se cachent derrière eux&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</guid>
@@ -420,6 +461,13 @@
       <link>https://nyobemichel.me/posts/learn/zero-trust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/zero-trust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/crunch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/crunch/</guid>
       <description></description>
     </item>
     <item>

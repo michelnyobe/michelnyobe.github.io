@@ -12,8 +12,22 @@
     <generator>Hugo -- 0.147.8</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 07 May 2025 10:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enumeration IMAP - POP3</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</guid>
+      <description>IMAP/POP3</description>
+    </item>
+    <item>
+      <title>Enumeration AD - Interne</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</link>
+      <pubDate>Thu, 22 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</guid>
+      <description>SMTP</description>
+    </item>
     <item>
       <title>Enumeration - FTP</title>
       <link>https://nyobemichel.me/posts/enumeration/enumeration---ftp/</link>
@@ -40,6 +54,13 @@
       <link>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</link>
       <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</guid>
+      <description>SMTP</description>
+    </item>
+    <item>
+      <title>Enumeration - SMTP</title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</link>
+      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</guid>
       <description>SMTP</description>
     </item>
   </channel>
