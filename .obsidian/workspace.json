@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/learn/Entra ID.md",
+                "file": "content/posts/Enumeration/Enumeration - SNMP.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Entra ID"
+              "title": "Enumeration - SNMP"
             }
           }
         ]
@@ -170,17 +170,25 @@
   },
   "active": "6d6951fc4602c87e",
   "lastOpenFiles": [
+    "content/posts/Outils/Crunch.md",
+    "content/posts/Enumeration/Enumeration - SNMP.md",
+    "content/posts/Enumeration/Enumeration IMAP -  POP3.md",
+    "content/posts/Enumeration/Enumeration AD - Interne.md",
+    "content/posts/Enumeration/Enumeration - FTP.md",
+    "content/posts/Enumeration/Enumeration - SMTP.md",
+    "content/posts/Enumeration/Enumeration AD - Externe.md",
+    "content/posts/Enumeration/Enumeration - SMB.md",
+    "content/posts/Enumeration/Enumeration - NFS.md",
+    "content/posts/learn/Entra ID.md",
     "content/posts/learn/l’accès conditionnel.md",
     "content/posts/learn/Zero Trust.md",
     "content/posts/learn/Les Liens Essentiels.md",
-    "content/posts/learn/Entra ID.md",
     "content/posts/Articles/Cyber kill chain.md",
     "content/posts/learn",
     "content/posts/Articles/PowerShell.md",
     "content/posts/structure test penetration.md",
     "content/posts/Outils/mimikatz.md",
     "content/about.md",
-    "content/posts/Enumeration/Enumeration - FTP.md",
     "content/posts/Outils/Bloodhound.md",
     "content/posts/Articles",
     "content/posts/Outils/Curl.md",
@@ -190,14 +198,6 @@
     "content/posts/Outils/Evil-WinRM.md",
     "content/posts/devvortex.md",
     "content/posts/Outils/ffuf.md",
-    "content/posts/Outils/GetNPUsers.py.md",
-    "content/posts/Outils/WPscan.md",
-    "content/posts/Outils/username-anarchyPublic.md",
-    "content/posts/Outils/sshuttle.md",
-    "content/posts/Outils/SQLMAp.md",
-    "content/posts/Outils/Runascs.md",
-    "content/posts/Outils/Rubeus.md",
-    "content/posts/Outils/Responder.md",
     "content/posts/Enumeration",
     "content/posts/Outils",
     "static/images/20250423001854.png",
