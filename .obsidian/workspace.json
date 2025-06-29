@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Enumeration/Enumeration - SNMP.md",
+                "file": "content/posts/Enumeration/Enumeration IMAP -  POP3.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Enumeration - SNMP"
+              "title": "Enumeration IMAP -  POP3"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -160,22 +160,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "6d6951fc4602c87e",
   "lastOpenFiles": [
-    "content/posts/Outils/Crunch.md",
+    "content/posts/Enumeration/Enumeration - SMTP.md",
     "content/posts/Enumeration/Enumeration - SNMP.md",
     "content/posts/Enumeration/Enumeration IMAP -  POP3.md",
-    "content/posts/Enumeration/Enumeration AD - Interne.md",
     "content/posts/Enumeration/Enumeration - FTP.md",
-    "content/posts/Enumeration/Enumeration - SMTP.md",
+    "content/posts/Outils/Crunch.md",
+    "content/posts/Enumeration/Enumeration AD - Interne.md",
     "content/posts/Enumeration/Enumeration AD - Externe.md",
     "content/posts/Enumeration/Enumeration - SMB.md",
     "content/posts/Enumeration/Enumeration - NFS.md",
