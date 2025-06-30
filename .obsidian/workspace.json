@@ -11,10 +11,28 @@
             "id": "1f14d7bd0daff31e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/learn/Key Vault.md",
+                "mode": "preview",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Key Vault"
+            }
+          },
+          {
+            "id": "ac6228c497806e09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/learn/Key Vault.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Key Vault"
             }
           }
         ]
@@ -166,6 +184,18 @@
   },
   "active": "1f14d7bd0daff31e",
   "lastOpenFiles": [
+    "content/posts/learn/Hacking Key Vault.md",
+    "content/posts/learn/Key Vault.md",
+    "Pasted image 20250630023604.png",
+    "Pasted image 20250630023407.png",
+    "content/posts/Publisher-THM.md",
+    "content/posts/GoodGame.md",
+    "content/posts/Eureka.md",
+    "content/posts/learn/l’accès conditionnel.md",
+    "content/posts/Prérequis pour un test de pénétration.md",
+    "public/images/20250630012714.png",
+    "content/posts/learn/Les Liens Essentiels.md",
+    "content/posts/learn/Zero Trust.md",
     "content/posts/Enumeration/Enumeration - SMTP.md",
     "content/posts/Enumeration/Enumeration IMAP -  POP3.md",
     "content/posts/Enumeration/Enumeration AD - Interne.md",
@@ -176,9 +206,6 @@
     "content/posts/Enumeration/Enumeration - SMB.md",
     "content/posts/Enumeration/Enumeration - NFS.md",
     "content/posts/learn/Entra ID.md",
-    "content/posts/learn/l’accès conditionnel.md",
-    "content/posts/learn/Zero Trust.md",
-    "content/posts/learn/Les Liens Essentiels.md",
     "content/posts/Articles/Cyber kill chain.md",
     "content/posts/learn",
     "content/posts/Articles/PowerShell.md",
@@ -187,13 +214,6 @@
     "content/about.md",
     "content/posts/Outils/Bloodhound.md",
     "content/posts/Articles",
-    "content/posts/Outils/Curl.md",
-    "content/posts/Outils/Crackmapexec.md",
-    "content/posts/Outils/chisel.md",
-    "content/posts/Outils/BloodyAD.md",
-    "content/posts/Outils/Evil-WinRM.md",
-    "content/posts/devvortex.md",
-    "content/posts/Outils/ffuf.md",
     "content/posts/Enumeration",
     "content/posts/Outils",
     "static/images/20250423001854.png",
@@ -202,9 +222,6 @@
     "static/images/20250423143022.png",
     "static/images/20250423143138.png",
     "static/images/Pasted image 20250423001854.png",
-    "static/images/Pasted image 20250423001929.png",
-    "static/images/Pasted image 20250423142217.png",
-    "static/images/Pasted image 20250423143022.png",
-    "static/images/Pasted image 20250423143138.png"
+    "static/images/Pasted image 20250423001929.png"
   ]
 }
