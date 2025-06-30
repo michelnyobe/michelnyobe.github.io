@@ -15,7 +15,7 @@ onesixtyone -c /opt/useful/seclists/Discovery/SNMP/snmp.txt 10.129.14.128
 
 utiliser avec [braa](https://github.com/mteg/braa) pour forcer les OID individuels et énumérer les informations qui se cachent derrière eux
 
-```shell-session
+```bash
 sudo apt install braa
 braa <community string>@<IP>:.1.3.6.*   # Syntax
 braa public@10.129.14.128:.1.3.6.*
