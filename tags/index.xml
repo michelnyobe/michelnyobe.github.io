@@ -12,8 +12,29 @@
     <generator>Hugo -- 0.147.9</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Sat, 21 Jun 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure</title>
+      <link>https://nyobemichel.me/tags/azure/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Key Vault</title>
+      <link>https://nyobemichel.me/tags/key-vault/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/key-vault/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://nyobemichel.me/tags/security/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Autoapprentissage</title>
       <link>https://nyobemichel.me/tags/autoapprentissage/</link>

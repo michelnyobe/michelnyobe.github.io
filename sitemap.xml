@@ -2,31 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
-    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
+    <loc>https://nyobemichel.me/categories/azure/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/azure/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/learn/key-vault/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/key-vault/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/security/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/entra-id/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/lien/</loc>
-    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/resources/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/resources/</loc>
-    <lastmod>2025-06-21T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-06-21T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/enumeration/</loc>
