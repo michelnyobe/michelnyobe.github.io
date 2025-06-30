@@ -11,6 +11,12 @@
     <loc>https://nyobemichel.me/categories/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/categories/cpts-htb/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/cpts-htb/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/posts/learn/key-vault/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,7 +26,13 @@
     <loc>https://nyobemichel.me/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/tags/linux/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/learn/protocoles-de-gestion-%C3%A0-distance/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/security/</loc>
@@ -314,7 +326,11 @@
     <loc>https://nyobemichel.me/tags/papermod/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/posts/enumeration/enumeration---oracle-tns/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/learn/cyber-kill-chain/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</loc>
   </url><url>
@@ -323,6 +339,8 @@
     <loc>https://nyobemichel.me/posts/outils/crunch/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/mimikatz/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/odat/</loc>
   </url><url>
     <loc>https://nyobemichel.me/archives/</loc>
   </url><url>

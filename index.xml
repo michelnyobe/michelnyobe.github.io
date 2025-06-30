@@ -22,6 +22,13 @@
       <description>key vault</description>
     </item>
     <item>
+      <title>Protocoles de gestion à distance</title>
+      <link>https://nyobemichel.me/posts/learn/protocoles-de-gestion-%C3%A0-distance/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/protocoles-de-gestion-%C3%A0-distance/</guid>
+      <description>Protocoles de gestion à distance Linux</description>
+    </item>
+    <item>
       <title>Entra ID</title>
       <link>https://nyobemichel.me/posts/learn/entra-id/</link>
       <pubDate>Sat, 21 Jun 2025 20:00:00 +0200</pubDate>
@@ -465,6 +472,36 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---oracle-tns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---oracle-tns/</guid>
+      <description>&lt;p&gt;Le serveur &lt;code&gt;Oracle Transparent Network Substrate&lt;/code&gt;( &lt;code&gt;TNS&lt;/code&gt;) est un protocole de communication qui facilite la communication entre les bases de données et les applications Oracle sur les réseaux.&lt;/p&gt;
+&lt;p&gt;Avant de pouvoir énumérer l&amp;rsquo;écouteur TNS et interagir avec lui, nous devons télécharger quelques paquets et outils&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://download.oracle.com/otn_software/linux/instantclient/214000/instantclient-basic-linux.x64-21.4.0.0.0dbru.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://download.oracle.com/otn_software/linux/instantclient/214000/instantclient-sqlplus-linux.x64-21.4.0.0.0dbru.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mkdir -p /opt/oracle
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo unzip -d /opt/oracle instantclient-basic-linux.x64-21.4.0.0.0dbru.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo unzip -d /opt/oracle instantclient-sqlplus-linux.x64-21.4.0.0.0dbru.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/opt/oracle/instantclient_21_4:&lt;span class=&#34;nv&#34;&gt;$LD_LIBRARY_PATH&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$LD_LIBRARY_PATH&lt;/span&gt;:&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/quentinhardy/odat.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; odat/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install python-libnmap
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install cx_Oracle
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install python3-scapy -y
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo pip3 install colorlog termcolor passlib python-libnmap
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install build-essential libgmp-dev -y
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install pycryptodome
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./odat.py -h &lt;span class=&#34;c1&#34;&gt;# si l&amp;#39;instalation a reuissi &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Oracle Database Attacking Tool ( &lt;code&gt;ODAT&lt;/code&gt;) est un outil de test d&amp;rsquo;intrusion open source écrit en Python et conçu pour recenser et exploiter les vulnérabilités des bases de données Oracle. Il permet d&amp;rsquo;identifier et d&amp;rsquo;exploiter diverses failles de sécurité dans les bases de données Oracle, notamment l&amp;rsquo;injection SQL, l&amp;rsquo;exécution de code à distance et l&amp;rsquo;élévation de privilèges.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</guid>
@@ -475,6 +512,25 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;onesixtyone -c /opt/useful/seclists/Discovery/SNMP/snmp.txt 10.129.14.128
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;utiliser avec &lt;a href=&#34;https://github.com/mteg/braa&#34;&gt;braa&lt;/a&gt; pour forcer les OID individuels et énumérer les informations qui se cachent derrière eux&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/cyber-kill-chain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/cyber-kill-chain/</guid>
+      <description>&lt;p&gt;Inspirée des chaînes de destruction militaires, la Cyber ​​Kill Chain est un cadre de cybersécurité introduit par Lockheed Martin en 2011. Elle vise à aider les organisations à se défendre contre les cyberattaques en comprenant leur déroulement.
+La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Reconnaissance&lt;/strong&gt; : Dans la première étape, l&amp;rsquo;attaquant recueille des informations sur la cible&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Armement&lt;/strong&gt; : Une fois la reconnaissance appropriée effectuée, l&amp;rsquo;attaquant crée une charge utile livrable ou modifie une charge utile existante en fonction des vulnérabilités du système cible&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Livraison&lt;/strong&gt; : Une fois prête, l&amp;rsquo;attaquant envoie la charge utile armée à la cible&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exploitation&lt;/strong&gt; : Une fois exécutée, la charge utile exploite une vulnérabilité dans le système de la cible&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt; : L&amp;rsquo;exploitation permet à l&amp;rsquo;attaquant d&amp;rsquo;installer une porte dérobée ou un logiciel malveillant pour maintenir la persistance dans l&amp;rsquo;environnement de la cible&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Commande et contrôle ( C2 )&lt;/strong&gt; : En utilisant la porte dérobée installée, l&amp;rsquo;attaquant peut contrôler le système compromis&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Actions sur les objectifs&lt;/strong&gt; : En arrivant jusqu&amp;rsquo;ici, l&amp;rsquo;attaquant peut désormais effectuer d&amp;rsquo;autres actions telles que l&amp;rsquo;exfiltration de données ou l&amp;rsquo;exploitation d&amp;rsquo;autres systèmes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;reconnaissance&#34;&gt;Reconnaissance&lt;/h2&gt;
+&lt;p&gt;La reconnaissance trouve son origine dans le domaine militaire et désigne l&amp;rsquo;acte de recueillir des informations sur une cible. En cybersécurité, cette étape consiste à recueillir des informations sur les vulnérabilités et les faiblesses de la cible afin de découvrir des points d&amp;rsquo;entrée potentiels.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -504,6 +560,106 @@
       <guid>https://nyobemichel.me/posts/outils/mimikatz/</guid>
       <description>&lt;p&gt;Mimikatz est un outil de post-exploitation très populaire et puissant, le plus souvent utilisé pour vider les informations d&amp;rsquo;identification des utilisateurs à l&amp;rsquo;intérieur d&amp;rsquo;un réseau d&amp;rsquo;annuaire actif. Cependant, nous utiliserons Mimikatz afin de créer un ticket argenté.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/ParrotSec/mimikatz&#34;&gt;https://github.com/ParrotSec/mimikatz&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/odat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/odat/</guid>
+      <description>&lt;p&gt;un outil de test de pénétration open source qui teste la sécurité des bases de données Oracle à distance.
+Grâce à ODAT, vous pouvez :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rechercher &lt;strong&gt;un SID valide&lt;/strong&gt; sur un écouteur de base de données Oracle distant via :
+&lt;ul&gt;
+&lt;li&gt;une attaque par dictionnaire&lt;/li&gt;
+&lt;li&gt;une attaque par force brute&lt;/li&gt;
+&lt;li&gt;ALIAS de l&amp;rsquo;auditeur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rechercher des comptes&lt;/strong&gt; Oracle en utilisant :
+&lt;ul&gt;
+&lt;li&gt;une attaque par dictionnaire&lt;/li&gt;
+&lt;li&gt;chaque utilisateur Oracle aime le mot de passe (besoin d&amp;rsquo;un compte avant d&amp;rsquo;utiliser cette attaque)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;exécuter des commandes système&lt;/strong&gt; sur le serveur de base de données en utilisant :
+&lt;ul&gt;
+&lt;li&gt;DBMS_SCHEDULER&lt;/li&gt;
+&lt;li&gt;JAVA&lt;/li&gt;
+&lt;li&gt;tables externes&lt;/li&gt;
+&lt;li&gt;oradbg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;télécharger les fichiers&lt;/strong&gt; stockés sur le serveur de base de données en utilisant :
+&lt;ul&gt;
+&lt;li&gt;FICHIER_UTL&lt;/li&gt;
+&lt;li&gt;DBMS_XSLPROCESSOR&lt;/li&gt;
+&lt;li&gt;tables externes&lt;/li&gt;
+&lt;li&gt;CTXSYS&lt;/li&gt;
+&lt;li&gt;DBMS_LOB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;télécharger des fichiers&lt;/strong&gt; sur le serveur de base de données en utilisant :
+&lt;ul&gt;
+&lt;li&gt;FICHIER_UTL&lt;/li&gt;
+&lt;li&gt;DBMS_XSLPROCESSOR&lt;/li&gt;
+&lt;li&gt;DBMS_ADVISOR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;supprimer des fichiers&lt;/strong&gt; en utilisant :
+&lt;ul&gt;
+&lt;li&gt;FICHIER_UTL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;obtenez un accès privilégié&lt;/strong&gt; en utilisant les combinaisons de privilèges système suivantes (voir l&amp;rsquo;aide pour les commandes du module &lt;em&gt;privesc&lt;/em&gt; ) :
+&lt;ul&gt;
+&lt;li&gt;CRÉER N&amp;rsquo;IMPORTE QUELLE PROCÉDURE&lt;/li&gt;
+&lt;li&gt;CRÉER UNE PROCÉDURE et EXÉCUTER N&amp;rsquo;IMPORTE QUELLE PROCÉDURE&lt;/li&gt;
+&lt;li&gt;CRÉER N&amp;rsquo;IMPORTE QUEL DÉCLENCHEUR (ET CRÉER UNE PROCÉDURE)&lt;/li&gt;
+&lt;li&gt;ANALYSER TOUT (ET CRÉER UNE PROCÉDURE)&lt;/li&gt;
+&lt;li&gt;CRÉER N&amp;rsquo;IMPORTE QUEL INDEX (ET CRÉER UNE PROCÉDURE)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;envoyer/recevoir des requêtes HTTP&lt;/strong&gt; depuis le serveur de base de données en utilisant :
+&lt;ul&gt;
+&lt;li&gt;UTL_HTTP&lt;/li&gt;
+&lt;li&gt;HttpUriType&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;scanner les ports&lt;/strong&gt; du serveur local ou d&amp;rsquo;un serveur distant en utilisant :
+&lt;ul&gt;
+&lt;li&gt;UTL_HTTP&lt;/li&gt;
+&lt;li&gt;HttpUriType&lt;/li&gt;
+&lt;li&gt;UTL_TCP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;capturer une authentification SMB&lt;/strong&gt; via :
+&lt;ul&gt;
+&lt;li&gt;un index afin de déclencher une connexion SMB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;exploiter certains CVE :
+&lt;ul&gt;
+&lt;li&gt;la &lt;a href=&#34;http://cvedetails.com/cve/2012-3137&#34;&gt;&lt;strong&gt;CVE-2012-3137&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;récupérer la clé de session et le sel pour des utilisateurs arbitraires&lt;/li&gt;
+&lt;li&gt;attaque par dictionnaire sur les sessions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;le &lt;a href=&#34;https://twitter.com/gokhanatil/status/595853921479991297&#34;&gt;&lt;strong&gt;CVE-2012-????&lt;/strong&gt;&lt;/a&gt; : Un utilisateur authentifié peut modifier toutes les tables qu&amp;rsquo;il peut sélectionner même s&amp;rsquo;il ne peut pas les modifier normalement (pas de privilège ALTER).&lt;/li&gt;
+&lt;li&gt;l&amp;rsquo; attaque &lt;a href=&#34;http://seclists.org/fulldisclosure/2012/Apr/204&#34;&gt;&lt;strong&gt;CVE-2012-1675&lt;/strong&gt;&lt;/a&gt; (alias attaque par empoisonnement TNS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rechercher dans les noms de colonnes&lt;/strong&gt; grâce au module &lt;em&gt;de recherche&lt;/em&gt; :
+&lt;ul&gt;
+&lt;li&gt;rechercher un modèle (ex : mot de passe) dans les noms de colonnes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;déballer&lt;/strong&gt; le code source PL/SQL (10g/11g et 12c)&lt;/li&gt;
+&lt;li&gt;Obtenir les privilèges et les rôles &lt;strong&gt;système&lt;/strong&gt; &lt;strong&gt;accordés&lt;/strong&gt; . Il est également possible d&amp;rsquo;obtenir les privilèges et les rôles des rôles accordés.&lt;/li&gt;
+&lt;li&gt;exécuter des requêtes SELECT arbitraires (alias shell SQL minimal)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;documentation : &lt;a href=&#34;https://github.com/quentinhardy/odat/wiki&#34;&gt;https://github.com/quentinhardy/odat/wiki&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
