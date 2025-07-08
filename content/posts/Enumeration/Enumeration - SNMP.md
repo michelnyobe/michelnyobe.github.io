@@ -4,7 +4,20 @@ Pour l'empreinte SNMP, nous pouvons utiliser des outils tels que `snmpwalk`, `
 
 ```bash
 snmpwalk -v2c -c public 10.129.14.128
+
+snmpwalk -v2c -c backup 10.129.109.205
+
 ```
+
+```bash
+Community:
+admin
+manager
+public
+private
+backup
+```
+
 
 ```bash
 sudo apt install onesixtyone

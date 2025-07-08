@@ -8,3 +8,15 @@ summary: "SMTP"
 showToc: true
 tocOpen: true
 ---
+
+Outils 
+- Crackmapexec
+- netexec
+- smbclient
+- rpcclient
+- ldapsearch
+
+
+```bash
+ldapsearch -x -H ldap://10.10.11.75 -D 'name' -w 'password' -b "dc=rustykey,dc=htb" "(objectClass=user)" userPrincipalName
+```
