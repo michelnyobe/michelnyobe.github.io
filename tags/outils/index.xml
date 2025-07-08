@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.147.9</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 07 May 2025 15:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 15:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/outils/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whois</title>
+      <link>https://nyobemichel.me/posts/outils/whois/</link>
+      <pubDate>Mon, 07 Jul 2025 15:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/whois/</guid>
+      <description>Whois</description>
+    </item>
     <item>
       <title>Bloodhound</title>
       <link>https://nyobemichel.me/posts/outils/bloodhound/</link>

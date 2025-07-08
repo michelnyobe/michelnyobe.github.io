@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2025-07-20T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-07-20T20:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/outils/</loc>
+    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/outils/</loc>
+    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pentester/</loc>
+    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/whois/</loc>
+    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/categories/azure/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/azure/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/categories/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/cpts-htb/</loc>
@@ -23,22 +44,13 @@
     <loc>https://nyobemichel.me/tags/key-vault/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/linux/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/protocoles-de-gestion-%C3%A0-distance/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/security/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
@@ -141,15 +153,6 @@
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/nmap/</loc>
-    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/categories/outils/</loc>
-    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/outils/</loc>
-    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/pentester/</loc>
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/powerups/</loc>
@@ -341,6 +344,10 @@
     <loc>https://nyobemichel.me/posts/outils/mimikatz/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/odat/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/web/jwt-attacks/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/web/sql-attack/</loc>
   </url><url>
     <loc>https://nyobemichel.me/archives/</loc>
   </url><url>

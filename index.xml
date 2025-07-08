@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.147.9</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 15:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whois</title>
+      <link>https://nyobemichel.me/posts/outils/whois/</link>
+      <pubDate>Mon, 07 Jul 2025 15:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/whois/</guid>
+      <description>Whois</description>
+    </item>
     <item>
       <title>Key Vault</title>
       <link>https://nyobemichel.me/posts/learn/key-vault/</link>
@@ -508,6 +515,14 @@
       <description>&lt;p&gt;&lt;code&gt;Simple Network Management Protocol&lt;/code&gt; SNMP a été créé pour surveiller les périphériques réseau. Ce protocole permet également de gérer les tâches de configuration et de modifier les paramètres à distance.&lt;/p&gt;
 &lt;p&gt;Pour l&amp;rsquo;empreinte SNMP, nous pouvons utiliser des outils tels que &lt;code&gt;snmpwalk&lt;/code&gt;, &lt;code&gt;onesixtyone&lt;/code&gt;et &lt;code&gt;braa&lt;/code&gt;. &lt;code&gt;Snmpwalk&lt;/code&gt;Il permet d&amp;rsquo;interroger les OID avec leurs informations.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;snmpwalk -v2c -c public 10.129.14.128
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;snmpwalk -v2c -c backup 10.129.109.205
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Community:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;admin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;manager
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;private
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;backup
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install onesixtyone
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;onesixtyone -c /opt/useful/seclists/Discovery/SNMP/snmp.txt 10.129.14.128
@@ -660,6 +675,25 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
 &lt;li&gt;exécuter des requêtes SELECT arbitraires (alias shell SQL minimal)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;documentation : &lt;a href=&#34;https://github.com/quentinhardy/odat/wiki&#34;&gt;https://github.com/quentinhardy/odat/wiki&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/jwt-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/jwt-attacks/</guid>
+      <description>&lt;p&gt;JWT ( json web token )&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20250707104217.png]]&lt;/p&gt;
+&lt;p&gt;Les JWT étant principalement utilisés dans les mécanismes d&amp;rsquo;authentification, de gestion de session et de contrôle d&amp;rsquo;accès&lt;/p&gt;
+&lt;p&gt;La spécification JWT est étendue par les spécifications JSON Web Signature (JWS) et JSON Web Encryption (JWE), qui définissent des méthodes concrètes d&amp;rsquo;implémentation des JWT.
+L&amp;rsquo;un des types de jetons les plus courants est le jeton Web JSON (JWT), qui est transmis via l&amp;rsquo; &lt;code&gt;Authorization: Bearer&lt;/code&gt;en-tête.
+Les JWT sont des jetons autonomes permettant de transmettre des informations de session de manière sécurisée.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/sql-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/sql-attack/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
