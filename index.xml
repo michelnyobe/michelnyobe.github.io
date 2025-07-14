@@ -43,13 +43,6 @@
       <description>Protocoles de gestion à distance Linux</description>
     </item>
     <item>
-      <title>Entra ID</title>
-      <link>https://nyobemichel.me/posts/learn/entra-id/</link>
-      <pubDate>Sat, 21 Jun 2025 20:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/learn/entra-id/</guid>
-      <description>Entra ID</description>
-    </item>
-    <item>
       <title>Enumeration IMAP - POP3</title>
       <link>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
@@ -537,6 +530,59 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/learn/azure-managed-identities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/azure-managed-identities/</guid>
+      <description>&lt;p&gt;La gestion des secrets, des identifiants, des certificats et des clés utilisés pour sécuriser les communications entre les services constitue un défi courant pour les développeurs.&lt;/p&gt;
+&lt;h2 id=&#34;que-sont-les-identités-gérées-&#34;&gt;Que sont les identités gérées ?&lt;/h2&gt;
+&lt;p&gt;Les identités gérées par Azure sont une fonctionnalité d&amp;rsquo;Azure qui permet aux applications de s&amp;rsquo;authentifier auprès des services Azure sans avoir à gérer les informations d&amp;rsquo;identification. Cette fonctionnalité renforce la sécurité en évitant aux développeurs de stocker les informations d&amp;rsquo;identification dans leur code, réduisant ainsi le risque de fuite d&amp;rsquo;informations d&amp;rsquo;identification. Les identités gérées sont entièrement gérées par Azure, ce qui signifie que la plateforme prend en charge leur cycle de vie, y compris la rotation automatique des informations d&amp;rsquo;identification.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/conditional-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/conditional-access/</guid>
+      <description>&lt;p&gt;a sécurité moderne s&amp;rsquo;étend au-delà du périmètre réseau d&amp;rsquo;une organisation et inclut l&amp;rsquo;identité des utilisateurs et des appareils. Les organisations utilisent désormais des signaux basés sur l&amp;rsquo;identité pour prendre des décisions de contrôle d&amp;rsquo;accès.&lt;/p&gt;
+&lt;h2 id=&#34;signaux-communs&#34;&gt;Signaux communs&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;accès conditionnel prend en compte les signaux provenant de diverses sources lors de la prise de décisions d&amp;rsquo;accès.
+Ces signaux comprennent :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Appartenance d&amp;rsquo;utilisateur ou de groupe
+&lt;ul&gt;
+&lt;li&gt;Les politiques peuvent être ciblées sur des utilisateurs et des groupes spécifiques, offrant aux administrateurs un contrôle précis sur l&amp;rsquo;accès.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Informations de localisation IP
+&lt;ul&gt;
+&lt;li&gt;Les organisations peuvent créer des plages d’adresses IP fiables qui peuvent être utilisées lors de la prise de décisions stratégiques.&lt;/li&gt;
+&lt;li&gt;Les administrateurs peuvent spécifier des plages IP de pays ou de régions entières à partir desquelles bloquer ou autoriser le trafic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Appareil
+&lt;ul&gt;
+&lt;li&gt;Les utilisateurs disposant d&amp;rsquo;appareils de plates-formes spécifiques ou marqués d&amp;rsquo;un état spécifique peuvent être utilisés lors de l&amp;rsquo;application des politiques d&amp;rsquo;accès conditionnel.&lt;/li&gt;
+&lt;li&gt;Utilisez des filtres pour les appareils afin de cibler les politiques sur des appareils spécifiques tels que les postes de travail à accès privilégié.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application
+&lt;ul&gt;
+&lt;li&gt;Les utilisateurs qui tentent d’accéder à des applications spécifiques peuvent déclencher différentes politiques d’accès conditionnel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Détection des risques en temps réel et calculés
+&lt;ul&gt;
+&lt;li&gt;L&amp;rsquo;intégration de Signals avec Microsoft Entra ID Protection permet aux stratégies d&amp;rsquo;accès conditionnel d&amp;rsquo;identifier et de corriger les utilisateurs à risque et les comportements de connexion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Microsoft Defender pour les applications cloud
+&lt;ul&gt;
+&lt;li&gt;Permet de surveiller et de contrôler en temps réel l&amp;rsquo;accès aux applications et les sessions des utilisateurs. Cette intégration améliore la visibilité et le contrôle des accès et des activités au sein de votre environnement cloud.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/cyber-kill-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/cyber-kill-chain/</guid>
@@ -556,10 +602,31 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/learn/identity-secure-score/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/identity-secure-score/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/zero-trust---securing-identity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/zero-trust---securing-identity/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity&#34;&gt;https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
