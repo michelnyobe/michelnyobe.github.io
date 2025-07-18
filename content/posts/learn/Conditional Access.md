@@ -1,3 +1,18 @@
+---
+title: Conditional Access
+date: 2025-06-30
+draft: true
+tags:
+  - azure
+  - Hacking
+  - azure
+  - IAM
+categories:
+  - azure
+summary: Azure managed identities
+showToc: true
+tocOpen: true
+---
 a sécurité moderne s'étend au-delà du périmètre réseau d'une organisation et inclut l'identité des utilisateurs et des appareils. Les organisations utilisent désormais des signaux basés sur l'identité pour prendre des décisions de contrôle d'accès.
 
 ## Signaux communs

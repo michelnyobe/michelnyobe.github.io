@@ -1,3 +1,18 @@
+---
+title: Azure managed identities
+date: 2025-06-30
+draft: true
+tags:
+  - azure
+  - Hacking
+  - azure
+  - IAM
+categories:
+  - azure
+summary: Azure managed identities
+showToc: true
+tocOpen: true
+---
 
 La gestion des secrets, des identifiants, des certificats et des clés utilisés pour sécuriser les communications entre les services constitue un défi courant pour les développeurs.
 ## Que sont les identités gérées ?
