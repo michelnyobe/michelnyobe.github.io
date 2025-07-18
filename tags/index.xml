@@ -12,8 +12,29 @@
     <generator>Hugo -- 0.148.1</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 11 Jul 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure</title>
+      <link>https://nyobemichel.me/tags/azure/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>https://nyobemichel.me/tags/hacking/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://nyobemichel.me/tags/security/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AD</title>
       <link>https://nyobemichel.me/tags/ad/</link>
@@ -50,13 +71,6 @@
       <description></description>
     </item>
     <item>
-      <title>Azure</title>
-      <link>https://nyobemichel.me/tags/azure/</link>
-      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/azure/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>CPTS HTB</title>
       <link>https://nyobemichel.me/tags/cpts-htb/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
@@ -75,13 +89,6 @@
       <link>https://nyobemichel.me/tags/linux/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://nyobemichel.me/tags/security/</link>
-      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/security/</guid>
       <description></description>
     </item>
     <item>

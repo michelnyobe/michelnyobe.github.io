@@ -12,13 +12,41 @@
     <generator>Hugo -- 0.148.1</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Hacking</title>
+      <link>https://nyobemichel.me/posts/roadmap/azure-hacking/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/roadmap/azure-hacking/</guid>
+      <description>Azure Hacking</description>
+    </item>
+    <item>
+      <title>Active Directory - Hacking</title>
+      <link>https://nyobemichel.me/posts/roadmap/active-directory---hacking/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/roadmap/active-directory---hacking/</guid>
+      <description>key vault</description>
+    </item>
     <item>
       <title>Key Vault</title>
       <link>https://nyobemichel.me/posts/learn/key-vault/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/key-vault/</guid>
+      <description>key vault</description>
+    </item>
+    <item>
+      <title>Key Vault</title>
+      <link>https://nyobemichel.me/posts/roadmap/aws---hacking/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/roadmap/aws---hacking/</guid>
+      <description>key vault</description>
+    </item>
+    <item>
+      <title>Key Vault</title>
+      <link>https://nyobemichel.me/posts/roadmap/web-hacking/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/roadmap/web-hacking/</guid>
       <description>key vault</description>
     </item>
   </channel>
