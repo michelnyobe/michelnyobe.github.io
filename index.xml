@@ -507,6 +507,20 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/enumeration---azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/enumeration---azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/enumeration/enumeration---azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/enumeration/enumeration---azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/enumeration/enumeration---oracle-tns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration---oracle-tns/</guid>
@@ -616,6 +630,14 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/microsoft/windows-internal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/microsoft/windows-internal/</guid>
+      <description>&lt;h1 id=&#34;processus&#34;&gt;Processus&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads&#34;&gt;https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
