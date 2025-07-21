@@ -43,9 +43,10 @@ https://www.root-me.org/vladimirlarass
 ## Formations & Certifications
 
 - **CRTP (A jour)** — Certified Red Team Professional  
-- **CRTE (En cours)** — Certified Red Team Expert 
+- **CRTE (A jour)** — Certified Red Team Expert 
 - **CARTP (En cours)** — Certified Azure Red Team Professional 
-- **CPTS (en cours)** — Certified Penetration Testing Specialist  
+- **CPTS - HTB (en cours)** — Certified Penetration Testing Specialist  
+- ** OSCP ( En cours) 
 - **AZ-900 (A jour)** — Azure Fundamentals  
 - **AZ-500 (A jour)** — Azure Security Engineer  
 - **SC-900 (A jour)** — Security, Compliance, and Identity Fundamentals
