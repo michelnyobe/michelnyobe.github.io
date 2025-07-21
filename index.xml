@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.148.1</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jul 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS</title>
+      <link>https://nyobemichel.me/posts/learn/dns/</link>
+      <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/dns/</guid>
+      <description>DNS</description>
+    </item>
     <item>
       <title>Azure Hacking</title>
       <link>https://nyobemichel.me/posts/roadmap/azure-hacking/</link>
@@ -638,6 +645,15 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
       <guid>https://nyobemichel.me/posts/microsoft/windows-internal/</guid>
       <description>&lt;h1 id=&#34;processus&#34;&gt;Processus&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads&#34;&gt;https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/mitre/t1543-003---create-or-modify-system-process-windows-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/mitre/t1543-003---create-or-modify-system-process-windows-service/</guid>
+      <description>&lt;p&gt;Les pirates peuvent créer ou modifier des services Windows pour exécuter de manière répétée des charges malveillantes dans le cadre de la persistance. Au démarrage de Windows, des programmes ou applications appelés services exécutent des fonctions système en arrière-plan. (Citation : TechNet Services) Les informations de configuration des services Windows, notamment le chemin d&amp;rsquo;accès aux fichiers exécutables ou aux programmes/commandes de récupération, sont stockées dans le Registre Windows.&lt;/p&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;Creation d&amp;rsquo;un shell inverse&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

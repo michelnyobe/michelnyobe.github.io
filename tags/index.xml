@@ -12,8 +12,29 @@
     <generator>Hugo -- 0.148.1</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jul 2025 20:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autoapprentissage</title>
+      <link>https://nyobemichel.me/tags/autoapprentissage/</link>
+      <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/autoapprentissage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DNS</title>
+      <link>https://nyobemichel.me/tags/dns/</link>
+      <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resources</title>
+      <link>https://nyobemichel.me/tags/resources/</link>
+      <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/resources/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Azure</title>
       <link>https://nyobemichel.me/tags/azure/</link>
@@ -40,13 +61,6 @@
       <link>https://nyobemichel.me/tags/ad/</link>
       <pubDate>Fri, 11 Jul 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/ad/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Autoapprentissage</title>
-      <link>https://nyobemichel.me/tags/autoapprentissage/</link>
-      <pubDate>Fri, 11 Jul 2025 20:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/autoapprentissage/</guid>
       <description></description>
     </item>
     <item>
@@ -117,13 +131,6 @@
       <link>https://nyobemichel.me/tags/lien/</link>
       <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/lien/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Resources</title>
-      <link>https://nyobemichel.me/tags/resources/</link>
-      <pubDate>Fri, 20 Jun 2025 20:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/resources/</guid>
       <description></description>
     </item>
     <item>
