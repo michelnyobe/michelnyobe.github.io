@@ -51,9 +51,9 @@
     </item>
     <item>
       <title>Key Vault</title>
-      <link>https://nyobemichel.me/posts/learn/key-vault/</link>
+      <link>https://nyobemichel.me/posts/azure/key-vault/</link>
       <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/learn/key-vault/</guid>
+      <guid>https://nyobemichel.me/posts/azure/key-vault/</guid>
       <description>key vault</description>
     </item>
     <item>
@@ -521,6 +521,20 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/zero-trust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/zero-trust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/enumeration/enumeration---azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration---azure/</guid>
@@ -605,13 +619,6 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
-      <link>https://nyobemichel.me/posts/learn/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/learn/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
       <link>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</guid>
@@ -623,13 +630,6 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/zero-trust---securing-identity/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity&#34;&gt;https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://nyobemichel.me/posts/learn/zero-trust/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/learn/zero-trust/</guid>
-      <description></description>
     </item>
     <item>
       <title></title>

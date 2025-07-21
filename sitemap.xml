@@ -77,7 +77,7 @@
     <loc>https://nyobemichel.me/tags/cpts-htb/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/posts/learn/key-vault/</loc>
+    <loc>https://nyobemichel.me/posts/azure/key-vault/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/roadmap/aws---hacking/</loc>
@@ -358,6 +358,10 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/enumeration---azure/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/zero-trust/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---azure/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---oracle-tns/</loc>
@@ -368,13 +372,9 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/identity-secure-score/</loc>
   </url><url>
-    <loc>https://nyobemichel.me/posts/learn/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</loc>
-  </url><url>
     <loc>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/zero-trust---securing-identity/</loc>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/learn/zero-trust/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</loc>
   </url><url>
