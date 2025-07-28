@@ -1,9 +1,9 @@
-- Penetration Testing Process ✅ OK
-- Getting Started ✅ OK
-- Network Enumeration with Nmap ✅ OK
-- Footprinting ✅ OK
-- Information Gathering - Web Edition ✅ OK
-- Vulnerability Assessment ✅ OK
+- Penetration Testing Process 
+- Getting Started 
+- Network Enumeration with Nmap 
+- Footprinting 
+- Information Gathering - Web Edition 
+- Vulnerability Assessment 
 - File Transfers
 - Shells & Payloads
 - Using the Metasploit Framework
@@ -14,7 +14,7 @@
 - Using Web Proxies
 - Attacking Web Applications with Ffuf
 - Login Brute Forcing
-- SQL Injection Fundamentals ✅ OK
+- SQL Injection Fundamentals 
 - SQLMap Essentials
 - Cross-Site Scripting (XSS)
 - File Inclusion
