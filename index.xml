@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Sun, 20 Jul 2025 20:00:00 +0200</lastBuildDate>
@@ -514,6 +514,33 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/pass-the-hash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/pass-the-hash/</guid>
+      <description>&lt;h2 id=&#34;quest-ce-quune-attaque-pass-the-hash-&#34;&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;une attaque Pass the Hash ?&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;attaque « Pass the Hash » est répandue dans les environnements Windows. Elle exploite le mécanisme d&amp;rsquo;authentification du système d&amp;rsquo;exploitation Windows.&lt;/p&gt;
+&lt;p&gt;Pour éviter de stocker les mots de passe en clair, Windows conserve les hachages NTLM des mots de passe des utilisateurs. Lors du processus d&amp;rsquo;authentification, Windows compare ces hachages plutôt que les mots de passe en clair. L&amp;rsquo;attaque « Pass the Hash » exploite ce mécanisme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/avedrevasion/techniques-pratiques-d%C3%A9vasion-av-edr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/avedrevasion/techniques-pratiques-d%C3%A9vasion-av-edr/</guid>
+      <description>&lt;h1 id=&#34;architecture-avedr&#34;&gt;Architecture AV/EDR&lt;/h1&gt;
+&lt;h3 id=&#34;détection-basée-sur-la-signature&#34;&gt;&lt;strong&gt;Détection basée sur la signature&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;La détection basée sur les signatures s’appuie sur des modèles connus de code malveillant (chaînes binaires, hachages ou séquences d’instructions spécifiques) pour identifier les menaces.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Techniques d&amp;rsquo;évasion :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Réencodage ou cryptage du shellcode.&lt;/li&gt;
+&lt;li&gt;Enveloppement de stub pour générer de nouveaux hachages.&lt;/li&gt;
+&lt;li&gt;Utilisation de packers ou de crypteurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;détection-heuristique&#34;&gt;&lt;strong&gt;Détection heuristique&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;La détection heuristique implique des vérifications statiques et dynamiques basées sur des règles sur le code, à la recherche d&amp;rsquo;attributs ou de comportements suspects.
+&lt;strong&gt;Comment ça marche :&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/enumeration---azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/enumeration---azure/</guid>
@@ -593,6 +620,29 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/labs/trust-bank-breach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/trust-bank-breach/</guid>
+      <description>&lt;p&gt;In this Red Team exercise, students will simulate a financially motivated Advanced Persistent Threat (APT) attack against &amp;ldquo;Trust Bank,&amp;rdquo; aiming to compromise the branch manager’s email account and exfiltrate sensitive financial data including internal communications all while maintaining stealth to mimic real-world banking threats like FIN7. The Red Team will go through Initial Access, Privilege Escalation, Lateral Movement &amp;amp; Data Exfiltration.&lt;/p&gt;
+&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;
+&lt;p&gt;To conduct a &lt;strong&gt;targeted cyber operation&lt;/strong&gt; against “&lt;strong&gt;Trust Bank&lt;/strong&gt;” with the primary goal of &lt;strong&gt;compromising the branch manager’s mailbox&lt;/strong&gt; and &lt;strong&gt;exfiltrating sensitive financial data&lt;/strong&gt; (e.g., customer records, transaction logs, internal communications). The operation will simulate a &lt;strong&gt;financially motivated Advanced Persistent Threat (APT)&lt;/strong&gt; attack, leveraging advanced tradecraft to evade detection while achieving mission objectives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/antivirus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/antivirus/</guid>
+      <description>&lt;p&gt;Les logiciels antivirus ( AV ) sont l&amp;rsquo;une des solutions de sécurité essentielles pour détecter et prévenir les attaques de logiciels malveillants sur la machine de l&amp;rsquo;utilisateur final .&lt;/p&gt;
+&lt;h1 id=&#34;techniques-de-détection&#34;&gt;Techniques de détection&lt;/h1&gt;
+&lt;p&gt;Une technique de détection AV recherche et détecte les fichiers malveillants ; différentes techniques de détection peuvent être utilisées au sein du moteur AV , notamment :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La détection basée sur les signatures est la technique AV traditionnelle qui recherche des modèles et des signatures malveillants prédéfinis dans les fichiers.&lt;/li&gt;
+&lt;li&gt;La détection heuristique est une technique plus avancée qui comprend diverses méthodes comportementales pour analyser les fichiers suspects.&lt;/li&gt;
+&lt;li&gt;La détection dynamique est une technique qui comprend la surveillance des appels système et des API, ainsi que les tests et les analyses dans un environnement isolé.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/cyber-kill-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/cyber-kill-chain/</guid>
@@ -612,6 +662,21 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/learn/exfiltration-de-donn%C3%A9es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/exfiltration-de-donn%C3%A9es/</guid>
+      <description>&lt;h1 id=&#34;quest-ce-que-lexfiltration-de-données&#34;&gt;Qu&amp;rsquo;est-ce que l&amp;rsquo;exfiltration de données&lt;/h1&gt;
+&lt;p&gt;L&amp;rsquo;exfiltration de données consiste à copier des données sensibles de manière non autorisée et à les transférer de l&amp;rsquo;intérieur du réseau d&amp;rsquo;une organisation vers l&amp;rsquo;extérieur.&lt;/p&gt;
+&lt;p&gt;Il existe trois principaux scénarios d’utilisation de l’exfiltration de données, notamment :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Exfiltrer les données&lt;/li&gt;
+&lt;li&gt;Communications de commandement et de contrôle.&lt;/li&gt;
+&lt;li&gt;Tunneling&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;exfiltration-à-laide-du-socket-tcp&#34;&gt;Exfiltration à l&amp;rsquo;aide du socket TCP&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/identity-secure-score/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/identity-secure-score/</guid>
@@ -623,6 +688,13 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/lacc%C3%A8s-conditionnel/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/learn/transferts-de-fichiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/transferts-de-fichiers/</guid>
+      <description>&lt;h1 id=&#34;méthodes-de-transfert-de-fichiers-windows&#34;&gt;Méthodes de transfert de fichiers Windows&lt;/h1&gt;</description>
     </item>
     <item>
       <title></title>
@@ -640,10 +712,35 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/microsoft/ntlm-authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/microsoft/ntlm-authentication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/microsoft/redirection-de-port/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/microsoft/redirection-de-port/</guid>
+      <description>&lt;h1 id=&#34;tunneling-ssh&#34;&gt;Tunneling SSH&lt;/h1&gt;
+&lt;p&gt;Le tunneling SSH peut être utilisé de différentes manières pour rediriger des ports via une connexion SSH , selon la situation. Pour expliquer chaque cas, imaginons que nous ayons pris le contrôle de la machine PC-1 (sans accès administrateur) et que nous souhaitions l&amp;rsquo;utiliser comme pivot pour accéder à un port d&amp;rsquo;une autre machine auquel nous ne pouvons pas nous connecter directement. Nous allons créer un tunnel depuis la machine PC-1, agissant comme client SSH , vers le PC de l&amp;rsquo;attaquant, qui agira comme serveur SSH . En effet, les machines Windows disposent souvent d&amp;rsquo;un client SSH , mais la plupart du temps, aucun serveur SSH n&amp;rsquo;est disponible.
+&lt;img alt=&#34;SSh tunneling&#34; loading=&#34;lazy&#34; src=&#34;https://nyobemichel.me/images/ssh_tunneling.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/microsoft/sans-titre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/microsoft/sans-titre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/microsoft/windows-internal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/microsoft/windows-internal/</guid>
       <description>&lt;h1 id=&#34;processus&#34;&gt;Processus&lt;/h1&gt;
+&lt;p&gt;Un processus possède un espace d&amp;rsquo;adressage virtuel, du code exécutable, des handles ouverts vers des objets système, un contexte de sécurité, un identifiant de processus unique, des variables d&amp;rsquo;environnement, une classe de priorité, des tailles minimale et maximale de jeu de travail et au moins un thread d&amp;rsquo;exécution. »&lt;/p&gt;
+&lt;h1 id=&#34;threads&#34;&gt;Threads&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads&#34;&gt;https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
