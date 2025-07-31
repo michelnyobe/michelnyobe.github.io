@@ -541,6 +541,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/active-directory-federation-services-ad-fs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/active-directory-federation-services-ad-fs/</guid>
+      <description>&lt;p&gt;Les services de fédération Active Directory (AD FS) permettent la gestion des identités et des accès fédérés en partageant les identités numériques et les droits au-delà des limites de sécurité et d’entreprise. AD FS étend la possibilité d’utiliser la fonctionnalité d’authentification unique disponible dans une seule limite de sécurité ou d’entreprise aux applications accessibles sur Internet pour permettre aux clients, partenaires et fournisseurs une expérience utilisateur simplifiée tout en accédant aux applications web d’une organisation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/enumeration---azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/enumeration---azure/</guid>
@@ -552,6 +559,43 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/methode-de-connexion-azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/methode-de-connexion-azure/</guid>
+      <description>&lt;h1 id=&#34;synchronisation-du-hachage-de-mot-de-passe-avec-microsoft-entra-id&#34;&gt;Synchronisation du hachage de mot de passe avec Microsoft Entra ID&lt;/h1&gt;
+&lt;p&gt;La synchronisation du hachage du mot de passe est l&amp;rsquo;une des méthodes de connexion utilisées pour obtenir une identité hybride. Microsoft Entra Connect synchronise le hachage du mot de passe d&amp;rsquo;un utilisateur depuis une instance Active Directory locale vers une instance Microsoft Entra cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/microsoft-entra-cloud-sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/microsoft-entra-cloud-sync/</guid>
+      <description>&lt;p&gt;Microsoft Entra Cloud Sync est une nouvelle offre Microsoft conçue pour répondre à vos besoins en matière d&amp;rsquo;identité hybride et synchroniser vos utilisateurs, groupes et contacts avec Microsoft Entra ID. Pour ce faire, elle utilise l&amp;rsquo;agent de provisionnement cloud Microsoft Entra au lieu de l&amp;rsquo;application Microsoft Entra Connect. Elle peut toutefois être utilisée conjointement avec Microsoft Entra Connect Sync et offre les avantages suivants :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prise en charge de la synchronisation avec un locataire Microsoft Entra à partir d&amp;rsquo;un environnement de forêt Active Directory déconnecté multi-forêts : les scénarios courants incluent la fusion et l&amp;rsquo;acquisition (où les forêts AD de la société acquise sont isolées des forêts AD de la société mère) et les sociétés qui ont historiquement eu plusieurs forêts AD.&lt;/li&gt;
+&lt;li&gt;Installation simplifiée avec des agents de provisionnement légers : les agents agissent comme un pont entre AD et Microsoft Entra ID, avec toute la configuration de synchronisation gérée dans le cloud.&lt;/li&gt;
+&lt;li&gt;Plusieurs agents de provisionnement peuvent être utilisés pour simplifier les déploiements à haute disponibilité, particulièrement critiques pour les organisations qui s&amp;rsquo;appuient sur la synchronisation du hachage de mot de passe d&amp;rsquo;AD vers Microsoft Entra ID.&lt;/li&gt;
+&lt;li&gt;Prise en charge des grands groupes jusqu&amp;rsquo;à 50 000 membres. Il est recommandé d&amp;rsquo;utiliser uniquement le filtre de portée de l&amp;rsquo;unité organisationnelle (UO) lors de la synchronisation de grands groupes.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/microsoft-entra-connect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/microsoft-entra-connect/</guid>
+      <description>&lt;p&gt;Microsoft Entra Connect est une application Microsoft sur site conçue pour répondre à vos objectifs d’identité hybride.&lt;/p&gt;
+&lt;h2 id=&#34;fonctionnalités-de-microsoft-entra-connect&#34;&gt;Fonctionnalités de Microsoft Entra Connect&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Synchronisation du hachage du mot de passe&lt;/strong&gt; - Une méthode de connexion qui synchronise un hachage du mot de passe AD local d&amp;rsquo;un utilisateur avec l&amp;rsquo;ID Microsoft Entra.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authentification directe&lt;/strong&gt;: une méthode de connexion qui permet aux utilisateurs d&amp;rsquo;utiliser le même mot de passe sur site et dans le cloud, mais ne nécessite pas l&amp;rsquo;infrastructure supplémentaire d&amp;rsquo;un environnement fédéré.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Intégration de fédération&lt;/strong&gt; : la fédération est une option de Microsoft Entra Connect et permet de configurer un environnement hybride à l&amp;rsquo;aide d&amp;rsquo;une infrastructure AD FS locale. Elle offre également des fonctionnalités de gestion AD FS, telles que le renouvellement des certificats et le déploiement de serveurs AD FS supplémentaires.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronisation&lt;/strong&gt; : création des utilisateurs, des groupes et d&amp;rsquo;autres objets. Vérification de la correspondance des informations d&amp;rsquo;identité de vos utilisateurs et groupes locaux avec celles du cloud. Cette synchronisation inclut également les hachages de mots de passe.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Surveillance de la santé&lt;/strong&gt; - Microsoft Entra Connect Health peut fournir une surveillance robuste et fournir un emplacement central dans le centre d&amp;rsquo;administration Microsoft Entra pour afficher cette activité.
+Microsoft Entra Connect Health assure une surveillance robuste de votre infrastructure d&amp;rsquo;identité sur site. Il vous permet de maintenir une connexion fiable à Microsoft 365 et à Microsoft Online Services. Cette fiabilité est assurée par des fonctionnalités de surveillance de vos principaux composants d&amp;rsquo;identité. De plus, les données clés relatives à ces composants sont facilement accessibles.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
