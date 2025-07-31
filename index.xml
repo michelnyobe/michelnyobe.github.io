@@ -664,6 +664,28 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/labs/summus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/summus/</guid>
+      <description>&lt;p&gt;SUMMUS: Extreme Red Teamer Lab
+&lt;a href=&#34;https://extremeredlab.0x29a.it/redteamlabs&#34;&gt;https://extremeredlab.0x29a.it/redteamlabs&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;nmap&lt;/h2&gt;
+&lt;p&gt;nmap -sn 10.8.0.130/24&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Starting Nmap 7.95 ( https://nmap.org ) at 2025-07-31 14:50 CEST
+Nmap scan report for 10.8.0.1
+Host is up (0.10s latency).
+Nmap scan report for 10.8.0.34
+Host is up (0.37s latency).
+Nmap scan report for 10.8.0.46
+Host is up (0.38s latency).
+Nmap scan report for 10.8.0.130
+Host is up.
+Nmap done: 256 IP addresses (4 hosts up) scanned in 35.63 seconds
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;nmap -sV -sC 10.8.0.46 -v  &amp;ndash;min-rate 1000 -Pn -T4 -p-&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/labs/trust-bank-breach/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/labs/trust-bank-breach/</guid>
