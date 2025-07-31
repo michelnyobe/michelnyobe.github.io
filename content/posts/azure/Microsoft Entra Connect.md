@@ -1,0 +1,9 @@
+Microsoft Entra Connect est une application Microsoft sur site conçue pour répondre à vos objectifs d’identité hybride.
+## Fonctionnalités de Microsoft Entra Connect
+
+- **Synchronisation du hachage du mot de passe** - Une méthode de connexion qui synchronise un hachage du mot de passe AD local d'un utilisateur avec l'ID Microsoft Entra.
+- **Authentification directe**: une méthode de connexion qui permet aux utilisateurs d'utiliser le même mot de passe sur site et dans le cloud, mais ne nécessite pas l'infrastructure supplémentaire d'un environnement fédéré.
+- **Intégration de fédération** : la fédération est une option de Microsoft Entra Connect et permet de configurer un environnement hybride à l'aide d'une infrastructure AD FS locale. Elle offre également des fonctionnalités de gestion AD FS, telles que le renouvellement des certificats et le déploiement de serveurs AD FS supplémentaires.
+- **Synchronisation** : création des utilisateurs, des groupes et d'autres objets. Vérification de la correspondance des informations d'identité de vos utilisateurs et groupes locaux avec celles du cloud. Cette synchronisation inclut également les hachages de mots de passe.
+- **Surveillance de la santé** - Microsoft Entra Connect Health peut fournir une surveillance robuste et fournir un emplacement central dans le centre d'administration Microsoft Entra pour afficher cette activité.
+Microsoft Entra Connect Health assure une surveillance robuste de votre infrastructure d'identité sur site. Il vous permet de maintenir une connexion fiable à Microsoft 365 et à Microsoft Online Services. Cette fiabilité est assurée par des fonctionnalités de surveillance de vos principaux composants d'identité. De plus, les données clés relatives à ces composants sont facilement accessibles.

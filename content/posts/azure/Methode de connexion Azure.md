@@ -1,0 +1,2 @@
+# Synchronisation du hachage de mot de passe avec Microsoft Entra ID
+La synchronisation du hachage du mot de passe est l'une des méthodes de connexion utilisées pour obtenir une identité hybride. Microsoft Entra Connect synchronise le hachage du mot de passe d'un utilisateur depuis une instance Active Directory locale vers une instance Microsoft Entra cloud.
