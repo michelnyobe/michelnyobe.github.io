@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
-    <lastmod>2025-07-20T20:00:00+02:00</lastmod>
+    <loc>https://nyobemichel.me/categories/azure/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/security/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/shells/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
     <lastmod>2025-07-20T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/dns/</loc>
@@ -14,23 +35,11 @@
     <loc>https://nyobemichel.me/tags/dns/</loc>
     <lastmod>2025-07-20T20:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-07-20T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2025-07-20T20:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/categories/resources/</loc>
     <lastmod>2025-07-20T20:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/resources/</loc>
     <lastmod>2025-07-20T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
-    <lastmod>2025-07-20T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/categories/azure/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/azure/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
@@ -39,9 +48,6 @@
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/hacking/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/security/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/ad/</loc>
@@ -299,7 +305,7 @@
     <loc>https://nyobemichel.me/categories/active-directory/</loc>
     <lastmod>2025-05-05T19:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/posts/kerberoasting/</loc>
+    <loc>https://nyobemichel.me/posts/activedirectory/kerberoasting/</loc>
     <lastmod>2025-05-05T19:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/sid/</loc>
@@ -317,7 +323,7 @@
     <loc>https://nyobemichel.me/tags/directory/</loc>
     <lastmod>2025-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/posts/enumeration-active-directory/</loc>
+    <loc>https://nyobemichel.me/posts/activedirectory/enumeration-active-directory/</loc>
     <lastmod>2025-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/about/</loc>
@@ -356,7 +362,51 @@
     <loc>https://nyobemichel.me/tags/papermod/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/abuse-gpo/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/abusing-active-directory-acls/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/adcs-attack/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/bypassing-wdeck/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/cross-forest-attack/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/database-link-abuse/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/dcsync-attaque/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/delegation-kerberos/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/dpapi-abuse/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/dumping-the-certificate-pfx/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/forest-trust-key-sid-abuse/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/gmsa-abuse/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/golden-ticket/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/kerberoast---cross-domain-attack/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/kerberoasting-cibl%C3%A9/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/laps-abuse/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/pam-trust---shadow-principal/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/pass-the-hash/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/passe-ticket/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/resource-based-constrained-delegation/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/sans-titre/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/ticket-silver/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/techniques-pratiques-d%C3%A9vasion-av-edr/</loc>
   </url><url>
@@ -380,6 +430,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/formations/api-attack-and-defense/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/labs/summus/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/labs/trust-bank-breach/</loc>
@@ -398,6 +450,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/zero-trust---securing-identity/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/machine/certified---htb/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/ntlm-authentication/</loc>
@@ -412,7 +466,13 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/crunch/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/outils/impacket/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/metasploit/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/outils/mimikatz/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/netcat/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/odat/</loc>
   </url><url>

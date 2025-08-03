@@ -16,9 +16,9 @@
     <atom:link href="https://nyobemichel.me/categories/active-directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kerberoasting : Attaque d&#39;Active Directory via Kerberos</title>
-      <link>https://nyobemichel.me/posts/kerberoasting/</link>
+      <link>https://nyobemichel.me/posts/activedirectory/kerberoasting/</link>
       <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/kerberoasting/</guid>
+      <guid>https://nyobemichel.me/posts/activedirectory/kerberoasting/</guid>
       <description>Une attaque redoutable post-exploitation qui cible les services Kerberos dans les environnements Active Directory. Décryptons ensemble la méthode, les outils et les moyens de défense.</description>
     </item>
     <item>
