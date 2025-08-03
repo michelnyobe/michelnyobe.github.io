@@ -1,5 +1,5 @@
 ---
-title: "AV & EDR evasion
+title: "AV & EDR evasion"
 date: 2025-08-01
 draft: true
 tags: ["antivirus", "microsoft", "Evasion"]
