@@ -22,8 +22,12 @@ L’outil classique `SharpHound` peut être remplacé par [`bloodhound-python`](
 
 ### Exemple de commande complète :
 
-```
+```bash
 sudo bloodhound-python -d <domain> -u <username>@<domain> -p <password> -c all -ns <domain_controller_ip> -v
+```
+
+```bash
+ sudo bloodhound-python -d <domain> -c all --kerberos -ns <domaine_controller_ip> -v
 ```
 
 Une fois la collecte terminée, vous obtiendrez un ou plusieurs fichiers `.json.gz` à importer dans l’interface BloodHound.

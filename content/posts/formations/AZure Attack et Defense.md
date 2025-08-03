@@ -1,6 +1,6 @@
 ---
 title: "Azure Attack and Defense"
-date: 2025-06-21T20:00:00+02:00
+date: 2025-08-01
 draft: true
 tags: ["Microsoft", "Entra ID", "autoapprentissage"]
 categories: ["resources"]
