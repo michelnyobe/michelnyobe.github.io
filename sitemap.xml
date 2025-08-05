@@ -2,16 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nyobemichel.me/categories/azure/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+    <loc>https://nyobemichel.me/tags/active-directory/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/ad-enumeration/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/bloodhound/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/articles/bloodhound-v8/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/cybersecurity/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/neo4j/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/offensive-security/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/reconnaissance/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/red-team/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/specterops/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/tools/</loc>
+    <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/azure/</loc>
     <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/security/</loc>
@@ -21,9 +57,6 @@
     <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
@@ -66,9 +99,6 @@
     <lastmod>2025-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/pentest/</loc>
-    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/red-team/</loc>
     <lastmod>2025-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/s%C3%A9curit%C3%A9-d%C3%A9fensive/</loc>
@@ -163,9 +193,6 @@
   </url><url>
     <loc>https://nyobemichel.me/tags/lien/</loc>
     <lastmod>2025-06-20T20:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/active-directory/</loc>
-    <lastmod>2025-05-22T10:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</loc>
     <lastmod>2025-05-22T10:00:00+02:00</lastmod>
@@ -323,9 +350,6 @@
     <loc>https://nyobemichel.me/posts/publisher-thm/</loc>
     <lastmod>2025-05-06T10:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/tags/reconnaissance/</loc>
-    <lastmod>2025-05-06T10:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/categories/red-team/</loc>
     <lastmod>2025-05-06T10:00:00+02:00</lastmod>
   </url><url>
@@ -443,8 +467,6 @@
     <loc>https://nyobemichel.me/posts/activedirectory/ticket-silver/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</loc>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/articles/sans-titre/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</loc>
   </url><url>

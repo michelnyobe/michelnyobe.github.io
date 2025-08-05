@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.148.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/red-team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BloodHound v8</title>
+      <link>https://nyobemichel.me/posts/articles/bloodhound-v8/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/articles/bloodhound-v8/</guid>
+      <description>Explore BloodHound v8, an advanced Active Directory mapping tool used by Red Teams to identify attack paths. Discover its setup, graph-based architecture, and new security and management features.</description>
+    </item>
     <item>
       <title>AWS Attack and Defense: Stratégies offensives et défensives dans le cloud</title>
       <link>https://nyobemichel.me/posts/formations/aws-attack-and-defense/</link>
