@@ -20,7 +20,7 @@ Users can now select the **Table** layout to display query results in a sortable
 
 ### Query Library  
 Over **170 prebuilt queries**, organized in YAML format, are available in both BloodHound Enterprise and Community Editions. These queries cover practical use cases and are accessible through a dedicated interface.
-![Texte alternatif](/images/20250805123933.png])
+![Texte alternatif](images/20250805123933.png])
 
 ## **2. ACE Inheritance Tracking**  
 
