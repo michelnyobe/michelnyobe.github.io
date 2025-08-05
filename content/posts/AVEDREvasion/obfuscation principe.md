@@ -1,0 +1,1 @@
+L'obfuscation est largement utilisée dans de nombreux domaines liés aux logiciels pour protéger **la** **propriété** intellectuelle ( **PI** ) et d'autres informations propriétaires qu'une application peut contenir.
