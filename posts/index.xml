@@ -22,6 +22,20 @@
       <description>key vault</description>
     </item>
     <item>
+      <title>AWS Attack and Defense: Stratégies offensives et défensives dans le cloud</title>
+      <link>https://nyobemichel.me/posts/formations/aws-attack-and-defense/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/formations/aws-attack-and-defense/</guid>
+      <description>Explorez les techniques d&amp;rsquo;attaque et de défense sur AWS : reconnaissance, exploitation, élévation de privilèges, détection et mitigation.</description>
+    </item>
+    <item>
+      <title>Azure Attack et Defense</title>
+      <link>https://nyobemichel.me/posts/formations/azure-attack-et-defense/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/formations/azure-attack-et-defense/</guid>
+      <description>Découvrez les techniques d&amp;rsquo;attaque et de défense dans Azure, en explorant Entra ID, la sécurité des identités, et les bonnes pratiques pour renforcer votre posture cloud.</description>
+    </item>
+    <item>
       <title>DNS</title>
       <link>https://nyobemichel.me/posts/learn/dns/</link>
       <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
@@ -698,6 +712,33 @@ montrer l&amp;rsquo;impact et le manque de surveillance d&amp;rsquo;une organisa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/articles/sans-titre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/articles/sans-titre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</guid>
+      <description>&lt;h1 id=&#34;types-de-techniques-de-détection&#34;&gt;Types de techniques de détection&lt;/h1&gt;
+&lt;h2 id=&#34;détection-dynamique&#34;&gt;Détection dynamique&lt;/h2&gt;
+&lt;p&gt;La détection dynamique est une approche plus avancée et plus complexe que la détection statique. Elle se concentre davantage sur la vérification des fichiers à l&amp;rsquo;exécution, à l&amp;rsquo;aide de différentes méthodes.
+La première méthode consiste à surveiller les API Windows.
+Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
+&lt;h2 id=&#34;détection-heuristique-et-comportementale&#34;&gt;Détection heuristique et comportementale&lt;/h2&gt;
+&lt;p&gt;La détection heuristique et comportementale est devenue essentielle dans les antivirus modernes . Les logiciels antivirus modernes s&amp;rsquo;appuient sur ce type de détection pour détecter les logiciels malveillants.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/avedrevasion/obfuscation-principe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/avedrevasion/obfuscation-principe/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;obfuscation est largement utilisée dans de nombreux domaines liés aux logiciels pour protéger &lt;strong&gt;la&lt;/strong&gt; &lt;strong&gt;propriété&lt;/strong&gt; intellectuelle ( &lt;strong&gt;PI&lt;/strong&gt; ) et d&amp;rsquo;autres informations propriétaires qu&amp;rsquo;une application peut contenir.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

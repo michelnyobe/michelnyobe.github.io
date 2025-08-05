@@ -31,8 +31,78 @@
     <item>
       <title>Autoapprentissage</title>
       <link>https://nyobemichel.me/tags/autoapprentissage/</link>
-      <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/autoapprentissage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS</title>
+      <link>https://nyobemichel.me/tags/aws/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>https://nyobemichel.me/tags/azure/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blue Team</title>
+      <link>https://nyobemichel.me/tags/blue-team/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/blue-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Security</title>
+      <link>https://nyobemichel.me/tags/cloud-security/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/cloud-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entra ID</title>
+      <link>https://nyobemichel.me/tags/entra-id/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/entra-id/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>https://nyobemichel.me/tags/hacking/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IAM</title>
+      <link>https://nyobemichel.me/tags/iam/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/iam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft</title>
+      <link>https://nyobemichel.me/tags/microsoft/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pentest</title>
+      <link>https://nyobemichel.me/tags/pentest/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/pentest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red Team</title>
+      <link>https://nyobemichel.me/tags/red-team/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/red-team/</guid>
       <description></description>
     </item>
     <item>
@@ -47,20 +117,6 @@
       <link>https://nyobemichel.me/tags/resources/</link>
       <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/resources/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Azure</title>
-      <link>https://nyobemichel.me/tags/azure/</link>
-      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/azure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hacking</title>
-      <link>https://nyobemichel.me/tags/hacking/</link>
-      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/hacking/</guid>
       <description></description>
     </item>
     <item>
@@ -211,13 +267,6 @@
       <description></description>
     </item>
     <item>
-      <title>Pentest</title>
-      <link>https://nyobemichel.me/tags/pentest/</link>
-      <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/pentest/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>PowerView</title>
       <link>https://nyobemichel.me/tags/powerview/</link>
       <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
@@ -229,13 +278,6 @@
       <link>https://nyobemichel.me/tags/reconnaissance/</link>
       <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/reconnaissance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Red Team</title>
-      <link>https://nyobemichel.me/tags/red-team/</link>
-      <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/red-team/</guid>
       <description></description>
     </item>
     <item>
