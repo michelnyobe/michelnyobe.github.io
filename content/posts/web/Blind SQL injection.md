@@ -1,0 +1,1 @@
+L'injection SQL aveugle se produit lorsqu'une application est vulnérable à l'injection SQL, mais ses réponses HTTP ne contiennent pas les résultats de la requête SQL pertinente ni les détails des erreurs de base de données.
