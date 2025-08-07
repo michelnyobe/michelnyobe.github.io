@@ -47,18 +47,6 @@
     <loc>https://nyobemichel.me/categories/tools/</loc>
     <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/azure/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/security/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/shells/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</loc>
-    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/autoapprentissage/</loc>
     <lastmod>2025-08-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -119,7 +107,13 @@
     <loc>https://nyobemichel.me/tags/resources/</loc>
     <lastmod>2025-07-20T20:00:00+02:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/categories/azure/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/posts/roadmap/azure-hacking/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/security/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/ad/</loc>
@@ -476,15 +470,29 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/active-directory-federation-services-ad-fs/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/azure/authentification-sans-mot-de-passe-pour-microsoft-entra-id/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/azure-rbac/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/azure/enumeration---azure/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/azure/gouvernance-de-microsoft-entra-id/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/identit%C3%A9s-et-lacc%C3%A8s-avec-microsoft-entra/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/implement-multifactor-authentication-mfa/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/methode-de-connexion-azure/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/microsoft-entra-cloud-sync/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/microsoft-entra-connect/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/microsoft-entra-privileged-identity-management/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/microsoft-entra-verified-id/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/zero-trust/</loc>
   </url><url>
@@ -539,6 +547,8 @@
     <loc>https://nyobemichel.me/posts/outils/netcat/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/odat/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/web/bug-bounty/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/web/jwt-attacks/</loc>
   </url><url>

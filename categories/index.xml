@@ -36,13 +36,6 @@
       <description></description>
     </item>
     <item>
-      <title>Azure</title>
-      <link>https://nyobemichel.me/categories/azure/</link>
-      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/categories/azure/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Cloud</title>
       <link>https://nyobemichel.me/categories/cloud/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
@@ -75,6 +68,13 @@
       <link>https://nyobemichel.me/categories/resources/</link>
       <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/categories/resources/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>https://nyobemichel.me/categories/azure/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/azure/</guid>
       <description></description>
     </item>
     <item>

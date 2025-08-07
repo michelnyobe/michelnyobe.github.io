@@ -22,13 +22,6 @@
       <description>Explore BloodHound v8, an advanced Active Directory mapping tool used by Red Teams to identify attack paths. Discover its setup, graph-based architecture, and new security and management features.</description>
     </item>
     <item>
-      <title>Shells &amp; Payloads</title>
-      <link>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</link>
-      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/penetrationtester/shells--payloads/</guid>
-      <description>key vault</description>
-    </item>
-    <item>
       <title>AWS Attack and Defense: Stratégies offensives et défensives dans le cloud</title>
       <link>https://nyobemichel.me/posts/formations/aws-attack-and-defense/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
@@ -767,6 +760,29 @@ Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/authentification-sans-mot-de-passe-pour-microsoft-entra-id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/authentification-sans-mot-de-passe-pour-microsoft-entra-id/</guid>
+      <description>&lt;p&gt;Chaque organisation a des besoins différents en matière d&amp;rsquo;authentification. Microsoft Azure et Azure Government proposent les quatre options d&amp;rsquo;authentification sans mot de passe suivantes, compatibles avec Microsoft Entra ID :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows Hello Entreprise&lt;/li&gt;
+&lt;li&gt;Microsoft Authenticator&lt;/li&gt;
+&lt;li&gt;Clés d&amp;rsquo;accès FIDO2 (Fast IDentity Online 2)&lt;/li&gt;
+&lt;li&gt;Authentification basée sur un certificat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;windows-hello-entreprise&#34;&gt;Windows Hello Entreprise&lt;/h2&gt;
+&lt;p&gt;Windows Hello Entreprise est idéal pour les professionnels de l&amp;rsquo;information disposant de leur propre PC Windows. Les identifiants biométriques et le code PIN sont directement liés au PC de l&amp;rsquo;utilisateur, empêchant ainsi tout accès autre que celui du propriétaire. Grâce à l&amp;rsquo;intégration de l&amp;rsquo;infrastructure à clés publiques (PKI) et à la prise en charge intégrée de l&amp;rsquo;authentification unique (SSO), Windows Hello Entreprise offre un moyen pratique d&amp;rsquo;accéder facilement aux ressources de l&amp;rsquo;entreprise, sur site et dans le cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/azure-rbac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/azure-rbac/</guid>
+      <description>&lt;p&gt;Le contrôle d&amp;rsquo;accès aux ressources avec Azure RBAC consiste à attribuer des rôles Azure. Il s&amp;rsquo;agit d&amp;rsquo;un concept essentiel à comprendre : c&amp;rsquo;est ainsi que les autorisations sont appliquées. L&amp;rsquo;attribution d&amp;rsquo;un rôle se compose de trois éléments : le principal de sécurité, la définition du rôle et l&amp;rsquo;étendue.&lt;/p&gt;
+&lt;p&gt;Une définition de rôle est un ensemble d&amp;rsquo;autorisations. On l&amp;rsquo;appelle généralement simplement un rôle. Une définition de rôle répertorie les actions pouvant être effectuées, telles que la lecture, l&amp;rsquo;écriture et la suppression. Les rôles peuvent être de haut niveau, comme celui de propriétaire, ou spécifiques, comme celui de lecteur de machine virtuelle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/enumeration---azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/enumeration---azure/</guid>
@@ -774,10 +790,43 @@ Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/gouvernance-de-microsoft-entra-id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/gouvernance-de-microsoft-entra-id/</guid>
+      <description>&lt;p&gt;Microsoft Entra ID Governance est une solution de gouvernance des identités qui permet aux organisations d&amp;rsquo;améliorer leur productivité, de renforcer leur sécurité et de se conformer plus facilement aux exigences réglementaires et de conformité. Microsoft Entra ID Governance vous permet de garantir automatiquement l&amp;rsquo;accès des bonnes personnes aux bonnes ressources grâce à l&amp;rsquo;automatisation des processus d&amp;rsquo;identité et d&amp;rsquo;accès, à la délégation aux groupes d&amp;rsquo;entreprise et à une visibilité accrue.&lt;/p&gt;
+&lt;h2 id=&#34;cycle-de-vie-de-lidentité&#34;&gt;Cycle de vie de l&amp;rsquo;identité&lt;/h2&gt;
+&lt;p&gt;Dans Microsoft Entra ID Governance, vous pouvez automatiser le cycle de vie de l&amp;rsquo;identité de ces personnes en utilisant :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/identit%C3%A9-et-acc%C3%A8s-s%C3%A9curis%C3%A9s/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/identit%C3%A9s-et-lacc%C3%A8s-avec-microsoft-entra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/identit%C3%A9s-et-lacc%C3%A8s-avec-microsoft-entra/</guid>
+      <description>&lt;h2 id=&#34;objectifs-dapprentissage&#34;&gt;Objectifs d&amp;rsquo;apprentissage&lt;/h2&gt;
+&lt;p&gt;Dans ce module, vous :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Créer, configurer et gérer les utilisateurs&lt;/li&gt;
+&lt;li&gt;Créer, configurer et gérer des groupes&lt;/li&gt;
+&lt;li&gt;Gérer les licences&lt;/li&gt;
+&lt;li&gt;Explorez les attributs de sécurité personnalisés et le provisionnement automatique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;afficher-les-utilisateurs&#34;&gt;Afficher les utilisateurs&lt;/h2&gt;
+&lt;p&gt;Pour afficher les utilisateurs Microsoft Entra, sélectionnez l&amp;rsquo; entrée &lt;strong&gt;« Utilisateurs » sous&lt;/strong&gt; &lt;strong&gt;« Identité&lt;/strong&gt; », puis ouvrez la vue &lt;strong&gt;« Tous les utilisateurs »&lt;/strong&gt; . Prenez quelques instants pour accéder au portail et consulter vos utilisateurs. Observez la colonne &lt;strong&gt;« Type d&amp;rsquo;utilisateur »&lt;/strong&gt; pour afficher les membres et les invités.
+En règle générale, Microsoft Entra ID définit les utilisateurs de trois manières :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/implement-multifactor-authentication-mfa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/implement-multifactor-authentication-mfa/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;authentification multifacteur est un processus qui demande à l&amp;rsquo;utilisateur des éléments d&amp;rsquo;identification supplémentaires lors de la connexion. Par exemple, il peut être invité à saisir un code sur son téléphone portable ou à fournir une empreinte digitale.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -818,10 +867,44 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/microsoft-entra-privileged-identity-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/microsoft-entra-privileged-identity-management/</guid>
+      <description>&lt;p&gt;La gestion des identités privilégiées (Privileged Identity Management) permet l&amp;rsquo;activation des rôles en fonction du temps et des approbations afin de réduire les risques d&amp;rsquo;autorisations d&amp;rsquo;accès excessives, inutiles ou abusives sur les ressources qui vous sont importantes. Voici quelques-unes de ses principales fonctionnalités :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fournissez un accès privilégié juste à temps aux ressources Microsoft Entra ID et Azure.&lt;/li&gt;
+&lt;li&gt;Attribuez un accès limité dans le temps aux ressources à l’aide de dates de début et de fin.&lt;/li&gt;
+&lt;li&gt;Exiger une approbation pour activer les rôles privilégiés.&lt;/li&gt;
+&lt;li&gt;Appliquez l’authentification multifacteur pour activer n’importe quel rôle.&lt;/li&gt;
+&lt;li&gt;Utilisez la justification pour comprendre pourquoi les utilisateurs s&amp;rsquo;activent.&lt;/li&gt;
+&lt;li&gt;Recevez des notifications lorsque des rôles privilégiés sont activés.&lt;/li&gt;
+&lt;li&gt;Effectuez des examens d’accès pour vous assurer que les utilisateurs ont toujours besoin de rôles.&lt;/li&gt;
+&lt;li&gt;Téléchargez l&amp;rsquo;historique d&amp;rsquo;audit pour un audit interne ou externe.&lt;/li&gt;
+&lt;li&gt;Empêche la suppression des dernières attributions de rôle d&amp;rsquo;administrateur global et d&amp;rsquo;administrateur de rôle privilégié actives.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une fois Privileged Identity Management configuré, les options Tâches, Gérer et Activité s&amp;rsquo;affichent dans le menu de navigation de gauche. En tant qu&amp;rsquo;administrateur, vous pouvez choisir entre des options telles que la gestion des rôles Microsoft Entra, la gestion des rôles de ressources Azure ou PIM pour les groupes. Lorsque vous choisissez ce que vous souhaitez gérer, les options correspondantes s&amp;rsquo;affichent.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/microsoft-entra-verified-id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/microsoft-entra-verified-id/</guid>
+      <description>&lt;p&gt;La solution d&amp;rsquo;identifiants vérifiables de Microsoft utilise des identifiants décentralisés (DID) pour signer de manière cryptographique afin de prouver qu&amp;rsquo;une partie utilisatrice (vérificateur) atteste des informations prouvant sa propriété. Une compréhension de base des DID est recommandée à toute personne créant une solution d&amp;rsquo;identifiants vérifiables basée sur l&amp;rsquo;offre Microsoft.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/zero-trust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/zero-trust/</guid>
-      <description></description>
+      <description>&lt;p&gt;Zero Trust est un nouveau modèle de sécurité qui présuppose une violation et vérifie chaque requête comme si elle provenait d&amp;rsquo;un réseau non contrôlé.&lt;/p&gt;
+&lt;h2 id=&#34;principes-directeurs-du-zero-trust&#34;&gt;Principes directeurs du Zero Trust&lt;/h2&gt;
+&lt;p&gt;Pour répondre à ce nouveau monde de l&amp;rsquo;informatique, Microsoft recommande vivement le modèle de sécurité Zero Trust, qui repose sur ces principes directeurs :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vérifier explicitement&lt;/strong&gt; - Authentifiez et autorisez toujours en fonction de tous les points de données disponibles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Utilisez l&amp;rsquo;accès au moindre privilège&lt;/strong&gt; - Limitez l&amp;rsquo;accès des utilisateurs avec l&amp;rsquo;accès juste-à-temps et juste-assez-suffisant (JIT/JEA), les politiques adaptatives basées sur les risques et la protection des données.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1269,6 +1352,14 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
 &lt;li&gt;exécuter des requêtes SELECT arbitraires (alias shell SQL minimal)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;documentation : &lt;a href=&#34;https://github.com/quentinhardy/odat/wiki&#34;&gt;https://github.com/quentinhardy/odat/wiki&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/bug-bounty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/bug-bounty/</guid>
+      <description>&lt;h3 id=&#34;définition-et-concept-de-base&#34;&gt;&lt;strong&gt;Définition et concept de base&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Un programme de prime aux bugs est un programme proposé par les organisations pour inciter les hackers éthiques à identifier et à divulguer de manière responsable les vulnérabilités de leurs actifs numériques. Au lieu d&amp;rsquo;attendre que des acteurs malveillants exploitent des failles inconnues, les entreprises paient des chercheurs externes pour les signaler en premier.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
