@@ -1,3 +1,21 @@
+---
+title: Azure Labs
+date: 2025-06-30
+draft: true
+tags:
+  - Azure
+  - Labs
+  - AZ 500
+  - Cloud Security
+  - IAM
+categories:
+  - Azure
+summary: Labs pratiques sur Azure pour la sécurité, l'IAM.
+showToc: true
+tocOpen: true
+---
+
+
 -  Créer une politique d'accès conditionnel
 - Mettre en œuvre l'authentification multifacteur
 - Configurer Slack SSO
