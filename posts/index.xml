@@ -1355,6 +1355,13 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/web/blind-sql-injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/blind-sql-injection/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;injection SQL aveugle se produit lorsqu&amp;rsquo;une application est vulnérable à l&amp;rsquo;injection SQL, mais ses réponses HTTP ne contiennent pas les résultats de la requête SQL pertinente ni les détails des erreurs de base de données.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/web/bug-bounty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/web/bug-bounty/</guid>
