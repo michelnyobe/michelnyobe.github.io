@@ -1,0 +1,15 @@
+-  Créer une politique d'accès conditionnel
+- Mettre en œuvre l'authentification multifacteur
+- Configurer Slack SSO
+- Configurer l'ID vérifié Microsoft Entra
+- Configurer les autorisations de rôle Azure pour les groupes d'administration, les abonnements, les groupes de ressources et les ressources
+- Créer et attribuer un rôle personnalisé dans Microsoft Entra ID
+- Configurer la gestion des identités privilégiées
+- Implémenter des politiques d'accès conditionnel pour les ressources cloud dans Azure
+- attribuer des licences aux utilisateurs
+- restaurer ou supprimer les utilisateurs supprimés
+- Créer, configurer et gérer des groupes
+- Configurer et gérer l'enregistrement des appareils
+- Gérer les licences
+- modifier les attributions de licences de groupe
+- Créer des attributs de sécurité personnalisés

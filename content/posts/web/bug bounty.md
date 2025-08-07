@@ -1,0 +1,2 @@
+### **Définition et concept de base**
+Un programme de prime aux bugs est un programme proposé par les organisations pour inciter les hackers éthiques à identifier et à divulguer de manière responsable les vulnérabilités de leurs actifs numériques. Au lieu d'attendre que des acteurs malveillants exploitent des failles inconnues, les entreprises paient des chercheurs externes pour les signaler en premier.

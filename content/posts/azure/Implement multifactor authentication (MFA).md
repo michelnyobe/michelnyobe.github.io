@@ -1,0 +1,1 @@
+L'authentification multifacteur est un processus qui demande à l'utilisateur des éléments d'identification supplémentaires lors de la connexion. Par exemple, il peut être invité à saisir un code sur son téléphone portable ou à fournir une empreinte digitale.
