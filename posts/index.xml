@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.148.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AZ-500 : Azure Security Engineer</title>
+      <link>https://nyobemichel.me/posts/learn/az-500/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/az-500/</guid>
+      <description>la certification Microsoft Certified: Azure Security Engineer Associate (AZ-500)</description>
+    </item>
     <item>
       <title>BloodHound v8</title>
       <link>https://nyobemichel.me/posts/articles/bloodhound-v8/</link>
@@ -642,6 +649,35 @@ montrer l&amp;rsquo;impact et le manque de surveillance d&amp;rsquo;une organisa
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/introduction-active-directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/introduction-active-directory/</guid>
+      <description>&lt;p&gt;Active Directory Domain Services (AD DS) et ses services connexes constituent la base des réseaux d’entreprise qui exécutent des systèmes d’exploitation Windows et non-Windows.&lt;/p&gt;
+&lt;h2 id=&#34;les-composants-logiques&#34;&gt;les composants logiques ?&lt;/h2&gt;
+&lt;p&gt;Les composants logiques AD DS sont des structures que vous utilisez pour implémenter une conception AD DS appropriée pour une organisation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Partition : Une partition, ou contexte de nommage, est une partie de la base de données AD DS. Bien que la base de données se compose d’un fichier nommé Ntds.dit, les différentes partitions contiennent des données différentes.&lt;/li&gt;
+&lt;li&gt;schéma : Un schéma est l’ensemble des définitions des types d’objets et des attributs que vous utilisez pour définir les objets créés dans AD DS.&lt;/li&gt;
+&lt;li&gt;Domain : Un domaine est un conteneur d’administration logique pour les objets tels que les utilisateurs et les ordinateurs. Un domaine est associé à une partition spécifique et vous pouvez organiser le domaine avec des relations parent-enfant avec d’autres domaines.&lt;/li&gt;
+&lt;li&gt;Arborescence de domaine : Une arborescence de domaine est une collection hiérarchique de domaines qui partagent un domaine racine commun et un espace de noms DNS (Domain Name System) contigu&lt;/li&gt;
+&lt;li&gt;Foret : Une forêt est un regroupement d’un ou de plusieurs domaines qui ont une racine AD DS commune, un schéma commun et un catalogue global commun&lt;/li&gt;
+&lt;li&gt;OU : Une unité d’organisation est un objet conteneur pour les utilisateurs, les groupes et les ordinateurs qui fournit un cadre pour déléguer les droits administratifs et l’administration en liant des objets Stratégies de groupe (GPOs).&lt;/li&gt;
+&lt;li&gt;Conteneur : Un conteneur est un objet qui fournit une infrastructure organisationnelle à utiliser dans AD DS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;les-composants-physiques&#34;&gt;les composants physiques ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Contrôleur de domaine : Un contrôleur de domaine contient une copie de la base de données AD DS&lt;/li&gt;
+&lt;li&gt;Magasin de données : Une copie du magasin de données existe sur chaque contrôleur de domaine. La base de données AD DS utilise la technologie de base de données Microsoft Jet et stocke les informations d’annuaire dans le fichier Ntds.dit et les fichiers journaux associés.&lt;/li&gt;
+&lt;li&gt;Serveur du catalogue global : Un serveur de catalogue global est un contrôleur de domaine qui héberge le catalogue global, qui est une copie partielle en lecture seule de tous les objets dans une forêt multi-domaines.&lt;/li&gt;
+&lt;li&gt;Contrôleur de domaine en lecture seule (RODC) : Un contrôleur de domaine en lecture seule est une installation spéciale et en lecture seule de AD DS.&lt;/li&gt;
+&lt;li&gt;Site : Un site est un conteneur pour les objets AD DS, tels que les ordinateurs et les services spécifiques à un emplacement physique&lt;/li&gt;
+&lt;li&gt;Sous-réseau : Un sous-réseau est une portion des adresses IP du réseau d’une organisation attribuée aux ordinateurs dans un site.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;forêts-et-des-domaines-active-directory-domain-services&#34;&gt;forêts et des domaines Active Directory Domain Services&lt;/h1&gt;
+&lt;p&gt;Une forêt Active Directory Domain Services (AD DS) est une collection d’une ou plusieurs arborescences AD DS qui contiennent un ou plusieurs domaines AD DS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/activedirectory/kerberoast---cross-domain-attack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/kerberoast---cross-domain-attack/</guid>
@@ -973,6 +1009,13 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/labs/mailservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/mailservice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/labs/summus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/labs/summus/</guid>
@@ -1239,6 +1282,23 @@ Host script results:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/outils/crunch/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/gophish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/gophish/</guid>
+      <description>&lt;p&gt;Qu&amp;rsquo;est-ce que Gophish ?
+Gophish est un framework de phishing qui simplifie la simulation d&amp;rsquo;attaques réelles. L&amp;rsquo;idée derrière Gophish est simple : offrir une formation de pointe en phishing accessible à tous. « Disponible » signifie ici deux choses :
+Voici les fonctionnalités principales de Gophish :&lt;/p&gt;
+&lt;p&gt;Création d&amp;rsquo;utilisateurs et de groupes d&amp;rsquo;utilisateurs (cibles)
+Création de template pour les e-mails de vos campagnes
+Création de landing page pour vos campagnes (exemple : un formulaire de connexion)
+Envoyer des campagnes de phishing avec suivi des e-mails (e-mail envoyé, e-mail ouvert, clic sur le lien, données récoltées via le formulaire) pour chaque utilisateur
+Reporting sur les campagnes
+API pour interroger Gophish à distance et récupérer des informations
+Rappel : c&amp;rsquo;est quoi le phishing ?
+Le phishing, ou hameçonnage en français, est une technique utilisée dans le cadre d&amp;rsquo;attaques informatiques pour inciter l&amp;rsquo;utilisateur à communiquer des informations personnelles (nom d&amp;rsquo;utilisateur, mot de passe, numéro de carte bancaire, etc.) à partir d&amp;rsquo;un e-mail, d&amp;rsquo;un SMS, etc&amp;hellip; Qui va rediriger l&amp;rsquo;utilisateur sur une page Web malveillante&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

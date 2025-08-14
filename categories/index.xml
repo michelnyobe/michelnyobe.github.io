@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.148.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resources</title>
+      <link>https://nyobemichel.me/categories/resources/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/resources/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AD Enumeration</title>
       <link>https://nyobemichel.me/categories/ad-enumeration/</link>
@@ -61,13 +68,6 @@
       <link>https://nyobemichel.me/categories/s%C3%A9curit%C3%A9-offensive/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/categories/s%C3%A9curit%C3%A9-offensive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Resources</title>
-      <link>https://nyobemichel.me/categories/resources/</link>
-      <pubDate>Sun, 20 Jul 2025 20:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/categories/resources/</guid>
       <description></description>
     </item>
     <item>
