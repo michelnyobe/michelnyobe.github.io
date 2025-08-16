@@ -529,6 +529,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/antivirus/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/learn/burp-suite-certified-practitioner-bscp/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/learn/cyber-kill-chain/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/learn/exfiltration-de-donn%C3%A9es/</loc>
@@ -578,6 +580,8 @@
     <loc>https://nyobemichel.me/posts/web/blind-sql-injection/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/web/bug-bounty/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/web/intro-to-graphql-hacking/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/web/jwt-attacks/</loc>
   </url><url>

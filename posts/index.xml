@@ -1090,6 +1090,13 @@ Nmap done: 256 IP addresses (4 hosts up) scanned in 35.63 seconds
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/learn/burp-suite-certified-practitioner-bscp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/burp-suite-certified-practitioner-bscp/</guid>
+      <description>&lt;p&gt;La certification Burp Suite Certified Practitioner (BSCP) est une certification officielle destinée aux professionnels de la sécurité web, délivrée par les créateurs de Burp Suite&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/cyber-kill-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/cyber-kill-chain/</guid>
@@ -1492,6 +1499,13 @@ Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), 
       <guid>https://nyobemichel.me/posts/web/bug-bounty/</guid>
       <description>&lt;h3 id=&#34;définition-et-concept-de-base&#34;&gt;&lt;strong&gt;Définition et concept de base&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Un programme de prime aux bugs est un programme proposé par les organisations pour inciter les hackers éthiques à identifier et à divulguer de manière responsable les vulnérabilités de leurs actifs numériques. Au lieu d&amp;rsquo;attendre que des acteurs malveillants exploitent des failles inconnues, les entreprises paient des chercheurs externes pour les signaler en premier.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/intro-to-graphql-hacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/intro-to-graphql-hacking/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
