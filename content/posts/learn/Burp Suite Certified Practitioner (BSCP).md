@@ -1,0 +1,1 @@
+La certification Burp Suite Certified Practitioner (BSCP) est une certification officielle destinée aux professionnels de la sécurité web, délivrée par les créateurs de Burp Suite 
