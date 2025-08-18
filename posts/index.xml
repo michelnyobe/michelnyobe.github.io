@@ -929,6 +929,28 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/azure/s%C3%A9curiser-la-mise-en-r%C3%A9seau---az-500/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/s%C3%A9curiser-la-mise-en-r%C3%A9seau---az-500/</guid>
+      <description>&lt;h1 id=&#34;planifier-et-implémenter-la-sécurité-pour-les-réseaux-virtuels&#34;&gt;Planifier et implémenter la sécurité pour les réseaux virtuels&lt;/h1&gt;
+&lt;h1 id=&#34;quest-ce-quun-réseau-virtuel-azure-&#34;&gt;Qu’est-ce qu’un réseau virtuel Azure ?&lt;/h1&gt;
+&lt;p&gt;Le réseau virtuel Azure est un service qui fournit le bloc de construction fondamental de votre réseau privé dans Azure.&lt;/p&gt;
+&lt;h3 id=&#34;communiquer-entre-les-ressources-azure&#34;&gt;Communiquer entre les ressources Azure&lt;/h3&gt;
+&lt;p&gt;Les ressources Azure communiquent en toute sécurité entre elles de l’une des manières suivantes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Réseau virtuel : vous pouvez déployer des machines virtuelles et d’autres types de ressources Azure dans un réseau virtuel. Des exemples de ressources incluent les environnements App Service, Azure Kubernetes Service (AKS) et Microsoft Azure Virtual Machine Scale Sets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;communiquer-avec-les-ressources-locales&#34;&gt;Communiquer avec les ressources locales&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Réseau privé virtuel de point à site (VPN) : établi entre un réseau virtuel et un seul ordinateur de votre réseau.Une connexion par passerelle VPN point à site (P2S) vous permet de créer une connexion sécurisée à votre réseau virtuel à partir d’un ordinateur de client individuel.&lt;/li&gt;
+&lt;li&gt;VPN de site à site : établi entre votre appareil VPN local et une passerelle VPN Azure déployée dans un réseau virtuel.&lt;/li&gt;
+&lt;li&gt;Azure ExpressRoute : établi entre votre réseau et Azure, via un partenaire ExpressRoute. Cette connexion est privée.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;filtrer-le-trafic-réseau&#34;&gt;Filtrer le trafic réseau&lt;/h3&gt;
+&lt;p&gt;Vous pouvez filtrer le trafic réseau entre les sous-réseaux en utilisant l’une ou l’autre des options suivantes :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/zero-trust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/zero-trust/</guid>
