@@ -1,9 +1,17 @@
 ---
 title: "Comprendre Azure Network Watcher : Supervision, Diagnostic et Analyse du Trafic"
-date: 2025-08-18T20:00:00+02:00
+date: 2025-08-18
 draft: false
-tags: ["azure", "network-watcher", "cloud-security", "monitoring", "diagnostic"]
-categories: ["cloud", "cybersecurity", "azure"]
+tags:
+  - azure
+  - network-watcher
+  - cloud-security
+  - monitoring
+  - diagnostic
+categories:
+  - cloud
+  - cybersecurity
+  - azure
 summary: "Un guide complet sur Azure Network Watcher : supervision du réseau, outils de diagnostic et analyse du trafic pour mieux surveiller et sécuriser vos environnements IaaS."
 showToc: true
 tocOpen: true
