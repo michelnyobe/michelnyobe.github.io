@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.148.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab Cybersécurité Entreprise Moderne</title>
+      <link>https://nyobemichel.me/posts/learn/lab---learn/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/lab---learn/</guid>
+      <description>Mise en place d’un lab complet d’entreprise moderne avec plus de 10 machines, 2 forêts Active Directory, serveurs applicatifs, SIEM, pare-feux, messagerie, PKI, base de données, et une machine d’attaque Kali Linux pour la simulation Red Team et Blue Team.</description>
+    </item>
     <item>
       <title>Comprendre Azure Network Watcher : Supervision, Diagnostic et Analyse du Trafic</title>
       <link>https://nyobemichel.me/posts/azure/network-watcher/</link>
@@ -1533,6 +1540,13 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
 &lt;h2 id=&#34;quest-ce-quun-web-shell-&#34;&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;un Web Shell ?&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://attack.mitre.org/techniques/T1505/003/&#34;&gt;https://attack.mitre.org/techniques/T1505/003/&lt;/a&gt;
 Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), exec(), system()et passthru(), peuvent être utilisées abusivement pour obtenir l&amp;rsquo;exécution de commandes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/splunk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/splunk/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
