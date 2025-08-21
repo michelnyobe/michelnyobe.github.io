@@ -9,4 +9,13 @@ showToc: true
 tocOpen: true
 ---
 
-- 
+- Broken Access Control
+- Cryptographic Faillures
+- Injection
+- Insecure Design
+- Security Misconfiguration
+- **Vulnerable and Outdated Components**
+- **Identification and Authentication Failures**
+- Software and Data Integrity Failures
+- Security Logging and Monitoring Failures 
+- Identification and Authentication Failures
