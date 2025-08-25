@@ -49,3 +49,9 @@ Network Watcher se compose de trois principaux ensembles d’outils et de foncti
     
 - Outils de diagnostic réseau
 - Trafic
+# des points de terminaison de service de réseau virtuel
+Les points de terminaison de service de réseau virtuel (VNet) offrent une connectivité directe et sécurisée aux services Azure via un itinéraire optimisé sur le réseau principal Azure.
+## Principaux avantages
+- Sécurité renforcée pour vos ressources de service Azure : les espaces d'adressage privés du réseau virtuel peuvent se chevaucher.
+- Routage optimal pour le trafic du service Azure à partir de votre réseau virtuel
+- Configuration simple et gestion simplifiée : vous n'avez plus besoin d'adresses IP publiques réservées dans vos réseaux virtuels pour sécuriser les ressources Azure via un pare-feu IP.
