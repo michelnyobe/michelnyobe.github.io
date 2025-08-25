@@ -1093,20 +1093,19 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
       <guid>https://nyobemichel.me/posts/labs/summus/</guid>
       <description>&lt;p&gt;SUMMUS: Extreme Red Teamer Lab
 &lt;a href=&#34;https://extremeredlab.0x29a.it/redteamlabs&#34;&gt;https://extremeredlab.0x29a.it/redteamlabs&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
-&lt;h2 id=&#34;nmap&#34;&gt;nmap&lt;/h2&gt;
-&lt;p&gt;nmap -sn 10.8.0.130/24&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Starting Nmap 7.95 ( https://nmap.org ) at 2025-07-31 14:50 CEST
-Nmap scan report for 10.8.0.1
-Host is up (0.10s latency).
-Nmap scan report for 10.8.0.34
-Host is up (0.37s latency).
-Nmap scan report for 10.8.0.46
-Host is up (0.38s latency).
-Nmap scan report for 10.8.0.130
-Host is up.
-Nmap done: 256 IP addresses (4 hosts up) scanned in 35.63 seconds
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;nmap -sV -sC 10.8.0.46 -v  &amp;ndash;min-rate 1000 -Pn -T4 -p-&lt;/p&gt;</description>
+&lt;p&gt;![[20250825134143.png]]&lt;/p&gt;
+&lt;h2 id=&#34;présentation-du-laboratoire&#34;&gt;Présentation du laboratoire&lt;/h2&gt;
+&lt;p&gt;Notre laboratoire de certification est structuré pour tester les compétences pratiques et stratégiques requises pour fonctionner comme un véritable laboratoire Extreme Red Teamer.&lt;/p&gt;
+&lt;p&gt;Les candidats seront confrontés à des scénarios avancés qui incluent :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux et Windows : exploits et élévation des privilèges&lt;/li&gt;
+&lt;li&gt;Active Directory : attaques avancées et persistance&lt;/li&gt;
+&lt;li&gt;Pivotement extrême : mouvement latéral dans des réseaux complexes&lt;/li&gt;
+&lt;li&gt;Mise en réseau : manipuler les paquets dans les réseaux&lt;/li&gt;
+&lt;li&gt;Sécurité du cloud : vulnérabilités et erreurs de configuration dans GCP, AWS et Azure&lt;/li&gt;
+&lt;li&gt;Vulnérabilités du monde réel : exploiter les failles de sécurité&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La réussite du laboratoire nécessite des compétences techniques avancées, une pensée critique et une adaptabilité.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
