@@ -653,6 +653,19 @@ Comme prévu, il s&amp;rsquo;intègre étroitement à Active Directory et permet
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/enumeration-linux-ad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/enumeration-linux-ad/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Les services de domaine &lt;strong&gt;Active Directory (AD DS)&lt;/strong&gt; et leurs services associés constituent la base des réseaux d&amp;rsquo;entreprise exécutant des systèmes d&amp;rsquo;exploitation &lt;strong&gt;Windows&lt;/strong&gt; et non Windows.&lt;br&gt;
+La base de données &lt;strong&gt;AD DS&lt;/strong&gt; est le référentiel central de tous les objets du domaine, tels que les &lt;strong&gt;comptes d&amp;rsquo;utilisateurs&lt;/strong&gt;, les &lt;strong&gt;comptes d&amp;rsquo;ordinateurs&lt;/strong&gt; et les &lt;strong&gt;groupes&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-services-de-domaine-active-directory&#34;&gt;Les services de domaine Active Directory&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;AD DS&lt;/strong&gt; comprend des &lt;strong&gt;composants logiques&lt;/strong&gt; et &lt;strong&gt;physiques&lt;/strong&gt;.&lt;br&gt;
+Il est important de comprendre comment ces composants interagissent pour gérer efficacement votre infrastructure.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/activedirectory/forest-trust-key-sid-abuse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/forest-trust-key-sid-abuse/</guid>
