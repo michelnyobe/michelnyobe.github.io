@@ -512,7 +512,7 @@
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/about/</guid>
       <description>&lt;div style=&#34;font-size: 13px;&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Michel NYOBE&lt;/strong&gt; | Pentester &amp;amp; Cloud Security Enthusiast&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Michel NYOBE&lt;/strong&gt; | Pentester &amp;amp; Cloud Security Enthusiast  , developpeur
 📍 Paris, France | 📧 &lt;a href=&#34;mailto:michelnyobe87@gmail.com&#34;&gt;michelnyobe87@gmail.com&lt;/a&gt; | 🔐&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;profil&#34;&gt;Profil&lt;/h2&gt;
@@ -1624,6 +1624,13 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
 &lt;li&gt;exécuter des requêtes SELECT arbitraires (alias shell SQL minimal)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;documentation : &lt;a href=&#34;https://github.com/quentinhardy/odat/wiki&#34;&gt;https://github.com/quentinhardy/odat/wiki&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/python/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
