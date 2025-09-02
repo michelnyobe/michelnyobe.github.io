@@ -4,7 +4,7 @@ date: 2025-05-04
 ---
 <div style="font-size: 13px;">
 
-**Michel NYOBE** | Pentester & Cloud Security Enthusiast  
+**Michel NYOBE** | Pentester & Cloud Security Enthusiast  , developpeur 
 📍 Paris, France | 📧 michelnyobe87@gmail.com | 🔐 
 
 ---
@@ -56,6 +56,11 @@ https://www.root-me.org/vladimirlarass
 ---
 
 ## Expériences
+
+### Junior Security Analyst chez GROUPE **Deret** - (11/2024 – 06/2025)
+- Surveillance et analyse des événements de sécurité
+- Gestion des incidents de sécurité et réponse appropriée
+- Utilisation des outils SIEM, IDS/IPS et pare-feu
 
 #### 🛡️ Développeur Logiciels de Sécurité – **ENIX** (07/2023 – 01/2024)
 - Développement de scripts (Next.js, GraphQL)
