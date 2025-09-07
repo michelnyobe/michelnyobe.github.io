@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.149.0</generator>
+    <generator>Hugo -- 0.149.1</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
@@ -1062,6 +1062,128 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/formations/cpts---hackthebox/</guid>
       <description>&lt;p&gt;[[Shells &amp;amp; Payloads]]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/formations/formation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/formations/formation/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Introduction à la cybersécurité&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Comprendre les bases, les enjeux, les types de cyberattaques et les métiers du domaine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hygiène numérique et bonnes pratiques&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Gestion des mots de passe, MFA, mises à jour, sauvegardes, phishing et scams courants.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sécurité des réseaux pour débutants&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Notions simples : adresse IP, pare-feu, Wi-Fi sécurisé, VPN, attaques réseau fréquentes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Découverte des systèmes d’exploitation et de leur sécurité&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows, Linux, Android, iOS : comment ils fonctionnent et comment les protéger.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sécurité des emails et lutte contre le phishing&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Identifier les mails frauduleux, analyser les pièces jointes, se protéger contre l’ingénierie sociale.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Introduction à la cryptographie&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Bases : chiffrement, hachage, signatures numériques, certificats SSL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sécurité des applications web&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Comprendre les failles OWASP Top 10 (XSS, SQL Injection, etc.) avec des exemples simples.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Introduction à l’ethical hacking&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Méthodologie, outils basiques (Nmap, Wireshark, Burp Suite), cadre légal et éthique.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloud et cybersécurité&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Sensibilisation aux risques dans le cloud (AWS, Azure, GCP) et bonnes pratiques de base.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Construire son premier lab de cybersécurité&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Installer VirtualBox/VMware, créer un petit lab (Windows + Kali Linux), pratiquer en sécurité.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;modules-attaque--défense-cloud-azure&#34;&gt;&lt;strong&gt;Modules Attaque &amp;amp; Défense Cloud Azure&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Introduction à Azure et à la sécurité cloud&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Comprendre Entra ID (ex-Azure AD), RBAC, ressources de base (VM, Storage, Key Vault).&lt;/li&gt;
+&lt;li&gt;Différence entre sécurité On-Prem et sécurité Cloud.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reconnaissance et cartographie d’un tenant Azure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : découverte d’utilisateurs, groupes, permissions avec AADInternals, RoadRecon.&lt;/li&gt;
+&lt;li&gt;Défense : journaux de connexion, Azure Monitor, Entra ID Protection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exploitation des identités et attaques sur Entra ID&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : password spraying, MFA fatigue, consent phishing.&lt;/li&gt;
+&lt;li&gt;Défense : Conditional Access, MFA renforcé, Identity Protection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attaques et défenses sur Azure Key Vault&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : extraction de secrets/keys avec des permissions mal configurées.&lt;/li&gt;
+&lt;li&gt;Défense : RBAC, Key Vault firewall, Managed Identity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Escalade de privilèges dans Azure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : exploitation des rôles Contributor, App Owner, Automation Account.&lt;/li&gt;
+&lt;li&gt;Défense : principe du moindre privilège, PIM (Privileged Identity Management).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Persistence dans Azure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : service principals, applications OAuth, rôles persistants.&lt;/li&gt;
+&lt;li&gt;Défense : détection avec Microsoft Sentinel, audit des objets persistants.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attaques sur le stockage Azure (Blob, File, Disk)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : accès anonyme, SAS tokens mal configurés.&lt;/li&gt;
+&lt;li&gt;Défense : Private endpoints, Azure Defender for Storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attaques et défense sur les ressources compute (VM, Containers)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : récupération de credentials dans une VM, container escape.&lt;/li&gt;
+&lt;li&gt;Défense : Defender for Cloud, Just-In-Time VM Access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mouvement latéral et pivoting dans Azure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Attaque : abus de managed identities, rôle &amp;ldquo;User Access Administrator&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Défense : Zero Trust, restriction d’accès réseau, journaux détaillés.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring et Threat Hunting dans Azure&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilisation de &lt;strong&gt;Microsoft Sentinel&lt;/strong&gt; pour détecter les attaques.&lt;/li&gt;
+&lt;li&gt;Création de règles de détection (KQL), tableaux de bord de surveillance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Introduction à Active Directory et à ses composants&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
