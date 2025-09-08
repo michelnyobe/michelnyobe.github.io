@@ -505,6 +505,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/obfuscation-principe/</loc>
@@ -514,6 +516,8 @@
     <loc>https://nyobemichel.me/posts/azure/active-directory-federation-services-ad-fs/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/authentification-sans-mot-de-passe-pour-microsoft-entra-id/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/azure-kubernetes-service/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/azure-rbac/</loc>
   </url><url>
@@ -536,6 +540,8 @@
     <loc>https://nyobemichel.me/posts/azure/microsoft-entra-privileged-identity-management/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/microsoft-entra-verified-id/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/azure/securiser-les-ressources/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/s%C3%A9curiser-la-mise-en-r%C3%A9seau---az-500/</loc>
   </url><url>

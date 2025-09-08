@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.149.1</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
@@ -798,6 +798,14 @@ montrer l&amp;rsquo;impact et le manque de surveillance d&amp;rsquo;une organisa
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Endpoint Detection and Response ( EDR ) est une solution de sécurité conçue pour surveiller, détecter et contrer les menaces avancées au niveau des terminaux.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</guid>
@@ -855,6 +863,15 @@ Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;windows-hello-entreprise&#34;&gt;Windows Hello Entreprise&lt;/h2&gt;
 &lt;p&gt;Windows Hello Entreprise est idéal pour les professionnels de l&amp;rsquo;information disposant de leur propre PC Windows. Les identifiants biométriques et le code PIN sont directement liés au PC de l&amp;rsquo;utilisateur, empêchant ainsi tout accès autre que celui du propriétaire. Grâce à l&amp;rsquo;intégration de l&amp;rsquo;infrastructure à clés publiques (PKI) et à la prise en charge intégrée de l&amp;rsquo;authentification unique (SSO), Windows Hello Entreprise offre un moyen pratique d&amp;rsquo;accéder facilement aux ressources de l&amp;rsquo;entreprise, sur site et dans le cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/azure-kubernetes-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/azure-kubernetes-service/</guid>
+      <description>&lt;p&gt;Azure Kubernetes Service (AKS) est un service Kubernetes managé permettant de déployer et de gérer des applications conteneurisées. Aucune expertise en orchestration de conteneurs n&amp;rsquo;est requise pour utiliser AKS.&lt;/p&gt;
+&lt;h2 id=&#34;présentation-du-service-azure-kubernetes&#34;&gt;Présentation du service Azure Kubernetes&lt;/h2&gt;
+&lt;p&gt;AKS réduit la complexité et la charge opérationnelle de la gestion de Kubernetes en transférant cette responsabilité à Azure. Lorsque vous créez un cluster AKS, Azure crée et configure automatiquement un plan de contrôle pour vous, sans frais.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -973,6 +990,14 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/microsoft-entra-verified-id/</guid>
       <description>&lt;p&gt;La solution d&amp;rsquo;identifiants vérifiables de Microsoft utilise des identifiants décentralisés (DID) pour signer de manière cryptographique afin de prouver qu&amp;rsquo;une partie utilisatrice (vérificateur) atteste des informations prouvant sa propriété. Une compréhension de base des DID est recommandée à toute personne créant une solution d&amp;rsquo;identifiants vérifiables basée sur l&amp;rsquo;offre Microsoft.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/securiser-les-ressources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/securiser-les-ressources/</guid>
+      <description>&lt;h1 id=&#34;planifier-et-mettre-en-œuvre-une-sécurité-avancée-pour-le-calcul&#34;&gt;Planifier et mettre en œuvre une sécurité avancée pour le calcul&lt;/h1&gt;
+&lt;p&gt;Ce module est conçu pour fournir aux administrateurs les connaissances et les compétences nécessaires pour planifier et mettre en œuvre des mesures de sécurité avancées pour les ressources de calcul Azure,&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
