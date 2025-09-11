@@ -1375,6 +1375,13 @@ Host script results:
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/learn/comptia-security-plus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/learn/comptia-security-plus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/learn/cyber-kill-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/learn/cyber-kill-chain/</guid>
@@ -1781,6 +1788,13 @@ Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;New-Object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Net&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WebClient&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;DownloadFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;Target File URL&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;Output File Name&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;powershell-downloadstring--méthode-sans-fichier&#34;&gt;PowerShell DownloadString – Méthode sans fichier&lt;/h3&gt;
 &lt;p&gt;Comme nous l&amp;rsquo;avons vu précédemment, les attaques sans fichier utilisent certaines fonctions du système d&amp;rsquo;exploitation pour télécharger la charge utile et l&amp;rsquo;exécuter directement. PowerShell peut également être utilisé pour réaliser des attaques sans fichier. Au lieu de télécharger un script PowerShell sur le disque, nous pouvons l&amp;rsquo;exécuter directement en mémoire à l&amp;rsquo;aide de l&amp;rsquo; applet de commande Invoke-Expression ou de l&amp;rsquo;alias IEX.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/siem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/siem/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
