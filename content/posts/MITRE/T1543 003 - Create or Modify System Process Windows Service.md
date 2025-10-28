@@ -1,4 +1,4 @@
-Les pirates peuvent créer ou modifier des services Windows pour exécuter de manière répétée des charges malveillantes dans le cadre de la persistance. Au démarrage de Windows, des programmes ou applications appelés services exécutent des fonctions système en arrière-plan. (Citation : TechNet Services) Les informations de configuration des services Windows, notamment le chemin d'accès aux fichiers exécutables ou aux programmes/commandes de récupération, sont stockées dans le Registre Windows.
+mLes pirates peuvent créer ou modifier des services Windows pour exécuter de manière répétée des charges malveillantes dans le cadre de la persistance. Au démarrage de Windows, des programmes ou applications appelés services exécutent des fonctions système en arrière-plan. (Citation : TechNet Services) Les informations de configuration des services Windows, notamment le chemin d'accès aux fichiers exécutables ou aux programmes/commandes de récupération, sont stockées dans le Registre Windows.
 
 #### Example 
 Creation d'un shell inverse

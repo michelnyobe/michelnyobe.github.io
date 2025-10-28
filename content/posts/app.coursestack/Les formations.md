@@ -1,0 +1,14 @@
+- Apprendre a Apprendre  (E) 25 euros 
+- Introduction a active directory (E)
+- premier pas dans la securite offensive (E)
+- introduction a l'algoritmique (E)
+- introduction au cloud Azure (E)
+- projet 1  :  Devops de l'application a l'automatisation (E) 5 euros 
+- cryptologie  (E) 25 euros 
+- zero trust 
+- post exploitation dans les environnement windows (E)
+- comment commencer en pentester sans enfreindre la la loi (E)
+- Gestion des identites et permissions dans le cloud (E)
+- comment creer un honeypot pour attirer le attaquant (E)
+- les etapes pour repondre a un incident de securite (E)
+- l'enumeration 
