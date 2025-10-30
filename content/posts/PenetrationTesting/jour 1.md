@@ -1,3 +1,8 @@
+---
+title: Jour 1
+date: 2025-10-30
+draft: true
+---
 - introduction a HTB
 - preparation de l'environnement 
 - comment faire un rapport 
