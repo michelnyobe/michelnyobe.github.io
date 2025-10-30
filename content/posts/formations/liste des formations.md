@@ -1,3 +1,9 @@
+---
+title: Liste des formations
+date: 2025-10-30
+draft: true
+---
+
 - Apprendre a Apprendre 
 - Introduction a active directory 
 - premier pas dans la securite offensive 
