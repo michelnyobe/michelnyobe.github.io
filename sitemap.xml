@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-08-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2025-08-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/active-directory/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
@@ -463,6 +463,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/bypassing-wdeck/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/certified-ad-red-team-specialist/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/cross-forest-attack/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/database-link-abuse/</loc>
@@ -505,6 +507,28 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/unconstrained-delegation/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/comment-commencer-en-pentester-sans-enfreindre-la-la-loi/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/comment-creer-un-honeypot-pour-attirer-le-attaquant/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/cryptologie/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/gestion-des-identites-et-permissions-dans-le-cloud/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/introduction-a-active-directory/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/introduction-a-lalgoritmique/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/introduction-au-cloud-azure/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/les-etapes-pour-repondre-a-un-incident-de-securite/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/lart-dapprendre-en-travaillant/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/premier-pas-dans-la-securite-offensive/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/appcoursestack/projet-1--devops-de-lapplication-a-lautomatisation/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/introduction-antivirus/</loc>
@@ -512,6 +536,12 @@
     <loc>https://nyobemichel.me/posts/avedrevasion/obfuscation-principe/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/avedrevasion/techniques-pratiques-d%C3%A9vasion-av-edr/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/aws/aws-lambda/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/aws/domain-1-concept-du-cloud/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/aws/introduction/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/azure/active-directory-federation-services-ad-fs/</loc>
   </url><url>
@@ -593,6 +623,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/machine/certified---htb/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/machine/expressway---htb/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/ntlm-authentication/</loc>
@@ -619,17 +651,23 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/odat/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/documentation-et-de-reportingdocumentation-et-de-reporting/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/interagir-avec-les-services/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/programme-de-60-jours/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/penetrationtesting/python/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/penetrationtesting/shells--payloads/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/penetrationtesting/transferts-de-fichiers/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/preparation-entretien/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/soc/siem/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/soc/splunk/</loc>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/web/blind-sql-injection/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/web/bug-bounty/</loc>
   </url><url>
@@ -638,6 +676,8 @@
     <loc>https://nyobemichel.me/posts/web/jwt-attacks/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/web/sql-attack/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/web/sql-injection/</loc>
   </url><url>
     <loc>https://nyobemichel.me/archives/</loc>
   </url><url>

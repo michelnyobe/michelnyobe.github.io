@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.150.0</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
@@ -582,6 +582,13 @@ Comme prévu, il s&amp;rsquo;intègre étroitement à Active Directory et permet
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/certified-ad-red-team-specialist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/certified-ad-red-team-specialist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/activedirectory/cross-forest-attack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/cross-forest-attack/</guid>
@@ -778,6 +785,96 @@ montrer l&amp;rsquo;impact et le manque de surveillance d&amp;rsquo;une organisa
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/comment-commencer-en-pentester-sans-enfreindre-la-la-loi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/comment-commencer-en-pentester-sans-enfreindre-la-la-loi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/comment-creer-un-honeypot-pour-attirer-le-attaquant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/comment-creer-un-honeypot-pour-attirer-le-attaquant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/cryptologie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/cryptologie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/gestion-des-identites-et-permissions-dans-le-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/gestion-des-identites-et-permissions-dans-le-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/introduction-a-active-directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/introduction-a-active-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/introduction-a-lalgoritmique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/introduction-a-lalgoritmique/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/introduction-au-cloud-azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/introduction-au-cloud-azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/les-etapes-pour-repondre-a-un-incident-de-securite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/les-etapes-pour-repondre-a-un-incident-de-securite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/lart-dapprendre-en-travaillant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/lart-dapprendre-en-travaillant/</guid>
+      <description>&lt;p&gt;sommaire&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;introduction&lt;/li&gt;
+&lt;li&gt;pourquoi apprendre a apprendre&lt;/li&gt;
+&lt;li&gt;Gerer un project d&amp;rsquo;etude&lt;/li&gt;
+&lt;li&gt;comprendre votre cerveau&lt;/li&gt;
+&lt;li&gt;decouvrer les methode d&amp;rsquo;apprentissage&lt;/li&gt;
+&lt;li&gt;conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;module-1--introduction&#34;&gt;Module 1 : Introduction&lt;/h1&gt;
+&lt;p&gt;comprendre qu’apprendre n’est pas une question de quantité de temps, mais de méthode et de régularité&lt;/p&gt;
+&lt;h2 id=&#34;les-défis-de-lapprentissage-à-lère-moderne&#34;&gt;Les défis de l’apprentissage à l’ère moderne&lt;/h2&gt;
+&lt;p&gt;Apprendre n’est pas réservé aux étudiants à plein temps. Dans un monde où les compétences deviennent rapidement obsolètes, chaque travailleur doit apprendre en continu. Pourtant, le manque de temps est l’obstacle numéro un.
+Cette formation propose une approche concrète : apprendre à mieux utiliser votre cerveau, votre temps et les bons outils pour progresser régulièrement, même avec un emploi du temps chargé.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/premier-pas-dans-la-securite-offensive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/premier-pas-dans-la-securite-offensive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/appcoursestack/projet-1--devops-de-lapplication-a-lautomatisation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/appcoursestack/projet-1--devops-de-lapplication-a-lautomatisation/</guid>
+      <description>&lt;p&gt;projet 1  :  Devops de l&amp;rsquo;application a l&amp;rsquo;automatisation&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</guid>
@@ -821,6 +918,54 @@ Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
 &lt;h3 id=&#34;détection-heuristique&#34;&gt;&lt;strong&gt;Détection heuristique&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;La détection heuristique implique des vérifications statiques et dynamiques basées sur des règles sur le code, à la recherche d&amp;rsquo;attributs ou de comportements suspects.
 &lt;strong&gt;Comment ça marche :&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/aws/aws-lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/aws/aws-lambda/</guid>
+      <description>&lt;p&gt;AWS Lambda est un service de calcul sans serveur qui vous permet d&amp;rsquo;exécuter du code sans provisionner ni gérer de serveurs. Vous ne payez que pour le temps de calcul consommé ; aucun frais n&amp;rsquo;est appliqué lorsque votre code n&amp;rsquo;est pas exécuté&lt;/p&gt;
+&lt;h3 id=&#34;principaux-avantages-du-sans-serveur&#34;&gt;Principaux avantages du sans serveur :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aucune gestion de serveur&lt;/strong&gt; – AWS gère l’infrastructure&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mise à l’échelle automatique&lt;/strong&gt; – Les fonctions s’adaptent automatiquement à la demande&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paiement à l&amp;rsquo;utilisation&lt;/strong&gt; – Vous ne payez que pour le temps d&amp;rsquo;exécution réel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tolérance aux pannes intégrée&lt;/strong&gt; – Haute disponibilité par défaut&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Piloté par les événements&lt;/strong&gt; – Les fonctions peuvent répondre à divers événements de service AWS (très pratique pour l’automatisation de la sécurité !)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cas-dutilisation-courants-de-lambda&#34;&gt;Cas d&amp;rsquo;utilisation courants de Lambda :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Backends API&lt;/li&gt;
+&lt;li&gt;Automatisation de la sécurité et réponse aux incidents&lt;/li&gt;
+&lt;li&gt;Pipelines de traitement de données&lt;/li&gt;
+&lt;li&gt;Traitement des fichiers en temps réel&lt;/li&gt;
+&lt;li&gt;Tâches planifiées&lt;/li&gt;
+&lt;li&gt;Backends IoT&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/aws/domain-1-concept-du-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/aws/domain-1-concept-du-cloud/</guid>
+      <description>&lt;p&gt;le cloud computing est un modèle permettant un accès réseau omniprésent, pratique et à la demande à un pool partagé de ressources informatiques configurables (par exemple, réseaux, serveurs, stockage, applications et services) qui peuvent être rapidement provisionnées et libérées avec un minimum d&amp;rsquo;effort de gestion ou de fournisseur de services.&lt;/p&gt;
+&lt;p&gt;Libre­-service à la demande &lt;em&gt;L’utilisateur gère les ressources mis à disposition par le fournisseur provider, et paie en fonction de l’utilisation de ces ressources, il s’agit d’un paiement à l’utilisation.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/aws/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/aws/introduction/</guid>
+      <description>&lt;h2 id=&#34;awscertified-cloud-practitioner&#34;&gt;AWS Certified Cloud Practitioner&lt;/h2&gt;
+&lt;p&gt;La certification AWS Certified Cloud Practitioner valide une compréhension fondamentale et de haut niveau du Cloud AWS, des services et de la terminologie.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;examen valide également la capacité d&amp;rsquo;un candidat à effectuer les tâches suivantes :
+• Expliquer la valeur du Cloud AWS
+• Comprendre et expliquer le modèle de responsabilité partagée AWS
+• Comprendre le cadre AWS Well-Architected
+• Comprendre les bonnes pratiques en matière de sécurité
+• Comprendre les coûts, les aspects économiques et les pratiques de facturation du Cloud AWS
+• Décrire et positionner les principaux services AWS, y compris les services de calcul, de réseau, de base de données et de stockage
+• Identifier les services AWS pour les cas d&amp;rsquo;utilisation courants&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1555,6 +1700,14 @@ Host script results:
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/machine/expressway---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/expressway---htb/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;Nmap&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</guid>
@@ -1598,7 +1751,7 @@ Host script results:
       <link>https://nyobemichel.me/posts/mitre/t1543-003---create-or-modify-system-process-windows-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/mitre/t1543-003---create-or-modify-system-process-windows-service/</guid>
-      <description>&lt;p&gt;Les pirates peuvent créer ou modifier des services Windows pour exécuter de manière répétée des charges malveillantes dans le cadre de la persistance. Au démarrage de Windows, des programmes ou applications appelés services exécutent des fonctions système en arrière-plan. (Citation : TechNet Services) Les informations de configuration des services Windows, notamment le chemin d&amp;rsquo;accès aux fichiers exécutables ou aux programmes/commandes de récupération, sont stockées dans le Registre Windows.&lt;/p&gt;
+      <description>&lt;p&gt;mLes pirates peuvent créer ou modifier des services Windows pour exécuter de manière répétée des charges malveillantes dans le cadre de la persistance. Au démarrage de Windows, des programmes ou applications appelés services exécutent des fonctions système en arrière-plan. (Citation : TechNet Services) Les informations de configuration des services Windows, notamment le chemin d&amp;rsquo;accès aux fichiers exécutables ou aux programmes/commandes de récupération, sont stockées dans le Registre Windows.&lt;/p&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
 &lt;p&gt;Creation d&amp;rsquo;un shell inverse&lt;/p&gt;</description>
     </item>
@@ -1761,6 +1914,65 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/documentation-et-de-reportingdocumentation-et-de-reporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/documentation-et-de-reportingdocumentation-et-de-reporting/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/tmux-plugins/tmux-logging&#34;&gt;https://github.com/tmux-plugins/tmux-logging&lt;/a&gt; est un excellent choix pour la journalisation des terminaux. Nous devons absolument l&amp;rsquo;utiliser Tmuxen complément, car elle enregistre toutes les données saisies dans un panneau Tmux dans un fichier journal. Il est également essentiel de suivre les tentatives d&amp;rsquo;exploitation au cas où le client aurait besoin de corréler les événements ultérieurement (ou en cas de résultats très limités et de questions sur le travail effectué).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/interagir-avec-les-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/interagir-avec-les-services/</guid>
+      <description>&lt;h1 id=&#34;bloc-de-messages-du-serveur-smb&#34;&gt;Bloc de messages du serveur (SMB)&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/findstr&#34;&gt;https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/findstr&lt;/a&gt;
+&lt;a href=&#34;https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/gg651155%28v=ws.11%29&#34;&gt;https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/gg651155(v=ws.11)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;New-PSDrive -Name &amp;ldquo;N&amp;rdquo; -Root &amp;ldquo;\192.168.220.129\Finance&amp;rdquo; -PSProvider &amp;ldquo;FileSystem&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;PS C:\htb&amp;gt; $username = &amp;lsquo;plaintext&amp;rsquo;
+PS C:\htb&amp;gt; $password = &amp;lsquo;Password123&amp;rsquo;
+PS C:\htb&amp;gt; $secpassword = ConvertTo-SecureString $password -AsPlainText -Force
+PS C:\htb&amp;gt; $cred = New-Object System.Management.Automation.PSCredential $username, $secpassword
+PS C:\htb&amp;gt; New-PSDrive -Name &amp;ldquo;N&amp;rdquo; -Root &amp;ldquo;\192.168.220.129\Finance&amp;rdquo; -PSProvider &amp;ldquo;FileSystem&amp;rdquo; -Credential $cred&lt;/p&gt;
+&lt;p&gt;bruteforce ftp&lt;/p&gt;
+&lt;p&gt;medusa -u fiona -P /usr/share/wordlists/rockyou.txt -h 10.129.203.7 -M ftp&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/programme-de-60-jours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/programme-de-60-jours/</guid>
+      <description>&lt;h1 id=&#34;modules&#34;&gt;Modules&lt;/h1&gt;
+&lt;p&gt;Penetration Testing Process
+Getting Started
+Network Enumeration with Nmap
+Footprinting
+Information Gathering - Web Edition
+Vulnerability Assessment
+File Transfers
+Shells &amp;amp; Payloads
+Using the Metasploit Framework
+Password Attacks
+Attacking Common Services
+Pivoting, Tunneling, and Port Forwarding
+Active Directory Enumeration &amp;amp; Attacks
+Using Web Proxies
+Attacking Web Applications with Ffuf
+Login Brute Forcing
+SQL Injection Fundamentals
+SQLMap Essentials
+Cross-Site Scripting (XSS)
+File Inclusion
+File Upload Attacks
+Command Injections
+Web Attacks
+Attacking Common Applications
+Linux Privilege Escalation
+Windows Privilege Escalation
+Documentation &amp;amp; Reporting
+Attacking Enterprise Networks&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/penetrationtesting/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/penetrationtesting/python/</guid>
@@ -1791,10 +2003,17 @@ Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), 
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/preparation-entretien/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/preparation-entretien/</guid>
+      <description>&lt;h1 id=&#34;attaques-web&#34;&gt;Attaques web&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/soc/siem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/soc/siem/</guid>
-      <description></description>
+      <description>&lt;p&gt;Qu&amp;rsquo;est-ce que le SIEM ?&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1802,13 +2021,6 @@ Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/soc/splunk/</guid>
       <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://nyobemichel.me/posts/web/blind-sql-injection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/web/blind-sql-injection/</guid>
-      <description>&lt;p&gt;L&amp;rsquo;injection SQL aveugle se produit lorsqu&amp;rsquo;une application est vulnérable à l&amp;rsquo;injection SQL, mais ses réponses HTTP ne contiennent pas les résultats de la requête SQL pertinente ni les détails des erreurs de base de données.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1843,6 +2055,13 @@ Les JWT sont des jetons autonomes permettant de transmettre des informations de 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/web/sql-attack/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/sql-injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/sql-injection/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;injection SQL aveugle se produit lorsqu&amp;rsquo;une application est vulnérable à l&amp;rsquo;injection SQL, mais ses réponses HTTP ne contiennent pas les résultats de la requête SQL pertinente ni les détails des erreurs de base de données.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
