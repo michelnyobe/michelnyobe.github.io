@@ -1,14 +1,21 @@
-- Apprendre a Apprendre  (E) 25 euros 
-- Introduction a active directory (E)
-- premier pas dans la securite offensive (E)
-- introduction a l'algoritmique (E)
-- introduction au cloud Azure (E)
-- projet 1  :  Devops de l'application a l'automatisation (E) 5 euros 
-- cryptologie  (E) 25 euros 
-- zero trust 
-- post exploitation dans les environnement windows (E)
-- comment commencer en pentester sans enfreindre la la loi (E)
-- Gestion des identites et permissions dans le cloud (E)
-- comment creer un honeypot pour attirer le attaquant (E)
-- les etapes pour repondre a un incident de securite (E)
-- l'enumeration 
+---
+title: Les formations
+date: 2025-10-30T00:00:00+01:00
+draft: true
+description: Liste des formations proposées
+---
+
+- Apprendre à Apprendre (E) — 25 €  
+- Introduction à Active Directory (E)  
+- Premiers pas dans la sécurité offensive (E)  
+- Introduction à l'algorithmique (E)  
+- Introduction au cloud Azure (E)  
+- Projet 1 : DevOps — de l'application à l'automatisation (E) — 5 €  
+- Cryptologie (E) — 25 €  
+- Zero Trust  
+- Post-exploitation dans les environnements Windows (E)  
+- Comment commencer en pentest sans enfreindre la loi (E)  
+- Gestion des identités et permissions dans le cloud (E)  
+- Comment créer un honeypot pour attirer l'attaquant (E)  
+- Les étapes pour répondre à un incident de sécurité (E)  
+- L'énumération
