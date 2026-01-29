@@ -9,8 +9,8 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.152.2</generator>
-    <language>fr</language>
+    <generator>Hugo -- 0.155.0</generator>
+    <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/index.xml" rel="self" type="application/rss+xml" />
@@ -899,7 +899,16 @@ Cette formation propose une approche concrète : apprendre à mieux utiliser vot
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/avedrevasion/introduction-a-edr/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Endpoint Detection and Response ( EDR ) est une solution de sécurité conçue pour surveiller, détecter et contrer les menaces avancées au niveau des terminaux.&lt;/p&gt;</description>
+&lt;p&gt;Endpoint Detection and Response ( EDR ) est une solution de sécurité conçue pour surveiller, détecter et contrer les menaces avancées au niveau des terminaux.&lt;/p&gt;
+&lt;p&gt;Voici quelques-unes des solutions EDR disponibles sur le marché :&lt;/p&gt;
+&lt;p&gt;CrowdStrike Falcon
+SentinelOne ActiveEDR
+Microsoft Defender pour Endpoint
+OpenEDR
+Symantec EDR&lt;/p&gt;
+&lt;h2 id=&#34;caractéristique-de-ledr&#34;&gt;Caractéristique de l&amp;rsquo;EDR&lt;/h2&gt;
+&lt;p&gt;Un système EDR comporte trois caractéristiques principales , que l&amp;rsquo;on peut également appeler les trois piliers d&amp;rsquo;une solution EDR .
+visibilité  , détection et la réponse&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -973,6 +982,23 @@ Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/aws/domain-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/aws/domain-2/</guid>
+      <description>&lt;h1 id=&#34;le-modele-de-responsabilite-partagee-daws&#34;&gt;Le modele de responsabilite partagee d&amp;rsquo;AWS&lt;/h1&gt;
+&lt;h2 id=&#34;modele-de-responsabilite-partagee-aws&#34;&gt;Modele de responsabilite partagee AWS&lt;/h2&gt;
+&lt;p&gt;répartit les responsabilités en matière de sécurité entre deux parties : le client AWS (vous) et Amazon (AWS)&lt;/p&gt;
+&lt;p&gt;Controle Herite : il s’agit des contrôles de sécurité dont le client bénéficie intégralement auprès d’AWS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/aws/domain-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/aws/domain-3/</guid>
+      <description>&lt;h1 id=&#34;linfrastructure-mondiale-daws&#34;&gt;L&amp;rsquo;infrastructure mondiale d&amp;rsquo;AWS&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/aws/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/aws/introduction/</guid>
@@ -1008,6 +1034,13 @@ Une autre méthode de détection dynamique est le sandboxing.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;windows-hello-entreprise&#34;&gt;Windows Hello Entreprise&lt;/h2&gt;
 &lt;p&gt;Windows Hello Entreprise est idéal pour les professionnels de l&amp;rsquo;information disposant de leur propre PC Windows. Les identifiants biométriques et le code PIN sont directement liés au PC de l&amp;rsquo;utilisateur, empêchant ainsi tout accès autre que celui du propriétaire. Grâce à l&amp;rsquo;intégration de l&amp;rsquo;infrastructure à clés publiques (PKI) et à la prise en charge intégrée de l&amp;rsquo;authentification unique (SSO), Windows Hello Entreprise offre un moyen pratique d&amp;rsquo;accéder facilement aux ressources de l&amp;rsquo;entreprise, sur site et dans le cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/azure/azure-compute-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/azure/azure-compute-services/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -1183,6 +1216,14 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/black-friday/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/black-friday/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://cyberwarfare.live/&#34;&gt;https://cyberwarfare.live/&lt;/a&gt;
+&lt;a href=&#34;https://pwnedlabs.io/dashboard&#34;&gt;https://pwnedlabs.io/dashboard&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/enumeration/enumeration---azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration---azure/</guid>
@@ -1241,6 +1282,24 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/fondamentaux/les-composants-dun-reseaux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/fondamentaux/les-composants-dun-reseaux/</guid>
+      <description>&lt;h1 id=&#34;les-cables&#34;&gt;les cables&lt;/h1&gt;
+&lt;h1 id=&#34;hub&#34;&gt;Hub&lt;/h1&gt;
+&lt;h1 id=&#34;routeur&#34;&gt;Routeur&lt;/h1&gt;
+&lt;h1 id=&#34;switch--commutateur&#34;&gt;switch / commutateur&lt;/h1&gt;
+&lt;h1 id=&#34;serveur&#34;&gt;serveur&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/fondamentaux/reseaux---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/fondamentaux/reseaux---htb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/formations/api-attack-and-defense/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/formations/api-attack-and-defense/</guid>
@@ -1251,7 +1310,49 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
       <link>https://nyobemichel.me/posts/formations/cpts---hackthebox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/formations/cpts---hackthebox/</guid>
-      <description>&lt;p&gt;[[Shells &amp;amp; Payloads]]&lt;/p&gt;</description>
+      <description>&lt;p&gt;[[Shells &amp;amp; Payloads]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Injection SQL (SQLi)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exécution de code à distance (RCE)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Upload de fichier non restreint&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Prise de contrôle de compte (Account Takeover)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Escalade de privilèges sur API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exploitation de la console Werkzeug (RCE)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Escalade de privilèges via Docker&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Divulgation de mot de passe maître via partage NFS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exploitation de GlassFish Server (RCE)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Abus du privilège SeLoadDriverPrivilege&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Abus du privilège SeDebugPrivilege&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1377,12 +1478,175 @@ Microsoft Entra Connect Health assure une surveillance robuste de votre infrastr
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/formations/preparation-oscp-cpts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/formations/preparation-oscp-cpts/</guid>
+      <description>&lt;p&gt;• [x ] Scan TCP avec Nmap
+• [ ] Scan UDP avec Nmap
+• [ ] Service &amp;amp; version detection
+• [ ] OS fingerprinting
+• [ ] Banner grabbing manuel
+• [ ] DNS enumeration (zone transfer)
+• [ ] DNS brute-force
+• [ ] Subdomain enumeration
+• [ ] SMB enumeration (shares)
+• [ ] SMB enumeration (users)
+• [ ] LDAP enumeration
+• [ ] RPC enumeration
+• [ ] SNMP enumeration
+• [ ] NFS enumeration
+• [ ] FTP enumeration
+• [ ] SSH enumeration
+• [ ] HTTP header analysis
+• [ ] Robots.txt &amp;amp; sitemap discovery
+• [ ] Directory brute-forcing
+• [ ] Parameter discovery
+• [ ] Virtual host discovery
+• [ ] Exploitation de services vulnérables
+• [ ] Exploit public adaptation
+• [ ] Manual exploit modification
+• [ ] Remote Code Execution (RCE)
+• [ ] Command injection
+• [ ] Reverse shell
+• [ ] Bind shell
+• [ ] Web shell deployment
+• [ ] Password brute-force services
+• [ ] Credential stuffing
+• [ ] Exploitation de mauvaises configurations
+• [ ] Cleartext credentials abuse
+• [ ] Exploitation de services legacy
+• [ ] SQL Injection error-based
+• [ ] SQL Injection union-based
+• [ ] Blind SQL Injection
+• [ ] Time-based SQL Injection
+• [ ] Local File Inclusion (LFI)
+• [ ] Remote File Inclusion (RFI)
+• [ ] File upload vulnerabilities
+• [ ] Authentication bypass
+• [ ] Session fixation
+• [ ] Session hijacking
+• [ ] Cross-Site Scripting (reflected)
+• [ ] Cross-Site Scripting (stored)
+• [ ] IDOR
+• [ ] CSRF
+• [ ] HTTP verb tampering
+• [ ] API endpoint abuse
+• [ ] Business logic flaws
+• [ ] Password reset flaws
+• [ ] XXE injection
+• [ ] Linux enumeration
+• [ ] SUID binaries abuse
+• [ ] Sudo misconfigurations
+• [ ] Cron jobs abuse
+• [ ] PATH hijacking
+• [ ] Capabilities abuse
+• [ ] Kernel exploits (Linux)
+• [ ] Credential harvesting
+• [ ] Windows enumeration
+• [ ] Unquoted service path
+• [ ] Weak service permissions
+• [ ] Registry privilege escalation
+• [ ] Token impersonation
+• [ ] DLL hijacking
+• [ ] Scheduled tasks abuse
+• [ ] AD user enumeration
+• [ ] AD group enumeration
+• [ ] Kerberoasting
+• [ ] AS-REP Roasting
+• [ ] Password spraying
+• [ ] NTLM relay
+• [ ] Pass-the-Hash
+• [ ] Pass-the-Ticket
+• [ ] Golden Ticket
+• [ ] Silver Ticket
+• [ ] DCSync attack
+• [ ] Lateral movement (SMB, WinRM)
+• [ ] Privilege escalation in AD
+• [ ] GPO abuse
+• [ ] Delegation abuse
+• [ ] Internal network discovery
+• [ ] Pivoting with SSH tunnels
+• [ ] Port forwarding
+• [ ] SOCKS proxy setup
+• [ ] Credential reuse
+• [ ] Persistence techniques
+• [ ] Scheduled persistence
+• [ ] Cleanup &amp;amp; log removal
+• [ ] OPSEC basics
+• [ ] Attack path documentation
+• [ ] Proof of compromise collection
+• [ ] Screenshot &amp;amp; evidence management
+• [ ] Risk rating (CVSS basics)
+• [ ] Technical remediation writing
+• [ ] Executive summary writing
+• [ ] Time management during exam&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/ia/ai-powered-job-application-portal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/ia/ai-powered-job-application-portal/</guid>
+      <description>&lt;p&gt;En tant que candidat, vous avez sans doute déjà rencontré l&amp;rsquo;obstacle classique du filtrage des CV par des agents d&amp;rsquo;IA, ce qui vous empêche souvent d&amp;rsquo;être présélectionné. Pour contourner ce problème, vous avez mis au point une technique : vous intégrez des charges utiles malveillantes dans le texte de votre CV.&lt;/p&gt;
+&lt;p&gt;Ce scénario explique comment contourner le tri des CV par IA. L&amp;rsquo;objectif est de créer une incitation à présélectionner un CV, même s&amp;rsquo;il ne correspond pas initialement à la description du poste, afin d&amp;rsquo;obtenir un entretien.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/labs/advent-of-cyber-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/advent-of-cyber-2025/</guid>
+      <description>&lt;p&gt;jour 1 :
+Objectifs d&amp;rsquo;apprentissage
+Apprenez les bases de l&amp;rsquo; interface de ligne de commande ( CLI ) Linux .
+Explorez son utilisation pour des objectifs personnels et l&amp;rsquo;administration informatique
+Mettez vos connaissances à profit pour percer les mystères de Noël.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/labs/crta----cyberwarfare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/labs/crta----cyberwarfare/</guid>
       <description>&lt;p&gt;L&amp;rsquo;objectif principal de cette opération Red Team est d&amp;rsquo;évaluer la sécurité de l&amp;rsquo;environnement de l&amp;rsquo;entreprise. Cette mission vise à identifier les vulnérabilités et les erreurs de configuration de l&amp;rsquo;environnement AD et à formuler des recommandations concrètes pour renforcer la sécurité de l&amp;rsquo;infrastructure.&lt;/p&gt;
+&lt;p&gt;VPN Credential&lt;/p&gt;
+&lt;p&gt;Username: Larass0x04
+Password: odzDc#La&lt;/p&gt;
+&lt;p&gt;my ip : 10.10.200.115/24&lt;/p&gt;
+&lt;p&gt;Etapes /&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;injection de commande&lt;/li&gt;
+&lt;li&gt;Proxychain&lt;/li&gt;
+&lt;li&gt;dump Databases MYSQL.&lt;/li&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id=&#34;exploitation-du-reseaux-externe-de-lentreprise&#34;&gt;Exploitation du reseaux externe de l&amp;rsquo;entreprise&lt;/h1&gt;
-&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;</description>
+&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h1 id=&#34;initial-access&#34;&gt;initial access&lt;/h1&gt;
+&lt;p&gt;nmap
+la plage du reseaux  192.168.80.0/24&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/labs/lab---entreprise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/lab---entreprise/</guid>
+      <description>&lt;h1 id=&#34;reseaux&#34;&gt;Reseaux&lt;/h1&gt;
+&lt;h1 id=&#34;active-directory&#34;&gt;Active directory&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/labs/lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/lab/</guid>
+      <description>&lt;h1 id=&#34;objectif&#34;&gt;objectif&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Deployer Active directory&lt;/li&gt;
+&lt;li&gt;Centraliser les logs dans un SIEM&lt;/li&gt;
+&lt;li&gt;filtrer et controler le trafic avec un pare feu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;installation-et-configuration-de-pfsense&#34;&gt;Installation et configuration de Pfsense&lt;/h1&gt;
+&lt;h2 id=&#34;objectif-1&#34;&gt;Objectif&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Autoriser LAN&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1503,6 +1767,13 @@ Host script results:
       <description>&lt;p&gt;In this Red Team exercise, students will simulate a financially motivated Advanced Persistent Threat (APT) attack against &amp;ldquo;Trust Bank,&amp;rdquo; aiming to compromise the branch manager’s email account and exfiltrate sensitive financial data including internal communications all while maintaining stealth to mimic real-world banking threats like FIN7. The Red Team will go through Initial Access, Privilege Escalation, Lateral Movement &amp;amp; Data Exfiltration.&lt;/p&gt;
 &lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;
 &lt;p&gt;To conduct a &lt;strong&gt;targeted cyber operation&lt;/strong&gt; against “&lt;strong&gt;Trust Bank&lt;/strong&gt;” with the primary goal of &lt;strong&gt;compromising the branch manager’s mailbox&lt;/strong&gt; and &lt;strong&gt;exfiltrating sensitive financial data&lt;/strong&gt; (e.g., customer records, transaction logs, internal communications). The operation will simulate a &lt;strong&gt;financially motivated Advanced Persistent Threat (APT)&lt;/strong&gt; attack, leveraging advanced tradecraft to evade detection while achieving mission objectives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/labs/uber-hack-simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/uber-hack-simulation/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -1634,6 +1905,257 @@ La Cyber ​​Kill Chain divise une attaque en sept étapes :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/machine/absolute---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/absolute---htb/</guid>
+      <description>&lt;h2 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h2&gt;
+&lt;h3 id=&#34;nmap&#34;&gt;Nmap&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PORT      STATE SERVICE       REASON          VERSION
+53/tcp    open  domain        syn-ack ttl 127 Simple DNS Plus
+80/tcp    open  http          syn-ack ttl 127 Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Absolute
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp    open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2026-01-21 06:08:43Z)
+135/tcp   open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+|_ssl-date: 2026-01-21T06:09:47+00:00; +7h00m00s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Issuer: commonName=absolute-DC-CA/domainComponent=absolute
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-04-23T18:13:50
+| Not valid after:  2026-04-23T18:13:50
+| MD5:   88cd:2d01:6795:f78f:4df0:d194:ec78:b90d
+| SHA-1: 9831:ec1f:3649:814d:ef5d:6133:235c:c738:0420:b081
+| -----BEGIN CERTIFICATE-----
+| MIIF8jCCBNqgAwIBAgITbgAAAAcGWG4iffRa8QABAAAABzANBgkqhkiG9w0BAQUF
+| ADBIMRMwEQYKCZImiZPyLGQBGRYDaHRiMRgwFgYKCZImiZPyLGQBGRYIYWJzb2x1
+| dGUxFzAVBgNVBAMTDmFic29sdXRlLURDLUNBMB4XDTI1MDQyMzE4MTM1MFoXDTI2
+| MDQyMzE4MTM1MFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMOE
+| scFqn+1CHWKpA1edwK1615x3KaP4yRDQ+1nnAXDqurdJ/6p18fn3OhSjdg23sgML
+| n2ZLklrzGRPiXp2KqeGqxjW1G4PP0gs6/pC5Lsk8zsuqhAAgxgsiU1mUXQ8vLySw
+| bx81jpP4ChjsnDs35cVFD7//pOlZv0j20TJVOqw3Ip5ojb8eZS26kjQXp6j+kV5k
+| jhHKjK1wTYm42pKdDijCZP5NRuqR43S1WewTo0RaL3N3vxuCwXAyxjyR8naAJeuK
+| 2aWnYtN4s7wqyi1i+YTyHklh1yAauYgTbLWulTX6HxFx3bZYPfzkLeI5ZY+MfRfy
+| wzLHAc0ahN11soQajtECAwEAAaOCAxswggMXMDgGCSsGAQQBgjcVBwQrMCkGISsG
+| AQQBgjcVCIe89nGC4acdhPGdA4Gx8jOCz7kJgW4BIQIBbgIBADAyBgNVHSUEKzAp
+| BggrBgEFBQcDAgYIKwYBBQUHAwEGCisGAQQBgjcUAgIGBysGAQUCAwUwDgYDVR0P
+| AQH/BAQDAgWgMEAGCSsGAQQBgjcVCgQzMDEwCgYIKwYBBQUHAwIwCgYIKwYBBQUH
+| AwEwDAYKKwYBBAGCNxQCAjAJBgcrBgEFAgMFMB0GA1UdDgQWBBRU3ws2ulNPo7O+
+| rlSksas8uAtFnzAfBgNVHSMEGDAWgBSAhiBP4MNvSvhCZpCLP19QO92gNzCByAYD
+| VR0fBIHAMIG9MIG6oIG3oIG0hoGxbGRhcDovLy9DTj1hYnNvbHV0ZS1EQy1DQSxD
+| Tj1kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2Vydmlj
+| ZXMsQ049Q29uZmlndXJhdGlvbixEQz1hYnNvbHV0ZSxEQz1odGI/Y2VydGlmaWNh
+| dGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlv
+| blBvaW50MIHBBggrBgEFBQcBAQSBtDCBsTCBrgYIKwYBBQUHMAKGgaFsZGFwOi8v
+| L0NOPWFic29sdXRlLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2
+| aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWFic29sdXRlLERD
+| PWh0Yj9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlv
+| bkF1dGhvcml0eTA1BgNVHREBAf8EKzApgg9kYy5hYnNvbHV0ZS5odGKCDGFic29s
+| dXRlLmh0YoIIYWJzb2x1dGUwTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIB
+| oDAELlMtMS01LTIxLTQwNzgzODIyMzctMTQ5MjE4MjgxNy0yNTY4MTI3MjA5LTEw
+| MDAwDQYJKoZIhvcNAQEFBQADggEBACZFW9xR+dm7QH/lpvMy7hRQaksrXXzdA37l
+| UNpQaHqIbSk7p48+UpkfuufXcGXLKh5Uxw1XARPRZPcQuvI5xynj6rVTm0ImsGrU
+| JLijIepb89N7iglFw7E+JlsIZNN/Maw6xrryU0XhhOr3B6FX9odmYiaeh2CKClbi
+| 5hpopmXzR6fBKsLOLmq/EuY7xufiv1gTJrnAD7B3mstSvfpdjcyR0aPuBIG/Jq4n
+| PCHN4sCne9IqL13zelIE+m47urN6/4NoablwTH766MwTOkRiKw+HqF/QskrC51cG
+| 2eGyc9b6MoO75oc7jVGm9EFq97DGLi3h6J0xb4hfMkgJlc4gLfs=
+|_-----END CERTIFICATE-----
+445/tcp   open  microsoft-ds? syn-ack ttl 127
+464/tcp   open  kpasswd5?     syn-ack ttl 127
+593/tcp   open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Issuer: commonName=absolute-DC-CA/domainComponent=absolute
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-04-23T18:13:50
+| Not valid after:  2026-04-23T18:13:50
+| MD5:   88cd:2d01:6795:f78f:4df0:d194:ec78:b90d
+| SHA-1: 9831:ec1f:3649:814d:ef5d:6133:235c:c738:0420:b081
+| -----BEGIN CERTIFICATE-----
+| MIIF8jCCBNqgAwIBAgITbgAAAAcGWG4iffRa8QABAAAABzANBgkqhkiG9w0BAQUF
+| ADBIMRMwEQYKCZImiZPyLGQBGRYDaHRiMRgwFgYKCZImiZPyLGQBGRYIYWJzb2x1
+| dGUxFzAVBgNVBAMTDmFic29sdXRlLURDLUNBMB4XDTI1MDQyMzE4MTM1MFoXDTI2
+| MDQyMzE4MTM1MFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMOE
+| scFqn+1CHWKpA1edwK1615x3KaP4yRDQ+1nnAXDqurdJ/6p18fn3OhSjdg23sgML
+| n2ZLklrzGRPiXp2KqeGqxjW1G4PP0gs6/pC5Lsk8zsuqhAAgxgsiU1mUXQ8vLySw
+| bx81jpP4ChjsnDs35cVFD7//pOlZv0j20TJVOqw3Ip5ojb8eZS26kjQXp6j+kV5k
+| jhHKjK1wTYm42pKdDijCZP5NRuqR43S1WewTo0RaL3N3vxuCwXAyxjyR8naAJeuK
+| 2aWnYtN4s7wqyi1i+YTyHklh1yAauYgTbLWulTX6HxFx3bZYPfzkLeI5ZY+MfRfy
+| wzLHAc0ahN11soQajtECAwEAAaOCAxswggMXMDgGCSsGAQQBgjcVBwQrMCkGISsG
+| AQQBgjcVCIe89nGC4acdhPGdA4Gx8jOCz7kJgW4BIQIBbgIBADAyBgNVHSUEKzAp
+| BggrBgEFBQcDAgYIKwYBBQUHAwEGCisGAQQBgjcUAgIGBysGAQUCAwUwDgYDVR0P
+| AQH/BAQDAgWgMEAGCSsGAQQBgjcVCgQzMDEwCgYIKwYBBQUHAwIwCgYIKwYBBQUH
+| AwEwDAYKKwYBBAGCNxQCAjAJBgcrBgEFAgMFMB0GA1UdDgQWBBRU3ws2ulNPo7O+
+| rlSksas8uAtFnzAfBgNVHSMEGDAWgBSAhiBP4MNvSvhCZpCLP19QO92gNzCByAYD
+| VR0fBIHAMIG9MIG6oIG3oIG0hoGxbGRhcDovLy9DTj1hYnNvbHV0ZS1EQy1DQSxD
+| Tj1kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2Vydmlj
+| ZXMsQ049Q29uZmlndXJhdGlvbixEQz1hYnNvbHV0ZSxEQz1odGI/Y2VydGlmaWNh
+| dGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlv
+| blBvaW50MIHBBggrBgEFBQcBAQSBtDCBsTCBrgYIKwYBBQUHMAKGgaFsZGFwOi8v
+| L0NOPWFic29sdXRlLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2
+| aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWFic29sdXRlLERD
+| PWh0Yj9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlv
+| bkF1dGhvcml0eTA1BgNVHREBAf8EKzApgg9kYy5hYnNvbHV0ZS5odGKCDGFic29s
+| dXRlLmh0YoIIYWJzb2x1dGUwTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIB
+| oDAELlMtMS01LTIxLTQwNzgzODIyMzctMTQ5MjE4MjgxNy0yNTY4MTI3MjA5LTEw
+| MDAwDQYJKoZIhvcNAQEFBQADggEBACZFW9xR+dm7QH/lpvMy7hRQaksrXXzdA37l
+| UNpQaHqIbSk7p48+UpkfuufXcGXLKh5Uxw1XARPRZPcQuvI5xynj6rVTm0ImsGrU
+| JLijIepb89N7iglFw7E+JlsIZNN/Maw6xrryU0XhhOr3B6FX9odmYiaeh2CKClbi
+| 5hpopmXzR6fBKsLOLmq/EuY7xufiv1gTJrnAD7B3mstSvfpdjcyR0aPuBIG/Jq4n
+| PCHN4sCne9IqL13zelIE+m47urN6/4NoablwTH766MwTOkRiKw+HqF/QskrC51cG
+| 2eGyc9b6MoO75oc7jVGm9EFq97DGLi3h6J0xb4hfMkgJlc4gLfs=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2026-01-21T06:09:47+00:00; +7h00m00s from scanner time.
+3268/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+|_ssl-date: 2026-01-21T06:09:47+00:00; +7h00m00s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Issuer: commonName=absolute-DC-CA/domainComponent=absolute
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-04-23T18:13:50
+| Not valid after:  2026-04-23T18:13:50
+| MD5:   88cd:2d01:6795:f78f:4df0:d194:ec78:b90d
+| SHA-1: 9831:ec1f:3649:814d:ef5d:6133:235c:c738:0420:b081
+| -----BEGIN CERTIFICATE-----
+| MIIF8jCCBNqgAwIBAgITbgAAAAcGWG4iffRa8QABAAAABzANBgkqhkiG9w0BAQUF
+| ADBIMRMwEQYKCZImiZPyLGQBGRYDaHRiMRgwFgYKCZImiZPyLGQBGRYIYWJzb2x1
+| dGUxFzAVBgNVBAMTDmFic29sdXRlLURDLUNBMB4XDTI1MDQyMzE4MTM1MFoXDTI2
+| MDQyMzE4MTM1MFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMOE
+| scFqn+1CHWKpA1edwK1615x3KaP4yRDQ+1nnAXDqurdJ/6p18fn3OhSjdg23sgML
+| n2ZLklrzGRPiXp2KqeGqxjW1G4PP0gs6/pC5Lsk8zsuqhAAgxgsiU1mUXQ8vLySw
+| bx81jpP4ChjsnDs35cVFD7//pOlZv0j20TJVOqw3Ip5ojb8eZS26kjQXp6j+kV5k
+| jhHKjK1wTYm42pKdDijCZP5NRuqR43S1WewTo0RaL3N3vxuCwXAyxjyR8naAJeuK
+| 2aWnYtN4s7wqyi1i+YTyHklh1yAauYgTbLWulTX6HxFx3bZYPfzkLeI5ZY+MfRfy
+| wzLHAc0ahN11soQajtECAwEAAaOCAxswggMXMDgGCSsGAQQBgjcVBwQrMCkGISsG
+| AQQBgjcVCIe89nGC4acdhPGdA4Gx8jOCz7kJgW4BIQIBbgIBADAyBgNVHSUEKzAp
+| BggrBgEFBQcDAgYIKwYBBQUHAwEGCisGAQQBgjcUAgIGBysGAQUCAwUwDgYDVR0P
+| AQH/BAQDAgWgMEAGCSsGAQQBgjcVCgQzMDEwCgYIKwYBBQUHAwIwCgYIKwYBBQUH
+| AwEwDAYKKwYBBAGCNxQCAjAJBgcrBgEFAgMFMB0GA1UdDgQWBBRU3ws2ulNPo7O+
+| rlSksas8uAtFnzAfBgNVHSMEGDAWgBSAhiBP4MNvSvhCZpCLP19QO92gNzCByAYD
+| VR0fBIHAMIG9MIG6oIG3oIG0hoGxbGRhcDovLy9DTj1hYnNvbHV0ZS1EQy1DQSxD
+| Tj1kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2Vydmlj
+| ZXMsQ049Q29uZmlndXJhdGlvbixEQz1hYnNvbHV0ZSxEQz1odGI/Y2VydGlmaWNh
+| dGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlv
+| blBvaW50MIHBBggrBgEFBQcBAQSBtDCBsTCBrgYIKwYBBQUHMAKGgaFsZGFwOi8v
+| L0NOPWFic29sdXRlLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2
+| aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWFic29sdXRlLERD
+| PWh0Yj9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlv
+| bkF1dGhvcml0eTA1BgNVHREBAf8EKzApgg9kYy5hYnNvbHV0ZS5odGKCDGFic29s
+| dXRlLmh0YoIIYWJzb2x1dGUwTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIB
+| oDAELlMtMS01LTIxLTQwNzgzODIyMzctMTQ5MjE4MjgxNy0yNTY4MTI3MjA5LTEw
+| MDAwDQYJKoZIhvcNAQEFBQADggEBACZFW9xR+dm7QH/lpvMy7hRQaksrXXzdA37l
+| UNpQaHqIbSk7p48+UpkfuufXcGXLKh5Uxw1XARPRZPcQuvI5xynj6rVTm0ImsGrU
+| JLijIepb89N7iglFw7E+JlsIZNN/Maw6xrryU0XhhOr3B6FX9odmYiaeh2CKClbi
+| 5hpopmXzR6fBKsLOLmq/EuY7xufiv1gTJrnAD7B3mstSvfpdjcyR0aPuBIG/Jq4n
+| PCHN4sCne9IqL13zelIE+m47urN6/4NoablwTH766MwTOkRiKw+HqF/QskrC51cG
+| 2eGyc9b6MoO75oc7jVGm9EFq97DGLi3h6J0xb4hfMkgJlc4gLfs=
+|_-----END CERTIFICATE-----
+3269/tcp  open  ssl/ldap      syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Issuer: commonName=absolute-DC-CA/domainComponent=absolute
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-04-23T18:13:50
+| Not valid after:  2026-04-23T18:13:50
+| MD5:   88cd:2d01:6795:f78f:4df0:d194:ec78:b90d
+| SHA-1: 9831:ec1f:3649:814d:ef5d:6133:235c:c738:0420:b081
+| -----BEGIN CERTIFICATE-----
+| MIIF8jCCBNqgAwIBAgITbgAAAAcGWG4iffRa8QABAAAABzANBgkqhkiG9w0BAQUF
+| ADBIMRMwEQYKCZImiZPyLGQBGRYDaHRiMRgwFgYKCZImiZPyLGQBGRYIYWJzb2x1
+| dGUxFzAVBgNVBAMTDmFic29sdXRlLURDLUNBMB4XDTI1MDQyMzE4MTM1MFoXDTI2
+| MDQyMzE4MTM1MFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMOE
+| scFqn+1CHWKpA1edwK1615x3KaP4yRDQ+1nnAXDqurdJ/6p18fn3OhSjdg23sgML
+| n2ZLklrzGRPiXp2KqeGqxjW1G4PP0gs6/pC5Lsk8zsuqhAAgxgsiU1mUXQ8vLySw
+| bx81jpP4ChjsnDs35cVFD7//pOlZv0j20TJVOqw3Ip5ojb8eZS26kjQXp6j+kV5k
+| jhHKjK1wTYm42pKdDijCZP5NRuqR43S1WewTo0RaL3N3vxuCwXAyxjyR8naAJeuK
+| 2aWnYtN4s7wqyi1i+YTyHklh1yAauYgTbLWulTX6HxFx3bZYPfzkLeI5ZY+MfRfy
+| wzLHAc0ahN11soQajtECAwEAAaOCAxswggMXMDgGCSsGAQQBgjcVBwQrMCkGISsG
+| AQQBgjcVCIe89nGC4acdhPGdA4Gx8jOCz7kJgW4BIQIBbgIBADAyBgNVHSUEKzAp
+| BggrBgEFBQcDAgYIKwYBBQUHAwEGCisGAQQBgjcUAgIGBysGAQUCAwUwDgYDVR0P
+| AQH/BAQDAgWgMEAGCSsGAQQBgjcVCgQzMDEwCgYIKwYBBQUHAwIwCgYIKwYBBQUH
+| AwEwDAYKKwYBBAGCNxQCAjAJBgcrBgEFAgMFMB0GA1UdDgQWBBRU3ws2ulNPo7O+
+| rlSksas8uAtFnzAfBgNVHSMEGDAWgBSAhiBP4MNvSvhCZpCLP19QO92gNzCByAYD
+| VR0fBIHAMIG9MIG6oIG3oIG0hoGxbGRhcDovLy9DTj1hYnNvbHV0ZS1EQy1DQSxD
+| Tj1kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2Vydmlj
+| ZXMsQ049Q29uZmlndXJhdGlvbixEQz1hYnNvbHV0ZSxEQz1odGI/Y2VydGlmaWNh
+| dGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlv
+| blBvaW50MIHBBggrBgEFBQcBAQSBtDCBsTCBrgYIKwYBBQUHMAKGgaFsZGFwOi8v
+| L0NOPWFic29sdXRlLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2
+| aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWFic29sdXRlLERD
+| PWh0Yj9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlv
+| bkF1dGhvcml0eTA1BgNVHREBAf8EKzApgg9kYy5hYnNvbHV0ZS5odGKCDGFic29s
+| dXRlLmh0YoIIYWJzb2x1dGUwTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIB
+| oDAELlMtMS01LTIxLTQwNzgzODIyMzctMTQ5MjE4MjgxNy0yNTY4MTI3MjA5LTEw
+| MDAwDQYJKoZIhvcNAQEFBQADggEBACZFW9xR+dm7QH/lpvMy7hRQaksrXXzdA37l
+| UNpQaHqIbSk7p48+UpkfuufXcGXLKh5Uxw1XARPRZPcQuvI5xynj6rVTm0ImsGrU
+| JLijIepb89N7iglFw7E+JlsIZNN/Maw6xrryU0XhhOr3B6FX9odmYiaeh2CKClbi
+| 5hpopmXzR6fBKsLOLmq/EuY7xufiv1gTJrnAD7B3mstSvfpdjcyR0aPuBIG/Jq4n
+| PCHN4sCne9IqL13zelIE+m47urN6/4NoablwTH766MwTOkRiKw+HqF/QskrC51cG
+| 2eGyc9b6MoO75oc7jVGm9EFq97DGLi3h6J0xb4hfMkgJlc4gLfs=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2026-01-21T06:09:47+00:00; +7h00m00s from scanner time.
+5985/tcp  open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        syn-ack ttl 127 .NET Message Framing
+47001/tcp open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49665/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49666/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49673/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49694/tcp open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+49695/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49701/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49706/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49717/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+60179/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+60207/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 13413/tcp): CLEAN (Couldn&amp;#39;t connect)
+|   Check 2 (port 37305/tcp): CLEAN (Couldn&amp;#39;t connect)
+|   Check 3 (port 55312/udp): CLEAN (Timeout)
+|   Check 4 (port 39870/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-time: 
+|   date: 2026-01-21T06:09:42
+|_  start_date: N/A
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/machine/backdoor---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/backdoor---htb/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h1 id=&#34;nmap&#34;&gt;Nmap&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/machine/certified---htb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/machine/certified---htb/</guid>
@@ -1728,6 +2250,110 @@ Host script results:
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/machine/forgotten---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/forgotten---htb/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;Nmap&lt;/h2&gt;
+&lt;p&gt;nmap -sV -sC 10.129.48.163 -vv -p- &amp;ndash;min-rate 1000 -Pn&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 28:c7:f1:96:f9:53:64:11:f8:70:55:68:0b:e5:3c:22 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMIbLmW6I3vlf8QRrAaFLhH3Ao7CFIvqPPmQG0Z14i0SlPfX9IZobRkjLOB0ncKb5oQ/0SXLnU60rnUe+7Xe6BU=
+|   256 02:43:d2:ba:4e:87:de:77:72:ce:5a:fa:86:5c:0d:f4 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICGL/2c6HVh+6F9RbNsZpoYJ2jv4C8SGqtskv0GGuU2P
+80/tcp open  http    syn-ack ttl 62 Apache httpd 2.4.56
+|_http-title: 403 Forbidden
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.56 (Debian)
+Service Info: Host: 172.17.0.2; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;web&#34;&gt;Web&lt;/h2&gt;
+&lt;p&gt;gobuster dir -u http://10.129.48.163 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/machine/lookup---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/lookup---htb/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;enumeration&lt;/h1&gt;
+&lt;h1 id=&#34;nmap&#34;&gt;Nmap&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/machine/usage---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/usage---htb/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;nmap&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Discovered open port 80/tcp on 10.10.11.18
+Discovered open port 22/tcp on 10.10.11.18
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nous avons decouvert  deux port ouverts 80 et 22&lt;/p&gt;
+&lt;h1 id=&#34;enumeration-web&#34;&gt;enumeration web&lt;/h1&gt;
+&lt;p&gt;nous  avons ajouté le site s&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20251117111924.png]]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/machine/vulnescape---htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/vulnescape---htb/</guid>
+      <description>&lt;h2 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h2&gt;
+&lt;h3 id=&#34;nmap&#34;&gt;Nmap&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PORT     STATE SERVICE       REASON          VERSION
+3389/tcp open  ms-wbt-server syn-ack ttl 127 Microsoft Terminal Services
+|_ssl-date: 2025-12-28T22:45:46+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=Escape
+| Issuer: commonName=Escape
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-12-27T22:39:20
+| Not valid after:  2026-06-28T22:39:20
+| MD5:   beb0:afd1:f12f:b364:ef0f:9c2a:4328:eba5
+| SHA-1: 2fae:461d:59b1:98bf:d626:d2f0:7ed1:2c2e:b026:9681
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIQfxExIe2NtJVCmcjEtXQ5CDANBgkqhkiG9w0BAQsFADAR
+| MQ8wDQYDVQQDEwZFc2NhcGUwHhcNMjUxMjI3MjIzOTIwWhcNMjYwNjI4MjIzOTIw
+| WjARMQ8wDQYDVQQDEwZFc2NhcGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQC4wyMYLvnw0O1MmQxcxuVohVhGAjVylcGJOnqbJabQXvrwZLSQvx//pz0Z
+| m9GEJmg82g9RFezAJqXr/qHg58Ml1oyuKfFIJd6NiCFiyc0UHOLj9c46Kv3iOC4I
+| p51omXdI4KjaamyG2af0jA1XbYd9XJ+A6yKC5DabhqY3moz47dJjBNwyw8yOYEG8
+| Sde5XXEB4dVXGTEYwdttzJPWj26H9nYJGggory7n4Rmjp7N9sDSO4yjhQlAjG57z
+| 5fQD95wQRR2WmsYZV+7Pv+cSKILUR/JCD59M2DTKfM8jVx3461Q8qh523i/tMVkj
+| VX4ehJZGeGs8E0/GtRShCxhBvi3VAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF
+| BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAnTDQ6a4WPzA7VlDG
+| nKl6z6LM6xnSVpFvLhuiJcJW1L/ZdllRNvQHGzIM/gNG+eAj6KYdMLboa1SFmMRL
+| CAavc1xUOg8PcDcm72rJeodO5HL3oyf3UJwoVsUFHS1+Bbm152L7J7iuWkWzoh4+
+| kJGiOuIveu1Ram+MXTE06a5bddQ9NFDYKRJe2jD5e/4yN0x9rhcS8JnnHYvHII4A
+| Y7oU9vQ5u9TyGQoWbcGHBtYrFXjVdprFnU7YG4c5/xOitAXXizA9kR55ihgLmogj
+| sIV0l94GK3PvoXgk/R3nivDOjQ8vBlX1HtWb4wvymO0UN3PapMTiKA/6iXfTsvrI
+| uxGfNQ==
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: ESCAPE
+|   NetBIOS_Domain_Name: ESCAPE
+|   NetBIOS_Computer_Name: ESCAPE
+|   DNS_Domain_Name: Escape
+|   DNS_Computer_Name: Escape
+|   Product_Version: 10.0.19041
+|_  System_Time: 2025-12-28T22:45:41+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;connection RDP&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/mes-courses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/mes-courses/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://redops-academy.coursestack.com/dashboard&#34;&gt;https://redops-academy.coursestack.com/dashboard&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</guid>
@@ -1768,6 +2394,13 @@ Host script results:
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/mitre/mitre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/mitre/mitre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/mitre/t1543-003---create-or-modify-system-process-windows-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/mitre/t1543-003---create-or-modify-system-process-windows-service/</guid>
@@ -1781,6 +2414,34 @@ Host script results:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/outils/crunch/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/gns3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/gns3/</guid>
+      <description>&lt;h1 id=&#34;card-support&#34;&gt;card Support&lt;/h1&gt;
+&lt;p&gt;Card Support:&lt;/p&gt;
+&lt;p&gt;C7200-IO-FE       (1 FastEthernet port)
+C7200-IO-2FE     (2 FastEthernet ports)
+C7200-IO-GE-E   (1 GigabitEthernet port)
+PA-FE-TX             (1 FastEthernet port)
+PA-2FE-TX           (2 FastEthernet ports)
+PA-4E                   (4 Ethernet ports)
+PA-8E                   (8 Ethernet ports)
+PA-4T+                 (4 Serial ports)
+PA-8T                   (8 Serial ports)
+PA-A1                   (1 ATM port))
+PA-POS-OC3       (1 POS port)
+PA-GE                  (1 GigabitEthernet port)&lt;/p&gt;
+&lt;p&gt;NM-1FE-TX       (FastEthernet, 1 port)
+NM-4T               (Serial, 4 ports)
+NM-16ESW       (Ethernet switch module, 16 ports)
+GT96100-FE      (2 integrated ports, automatically used)
+NM-CIDS           (IDS-Sensor, 1 port)
+NM-NAM           (Analysis module, 1 port)
+WIC-1T              (1 Serial port)
+WIC-2T              (2 Serial ports)&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1811,7 +2472,27 @@ Le phishing, ou hameçonnage en français, est une technique utilisée dans le c
       <link>https://nyobemichel.me/posts/outils/metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/outils/metasploit/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;mfsconsole&#34;&gt;Mfsconsole&lt;/h2&gt;
+&lt;p&gt;Pour commencer à utiliser Metasploit Framework, il suffit de saisir la commande msfconsoledans le terminal de votre choix.
+On peut aussi utiliser l&amp;rsquo; -qoption qui ne permet pas d&amp;rsquo;afficher la bannière.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msfconsole -q
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Pour mieux visualiser toutes les commandes disponibles, nous pouvons les saisir help.&lt;/p&gt;
+&lt;h2 id=&#34;architecture-de-metasploit&#34;&gt;Architecture de Metasploit&lt;/h2&gt;
+&lt;h3 id=&#34;modules&#34;&gt;Modules&lt;/h3&gt;
+&lt;h4 id=&#34;les-types-de-modules&#34;&gt;les types de modules&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Auxiliary : Fonctionnalités de scan, de fuzzing, d&amp;rsquo;analyse du trafic réseau et d&amp;rsquo;administration. Offre une assistance et des fonctionnalités supplémentaires.&lt;/li&gt;
+&lt;li&gt;Encoders  : S&amp;rsquo;assurer que les charges utiles arrivent intactes à destination.&lt;/li&gt;
+&lt;li&gt;Exploits : Définis comme des modules exploitant une vulnérabilité permettant la livraison de la charge utile.&lt;/li&gt;
+&lt;li&gt;NOPs : (Aucun code d&amp;rsquo;opération) Veillez à ce que la taille de la charge utile reste constante d&amp;rsquo;une tentative d&amp;rsquo;exploitation à l&amp;rsquo;autre.&lt;/li&gt;
+&lt;li&gt;payloads : Le code s&amp;rsquo;exécute à distance et renvoie une connexion (ou un shell) à la machine de l&amp;rsquo;attaquant.&lt;/li&gt;
+&lt;li&gt;Plugins : Des scripts supplémentaires peuvent être intégrés à une évaluation et coexister avec elle.&lt;/li&gt;
+&lt;li&gt;Post : Large éventail de modules pour recueillir des informations, approfondir l&amp;rsquo;analyse, etc.
+Nous pouvons également affiner notre recherche et la limiter à une seule catégorie de services. Par exemple, pour la CVE, nous pourrions spécifier l&amp;rsquo;année cve:&lt;year&gt;, la plateforme Windows platform:&lt;os&gt;, le type de module recherché type:&amp;lt;auxiliary/exploit/post&amp;gt;, le niveau de fiabilité rank:&lt;rank&gt;et le nom de la recherche &lt;pattern&gt;. Les résultats ne contiendraient alors que les services correspondant à tous ces critères.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;search type:exploit platform:windows cve:2021 rank:excellent microsoft
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;cibles&#34;&gt;Cibles&lt;/h3&gt;
+&lt;p&gt;Il s&amp;rsquo;agit d&amp;rsquo;identifiants uniques du système d&amp;rsquo;exploitation, extraits des versions spécifiques de ces systèmes, qui permettent d&amp;rsquo;adapter le module d&amp;rsquo;exploitation sélectionné à cette version particulière.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1934,6 +2615,20 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/attaque-par-mot-de-passe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/attaque-par-mot-de-passe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/data-exfiltration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/data-exfiltration/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/L-codes/Neo-reGeorg&#34;&gt;https://github.com/L-codes/Neo-reGeorg&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/penetrationtesting/documentation-et-de-reportingdocumentation-et-de-reporting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/penetrationtesting/documentation-et-de-reportingdocumentation-et-de-reporting/</guid>
@@ -1955,6 +2650,13 @@ PS C:\htb&amp;gt; $cred = New-Object System.Management.Automation.PSCredential $
 PS C:\htb&amp;gt; New-PSDrive -Name &amp;ldquo;N&amp;rdquo; -Root &amp;ldquo;\192.168.220.129\Finance&amp;rdquo; -PSProvider &amp;ldquo;FileSystem&amp;rdquo; -Credential $cred&lt;/p&gt;
 &lt;p&gt;bruteforce ftp&lt;/p&gt;
 &lt;p&gt;medusa -u fiona -P /usr/share/wordlists/rockyou.txt -h 10.129.203.7 -M ftp&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/password-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/password-attacks/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -2030,10 +2732,118 @@ Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), 
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/soc/ad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/ad/</guid>
+      <description>&lt;h1 id=&#34;cest-quoi-ad&#34;&gt;c&amp;rsquo;est quoi AD&lt;/h1&gt;
+&lt;p&gt;AD DS et ses services connexes constituent la base pour les réseaux d’entreprise qui exécutent des systèmes d’exploitation Windows. La base de données AD DS est le magasin central de tous les objets de domaine, tels que les comptes d’utilisateur, les comptes d’ordinateur et les groupes. AD DS fournit un répertoire hiérarchique offrant des possibilités de recherche, ainsi qu’une méthode d’application des paramètres de configuration et de sécurité pour les objets d’une entreprise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/edr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/edr/</guid>
+      <description>&lt;p&gt;La détection et la réponse aux incidents sur les terminaux (EDR)
+est une solution de sécurité conçue pour surveiller, détecter et contrer les menaces avancées au niveau des terminaux.&lt;/p&gt;
+&lt;h1 id=&#34;cest-quoi-un-edr&#34;&gt;C&amp;rsquo;est quoi un EDR&lt;/h1&gt;
+&lt;p&gt;quelque EDR&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.crowdstrike.com/wp-content/uploads/2022/03/crowdstrike-falcon-insight-data-sheet.pdf&#34;&gt;&lt;strong&gt;CrowdStrike Falcon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sentinelone.com/resources/datasheets/assets/usecase/sentinel-one-active-#page=1&#34;&gt;&lt;strong&gt;SentinelOne ActiveEDR&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint&#34;&gt;&lt;strong&gt;Microsoft Defender pour Endpoint&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openedr.com/&#34;&gt;&lt;strong&gt;OpenEDR&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.broadcom.com/doc/endpoint-detection-and-response-atp-endpoint-en&#34;&gt;&lt;strong&gt;Symantec EDR&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/elk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/elk/</guid>
+      <description>&lt;p&gt;je travaille sur unbuntu server  Ubuntu 24.04.3 LTS  &lt;a href=&#34;https://ubuntu.com/download/server&#34;&gt;https://ubuntu.com/download/server&lt;/a&gt; (4g RAM 2 CPU)
+windows server 2022  microsoft.com/en-us/evalcenter/download-windows-server-2022
+et window 10&lt;/p&gt;
+&lt;h1 id=&#34;installer-dubuntu&#34;&gt;installer d&amp;rsquo;ubuntu&lt;/h1&gt;
+&lt;p&gt;installation sur vmware&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20251219144300.png]]&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20251219144713.png]]&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20251219145107.png]]&lt;/p&gt;
+&lt;h1 id=&#34;installation-de-elk&#34;&gt;installation de elk&lt;/h1&gt;
+&lt;p&gt;Pour commencer, utilisez cURL, l&amp;rsquo;outil en ligne de commande permettant de transférer des données via des URL, afin d&amp;rsquo;importer la clé publique GPG d&amp;rsquo;Elasticsearch dans APT&lt;/p&gt;
+&lt;p&gt;curl -fsSL &lt;a href=&#34;https://artifacts.elastic.co/GPG-KEY-elasticsearch&#34;&gt;https://artifacts.elastic.co/GPG-KEY-elasticsearch&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;
+&lt;p&gt;Ensuite, ajoutez la liste des sources Elastic au &lt;code&gt;sources.list.d&lt;/code&gt;répertoire dans lequel APT recherchera les nouvelles sources :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/lab/</guid>
+      <description>&lt;p&gt;il est question de mettre en place un lab pour faire mes scenarios&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Parefeu : PFsense&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SIEM  : stack ELK&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/pfsense/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/pfsense/</guid>
+      <description>&lt;p&gt;Le projet pfSense est une distribution gratuite de pare-feu réseau, basée sur le système d&amp;rsquo;exploitation FreeBSD avec un noyau personnalisé et intégrant des logiciels libres tiers pour des fonctionnalités supplémentaires.
+Le logiciel pfSense intègre une interface web permettant de configurer tous ses composants. Aucune connaissance UNIX n&amp;rsquo;est requise, ni l&amp;rsquo;utilisation de la ligne de commande, ni la modification manuelle des règles. Les utilisateurs habitués aux pare-feu commerciaux s&amp;rsquo;approprient rapidement l&amp;rsquo;interface web, même si une période d&amp;rsquo;apprentissage peut être nécessaire pour ceux qui ne connaissent pas ce type de pare-feu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/phishing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/phishing/</guid>
+      <description>&lt;h1 id=&#34;spf--sender-policy-framework&#34;&gt;SPF ( Sender Policy Framework)&lt;/h1&gt;
+&lt;p&gt;Le Sender Policy Framework ( SPF ) sert à authentifier l&amp;rsquo;expéditeur d&amp;rsquo;un courriel. Grâce à un enregistrement SPF , les fournisseurs d&amp;rsquo;accès à Internet peuvent vérifier qu&amp;rsquo;un serveur de messagerie est autorisé à envoyer des courriels pour un domaine spécifique.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dmarcian.com/spf-syntax-table/&#34;&gt;https://dmarcian.com/spf-syntax-table/&lt;/a&gt;
+&lt;a href=&#34;https://toolbox.googleapps.com/apps/messageheader/&#34;&gt;https://toolbox.googleapps.com/apps/messageheader/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;dkim-domainkeys-identified-mail-&#34;&gt;DKIM (Domainkeys Identified Mail )&lt;/h1&gt;
+&lt;p&gt;DKIM ( DomainKeys Identified Mail) est utilisé pour l&amp;rsquo;authentification des e-mails envoyés. À l&amp;rsquo;instar de SPF , DKIM est une norme ouverte d&amp;rsquo;authentification des e-mails, utilisée pour l&amp;rsquo;alignement DMARC
+&lt;a href=&#34;https://dmarcian.com/dkim-selectors/&#34;&gt;https://dmarcian.com/dkim-selectors/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/soc/siem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/soc/siem/</guid>
       <description>&lt;p&gt;Qu&amp;rsquo;est-ce que le SIEM ?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/soar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/soar/</guid>
+      <description>&lt;p&gt;SOAR (Security Orchestration, Automation, and Response)&lt;/p&gt;
+&lt;h2 id=&#34;voici-quelques-fonctionnalités-clés-dun-soc&#34;&gt;Voici quelques fonctionnalités clés d&amp;rsquo;un SOC&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Surveillance et détection&lt;/li&gt;
+&lt;li&gt;Reprise et correction des incidents&lt;/li&gt;
+&lt;li&gt;Veille sur les menaces
+La principale force d&amp;rsquo;un outil SOAR réside dans les trois capacités principales suivantes :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Orchestration&lt;/li&gt;
+&lt;li&gt;Automatisation&lt;/li&gt;
+&lt;li&gt;Reponse&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/soc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/soc/</guid>
+      <description>&lt;p&gt;_ installer et configuration de pfsense _
+installer et configuration AD
+nyoma.local&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -2049,6 +2859,20 @@ Les fonctions d&amp;rsquo;exécution système en PHP , telles que shell_exec(), 
       <guid>https://nyobemichel.me/posts/web/bug-bounty/</guid>
       <description>&lt;h3 id=&#34;définition-et-concept-de-base&#34;&gt;&lt;strong&gt;Définition et concept de base&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Un programme de prime aux bugs est un programme proposé par les organisations pour inciter les hackers éthiques à identifier et à divulguer de manière responsable les vulnérabilités de leurs actifs numériques. Au lieu d&amp;rsquo;attendre que des acteurs malveillants exploitent des failles inconnues, les entreprises paient des chercheurs externes pour les signaler en premier.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/cryptographic-failures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/cryptographic-failures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/file-upload-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/file-upload-attack/</guid>
+      <description>&lt;p&gt;les vulnerabilite liees au telechargement de fichier&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -2071,6 +2895,33 @@ Les JWT sont des jetons autonomes permettant de transmettre des informations de 
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/web/les-attaques-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/les-attaques-web/</guid>
+      <description>&lt;p&gt;[[JWT attacks]] :  JWTs  ( JSON Web Token )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/mfa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/mfa/</guid>
+      <description>&lt;p&gt;Multi-Factor Authentication
+désigne tout processus d&amp;rsquo;authentification nécessitant au moins deux facteurs pour vérifier l&amp;rsquo;identité d&amp;rsquo;un utilisateur.&lt;/p&gt;
+&lt;h1 id=&#34;types-de-facteurs-dauthentification&#34;&gt;Types de facteurs d&amp;rsquo;authentification&lt;/h1&gt;
+&lt;p&gt;Le MFA combine généralement deux ou plusieurs types de qualifications différents issues des catégories suivantes : quelque chose que vous savez, quelque chose que vous possédez, quelque chose que vous êtes, un endroit où vous vous trouvez et quelque chose que vous faites.
+Quelque chose que vous savez
+Il peut s&amp;rsquo;agir d&amp;rsquo;un mot de passe, d&amp;rsquo;un code PIN ou de toute autre information à mémoriser.
+Quelque chose que vous avez
+Il peut s&amp;rsquo;agir de votre téléphone avec une application d&amp;rsquo;authentification, d&amp;rsquo;un jeton de sécurité, voire d&amp;rsquo;une carte à puce.
+Quelque chose que vous êtes
+Cela fait appel à la biométrie, notamment aux empreintes digitales, à la reconnaissance faciale ou à la reconnaissance de l&amp;rsquo;iris.
+Quelque part où tu es
+Cela concerne votre adresse IP d&amp;rsquo;origine ou votre géolocalisation.
+Quelque chose que vous faites
+Ce type d&amp;rsquo;authentification est généralement utilisé dans les applications qui limitent l&amp;rsquo;interaction avec les robots, comme les pages d&amp;rsquo;inscription. L&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/web/sql-attack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/web/sql-attack/</guid>
@@ -2082,6 +2933,24 @@ Les JWT sont des jetons autonomes permettant de transmettre des informations de 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/web/sql-injection/</guid>
       <description>&lt;p&gt;L&amp;rsquo;injection SQL aveugle se produit lorsqu&amp;rsquo;une application est vulnérable à l&amp;rsquo;injection SQL, mais ses réponses HTTP ne contiennent pas les résultats de la requête SQL pertinente ni les détails des erreurs de base de données.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/web/xss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/web/xss/</guid>
+      <description>&lt;p&gt;Cross-site scripting&lt;/p&gt;
+&lt;p&gt;Qu&amp;rsquo;est-ce que le cross-site scripting (XSS) ?
+Lorsqu&amp;rsquo;une application web vulnérable ne filtre pas correctement les données saisies par l&amp;rsquo;utilisateur, un utilisateur malveillant peut injecter du code JavaScript supplémentaire dans un champ de saisie (par exemple, un champ de commentaire ou de réponse). Ainsi, lorsqu&amp;rsquo;un autre utilisateur consulte la même page, il exécute, à son insu, ce code JavaScript malveillant.&lt;/p&gt;
+&lt;h2 id=&#34;type-de-xss&#34;&gt;Type de XSS&lt;/h2&gt;
+&lt;p&gt;Il existe trois principaux types de vulnérabilités XSS&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
