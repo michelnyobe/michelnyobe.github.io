@@ -1,0 +1,3 @@
+# c'est quoi AD
+
+AD DS et ses services connexes constituent la base pour les réseaux d’entreprise qui exécutent des systèmes d’exploitation Windows. La base de données AD DS est le magasin central de tous les objets de domaine, tels que les comptes d’utilisateur, les comptes d’ordinateur et les groupes. AD DS fournit un répertoire hiérarchique offrant des possibilités de recherche, ainsi qu’une méthode d’application des paramètres de configuration et de sécurité pour les objets d’une entreprise.

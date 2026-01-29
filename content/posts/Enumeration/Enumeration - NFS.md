@@ -28,3 +28,12 @@ sudo mount -t nfs 10.129.14.128:/ ./target-NFS/ -o nolock
 cd target-NFS
 tree .
 ```
+
+démonter un partage NFS
+
+```
+umount /mnt/nfs
+```
+
+
+https://hackviser.com/tactics/pentesting/services/nfs

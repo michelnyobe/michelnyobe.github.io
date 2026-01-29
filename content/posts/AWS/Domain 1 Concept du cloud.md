@@ -53,3 +53,60 @@ DynamoDB : Amazon DynamoDB est un service de base de données NoSQL rapide et fl
 
 ElastiCache est un service web qui simplifie le déploiement, l'exploitation et la mise à l'échelle d'un cache en mémoire dans le cloud..
 
+
+CodeDeploy : AWS CodeDeploy est un service de déploiement
+entièrement géré qui automatise les déploiements logiciels vers divers services de calcul, tels qu'EC2, Lambda et vos serveurs sur site.
+
+
+# Quelques avantages du cloud AWS
+
+
+
+## les avantages economiques 
+### les economies d'echelles 
+#### les CapEX ( depense d'investissement ) sont remplaces par les OpEX ( depense d'exploitation) l'utilisation des technologies de cloud public permet aux startups et aux organisations existantes de proposer de nouvelles fonctionnalités et de nouveaux services avec un minimum de dépenses d'investissement (CapEx). Les dépenses de cloud public sont désormais axées sur les dépenses d'exploitation mensuelles (OpEx).
+
+
+#### Absence d'engagements contractuels : De nombreux fournisseurs de cloud public facturent à l'heure (voire moins). La plupart des services ne s'engagent pas à long terme auprès d'une organisation.
+
+#### Réduction des négociations requises : l'établissement de nouveaux comptes auprès des fournisseurs de cloud public est simple et les prix des principaux fournisseurs de cloud public diminuent
+
+#### Délais d’approvisionnement réduits : des ressources supplémentaires peuvent être mises en place avec la plupart des implémentations cloud en quelques secondes.
+
+## Les avantages de l'infrastructure mondiale
+
+L'infrastructure mondiale d'AWS est composée de nombreux composants, notamment
+
+### Les Regions 
+Les régions sont des emplacements physiques situés dans des régions géographiquement dispersées du monde
+### Zone de disponibilite 
+
+Une AZ est composée d'un ou plusieurs centres de données. Ces centres de données offrent une redondance à tous les niveaux, des connexions réseau aux équipements physiques.
+
+### La Haute disponibilite (HA) 
+Implique la conception d'une solution AWs de maniere a maintenir les systemes et services operationnels et accessibles pendant de longues periodes . 
+
+## AWS Well-Architecture 
+
+## Excellence operationnelle 
+
+est de garantir l'exploitation et le suivi des systèmes afin de garantir leur contribution aux objectifs opérationnels de l'organisation
+## Securite 
+
+a pour mission de protéger vos actifs, vos systèmes et vos
+informations associées à AWS. Il doit également vous accompagner dans l'évaluation des risques et la mise en place de mesures d'atténuation.
+## fiabilite
+
+repose sur de nombreux principes de conception importants, tous axés sur la capacité de votre conception à se remettre facilement des pannes de service..
+
+# Strategie de migration cers le cloud AWS
+
+
+## CAF (Cloud Adoption Framework )Assurez­vous de bien connaître ces perspectives :
+
+Enterprise , Personnel ,Gouvernance ,plateforme ,securite,operation 
+
+
+phase d'adoption ,phase d'aligenement , phase de lancement , phase de mise a l'echelle 
+
+
