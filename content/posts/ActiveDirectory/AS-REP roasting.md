@@ -1,6 +1,6 @@
 ---
 title: "AS-REP roasting"
-date: 2026-29-01
+date: 2026-28-01
 draft: false
 tags: ["AD", "kerberos", "autoapprentissage" ,"brute force"]
 categories: ["Attaque AD"]
@@ -8,7 +8,7 @@ summary: "AS-REP Roasting"
 showToc: true
 tocOpen: true
 ---
-hello
+
 # Introduction 
 Lorsqu'une authentification a lieu au sein de Kerberos, la première chose qui se produit est une requête d'authentification adressée au contrôleur de domaine afin que l'identité de la personne tentant de s'authentifier puisse être vérifiée. 
 Cette requête est connue sous le nom de requête au serveur d'authentification (AS-REQ.). 
