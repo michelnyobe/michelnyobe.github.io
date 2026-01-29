@@ -1,0 +1,62 @@
+- Kerberoasting OK
+- AS-REP Roasting
+- Overpass-the-Hash
+- Pass-the-Ticket
+- Golden Ticket
+- Silver Ticket
+- Skeleton Key
+- Kerberos Delegation Abuse
+    - Unconstrained Delegation
+    - Constrained Delegation
+    - Resource-Based Constrained Delegation (RBCD)
+- Pass-the-Hash
+- NTLM Relay
+- SMB Relay
+- LDAP Relay
+- HTTP Relay
+- SMB Signing bypass
+- Password spraying
+- Brute force (rare en réel mais conceptuellement)
+- Credential dumping
+- Token impersonation
+- SID History abuse
+- Service Account abuse
+- Local Admin password reuse
+- LAPS misconfiguration abuse
+- DCSync
+- DCShadow
+- NTDS.dit extraction
+- SYSTEM hive abuse
+- SYSVOL abuse
+- GPP Passwords
+- AD database offline extraction
+- GPO abuse
+- Modification de scripts de logon
+- Scheduled tasks via GPO
+- Startup scripts malveillants
+- Abuse des permissions GPO
+- Forest Trust abuse
+- External Trust abuse
+- Child → Parent escalation
+- SID Filtering bypass
+- Trust account compromise
+- SMB lateral movement
+- WMI lateral movement
+- WinRM lateral movement
+- PsExec-like techniques
+- RDP abuse
+- Scheduled Tasks remote
+- Service creation abuse
+- Golden Ticket persistence
+- ACL backdoor
+- GPO persistence
+- AdminSDHolder abuse
+- Shadow Credentials persistence
+- Service account persistence
+- DCShadow persistence
+- Living Off The Land (LOLBins)
+- Bypass AMSI
+- Bypass PowerShell logging
+- Evasion EDR via AD paths
+- Time-based attacks
+- Token manipulation
