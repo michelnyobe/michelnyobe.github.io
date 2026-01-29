@@ -10,6 +10,7 @@ tocOpen: true
 ---
 
 # Introduction 
+
 Lorsqu'une authentification a lieu au sein de Kerberos, la première chose qui se produit est une requête d'authentification adressée au contrôleur de domaine afin que l'identité de la personne tentant de s'authentifier puisse être vérifiée. 
 Cette requête est connue sous le nom de requête au serveur d'authentification (AS-REQ.). 
 Ce processus est communément appelé préauthentification Kerberos.
@@ -40,10 +41,70 @@ Une fois l'authentification préalable réussie, le serveur d'authentification (
 
 # c'est quoi AS-REP Roasting
 
+L'attaque **AS-REP Roasting**  est une technique d'exploitation du protocole Kerberos qui cible les utilisateurs n'ayant pas l'option « L'authentification préalable Kerberos n'est pas requise » (Do not require Kerberos preauthentication) activée. Normalement, un utilisateur doit chiffrer un horodatage avec son mot de passe pour prouver son identité avant que le contrôleur de domaine (KDC) ne lui réponde. Si cette sécurité est désactivée, un attaquant peut envoyer une simple requête de ticket (**AS-REQ**) au nom de la victime, et le KDC renverra immédiatement un message **AS-REP** contenant une partie chiffrée avec le hash du mot de passe de l'utilisateur. L'attaquant peut alors récupérer ce message hors ligne et tenter de "cracker" le mot de passe par force brute ou dictionnaire sans jamais interagir à nouveau avec le réseau, ce qui rend l'attaque très discrète.
 
 # mettre en place une vulnerabilité AS-REP Roasting
+
+## creation d'un utilisateur 
+
+Dans AD DS, vous devez fournir à tous les utilisateurs qui ont besoin d’accéder aux ressources réseau un compte utilisateur. Avec ce compte d’utilisateur, les utilisateurs peuvent s’authentifier auprès du domaine AD DS et accéder aux ressources réseau.
+Dans Windows Server, un compte d’utilisateur est un objet qui contient toutes les informations qui définissent un utilisateur. 
+
+- Le nom d’utilisateur.
+- Un mot de passe utilisateur.
+- Les appartenances aux groupes.
+
+![[Pasted image 20260129134901.png]]
+![usercreate](/images/usercreate.png)
+ j'ai coché la case 
+
 # test de l'attaque 
+
+pour notre lab nous allons utiliser un script pour generer des utilisateursuffer/vulnerable-AD
+## Linux 
+### Enumeration
+### enumeration du domaine 
+outil : Nmap 
+
+
+
+nous avons  le domaine 
+
+### enumeration des utilisateurs 
+
+
+Pour mettre en œuvre la technique AS-REP Roasting, il est nécessaire d'énumérer les comptes vulnérables. ADSearch est un outil capable d'effectuer des requêtes LDAP afin d'énumérer les objets Active Directory.
+ outils :  Impacket GetNPUsers ( python)
+ 
+```
+crackmapexec smb IP -u UserNme -p 'Mot de passe ' --users | grep -oP 'Domain\\\K[^ ]+' > users.txt
+```
+
+![usercreate](/images/Pasted image 20260129175851.png)
+
+ maintenant les utilisateur qui ont 
+
+```
+Python GetNPUsers.py nyoma.local/ -usersfile users.txt
+```
+
+
+![usercreate](/images/Pasted image 20260129175954.png)
+
+
+### brute force 
+
+```
+john --wordlist=rockyou.txt asrep_hashes.txt 
+```
+
+
+![usercreate](/images/Pasted image 20260129180257.png)
+
+
 # Detection avec elastic 
+
+
 # comment se prevenir 
 
 
