@@ -1,3 +1,5 @@
+je vais lister quelques attaues AD
+
 - Kerberoasting OK
 - AS-REP Roasting
 - Overpass-the-Hash
