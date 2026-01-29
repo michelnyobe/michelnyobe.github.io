@@ -12,15 +12,8 @@
     <generator>Hugo -- 0.155.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AS-REP roasting</title>
-      <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
-      <description>AS-REP Roasting</description>
-    </item>
     <item>
       <title>Lab Cybersécurité Entreprise Moderne</title>
       <link>https://nyobemichel.me/posts/learn/lab---learn/</link>
@@ -592,6 +585,15 @@ Name PwnedGPO
 Comme prévu, il s&amp;rsquo;intègre étroitement à Active Directory et permet l&amp;rsquo;émission de certificats, qui sont des documents électroniques signés numériquement au format X.509, utilisables pour le chiffrement, la signature de messages et/ou l&amp;rsquo;authentification (notre axe de recherche).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/GhostPack/PSPKIAudit&#34;&gt;https://github.com/GhostPack/PSPKIAudit&lt;/a&gt;
 &lt;a href=&#34;https://posts.specterops.io/certified-pre-owned-d95910965cd2&#34;&gt;https://posts.specterops.io/certified-pre-owned-d95910965cd2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Dans un environnement &lt;strong&gt;Active Directory&lt;/strong&gt;, le protocole &lt;strong&gt;Kerberos&lt;/strong&gt; est le pilier de l&amp;rsquo;authentification. Avant qu&amp;rsquo;un utilisateur puisse accéder aux ressources du réseau, il doit prouver son identité auprès du contrôleur de domaine (DC).&lt;/p&gt;
+&lt;p&gt;Ce processus commence par une requête appelée &lt;strong&gt;AS-REQ&lt;/strong&gt; (&lt;em&gt;Authentication Service Request&lt;/em&gt;). Par défaut, Kerberos utilise une sécurité appelée &lt;strong&gt;pré-authentification&lt;/strong&gt;. Cependant, lorsque cette sécurité est mal configurée, elle ouvre la porte à une attaque redoutable et discrète : l&amp;rsquo;&lt;strong&gt;AS-REP Roasting&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

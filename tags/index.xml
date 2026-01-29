@@ -12,36 +12,8 @@
     <generator>Hugo -- 0.155.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AD</title>
-      <link>https://nyobemichel.me/tags/ad/</link>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/ad/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Autoapprentissage</title>
-      <link>https://nyobemichel.me/tags/autoapprentissage/</link>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/autoapprentissage/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Brute Force</title>
-      <link>https://nyobemichel.me/tags/brute-force/</link>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/brute-force/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kerberos</title>
-      <link>https://nyobemichel.me/tags/kerberos/</link>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/kerberos/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Active Directory</title>
       <link>https://nyobemichel.me/tags/active-directory/</link>
@@ -99,7 +71,7 @@
       <description></description>
     </item>
     <item>
-      <title>Cloud-Security</title>
+      <title>Cloud Security</title>
       <link>https://nyobemichel.me/tags/cloud-security/</link>
       <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/cloud-security/</guid>
@@ -124,6 +96,13 @@
       <link>https://nyobemichel.me/tags/network-watcher/</link>
       <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/network-watcher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autoapprentissage</title>
+      <link>https://nyobemichel.me/tags/autoapprentissage/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/autoapprentissage/</guid>
       <description></description>
     </item>
     <item>
@@ -369,6 +348,13 @@
       <link>https://nyobemichel.me/tags/web/</link>
       <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kerberos</title>
+      <link>https://nyobemichel.me/tags/kerberos/</link>
+      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/tags/kerberos/</guid>
       <description></description>
     </item>
     <item>
