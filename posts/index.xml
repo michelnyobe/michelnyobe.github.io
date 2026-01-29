@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.155.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AS-REP roasting</title>
+      <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
+      <description>AS-REP Roasting</description>
+    </item>
     <item>
       <title>Lab Cybersécurité Entreprise Moderne</title>
       <link>https://nyobemichel.me/posts/learn/lab---learn/</link>
@@ -69,13 +76,6 @@
       <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/roadmap/azure-hacking/</guid>
       <description>Azure Hacking</description>
-    </item>
-    <item>
-      <title>AS-REP roasting</title>
-      <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
-      <pubDate>Fri, 11 Jul 2025 20:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
-      <description>Entra ID</description>
     </item>
     <item>
       <title>Whois</title>
@@ -572,6 +572,80 @@ Name PwnedGPO
 Comme prévu, il s&amp;rsquo;intègre étroitement à Active Directory et permet l&amp;rsquo;émission de certificats, qui sont des documents électroniques signés numériquement au format X.509, utilisables pour le chiffrement, la signature de messages et/ou l&amp;rsquo;authentification (notre axe de recherche).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/GhostPack/PSPKIAudit&#34;&gt;https://github.com/GhostPack/PSPKIAudit&lt;/a&gt;
 &lt;a href=&#34;https://posts.specterops.io/certified-pre-owned-d95910965cd2&#34;&gt;https://posts.specterops.io/certified-pre-owned-d95910965cd2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/attaquesad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/attaquesad/</guid>
+      <description>&lt;p&gt;je vais lister quelques attaues AD&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kerberoasting OK&lt;/li&gt;
+&lt;li&gt;AS-REP Roasting&lt;/li&gt;
+&lt;li&gt;Overpass-the-Hash&lt;/li&gt;
+&lt;li&gt;Pass-the-Ticket&lt;/li&gt;
+&lt;li&gt;Golden Ticket&lt;/li&gt;
+&lt;li&gt;Silver Ticket&lt;/li&gt;
+&lt;li&gt;Skeleton Key&lt;/li&gt;
+&lt;li&gt;Kerberos Delegation Abuse
+&lt;ul&gt;
+&lt;li&gt;Unconstrained Delegation&lt;/li&gt;
+&lt;li&gt;Constrained Delegation&lt;/li&gt;
+&lt;li&gt;Resource-Based Constrained Delegation (RBCD)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pass-the-Hash&lt;/li&gt;
+&lt;li&gt;NTLM Relay&lt;/li&gt;
+&lt;li&gt;SMB Relay&lt;/li&gt;
+&lt;li&gt;LDAP Relay&lt;/li&gt;
+&lt;li&gt;HTTP Relay&lt;/li&gt;
+&lt;li&gt;SMB Signing bypass&lt;/li&gt;
+&lt;li&gt;Password spraying&lt;/li&gt;
+&lt;li&gt;Brute force (rare en réel mais conceptuellement)&lt;/li&gt;
+&lt;li&gt;Credential dumping&lt;/li&gt;
+&lt;li&gt;Token impersonation&lt;/li&gt;
+&lt;li&gt;SID History abuse&lt;/li&gt;
+&lt;li&gt;Service Account abuse&lt;/li&gt;
+&lt;li&gt;Local Admin password reuse&lt;/li&gt;
+&lt;li&gt;LAPS misconfiguration abuse&lt;/li&gt;
+&lt;li&gt;DCSync&lt;/li&gt;
+&lt;li&gt;DCShadow&lt;/li&gt;
+&lt;li&gt;NTDS.dit extraction&lt;/li&gt;
+&lt;li&gt;SYSTEM hive abuse&lt;/li&gt;
+&lt;li&gt;SYSVOL abuse&lt;/li&gt;
+&lt;li&gt;GPP Passwords&lt;/li&gt;
+&lt;li&gt;AD database offline extraction&lt;/li&gt;
+&lt;li&gt;GPO abuse&lt;/li&gt;
+&lt;li&gt;Modification de scripts de logon&lt;/li&gt;
+&lt;li&gt;Scheduled tasks via GPO&lt;/li&gt;
+&lt;li&gt;Startup scripts malveillants&lt;/li&gt;
+&lt;li&gt;Abuse des permissions GPO&lt;/li&gt;
+&lt;li&gt;Forest Trust abuse&lt;/li&gt;
+&lt;li&gt;External Trust abuse&lt;/li&gt;
+&lt;li&gt;Child → Parent escalation&lt;/li&gt;
+&lt;li&gt;SID Filtering bypass&lt;/li&gt;
+&lt;li&gt;Trust account compromise&lt;/li&gt;
+&lt;li&gt;SMB lateral movement&lt;/li&gt;
+&lt;li&gt;WMI lateral movement&lt;/li&gt;
+&lt;li&gt;WinRM lateral movement&lt;/li&gt;
+&lt;li&gt;PsExec-like techniques&lt;/li&gt;
+&lt;li&gt;RDP abuse&lt;/li&gt;
+&lt;li&gt;Scheduled Tasks remote&lt;/li&gt;
+&lt;li&gt;Service creation abuse&lt;/li&gt;
+&lt;li&gt;Golden Ticket persistence&lt;/li&gt;
+&lt;li&gt;ACL backdoor&lt;/li&gt;
+&lt;li&gt;GPO persistence&lt;/li&gt;
+&lt;li&gt;AdminSDHolder abuse&lt;/li&gt;
+&lt;li&gt;Shadow Credentials persistence&lt;/li&gt;
+&lt;li&gt;Service account persistence&lt;/li&gt;
+&lt;li&gt;DCShadow persistence&lt;/li&gt;
+&lt;li&gt;Living Off The Land (LOLBins)&lt;/li&gt;
+&lt;li&gt;Bypass AMSI&lt;/li&gt;
+&lt;li&gt;Bypass PowerShell logging&lt;/li&gt;
+&lt;li&gt;Evasion EDR via AD paths&lt;/li&gt;
+&lt;li&gt;Time-based attacks&lt;/li&gt;
+&lt;li&gt;Token manipulation&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>

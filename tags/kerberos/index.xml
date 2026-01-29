@@ -12,14 +12,14 @@
     <generator>Hugo -- 0.155.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 11 Jul 2025 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/kerberos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AS-REP roasting</title>
       <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
-      <pubDate>Fri, 11 Jul 2025 20:00:00 +0200</pubDate>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
-      <description>Entra ID</description>
+      <description>AS-REP Roasting</description>
     </item>
     <item>
       <title>Kerberoasting : Attaque d&#39;Active Directory via Kerberos</title>
