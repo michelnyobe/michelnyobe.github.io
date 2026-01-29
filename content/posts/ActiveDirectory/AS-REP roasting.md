@@ -1,6 +1,6 @@
 ---
 title: "AS-REP roasting"
-date: 2026-28-01
+date: 2026-01-28
 draft: false
 tags: ["AD", "kerberos", "autoapprentissage" ,"brute force"]
 categories: ["Attaque AD"]
