@@ -9,16 +9,44 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.0</generator>
+    <generator>Hugo -- 0.155.1</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Directory</title>
       <link>https://nyobemichel.me/tags/active-directory/</link>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brute Force</title>
+      <link>https://nyobemichel.me/tags/brute-force/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/brute-force/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kerberos</title>
+      <link>https://nyobemichel.me/tags/kerberos/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/kerberos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pentest</title>
+      <link>https://nyobemichel.me/tags/pentest/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/pentest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sécurité</title>
+      <link>https://nyobemichel.me/tags/s%C3%A9curit%C3%A9/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/s%C3%A9curit%C3%A9/</guid>
       <description></description>
     </item>
     <item>
@@ -50,13 +78,6 @@
       <description></description>
     </item>
     <item>
-      <title>Pentest</title>
-      <link>https://nyobemichel.me/tags/pentest/</link>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/tags/pentest/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Red Team</title>
       <link>https://nyobemichel.me/tags/red-team/</link>
       <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
@@ -71,7 +92,7 @@
       <description></description>
     </item>
     <item>
-      <title>Cloud Security</title>
+      <title>Cloud-Security</title>
       <link>https://nyobemichel.me/tags/cloud-security/</link>
       <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/cloud-security/</guid>
@@ -348,13 +369,6 @@
       <link>https://nyobemichel.me/tags/web/</link>
       <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kerberos</title>
-      <link>https://nyobemichel.me/tags/kerberos/</link>
-      <pubDate>Mon, 05 May 2025 19:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/kerberos/</guid>
       <description></description>
     </item>
     <item>

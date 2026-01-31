@@ -9,11 +9,18 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.0</generator>
+    <generator>Hugo -- 0.155.1</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maîtriser l&#39;AS-REP Roasting : De la Vulnérabilité au Crack de Mot de Passe</title>
+      <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
+      <description>Découvrez le fonctionnement de l&amp;rsquo;attaque AS-REP Roasting, comment identifier les comptes vulnérables et les méthodes pour s&amp;rsquo;en protéger efficacement.</description>
+    </item>
     <item>
       <title>Lab Cybersécurité Entreprise Moderne</title>
       <link>https://nyobemichel.me/posts/learn/lab---learn/</link>
@@ -565,15 +572,6 @@ Name PwnedGPO
 Comme prévu, il s&amp;rsquo;intègre étroitement à Active Directory et permet l&amp;rsquo;émission de certificats, qui sont des documents électroniques signés numériquement au format X.509, utilisables pour le chiffrement, la signature de messages et/ou l&amp;rsquo;authentification (notre axe de recherche).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/GhostPack/PSPKIAudit&#34;&gt;https://github.com/GhostPack/PSPKIAudit&lt;/a&gt;
 &lt;a href=&#34;https://posts.specterops.io/certified-pre-owned-d95910965cd2&#34;&gt;https://posts.specterops.io/certified-pre-owned-d95910965cd2&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Dans un environnement &lt;strong&gt;Active Directory&lt;/strong&gt;, le protocole &lt;strong&gt;Kerberos&lt;/strong&gt; est le pilier de l&amp;rsquo;authentification. Avant qu&amp;rsquo;un utilisateur puisse accéder aux ressources du réseau, il doit prouver son identité auprès du contrôleur de domaine (DC).&lt;/p&gt;
-&lt;p&gt;Ce processus commence par une requête appelée &lt;strong&gt;AS-REQ&lt;/strong&gt; (&lt;em&gt;Authentication Service Request&lt;/em&gt;). Par défaut, Kerberos utilise une sécurité appelée &lt;strong&gt;pré-authentification&lt;/strong&gt;. Cependant, lorsque cette sécurité est mal configurée, elle ouvre la porte à une attaque redoutable et discrète : l&amp;rsquo;&lt;strong&gt;AS-REP Roasting&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -2338,6 +2336,87 @@ Service Info: Host: 172.17.0.2; OS: Linux; CPE: cpe:/o:linux:linux_kernel
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/machine/soupedecode---htm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/machine/soupedecode---htm/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;nmap&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PORT      STATE SERVICE       REASON          VERSION
+53/tcp    open  domain        syn-ack ttl 126 Simple DNS Plus
+88/tcp    open  kerberos-sec  syn-ack ttl 126 Microsoft Windows Kerberos (server time: 2026-01-31 09:46:07Z)
+135/tcp   open  msrpc         syn-ack ttl 126 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 126 Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack ttl 126 Microsoft Windows Active Directory LDAP (Domain: SOUPEDECODE.LOCAL0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack ttl 126
+464/tcp   open  kpasswd5?     syn-ack ttl 126
+593/tcp   open  ncacn_http    syn-ack ttl 126 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack ttl 126
+3268/tcp  open  ldap          syn-ack ttl 126 Microsoft Windows Active Directory LDAP (Domain: SOUPEDECODE.LOCAL0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack ttl 126
+3389/tcp  open  ms-wbt-server syn-ack ttl 126 Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: SOUPEDECODE
+|   NetBIOS_Domain_Name: SOUPEDECODE
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: SOUPEDECODE.LOCAL
+|   DNS_Computer_Name: DC01.SOUPEDECODE.LOCAL
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-01-31T09:46:56+00:00
+|_ssl-date: 2026-01-31T09:47:36+00:00; -2s from scanner time.
+| ssl-cert: Subject: commonName=DC01.SOUPEDECODE.LOCAL
+| Issuer: commonName=DC01.SOUPEDECODE.LOCAL
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-01-30T09:39:33
+| Not valid after:  2026-08-01T09:39:33
+| MD5:   6f4e:c1e8:213f:2155:8f12:2f95:e707:a8d0
+| SHA-1: d7c3:df44:4c7b:9430:1534:7adc:b999:c58a:9f5a:7b3c
+| -----BEGIN CERTIFICATE-----
+| MIIC8DCCAdigAwIBAgIQTvulgCBMwqpCJNB34w9sDDANBgkqhkiG9w0BAQsFADAh
+| MR8wHQYDVQQDExZEQzAxLlNPVVBFREVDT0RFLkxPQ0FMMB4XDTI2MDEzMDA5Mzkz
+| M1oXDTI2MDgwMTA5MzkzM1owITEfMB0GA1UEAxMWREMwMS5TT1VQRURFQ09ERS5M
+| T0NBTDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMLOW5lCftIBAbnh
+| vgZyV0NTv1D2NCS+2YzIDPze1v5M27PoJBKiUyBn959sNE5YnBMbQAubChYFzBEC
+| wbwvH4pOpgEjdoteXhAGQdTcPhqyqD/daGEAeFtB0BMhNcWGx67PTf4ewWqSQ56Z
+| g9ivRetAVuiuSs2KIwIY6ldqQI2fb8HwtR8WUXm7GU4VNJjZwzTj+dMq61cazu/r
+| bBkWgalhw7MWKISoBc2X+fb+bb3aroMFUfVHzc8JlAps7/t+Y40btAGwfY5uqLRf
+| dezaKEDkr6XELGkecFppPUJ2O6mDzkNke8Zdeo6LV60C3pGF20Sj88vT09u0TQOF
+| POUa71UCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw
+| MA0GCSqGSIb3DQEBCwUAA4IBAQAn/A2IRFUgh0+inMRpGm6I4My23SIaIEBkay3q
+| yMWgMihrEUSMuIF+XKG4o8iLUzxEQygzUdlvSTKmHwK69JTTkEvMHlgyAvpvHOkw
+| NlqV22sIECHoM+BrNiYemtqmxPxeAoHGvQZ7ySSPWO8Dcp6Xo17tDuL96SQCe/Dd
+| XhEeZmbik+fz99XjDNgLHk7pWM7cYeU48cFN6hmwmPgDCgZqWpJ3nI9eBCJFtlkc
+| riLNV/sJ/Hir0uHD/g8YoZLHZAoXJwcYfdofC/y5frBEkjOOms5zPZP0qoEVtP8f
+| aAeOqA3IP4fbWK0LQjv3+qALuBdvZWZrAw1cWsVbe8TCaUlb
+|_-----END CERTIFICATE-----
+9389/tcp  open  mc-nmf        syn-ack ttl 126 .NET Message Framing
+49664/tcp open  msrpc         syn-ack ttl 126 Microsoft Windows RPC
+49670/tcp open  msrpc         syn-ack ttl 126 Microsoft Windows RPC
+49671/tcp open  ncacn_http    syn-ack ttl 126 Microsoft Windows RPC over HTTP 1.0
+49714/tcp open  msrpc         syn-ack ttl 126 Microsoft Windows RPC
+49799/tcp open  msrpc         syn-ack ttl 126 Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 60770/tcp): CLEAN (Timeout)
+|   Check 2 (port 49560/tcp): CLEAN (Timeout)
+|   Check 3 (port 19044/udp): CLEAN (Timeout)
+|   Check 4 (port 24349/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2026-01-31T09:46:58
+|_  start_date: N/A
+|_clock-skew: mean: -2s, deviation: 0s, median: -2s
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/machine/usage---htb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/machine/usage---htb/</guid>
@@ -2525,6 +2604,21 @@ Le phishing, ou hameçonnage en français, est une technique utilisée dans le c
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/outils/john-the-ripper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/john-the-ripper/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/openwall/john&#34;&gt;https://github.com/openwall/john&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;est un outil de test d&amp;rsquo;intrusion réputé, utilisé pour casser les mots de passe grâce à diverses attaques, notamment par force brute et par dictionnaire. Ce logiciel libre, initialement développé pour les systèmes UNIX, a été lancé en 1996. Il est devenu un incontournable du secteur de la sécurité grâce à ses nombreuses fonctionnalités.&lt;/p&gt;
+&lt;h1 id=&#34;modes-de-craquage&#34;&gt;Modes de craquage&lt;/h1&gt;
+&lt;h2 id=&#34;single-crack-mode&#34;&gt;single crack mode&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;john --single passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mode-liste-de-mot&#34;&gt;mode liste de mot&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;john --wordlist=&amp;lt;wordlist_file&amp;gt; &amp;lt;hash_file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mode-incrémental&#34;&gt;mode incrémental&lt;/h2&gt;
+&lt;p&gt;Il s&amp;rsquo;agit d&amp;rsquo;un mode de craquage de mots de passe puissant, de type force brute, qui génère des mots de passe candidats à partir d&amp;rsquo;un modèle statistique&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/outils/metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/outils/metasploit/</guid>
@@ -2674,7 +2768,12 @@ Grâce à ODAT, vous pouvez :&lt;/p&gt;
       <link>https://nyobemichel.me/posts/penetrationtesting/attaque-par-mot-de-passe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/penetrationtesting/attaque-par-mot-de-passe/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;introduction-au-craquage-de-mots-de-passe&#34;&gt;Introduction au craquage de mots de passe&lt;/h1&gt;
+&lt;h1 id=&#34;attaque-par-force-brute&#34;&gt;Attaque par force brute&lt;/h1&gt;
+&lt;p&gt;Une brute-forceattaque par force brute consiste à tester toutes les combinaisons possibles de lettres, de chiffres et de symboles jusqu&amp;rsquo;à trouver le bon mot de passe.&lt;/p&gt;
+&lt;h2 id=&#34;attaque-par-dictionnaire&#34;&gt;Attaque par dictionnaire&lt;/h2&gt;
+&lt;h1 id=&#34;générer-des-listes-de-mots-à-laide-de-cewl&#34;&gt;Générer des listes de mots à l&amp;rsquo;aide de CeWL&lt;/h1&gt;
+&lt;p&gt;Nous pouvons utiliser l&amp;rsquo;outil CeWL pour analyser les mots potentiels du site web d&amp;rsquo;une entreprise et les enregistrer dans une liste distincte. Cette liste peut ensuite être combinée aux règles souhaitées afin de créer une liste de mots de passe personnalisée, présentant une plus grande probabilité de contenir le mot de passe correct d&amp;rsquo;un employé. Nous spécifions certains paramètres, tels que la profondeur d&amp;rsquo;exploration ( -d), la longueur minimale des mots ( -m), le stockage des mots trouvés en minuscules ( &amp;ndash;lowercase), ainsi que le fichier de destination des résultats ( -w).&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -2954,7 +3053,49 @@ Les JWT sont des jetons autonomes permettant de transmettre des informations de 
       <link>https://nyobemichel.me/posts/web/les-attaques-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/web/les-attaques-web/</guid>
-      <description>&lt;p&gt;[[JWT attacks]] :  JWTs  ( JSON Web Token )&lt;/p&gt;</description>
+      <description>&lt;p&gt;[[JWT attacks]] :  JWTs  ( JSON Web Token )&lt;/p&gt;
+&lt;h3 id=&#34;input-validation-mechanisms&#34;&gt;Input Validation Mechanisms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Blacklisting&lt;/li&gt;
+&lt;li&gt;Whitelisting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cross-site-scripting&#34;&gt;Cross-Site Scripting&lt;/h3&gt;
+&lt;h3 id=&#34;sql-injection&#34;&gt;SQL Injection&lt;/h3&gt;
+&lt;h3 id=&#34;xml-external-entity-attack&#34;&gt;XML External Entity Attack&lt;/h3&gt;
+&lt;h3 id=&#34;cross-site-request-forgery&#34;&gt;Cross-Site Request Forgery&lt;/h3&gt;
+&lt;h3 id=&#34;encoding-encryption-and-hashing&#34;&gt;Encoding, Encryption and Hashing&lt;/h3&gt;
+&lt;h3 id=&#34;authentication-related-vulnerabilities&#34;&gt;Authentication Related Vulnerabilities&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brute force Attacks&lt;/li&gt;
+&lt;li&gt;Password Storage and Password Policy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;understanding-of-owasp-top-10-vulnerabilities&#34;&gt;Understanding of OWASP Top 10 Vulnerabilities&lt;/h3&gt;
+&lt;h3 id=&#34;security-best-practices-and-hardening-mechanisms&#34;&gt;Security Best Practices and Hardening Mechanisms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Same Origin Policy&lt;/li&gt;
+&lt;li&gt;Security Headers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tls-security&#34;&gt;TLS security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TLS Certificate Misconfiguration&lt;/li&gt;
+&lt;li&gt;Symmetric and Asymmetric Ciphers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;server-side-request-forgery&#34;&gt;Server-Side Request Forgery&lt;/h3&gt;
+&lt;h3 id=&#34;authorization-and-session-management-related-flaws-&#34;&gt;Authorization and Session Management Related Flaws –&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Insecure Direct Object Reference (IDOR)&lt;/li&gt;
+&lt;li&gt;Privilege Escalation&lt;/li&gt;
+&lt;li&gt;Parameter Manipulation attacks&lt;/li&gt;
+&lt;li&gt;Securing Cookies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;insecure-file-uploads&#34;&gt;Insecure File Uploads&lt;/h3&gt;
+&lt;h3 id=&#34;code-injection-vulnerabilities&#34;&gt;Code Injection Vulnerabilities&lt;/h3&gt;
+&lt;h3 id=&#34;business-logic-flaws&#34;&gt;Business Logic Flaws&lt;/h3&gt;
+&lt;h3 id=&#34;directory-traversal-vulnerabilities&#34;&gt;Directory Traversal Vulnerabilities&lt;/h3&gt;
+&lt;h3 id=&#34;security-misconfigurations&#34;&gt;Security Misconfigurations&lt;/h3&gt;
+&lt;h3 id=&#34;information-disclosure&#34;&gt;Information Disclosure&lt;/h3&gt;
+&lt;h3 id=&#34;vulnerable-and-outdated-components&#34;&gt;Vulnerable and Outdated Components&lt;/h3&gt;
+&lt;h3 id=&#34;common-supply-chain-attacks-and-prevention-methods&#34;&gt;Common Supply Chain Attacks and Prevention Methods&lt;/h3&gt;</description>
     </item>
     <item>
       <title></title>

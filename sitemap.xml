@@ -3,15 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nyobemichel.me/tags/active-directory/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/attaques-ad/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/brute-force/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/kerberos/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pentest/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/s%C3%A9curit%C3%A9/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/azure/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/blue-team/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/categories/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/cybers%C3%A9curit%C3%A9/</loc>
@@ -32,22 +59,10 @@
     <loc>https://nyobemichel.me/categories/labs/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/pentest/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/red-team/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/siem/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/azure/</loc>
@@ -392,9 +407,6 @@
     <loc>https://nyobemichel.me/posts/activedirectory/kerberoasting/</loc>
     <lastmod>2025-05-05T19:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/tags/kerberos/</loc>
-    <lastmod>2025-05-05T19:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/sid/</loc>
     <lastmod>2025-05-05T19:00:00+02:00</lastmod>
   </url><url>
@@ -451,8 +463,6 @@
     <loc>https://nyobemichel.me/posts/activedirectory/abusing-active-directory-acls/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/adcs-attack/</loc>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/attaquesad/</loc>
   </url><url>
@@ -652,6 +662,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/machine/lookup---htb/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/machine/soupedecode---htm/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/machine/usage---htb/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/machine/vulnescape---htb/</loc>
@@ -679,6 +691,8 @@
     <loc>https://nyobemichel.me/posts/outils/gophish/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/impacket/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/john-the-ripper/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/metasploit/</loc>
   </url><url>
