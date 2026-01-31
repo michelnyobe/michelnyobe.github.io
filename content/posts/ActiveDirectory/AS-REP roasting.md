@@ -1,4 +1,13 @@
-
+---
+title: "Maîtriser l'AS-REP Roasting : De la Vulnérabilité au Crack de Mot de Passe"
+date: 2026-01-28
+draft: false
+tags: ["Active Directory", "Kerberos", "Pentest", "Brute Force", "Sécurité"]
+categories: ["Attaques AD"]
+summary: "Découvrez le fonctionnement de l'attaque AS-REP Roasting, comment identifier les comptes vulnérables et les méthodes pour s'en protéger efficacement."
+showToc: true
+tocOpen: true
+---
 ## Introduction 
 
 Dans un environnement **Active Directory**, le protocole **Kerberos** est le pilier de l'authentification. Avant qu'un utilisateur puisse accéder aux ressources du réseau, il doit prouver son identité auprès du contrôleur de domaine (DC). 
