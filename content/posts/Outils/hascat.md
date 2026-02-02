@@ -1,6 +1,6 @@
 ---
 title: "hascat"
-date: 2025-05-07T15:00:00+02:00
+date: 2026-01-02
 draft: false
 tags: ["Outils", "Pentester"]
 categories: ["Outils"]
@@ -46,3 +46,16 @@ n type d'attaque par force brute où l'espace des clés est explicitement défin
 ```
 hashcat -a 3 -m 0 1e293d6912d074c0fd15844d803400dd '?u?l?l?l?l?d?s'
 ```
+
+
+## generer un fichier de mot de passe 
+
+```
+hashcat --force password.list -r custom.rule --stdout | sort -u  > mut_password.list
+```
+
+https://hashcat.net/wiki/doku.php?id=rule_based_attack
+
+## CUPP
+
+https://github.com/Mebus/cupp
