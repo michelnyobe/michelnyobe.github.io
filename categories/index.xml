@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.1</generator>
+    <generator>Hugo -- 0.155.2</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
@@ -19,6 +19,13 @@
       <link>https://nyobemichel.me/categories/attaques-ad/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/categories/attaques-ad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outils</title>
+      <link>https://nyobemichel.me/categories/outils/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/outils/</guid>
       <description></description>
     </item>
     <item>
@@ -110,13 +117,6 @@
       <link>https://nyobemichel.me/categories/s%C3%A9curit%C3%A9-offensive/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/categories/s%C3%A9curit%C3%A9-offensive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Outils</title>
-      <link>https://nyobemichel.me/categories/outils/</link>
-      <pubDate>Mon, 07 Jul 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/categories/outils/</guid>
       <description></description>
     </item>
     <item>

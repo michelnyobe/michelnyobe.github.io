@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.1</generator>
+    <generator>Hugo -- 0.155.2</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
@@ -20,6 +20,13 @@
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</guid>
       <description>Découvrez le fonctionnement de l&amp;rsquo;attaque AS-REP Roasting, comment identifier les comptes vulnérables et les méthodes pour s&amp;rsquo;en protéger efficacement.</description>
+    </item>
+    <item>
+      <title>hascat</title>
+      <link>https://nyobemichel.me/posts/outils/hascat/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/hascat/</guid>
+      <description>hascat</description>
     </item>
     <item>
       <title>Lab Cybersécurité Entreprise Moderne</title>
@@ -216,13 +223,6 @@
       <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/outils/guacamole/</guid>
       <description>Guacamole</description>
-    </item>
-    <item>
-      <title>hascat</title>
-      <link>https://nyobemichel.me/posts/outils/hascat/</link>
-      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/outils/hascat/</guid>
-      <description>hascat</description>
     </item>
     <item>
       <title>Hydra</title>
@@ -2502,6 +2502,13 @@ Host script results:
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/malware/introduction-aux-logiciels-malveillants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/malware/introduction-aux-logiciels-malveillants/</guid>
+      <description>&lt;p&gt;ar exemple, la valeur hexadécimale d&amp;rsquo;un exécutable est toujours « 4D 5A »&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/mes-courses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/mes-courses/</guid>
@@ -2529,6 +2536,13 @@ Host script results:
       <description>&lt;h1 id=&#34;tunneling-ssh&#34;&gt;Tunneling SSH&lt;/h1&gt;
 &lt;p&gt;Le tunneling SSH peut être utilisé de différentes manières pour rediriger des ports via une connexion SSH , selon la situation. Pour expliquer chaque cas, imaginons que nous ayons pris le contrôle de la machine PC-1 (sans accès administrateur) et que nous souhaitions l&amp;rsquo;utiliser comme pivot pour accéder à un port d&amp;rsquo;une autre machine auquel nous ne pouvons pas nous connecter directement. Nous allons créer un tunnel depuis la machine PC-1, agissant comme client SSH , vers le PC de l&amp;rsquo;attaquant, qui agira comme serveur SSH . En effet, les machines Windows disposent souvent d&amp;rsquo;un client SSH , mais la plupart du temps, aucun serveur SSH n&amp;rsquo;est disponible.
 &lt;img alt=&#34;SSh tunneling&#34; loading=&#34;lazy&#34; src=&#34;https://nyobemichel.me/images/ssh_tunneling.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/microsoft/renforcement-de-la-s%C3%A9curit%C3%A9-de-microsoft-windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/microsoft/renforcement-de-la-s%C3%A9curit%C3%A9-de-microsoft-windows/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -2990,7 +3004,7 @@ Le logiciel pfSense intègre une interface web permettant de configurer tous ses
       <link>https://nyobemichel.me/posts/soc/siem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/soc/siem/</guid>
-      <description>&lt;p&gt;Qu&amp;rsquo;est-ce que le SIEM ?&lt;/p&gt;</description>
+      <description></description>
     </item>
     <item>
       <title></title>

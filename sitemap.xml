@@ -35,6 +35,18 @@
     <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2026-01-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/posts/outils/hascat/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/outils/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/outils/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pentester/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/tags/azure/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -173,15 +185,6 @@
     <loc>https://nyobemichel.me/tags/security/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/outils/</loc>
-    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/outils/</loc>
-    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/pentester/</loc>
-    <lastmod>2025-07-07T15:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/posts/outils/whois/</loc>
     <lastmod>2025-07-07T15:00:00+02:00</lastmod>
   </url><url>
@@ -276,9 +279,6 @@
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/guacamole/</loc>
-    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/outils/hascat/</loc>
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/hydra/</loc>
@@ -668,6 +668,8 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/machine/vulnescape---htb/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/malware/introduction-aux-logiciels-malveillants/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/mes-courses/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/mouvement-lat%C3%A9ral-et-pivotement/</loc>
@@ -675,6 +677,8 @@
     <loc>https://nyobemichel.me/posts/microsoft/ntlm-authentication/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/redirection-de-port/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/microsoft/renforcement-de-la-s%C3%A9curit%C3%A9-de-microsoft-windows/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/microsoft/sans-titre/</loc>
   </url><url>
