@@ -32,7 +32,7 @@ sudo bloodhound-python -d <domain> -u <username>@<domain> -p <password> -c all -
 
 Une fois la collecte terminée, vous obtiendrez un ou plusieurs fichiers `.json.gz` à importer dans l’interface BloodHound.
 
-```
+```bash
 neo4j console
 ```
 
@@ -49,3 +49,4 @@ sudo ./bloodhound-cli up
 
 https://bloodhound.readthedocs.io/en/latest/index.html
 https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/
+https://bloodhound.specterops.io/analyze-data/privilege-zones/zones
