@@ -9,17 +9,17 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.2</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 10:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/red-team/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lab Cybersécurité Entreprise Moderne</title>
-      <link>https://nyobemichel.me/posts/learn/lab---learn/</link>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/learn/lab---learn/</guid>
-      <description>Mise en place d’un lab complet d’entreprise moderne avec plus de 10 machines, 2 forêts Active Directory, serveurs applicatifs, SIEM, pare-feux, messagerie, PKI, base de données, et une machine d’attaque Kali Linux pour la simulation Red Team et Blue Team.</description>
+      <title>Abuse GPO</title>
+      <link>https://nyobemichel.me/posts/soc/gestion-des-incidents/</link>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/gestion-des-incidents/</guid>
+      <description>Une vue d&amp;rsquo;ensemble structurée des prérequis et méthodologies à maîtriser avant de réaliser un test d’intrusion.</description>
     </item>
     <item>
       <title>BloodHound v8</title>
@@ -27,13 +27,6 @@
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/articles/bloodhound-v8/</guid>
       <description>Explore BloodHound v8, an advanced Active Directory mapping tool used by Red Teams to identify attack paths. Discover its setup, graph-based architecture, and new security and management features.</description>
-    </item>
-    <item>
-      <title>AWS Attack and Defense: Stratégies offensives et défensives dans le cloud</title>
-      <link>https://nyobemichel.me/posts/formations/aws-attack-and-defense/</link>
-      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/formations/aws-attack-and-defense/</guid>
-      <description>Explorez les techniques d&amp;rsquo;attaque et de défense sur AWS : reconnaissance, exploitation, élévation de privilèges, détection et mitigation.</description>
     </item>
     <item>
       <title>Prérequis pour un test de pénétration part1</title>

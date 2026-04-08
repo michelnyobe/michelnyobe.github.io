@@ -9,11 +9,18 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.2</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 10:00:00 +0200</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abuse GPO</title>
+      <link>https://nyobemichel.me/posts/soc/gestion-des-incidents/</link>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/gestion-des-incidents/</guid>
+      <description>Une vue d&amp;rsquo;ensemble structurée des prérequis et méthodologies à maîtriser avant de réaliser un test d’intrusion.</description>
+    </item>
     <item>
       <title>Maîtriser l&#39;AS-REP Roasting : De la Vulnérabilité au Crack de Mot de Passe</title>
       <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
@@ -22,32 +29,11 @@
       <description>Découvrez le fonctionnement de l&amp;rsquo;attaque AS-REP Roasting, comment identifier les comptes vulnérables et les méthodes pour s&amp;rsquo;en protéger efficacement.</description>
     </item>
     <item>
-      <title>Lab Cybersécurité Entreprise Moderne</title>
-      <link>https://nyobemichel.me/posts/learn/lab---learn/</link>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://nyobemichel.me/posts/learn/lab---learn/</guid>
-      <description>Mise en place d’un lab complet d’entreprise moderne avec plus de 10 machines, 2 forêts Active Directory, serveurs applicatifs, SIEM, pare-feux, messagerie, PKI, base de données, et une machine d’attaque Kali Linux pour la simulation Red Team et Blue Team.</description>
-    </item>
-    <item>
       <title>BloodHound v8</title>
       <link>https://nyobemichel.me/posts/articles/bloodhound-v8/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/articles/bloodhound-v8/</guid>
       <description>Explore BloodHound v8, an advanced Active Directory mapping tool used by Red Teams to identify attack paths. Discover its setup, graph-based architecture, and new security and management features.</description>
-    </item>
-    <item>
-      <title>Enumeration AD - Interne</title>
-      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</link>
-      <pubDate>Thu, 22 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</guid>
-      <description>SMTP</description>
-    </item>
-    <item>
-      <title>Enumeration - SMTP</title>
-      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</link>
-      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</guid>
-      <description>SMTP</description>
     </item>
     <item>
       <title>Prérequis pour un test de pénétration part1</title>

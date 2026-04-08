@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.2</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
@@ -34,34 +34,6 @@
       <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/outils/bloodhound/</guid>
       <description>Bloodhound</description>
-    </item>
-    <item>
-      <title>BloodyAD</title>
-      <link>https://nyobemichel.me/posts/outils/bloodyad/</link>
-      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/outils/bloodyad/</guid>
-      <description>BloodyAD</description>
-    </item>
-    <item>
-      <title>chisel</title>
-      <link>https://nyobemichel.me/posts/outils/chisel/</link>
-      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/outils/chisel/</guid>
-      <description>chisel</description>
-    </item>
-    <item>
-      <title>Crackmapexec</title>
-      <link>https://nyobemichel.me/posts/outils/crackmapexec/</link>
-      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/outils/crackmapexec/</guid>
-      <description>Crackmapexec</description>
-    </item>
-    <item>
-      <title>curl</title>
-      <link>https://nyobemichel.me/posts/outils/curl/</link>
-      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/outils/curl/</guid>
-      <description>Curl</description>
     </item>
     <item>
       <title>Evil-WinRM</title>

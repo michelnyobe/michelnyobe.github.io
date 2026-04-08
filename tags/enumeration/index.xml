@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.155.2</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Sat, 21 Jun 2025 00:00:00 +0000</lastBuildDate>
@@ -20,13 +20,6 @@
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration-imap----pop3/</guid>
       <description>IMAP/POP3</description>
-    </item>
-    <item>
-      <title>Enumeration AD - Interne</title>
-      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</link>
-      <pubDate>Thu, 22 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---interne/</guid>
-      <description>SMTP</description>
     </item>
     <item>
       <title>Enumeration - FTP</title>
@@ -54,13 +47,6 @@
       <link>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</link>
       <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/enumeration/enumeration---smtp/</guid>
-      <description>SMTP</description>
-    </item>
-    <item>
-      <title>Enumeration - SMTP</title>
-      <link>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</link>
-      <pubDate>Wed, 07 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/posts/enumeration/enumeration-ad---externe/</guid>
       <description>SMTP</description>
     </item>
   </channel>
