@@ -1,3 +1,13 @@
+---
+title: "john the riper"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 https://github.com/openwall/john
 
 est un outil de test d'intrusion réputé, utilisé pour casser les mots de passe grâce à diverses attaques, notamment par force brute et par dictionnaire. Ce logiciel libre, initialement développé pour les systèmes UNIX, a été lancé en 1996. Il est devenu un incontournable du secteur de la sécurité grâce à ses nombreuses fonctionnalités.

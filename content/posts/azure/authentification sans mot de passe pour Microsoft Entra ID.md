@@ -1,3 +1,13 @@
+---
+title: "Authentification sans mot de passe"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Chaque organisation a des besoins différents en matière d'authentification. Microsoft Azure et Azure Government proposent les quatre options d'authentification sans mot de passe suivantes, compatibles avec Microsoft Entra ID :
 
 - Windows Hello Entreprise

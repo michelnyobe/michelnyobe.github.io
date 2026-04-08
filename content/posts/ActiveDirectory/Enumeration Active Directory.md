@@ -1,6 +1,7 @@
 ---
 title: Reconnaissance Active Directory avec PowerView
 date: 2025-05-05
+draft: false
 tags:
   - Active
   - Directory
@@ -11,6 +12,8 @@ tags:
 categories:
   - Cybersecurity
   - Red Team
+showToc: true
+tocOpen: true
 ---
 
 
@@ -69,18 +72,21 @@ Get-ADTrust -Filter 'ms-DS-TrustForestTrustInfo -ne "$null"'
 ## 👤 2. Utilisateurs
 
 ### 👥 Liste des utilisateurs
+
 ```powershell
 Get-DomainUser
 Get-ADUser -Filter * -Properties *
 ```
 
 ### 🔍 Détails d’un utilisateur spécifique
+
 ```powershell
 Get-DomainUser -Identity user1 -Properties *
 Get-ADUser -Identity user1 -Properties *
 ```
 
 ### 🔄 Propriétés utiles
+
 ```powershell
 Get-ADUser -Filter * -Properties * | select -First 1 | Get-Member -MemberType *Property | select Name
 ```
@@ -186,6 +192,7 @@ Get-PathAcl -Path "\\dcorp-dc.dollarcorp.moneycorp.local\sysvol"
 ## 📂 6. Autres Techniques
 
 ### 📂 Découverte de serveurs de fichiers
+
 ```powershell
 Get-NetFileServer
 ```

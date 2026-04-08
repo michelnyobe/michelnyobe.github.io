@@ -1,3 +1,13 @@
+---
+title: "Gophish"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Qu'est-ce que Gophish ?
 Gophish est un framework de phishing qui simplifie la simulation d'attaques réelles. L'idée derrière Gophish est simple : offrir une formation de pointe en phishing accessible à tous. « Disponible » signifie ici deux choses :
 Voici les fonctionnalités principales de Gophish :

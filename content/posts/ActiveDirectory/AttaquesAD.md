@@ -1,17 +1,28 @@
+---
+title: "Attaque AD"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 je vais lister quelques attaues AD
 
-- Kerberoasting OK
-- AS-REP Roasting
-- Overpass-the-Hash
-- Pass-the-Ticket
-- Golden Ticket
-- Silver Ticket
-- Skeleton Key
-- Kerberos Delegation Abuse
-    - Unconstrained Delegation
-    - Constrained Delegation
-    - Resource-Based Constrained Delegation (RBCD)
-- Pass-the-Hash
+- [[Enumeration Active Directory]]
+- [[Kerberoasting]]
+- [[AS-REP roasting]]
+- [[Overpass-the-Hash]]
+- [[Pass-the-Ticket]]
+- [[Golden Ticket]]
+- [[Silver Ticket]]
+- [[Skeleton Key]]
+- [[Kerberos Delegation Abuse]]
+    -[[Unconstrained Delegation]]
+    - [[Constrained Delegation]]
+    - [[Resource-Based Constrained Delegation]] (RBCD)
+- [[Pass-The-Hash]]
 - NTLM Relay
 - SMB Relay
 - LDAP Relay
@@ -62,3 +73,6 @@ je vais lister quelques attaues AD
 - Evasion EDR via AD paths
 - Time-based attacks
 - Token manipulation
+- [[BadSuccessor]]
+- [[Bypassing WDECK]]
+- [[DPAPI abuse]]

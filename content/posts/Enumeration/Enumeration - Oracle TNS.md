@@ -1,3 +1,13 @@
+---
+title: "Enumeration Oracle TNS"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Le serveur `Oracle Transparent Network Substrate`( `TNS`) est un protocole de communication qui facilite la communication entre les bases de données et les applications Oracle sur les réseaux.
 
 Avant de pouvoir énumérer l'écouteur TNS et interagir avec lui, nous devons télécharger quelques paquets et outils

@@ -1,3 +1,13 @@
+---
+title: "Enumeration linux AD"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Introduction
 
 Les services de domaine **Active Directory (AD DS)** et leurs services associés constituent la base des réseaux d'entreprise exécutant des systèmes d'exploitation **Windows** et non Windows.  

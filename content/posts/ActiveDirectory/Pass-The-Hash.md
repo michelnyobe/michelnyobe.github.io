@@ -1,3 +1,13 @@
+---
+title: "pass the hash"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 ## Qu'est-ce qu'une attaque Pass the Hash ?
 L'attaque « Pass the Hash » est répandue dans les environnements Windows. Elle exploite le mécanisme d'authentification du système d'exploitation Windows.
 

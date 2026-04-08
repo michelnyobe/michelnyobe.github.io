@@ -1,7 +1,7 @@
 ---
 title: "Enumeration - SMTP"
 date: 2025-05-07T10:00:00+02:00
-draft: false
+draft: true
 tags: ["Enumeration", "Active Directory"]
 categories: ["Enumeration"]
 summary: "SMTP"

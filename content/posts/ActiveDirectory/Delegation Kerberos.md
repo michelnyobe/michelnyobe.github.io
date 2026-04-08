@@ -1,4 +1,13 @@
-
+---
+title: "Delegation Kerberos"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 ## Qu’est-ce que la délégation Kerberos ?
 
 La délégation Kerberos est un paramètre de délégation qui permet aux applications de demander des informations d’identification d’accès à l’utilisateur final pour accéder aux ressources pour le compte de l’utilisateur d’origine.
@@ -8,7 +17,8 @@ Les trois principaux types de délégation que je vais couvrir sont les suivants
 - **Délégation contrainte** : les entités contraintes peuvent être abusées si l’une de leurs entrées de délégation est sensible.
 - **Délégation contrainte basée sur les ressources (RBCD)** : les entités contraintes basées sur les ressources peuvent être abusées si l’entité elle-même est sensible.
 
-##  Délégation contrainte
+##  [[Constrained Delegation]]
+
 La délégation contrainte permet aux administrateurs de configurer les services auxquels un compte utilisateur ou ordinateur peut déléguer et quels protocoles d'authentification peuvent être utilisés
 
 ## Exploitation

@@ -1,7 +1,7 @@
 ---
 title: "Azure Attack et Defense"
 date: 2025-08-01
-draft: false
+draft: true
 tags: ["Azure", "Microsoft", "Entra ID", "Cloud Security", "Pentest", "Autoapprentissage"]
 categories: ["Formation", "Sécurité offensive", "Cloud"]
 summary: "Découvrez les techniques d'attaque et de défense dans Azure, en explorant Entra ID, la sécurité des identités, et les bonnes pratiques pour renforcer votre posture cloud."

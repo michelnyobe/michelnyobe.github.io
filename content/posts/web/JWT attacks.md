@@ -1,3 +1,13 @@
+---
+title: "JWT attack"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 JWT ( json web token )
 
 ![[Pasted image 20250707104217.png]]
@@ -54,6 +64,9 @@ Vous pouvez utiliser Burp Inspector pour visualiser et décoder les JWT. Vous po
 1. Générer des clés de signature cryptographiques.
 2. Modifiez le JWT.
 3. Résignez le jeton avec une signature valide qui correspond au JWT modifié.
+
+## Erreurs de validation de signature 
+
 
 https://jwt.io/
 https://datatracker.ietf.org/doc/html/rfc7519

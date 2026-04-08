@@ -1,3 +1,13 @@
+---
+title: "Trust Bank Breach"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 In this Red Team exercise, students will simulate a financially motivated Advanced Persistent Threat (APT) attack against "Trust Bank," aiming to compromise the branch manager’s email account and exfiltrate sensitive financial data including internal communications all while maintaining stealth to mimic real-world banking threats like FIN7. The Red Team will go through Initial Access, Privilege Escalation, Lateral Movement & Data Exfiltration.
 
 # Description

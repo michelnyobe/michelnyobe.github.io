@@ -1,3 +1,13 @@
+---
+title: "canto"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 En tant que membre de l'équipe rouge de Secure Corp, votre mission est d'exploiter une vulnérabilité dans un plugin WordPress utilisé pour la gestion des ressources numériques. Cette faille peut permettre un accès distant non autorisé au serveur, vous permettant ainsi de compromettre le système en exécutant du code arbitraire.
 
 # Enumeration 

@@ -1,3 +1,13 @@
+---
+title: "Soupedecode - HTM"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Enumeration
 ## nmap 
 
@@ -75,3 +85,20 @@ Host script results:
 |_  start_date: N/A
 |_clock-skew: mean: -2s, deviation: 0s, median: -2s
 ```
+
+
+ DNS_Domain_Name: SOUPEDECODE.LOCAL
+ DNS_Computer_Name: DC01.SOUPEDECODE.LOCAL
+
+```
+netexec smb soupedecode.local -u guest -p  ''
+```
+
+
+```
+rep 'SOUPEDECODE\\' rid_brute.txt | cut -d':' -f2- | sed -E 's/.*SOUPEDECODE\\(.*) \(SidType.*/\1/' | grep -v '\$' > usernames.txt
+```
+
+ybob317:ybob317 
+
+file_svc:Password123!!

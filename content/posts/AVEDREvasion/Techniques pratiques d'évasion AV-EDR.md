@@ -1,3 +1,13 @@
+---
+title: "evasion AV-EDR"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Architecture AV/EDR
 ### **Détection basée sur la signature**
 La détection basée sur les signatures s’appuie sur des modèles connus de code malveillant (chaînes binaires, hachages ou séquences d’instructions spécifiques) pour identifier les menaces.

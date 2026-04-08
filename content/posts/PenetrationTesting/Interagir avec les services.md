@@ -1,3 +1,13 @@
+---
+title: "services"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Bloc de messages du serveur (SMB)
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/findstr
 https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/gg651155(v=ws.11)

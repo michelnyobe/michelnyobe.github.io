@@ -1,3 +1,13 @@
+---
+title: "intoduction Antivirus"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Types de techniques de détection
 ## Détection dynamique
 La détection dynamique est une approche plus avancée et plus complexe que la détection statique. Elle se concentre davantage sur la vérification des fichiers à l'exécution, à l'aide de différentes méthodes.

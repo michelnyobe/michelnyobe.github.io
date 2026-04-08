@@ -1,3 +1,13 @@
+---
+title: "Zero trust"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Zero Trust est un nouveau modèle de sécurité qui présuppose une violation et vérifie chaque requête comme si elle provenait d'un réseau non contrôlé.
 ## Principes directeurs du Zero Trust
 Pour répondre à ce nouveau monde de l'informatique, Microsoft recommande vivement le modèle de sécurité Zero Trust, qui repose sur ces principes directeurs :

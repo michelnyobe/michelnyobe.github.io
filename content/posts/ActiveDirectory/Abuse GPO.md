@@ -1,3 +1,13 @@
+---
+title: "Abuse GPO"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 SharpGPOAbuse.exe
 
 ### 1. commande PowerShell utilisée pour créer un nouvel objet de stratégie de group

@@ -1,4 +1,14 @@
- exploitation des vulnérabilités du contrôle d'accès Windows/Active Directory pour l'élévation des privilèges, la persistance et les mouvements latéraux. Couvre les techniques offensives d'abus des ACL, l'analyse BloodHound et les méthodes de renforcement défensif pour les équipes de sécurité des entreprises.
+---
+title: "Abusing Active Directory ACLs"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
+ exploitation des vulnérabilités du contrôle d'accès Windows/Active Directory pour l'élévation des privilèges, la persistance et les mouvements latéraux. Couvre les techniques offensives d'abus des ACL, l'analyse BloodHound et les méthodes de renforcement défensif pour les équipes de sécurité des entreprises.
  Une liste de contrôle d'accès (ACL) est une liste d' entrées de contrôle d'accès (ACE). Chaque ACE d'une ACL identifie un administrateur et spécifie les droits d'accès autorisés, refusés ou audités pour cet administrateur. Le descripteur de sécurité d'un objet sécurisable peut contenir deux types d'ACL : une DACL et une SACL .
  Une liste de contrôle d'accès discrétionnaire (DACL) identifie les personnes autorisées ou non à accéder à un objet sécurisable. Lorsqu'un processus tente d'accéder à un objet sécurisable, le système vérifie les ACE de la DACL de l'objet afin de déterminer s'il doit y accéder.
  `DAC` La méthode traditionnelle de mise en œuvre du contrôle d'accès contrôle l'accès en fonction de l'identité du demandeur et des règles d'accès qui précisent ce que les demandeurs sont autorisés à faire (ou non). Ce contrôle d'accès est discrétionnaire , car une entité peut disposer de droits d'accès lui permettant, de son propre chef, d'autoriser une autre entité à accéder à une ressource ; contrairement à MAC , où l'entité ayant accès à une ressource ne peut pas, de son propre chef, autoriser une autre entité à y accéder. Windows est un exemple de système d'exploitation DAC , qui utilise des listes de contrôle d'accès discrétionnaires ( DACL ).

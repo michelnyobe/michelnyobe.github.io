@@ -1,12 +1,18 @@
-
+---
+title: "Abuse GPO"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 L'objectif principal de cette opération Red Team est d'évaluer la sécurité de l'environnement de l'entreprise. Cette mission vise à identifier les vulnérabilités et les erreurs de configuration de l'environnement AD et à formuler des recommandations concrètes pour renforcer la sécurité de l'infrastructure.
 
-VPN Credential
 
-Username: Larass0x04
-Password: odzDc#La
 
-my ip : 10.10.200.115/24
+my ip : 
 
 
 Etapes / 
@@ -26,7 +32,7 @@ nmap -sn 192.168.80.0/24
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-07 17:20 CET
 Nmap scan report for 192.168.80.10
 Host is up (0.030s latency).
-Nmap done: 256 IP addresses (1 host up) scanned in 5.08 seconds
+Nmap done: 256 IP address                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        es (1 host up) scanned in 5.08 seconds
 ```
 
 nmap -sV -sC 192.168.80.10 -p- -vv

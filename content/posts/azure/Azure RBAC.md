@@ -1,3 +1,13 @@
+---
+title: "Azure RBAC"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Le contrôle d'accès aux ressources avec Azure RBAC consiste à attribuer des rôles Azure. Il s'agit d'un concept essentiel à comprendre : c'est ainsi que les autorisations sont appliquées. L'attribution d'un rôle se compose de trois éléments : le principal de sécurité, la définition du rôle et l'étendue.
 
 Une définition de rôle est un ensemble d'autorisations. On l'appelle généralement simplement un rôle. Une définition de rôle répertorie les actions pouvant être effectuées, telles que la lecture, l'écriture et la suppression. Les rôles peuvent être de haut niveau, comme celui de propriétaire, ou spécifiques, comme celui de lecteur de machine virtuelle.

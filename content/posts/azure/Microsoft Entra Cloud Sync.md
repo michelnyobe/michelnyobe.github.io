@@ -1,3 +1,13 @@
+---
+title: "Microsoft entra Cloud sync"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Microsoft Entra Cloud Sync est une nouvelle offre Microsoft conçue pour répondre à vos besoins en matière d'identité hybride et synchroniser vos utilisateurs, groupes et contacts avec Microsoft Entra ID. Pour ce faire, elle utilise l'agent de provisionnement cloud Microsoft Entra au lieu de l'application Microsoft Entra Connect. Elle peut toutefois être utilisée conjointement avec Microsoft Entra Connect Sync et offre les avantages suivants :
 
 - Prise en charge de la synchronisation avec un locataire Microsoft Entra à partir d'un environnement de forêt Active Directory déconnecté multi-forêts : les scénarios courants incluent la fusion et l'acquisition (où les forêts AD de la société acquise sont isolées des forêts AD de la société mère) et les sociétés qui ont historiquement eu plusieurs forêts AD.

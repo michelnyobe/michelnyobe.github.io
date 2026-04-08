@@ -1,7 +1,7 @@
 ---
 title: "AWS Attack and Defense: Stratégies offensives et défensives dans le cloud"
 date: 2025-08-01
-draft: false
+draft: true
 tags: ["Hacking", "Cloud Security", "AWS", "Pentest", "IAM", "Red Team", "Blue Team"]
 categories: ["Formation", "Cloud", "Sécurité offensive", "Sécurité défensive"]
 summary: "Explorez les techniques d'attaque et de défense sur AWS : reconnaissance, exploitation, élévation de privilèges, détection et mitigation."

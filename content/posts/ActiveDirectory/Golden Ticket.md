@@ -1,3 +1,13 @@
+---
+title: "Golden ticket"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 L'attaque Golden Ticket permet aux attaquants de falsifier et de signer des TGT en utilisant le hachage du mot de passe du compte krbtgt. Lorsque ces tickets sont présentés à un serveur AD, les informations qu'ils contiennent ne seront pas du tout vérifiées et seront considérées comme valides car elles sont signées avec le hachage du mot de passe du compte krbtgt.
 L' attaque Golden Ticket permet aux attaquants de falsifier et de signer des TGT (Ticket Granting Tickets) en utilisant le hachage du mot de passe du compte krbtgt . Lorsque ces tickets sont présentés à un
 serveur AD, les informations qu'ils contiennent ne sont pas du tout vérifiées et sont considérées comme valides

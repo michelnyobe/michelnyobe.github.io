@@ -1,3 +1,13 @@
+---
+title: "Microsoft Entra PIM"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 La gestion des identités privilégiées (Privileged Identity Management) permet l'activation des rôles en fonction du temps et des approbations afin de réduire les risques d'autorisations d'accès excessives, inutiles ou abusives sur les ressources qui vous sont importantes. Voici quelques-unes de ses principales fonctionnalités :
 
 - Fournissez un accès privilégié juste à temps aux ressources Microsoft Entra ID et Azure.

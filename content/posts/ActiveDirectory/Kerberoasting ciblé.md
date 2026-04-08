@@ -1,4 +1,13 @@
-
+---
+title: "kerberoasting ciblé"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 
 Cet abus peut survenir lors du contrôle d'un objet doté d'un `GenericAll`, `GenericWrdddtechnique est appelée Kerberoasting ciblé.Cet abus peut survenir lors du contrôle d'un objet doté d'un GenericAll, GenericWriteou sur la cible. Un membre du groupe Opérateur de compteWriteProperty dispose généralement de ces autorisations.Validated-SPN[]
 

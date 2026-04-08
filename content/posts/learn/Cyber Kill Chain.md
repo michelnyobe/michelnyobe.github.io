@@ -1,3 +1,14 @@
+---
+title: "Cyber Kill Chain"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "Methodologie", "pentester"]
+summary: "Une vue d'ensemble structurée des prérequis et méthodologies à maîtriser avant de réaliser un test d’intrusion."
+showToc: true
+tocOpen: true
+---
+
 Inspirée des chaînes de destruction militaires, la Cyber ​​Kill Chain est un cadre de cybersécurité introduit par Lockheed Martin en 2011. Elle vise à aider les organisations à se défendre contre les cyberattaques en comprenant leur déroulement.
 La Cyber ​​Kill Chain divise une attaque en sept étapes :
 1. **Reconnaissance** : Dans la première étape, l'attaquant recueille des informations sur la cible

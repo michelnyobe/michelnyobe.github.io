@@ -1,4 +1,13 @@
-
+---
+title: "Introduction Active Directory"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Active Directory Domain Services (AD DS) et ses services connexes constituent la base des réseaux d’entreprise qui exécutent des systèmes d’exploitation Windows et non-Windows.
 ## les composants logiques ?
 

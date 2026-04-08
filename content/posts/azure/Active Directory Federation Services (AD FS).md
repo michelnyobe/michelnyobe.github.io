@@ -1,3 +1,13 @@
+---
+title: "AD FS"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Les services de fédération Active Directory (AD FS) permettent la gestion des identités et des accès fédérés en partageant les identités numériques et les droits au-delà des limites de sécurité et d’entreprise. AD FS étend la possibilité d’utiliser la fonctionnalité d’authentification unique disponible dans une seule limite de sécurité ou d’entreprise aux applications accessibles sur Internet pour permettre aux clients, partenaires et fournisseurs une expérience utilisateur simplifiée tout en accédant aux applications web d’une organisation.
 
 

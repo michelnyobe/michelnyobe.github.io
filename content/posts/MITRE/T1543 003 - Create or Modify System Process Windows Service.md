@@ -1,3 +1,13 @@
+---
+title: "T1543"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 mLes pirates peuvent créer ou modifier des services Windows pour exécuter de manière répétée des charges malveillantes dans le cadre de la persistance. Au démarrage de Windows, des programmes ou applications appelés services exécutent des fonctions système en arrière-plan. (Citation : TechNet Services) Les informations de configuration des services Windows, notamment le chemin d'accès aux fichiers exécutables ou aux programmes/commandes de récupération, sont stockées dans le Registre Windows.
 
 #### Example 

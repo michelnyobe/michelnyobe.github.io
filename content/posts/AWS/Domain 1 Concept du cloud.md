@@ -1,3 +1,13 @@
+---
+title: "cloud 01"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 le cloud computing est un modèle permettant un accès réseau omniprésent, pratique et à la demande à un pool partagé de ressources informatiques configurables (par exemple, réseaux, serveurs, stockage, applications et services) qui peuvent être rapidement provisionnées et libérées avec un minimum d'effort de gestion ou de fournisseur de services. 
 
 Libre­-service à la demande _L’utilisateur gère les ressources mis à disposition par le fournisseur provider, et paie en fonction de l’utilisation de ces ressources, il s’agit d’un paiement à l’utilisation._

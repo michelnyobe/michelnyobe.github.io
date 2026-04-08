@@ -1,3 +1,13 @@
+---
+title: "Abuse GPO"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 1. **Introduction à la cybersécurité**
     - Comprendre les bases, les enjeux, les types de cyberattaques et les métiers du domaine.
 2. **Hygiène numérique et bonnes pratiques**

@@ -1,3 +1,13 @@
+---
+title: "odat"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 un outil de test de pénétration open source qui teste la sécurité des bases de données Oracle à distance.
 Grâce à ODAT, vous pouvez :
 

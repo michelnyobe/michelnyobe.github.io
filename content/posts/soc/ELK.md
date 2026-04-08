@@ -1,4 +1,13 @@
- 
+---
+title: "ELK"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+--- 
 je travaille sur unbuntu server  Ubuntu 24.04.3 LTS  https://ubuntu.com/download/server (4g RAM 2 CPU)
 windows server 2022  microsoft.com/en-us/evalcenter/download-windows-server-2022
 et window 10 

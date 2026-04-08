@@ -1,3 +1,13 @@
+---
+title: "AZ-500"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Planifier et implémenter la sécurité pour les réseaux virtuels
 # Qu’est-ce qu’un réseau virtuel Azure ?
 Le réseau virtuel Azure est un service qui fournit le bloc de construction fondamental de votre réseau privé dans Azure.

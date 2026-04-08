@@ -1,3 +1,13 @@
+---
+title: "Phishing"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # SPF ( Sender Policy Framework)
 Le Sender Policy Framework ( SPF ) sert à authentifier l'expéditeur d'un courriel. Grâce à un enregistrement SPF , les fournisseurs d'accès à Internet peuvent vérifier qu'un serveur de messagerie est autorisé à envoyer des courriels pour un domaine spécifique.
 

@@ -1,3 +1,13 @@
+---
+title: "Gouvernance de Microsoft Entra ID"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 Microsoft Entra ID Governance est une solution de gouvernance des identités qui permet aux organisations d'améliorer leur productivité, de renforcer leur sécurité et de se conformer plus facilement aux exigences réglementaires et de conformité. Microsoft Entra ID Governance vous permet de garantir automatiquement l'accès des bonnes personnes aux bonnes ressources grâce à l'automatisation des processus d'identité et d'accès, à la délégation aux groupes d'entreprise et à une visibilité accrue.
 ## Cycle de vie de l'identité
 Dans Microsoft Entra ID Governance, vous pouvez automatiser le cycle de vie de l'identité de ces personnes en utilisant :

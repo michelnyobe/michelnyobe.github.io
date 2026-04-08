@@ -40,5 +40,12 @@ http://localhost:7474/
 Bloodhound
 
 
+# lancer bloodhound 
+
+```
+sudo ./bloodhound-cli up
+```
+
+
 https://bloodhound.readthedocs.io/en/latest/index.html
 https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/

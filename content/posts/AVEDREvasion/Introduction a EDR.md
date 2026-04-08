@@ -1,3 +1,13 @@
+---
+title: "Introduction a EDR"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 # Introduction 
 Endpoint Detection and Response ( EDR ) est une solution de sécurité conçue pour surveiller, détecter et contrer les menaces avancées au niveau des terminaux. 
 

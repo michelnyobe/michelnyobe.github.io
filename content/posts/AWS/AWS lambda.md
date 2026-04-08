@@ -1,3 +1,13 @@
+---
+title: "AWS lambda"
+date: 2026-03-06T10:00:00+02:00
+draft: true
+tags: ["pentest", "Active Directory", "PowerView", "reconnaissance", "CRTP", "red team"]
+categories: ["Red Team", "pentester"]
+summary: ""
+showToc: true
+tocOpen: true
+---
 AWS Lambda est un service de calcul sans serveur qui vous permet d'exécuter du code sans provisionner ni gérer de serveurs. Vous ne payez que pour le temps de calcul consommé ; aucun frais n'est appliqué lorsque votre code n'est pas exécuté
 
 ### Principaux avantages du sans serveur :
