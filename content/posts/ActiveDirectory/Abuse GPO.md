@@ -370,17 +370,17 @@ Add-ADGroupMember -Identity "Utilisateurs de gestion à distance" -Members laras
 
 Le compte **`larass`** est volontairement membre du groupe **Utilisateurs de gestion à distance** sur le DC : cela permet l'accès WinRM, mais sans aucun privilège élevé. C'est un scénario réaliste où un compte technique se retrouve avec un peu trop d'accès.
 
-![Texte alternatif](/images/Pasted image 20260427150449.png)
+![Texte alternatif](/images/20260427150449.png)
 
 ### 4.3 Création de la GPO vulnérable
 
 **Créez un objet de stratégie de groupe** (GPO) sur le contrôleur de domaine avec  **des droits de modification délégués à larass**  (simulant des erreurs de configuration réelles dues à une délégation excessive de pouvoirs par le service d'assistance ou à des scripts hérités).
 
-![Texte alternatif](/images/Pasted image 20260427151439.png)
+![Texte alternatif](/images/20260427151439.png)
 
-![Texte alternatif](/images/Pasted image 20260427151609.png)
+![Texte alternatif](/images/20260427151609.png)
 
-![Texte alternatif](/images/Pasted image 20260427152028.png)
+![Texte alternatif](/images/20260427152028.png)
 
 Cette permission équivaut à **GenericAll** sur la GPO. C'est exactement le type de délégation qu'on retrouve dans les environnements réels où le helpdesk obtient un accès "pour pouvoir aider rapidement".
 À ce stade, le lab est armé. Côté attaquant, on bascule sur Kali.
@@ -408,9 +408,9 @@ net user larass /domain
 
 ```
 
-![Texte alternatif](/images/Pasted image 20260427152946.png)
+![Texte alternatif](/images/20260427152946.png)
 
-![Texte alternatif](/images/Pasted image 20260427153230.png)
+![Texte alternatif](/images/20260427153230.png)
 
 Le retour confirme : `larass` est dans **Domain Users** et **Remote Management Users**. Aucun groupe sensible. Sur le papier, le compte est sans intérêt.
 
@@ -426,11 +426,11 @@ L'option `-c all` lance toutes les méthodes de collecte, dont **ACL** et **Obje
 bloodhound-python -u larass -p 'Password@1' -ns 192.168.17.144 -d nyoma.local -c all
 ```
 
-![Texte alternatif](/images/Pasted image 20260427153800.png)
+![Texte alternatif](/images/20260427153800.png)
 
-![Texte alternatif](/images/Pasted image 20260427154010.png)
+![Texte alternatif](/images/20260427154010.png)
 
-![Texte alternatif](/images/Pasted image 20260427154218.png)
+![Texte alternatif](/images/20260427154218.png)
 
 Sur le nœud `larass`, on observe trois arêtes vers `VULN GPO@NYOMA.LOCAL` :
 - **GenericWrite**
@@ -440,7 +440,7 @@ N'importe laquelle suffit à compromettre la GPO.
 
 ### 5.3 Extraction du GUID
 
-![Texte alternatif](/images/Pasted image 20260427154742.png)
+![Texte alternatif](/images/20260427154742.png)
 
 BloodHound affiche le **Distinguished Name** de la GPO dans le panneau d'information :
 
@@ -485,7 +485,7 @@ Par défaut, l'outil crée un compte local administrateur avec les credentials :
 - **Login** : `john`
 - **Password** : `H4x00r123..`
 
-![Texte alternatif](/images/Pasted image 20260427160019.png)
+![Texte alternatif](/images/20260427160019.png)
 
 Sortie attendue :
 
@@ -503,13 +503,13 @@ cmd.exe /c "net user john H4x00r123.. /add && net localgroup administrators john
 
 ```
 
-![Texte alternatif](/images/Pasted image 20260427160505.png)
+![Texte alternatif](/images/20260427160505.png)
 
-![Texte alternatif](/images/Pasted image 20260427160550.png)
+![Texte alternatif](/images/20260427160550.png)
 
 #### 6.1.4 Validation côté attaquant
 
-![Texte alternatif](/images/Pasted image 20260427162352.png)
+![Texte alternatif](/images/20260427162352.png)
 
 Après le refresh GPO (ou un `gpupdate /force`), on se connecte en tant que `john` sur le DC :
 
@@ -527,7 +527,7 @@ whoami /priv
 
 ```
 
-![Texte alternatif](/images/Pasted image 20260427162513.png)
+![Texte alternatif](/images/20260427162513.png)
 
 On observe les privilèges complets d'un local admin :
 - `SeDebugPrivilege`
