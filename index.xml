@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.161.1</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Fri, 06 Mar 2026 10:00:00 +0200</lastBuildDate>
@@ -509,6 +509,17 @@ Cette puissance fait des GPO un vecteur d&amp;rsquo;attaque redoutable. Une seul
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/activedirectory/methodologie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/methodologie/</guid>
+      <description>&lt;h1 id=&#34;enumeration&#34;&gt;enumeration&lt;/h1&gt;
+&lt;p&gt;nmap
+enum4linux
+kerbrute&lt;/p&gt;
+&lt;h1&gt;&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/azure/implement-multifactor-authentication-mfa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/azure/implement-multifactor-authentication-mfa/</guid>
@@ -541,6 +552,256 @@ Cette puissance fait des GPO un vecteur d&amp;rsquo;attaque redoutable. Une seul
 &lt;blockquote&gt;
 &lt;p&gt;[!NOTE]
 Ceci est une remarque&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/certifications/cartp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/certifications/cartp/</guid>
+      <description>&lt;h1 id=&#34;-checklist-de-préparation-cartp&#34;&gt;✅ Checklist de préparation CARTP&lt;/h1&gt;
+&lt;p&gt;Liste des compétences et tâches à maîtriser pour la certification &lt;strong&gt;Certified Azure Red Team Professional (CARTP®)&lt;/strong&gt; — Altered Security.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;i-introduction--concepts-fondamentaux&#34;&gt;I. Introduction &amp;amp; Concepts fondamentaux&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre Azure et Azure AD (Entra ID)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Maîtriser l&amp;rsquo;architecture Azure et les role assignments&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les concepts : Management Groups, Subscriptions, Resource Groups, Resources&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre Azure Resource Manager (ARM)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les Managed Identities (System-assigned vs User-assigned)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les rôles Azure AD et leur relation avec les rôles Azure&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Maîtriser la méthodologie d&amp;rsquo;attaque et l&amp;rsquo;Azure Kill Chain&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Différencier Azure RBAC vs Azure AD Roles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ii-recon--discovery&#34;&gt;II. Recon &amp;amp; Discovery&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Effectuer de l&amp;rsquo;OSINT sur une organisation cible&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire de l&amp;rsquo;énumération non authentifiée d&amp;rsquo;un tenant Azure&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Découvrir le tenant ID à partir d&amp;rsquo;un domaine&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Énumérer les sous-domaines pour découvrir les services Azure utilisés&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Valider les adresses email d&amp;rsquo;une organisation (user enumeration)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les permissions par défaut d&amp;rsquo;un utilisateur Azure AD dans un tenant&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser des outils comme &lt;code&gt;o365creeper&lt;/code&gt;, &lt;code&gt;MSOLSpray&lt;/code&gt;, &lt;code&gt;AADInternals&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Identifier si une organisation utilise Azure AD / Federation / Hybrid&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;iii-initial-access&#34;&gt;III. Initial Access&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les opsec fails liés au password spraying en cloud&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Maîtriser les permissions MS Graph API (low-impact vs high-impact)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Exécuter une attaque &lt;strong&gt;Illicit Consent Grant&lt;/strong&gt; contre des simulations utilisateur&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Passer d&amp;rsquo;un access token à la compromission d&amp;rsquo;une workstation&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser d&amp;rsquo;applications web internet-facing pour obtenir un foothold&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser une Managed Identity assignée à une web app pour pivoter&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de Storage Accounts non sécurisés (blobs anonymes)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Exécuter des attaques de &lt;strong&gt;phishing&lt;/strong&gt; pour obtenir des credentials clear-text&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser des Application credentials (client_id/secret) pour accéder au tenant&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser du CI/CD (compromission compte GitHub → accès tenant Azure)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre Device Code Phishing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;iv-enumeration-authentifiée&#34;&gt;IV. Enumeration (authentifiée)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Énumérer users, groups, devices, service principals, applications, roles dans Azure AD&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Lister les objets possédés par un objet Azure AD (mapping d&amp;rsquo;attack paths)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser &lt;strong&gt;Azure AD Module&lt;/strong&gt; (AzureAD / MSOnline)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser &lt;strong&gt;Az PowerShell&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser &lt;strong&gt;Az CLI&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Énumérer les device identities (active devices, owners, state)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Trouver les service principals abusables (app password, ownership, roles)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Énumérer les ressources Azure : VMs, Storage Accounts, Key Vaults, Blobs&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Énumérer Automation Accounts, Deployment Templates, App Services, Function Apps&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Énumérer les role assignments pour mapper les attack paths&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser &lt;strong&gt;ROADRecon&lt;/strong&gt; pour l&amp;rsquo;énumération&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser &lt;strong&gt;AzureHound&lt;/strong&gt; pour l&amp;rsquo;énumération&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Différencier l&amp;rsquo;énumération Azure AD vs on-prem AD&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser l&amp;rsquo;&lt;strong&gt;ARM REST API&lt;/strong&gt; pour l&amp;rsquo;énumération&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Utiliser la &lt;strong&gt;MS Graph REST API&lt;/strong&gt; pour l&amp;rsquo;énumération&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;v-privilege-escalation&#34;&gt;V. Privilege Escalation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser des &lt;strong&gt;Automation Accounts&lt;/strong&gt; (Runbooks, Run As accounts)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser des &lt;strong&gt;Key Vaults&lt;/strong&gt; pour PrivEsc&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser des &lt;strong&gt;Storage Accounts&lt;/strong&gt; pour PrivEsc&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de la &lt;strong&gt;Deployment History&lt;/strong&gt; (extraction de secrets)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Escalader via les &lt;strong&gt;Custom Roles&lt;/strong&gt; (Azure AD et Azure)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de l&amp;rsquo;Ownership sur des ressources&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de l&amp;rsquo;ajout d&amp;rsquo;application password pour PrivEsc&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser des role assignments (horizontal &amp;amp; vertical)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de &lt;strong&gt;Custom Script Extension&lt;/strong&gt; pour exécuter en SYSTEM sur VM&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de &lt;strong&gt;RunCommand&lt;/strong&gt; sur Azure VMs&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les &lt;strong&gt;Dynamic Groups&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser de la membership rule des Dynamic Groups pour rejoindre un groupe&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Identifier les chemins de PrivEsc cross-subscription&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vi-lateral-movement&#34;&gt;VI. Lateral Movement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser des &lt;strong&gt;Hybrid Workers&lt;/strong&gt; via Runbooks pour passer du cloud à l&amp;rsquo;on-prem&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire du lateral movement GitHub → Azure tenant via GitHub Actions + Function App&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Exécuter une attaque &lt;strong&gt;Pass-The-PRT&lt;/strong&gt; (replay du PRT cookie)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser &lt;strong&gt;Intune&lt;/strong&gt; pour exécuter des commandes sur des machines on-prem&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Attaquer les &lt;strong&gt;Application Proxy&lt;/strong&gt; apps (cloud → on-prem)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre et abuser &lt;strong&gt;Password Hash Sync (PHS)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre et abuser &lt;strong&gt;Pass-Through Authentication (PTA)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre et abuser &lt;strong&gt;Federation (AD FS)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire du lateral movement on-prem → cloud via Hybrid Identity&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire du lateral movement entre tenants&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vii-persistence&#34;&gt;VII. Persistence&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Identifier les opportunités de persistance liées à l&amp;rsquo;Hybrid Identity&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Abuser &lt;strong&gt;AZUREADSSOACC&lt;/strong&gt; pour la persistance via Seamless SSO&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre la criticité du serveur &lt;strong&gt;Azure AD Connect&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Réaliser une persistance OS-level sur Azure AD Connect&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Exécuter l&amp;rsquo;attaque &lt;strong&gt;Skeleton Key dans le cloud&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Exécuter l&amp;rsquo;attaque &lt;strong&gt;Golden SAML&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mettre en place la persistance via Storage Accounts&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mettre en place la persistance via Applications &amp;amp; Service Principals&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mettre en place la persistance via Consents et Permissions OAuth&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mettre en place la persistance via Azure VMs et NSGs&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Créer des Custom Azure roles et Custom Azure AD roles pour persistance&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Backdoor un Service Principal (ajout de credentials)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;viii-data-mining&#34;&gt;VIII. Data Mining&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Extraire des secrets depuis les &lt;strong&gt;Key Vaults&lt;/strong&gt; via Managed Identity&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mapper les attack paths en lisant les role assignments&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Extraire des secrets depuis la &lt;strong&gt;Deployment History&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Extraire les application passwords clear-text d&amp;rsquo;une workstation Azure compromise&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Extraire les tokens (refresh, access) d&amp;rsquo;une workstation compromise&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Extraire des secrets depuis le &lt;strong&gt;Blob Storage&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Lire les variables d&amp;rsquo;environnement / app settings dans Function Apps &amp;amp; App Services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ix-defenses-à-comprendre-côté-défensif&#34;&gt;IX. Defenses (à comprendre côté défensif)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Connaître la guidance Microsoft par catégorie de défense&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Maîtriser les &lt;strong&gt;Conditional Access Policies (CAP)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Maîtriser &lt;strong&gt;Privileged Identity Management (PIM)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;Azure AD Identity Protection&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;Microsoft Defender for Cloud&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;Just-in-Time (JIT) access&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;Adaptive Network Hardening (ANH)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;Adaptive Application Control&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;File Integrity Monitoring (FIM)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre &lt;strong&gt;Continuous Access Evaluation (CAE)&lt;/strong&gt; et son impact sur le replay de tokens&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Connaître les différentes méthodes d&amp;rsquo;enforcement MFA dans Azure AD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;x-defenses-bypass&#34;&gt;X. Defenses Bypass&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Pratiquer les bypass des &lt;strong&gt;Conditional Access Policies&lt;/strong&gt; les plus courantes&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Pratiquer l&amp;rsquo;opsec pour éviter les détections d&amp;rsquo;&lt;strong&gt;Azure AD Identity Protection&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass &lt;strong&gt;JIT&lt;/strong&gt; pour accéder aux VMs&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass &lt;strong&gt;ANH&lt;/strong&gt; et &lt;strong&gt;NSGs&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass &lt;strong&gt;Azure Firewall&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass &lt;strong&gt;Cloud Workload Protection&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-sous-section-mfa-bypass-focus-du-lab-manual&#34;&gt;🔐 Sous-section MFA Bypass (focus du lab manual)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les différentes méthodes d&amp;rsquo;enforcement MFA (per-user, CA, Security Defaults)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Evading Mandatory MFA Enforcement&lt;/strong&gt; (technique pointée dans le lab manual)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Identifier les comptes/scénarios non couverts par MFA (legacy auth, service accounts)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass MFA via legacy authentication protocols (si encore activé)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass MFA via service principals / application authentication&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass MFA via PRT / Pass-The-PRT (déjà MFA-claimed)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass MFA via Family of Client IDs (FOCI) et token swap&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bypass MFA via device code phishing&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre l&amp;rsquo;impact du device compliance / Hybrid Azure AD Joined sur MFA&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Comprendre les exclusions de Conditional Access et leur abus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-outils-à-maîtriser-transverse&#34;&gt;🛠️ Outils à maîtriser (transverse)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;AADInternals&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;ROADtools&lt;/strong&gt; / ROADRecon&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;AzureHound&lt;/strong&gt; + BloodHound&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;MicroBurst&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;PowerZure&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Az PowerShell&lt;/strong&gt; + &lt;strong&gt;Az CLI&lt;/strong&gt; + &lt;strong&gt;AzureAD module&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;TokenTactics / TokenTacticsV2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;GraphRunner&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Stormspotter&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;MSOLSpray&lt;/strong&gt; (password spraying)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;o365creeper&lt;/strong&gt; (user enumeration)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-préparation-examen-24h-hands-on&#34;&gt;📝 Préparation examen (24h hands-on)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; S&amp;rsquo;entraîner à rédiger un rapport pro avec proof-of-completion&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Prendre des screenshots à chaque étape pendant le lab&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Préparer son cheat sheet personnel (commandes Az / Graph / outils)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Refaire les 4 Kill Chains du lab + le CTF en autonomie&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tester les attaques avec les 3 modèles d&amp;rsquo;Hybrid Identity (PHS / PTA / Federation)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Vérifier l&amp;rsquo;accès au lab et au student VM avant le jour J&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Compromettre toutes les ressources mentionnées dans la page exam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=SK1zgqaAZ2E&amp;amp;list=PLyBFM3O1Pe7AB8WeKcieHmlewL6BZYWN6&#34;&gt;https://www.youtube.com/watch?v=SK1zgqaAZ2E&amp;list=PLyBFM3O1Pe7AB8WeKcieHmlewL6BZYWN6&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/certifications/scsc03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/certifications/scsc03/</guid>
+      <description>&lt;h1 id=&#34;roadmap-de-préparation--aws-certified-security--specialty-scs-c03&#34;&gt;Roadmap de préparation — AWS Certified Security – Specialty (SCS-C03)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Pour :&lt;/strong&gt; Michel &lt;strong&gt;Date de départ :&lt;/strong&gt; 29 avril 2026 &lt;strong&gt;Cible :&lt;/strong&gt; réussir l&amp;rsquo;examen &lt;strong&gt;SCS-C03&lt;/strong&gt; (lancé décembre 2025) — 750/1000 minimum, 170 min, ~65 questions&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;Nouveautés clés C02 → C03&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;IAM passe de 16 % à 20 %&lt;/strong&gt; — c&amp;rsquo;est désormais &lt;strong&gt;le domaine le plus lourd&lt;/strong&gt; (avant c&amp;rsquo;était Infrastructure Security).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Detection et Incident Response sont maintenant deux domaines distincts&lt;/strong&gt; (avant : un seul à 14 %).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nouveaux formats de questions&lt;/strong&gt; : &lt;strong&gt;ordering&lt;/strong&gt; (mettre des étapes dans l&amp;rsquo;ordre) et &lt;strong&gt;matching&lt;/strong&gt; (associer des éléments).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nouveaux sujets 2026&lt;/strong&gt; : logging aligné &lt;strong&gt;OCSF&lt;/strong&gt; (Open Cybersecurity Schema Framework) avec &lt;strong&gt;Security Lake&lt;/strong&gt;, &lt;strong&gt;guardrails pour l&amp;rsquo;IA générative&lt;/strong&gt; (Bedrock Guardrails, sécurité Bedrock).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-domaines--pondérations-scs-c03&#34;&gt;1. Domaines &amp;amp; pondérations (SCS-C03)&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Domaine&lt;/th&gt;
+          &lt;th&gt;Pondération&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Detection&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;16 %&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Incident Response&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;14 %&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Infrastructure Security&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;18 %&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Identity and Access Management&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;20 %&lt;/strong&gt; ⭐&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Data Protection&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;18 %&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Security Foundations and Governance&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;14 %&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;➡️ &lt;strong&gt;IAM + Data Protection + Infrastructure Security = 56 %&lt;/strong&gt; : c&amp;rsquo;est votre cœur de cible. ➡️ &lt;strong&gt;Detection + Incident Response = 30 %&lt;/strong&gt; : ne les négligez surtout pas, ils sont maintenant séparés et pèsent plus qu&amp;rsquo;avant.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -837,6 +1098,13 @@ Nmap done: 1 IP address (1 host up) scanned in 195.90 seconds
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/mes-courses/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://redops-academy.coursestack.com/dashboard&#34;&gt;https://redops-academy.coursestack.com/dashboard&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/outils/enum4linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/enum4linux/</guid>
+      <description>&lt;p&gt;Enum4linux est un outil open source permettant d&amp;rsquo;énumérer des informations sur les systèmes Windows et Samba. Il s&amp;rsquo;agit d&amp;rsquo;une surcouche des outils Samba smbclient, rpclient, net et nmblookup, regroupant leurs fonctionnalités dans une interface unique et conviviale&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

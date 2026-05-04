@@ -398,9 +398,15 @@
     <loc>https://nyobemichel.me/tags/papermod/</loc>
     <lastmod>2025-04-22T20:00:00+02:00</lastmod>
   </url><url>
+    <loc>https://nyobemichel.me/posts/activedirectory/methodologie/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/azure/implement-multifactor-authentication-mfa/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/black-friday/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/certifications/cartp/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/certifications/scsc03/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/enumeration/enumeration---snmp/</loc>
   </url><url>
@@ -409,6 +415,8 @@
     <loc>https://nyobemichel.me/posts/labs/tp---iris/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/mes-courses/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/enum4linux/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/splunk/</loc>
   </url><url>
