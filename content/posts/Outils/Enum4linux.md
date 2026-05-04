@@ -1,0 +1,1 @@
+Enum4linux est un outil open source permettant d'énumérer des informations sur les systèmes Windows et Samba. Il s'agit d'une surcouche des outils Samba smbclient, rpclient, net et nmblookup, regroupant leurs fonctionnalités dans une interface unique et conviviale

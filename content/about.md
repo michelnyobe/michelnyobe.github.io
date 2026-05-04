@@ -57,6 +57,8 @@ https://www.root-me.org/vladimirlarass
 
 ## Expériences
 
+#### 🛡️ Ingénieur Sécurité – **ATOS** (04/2026 – maintenant)
+- 
 
 #### 🛡️ Développeur Logiciels de Sécurité – **ENIX** (07/2023 – 01/2024)
 - Développement de scripts (Next.js, GraphQL)
