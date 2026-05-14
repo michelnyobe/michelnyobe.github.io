@@ -31,6 +31,15 @@ Cette puissance fait des GPO un vecteur d&amp;rsquo;attaque redoutable. Une seul
       <description>Une vue d&amp;rsquo;ensemble structurée des prérequis et méthodologies à maîtriser avant de réaliser un test d’intrusion.</description>
     </item>
     <item>
+      <title>Dcsync Attaque</title>
+      <link>https://nyobemichel.me/posts/activedirectory/dcsync-attaque/</link>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/dcsync-attaque/</guid>
+      <description>&lt;h3 id=&#34;quest-ce-que-dcsync-&#34;&gt;Qu&amp;rsquo;est-ce que DCSync ?&lt;/h3&gt;
+&lt;p&gt;DCSync est une technique d&amp;rsquo;attaque post-exploitation qui permet à un attaquant de &lt;strong&gt;récupérer les hashes de mots de passe&lt;/strong&gt; (NTLM, Kerberos keys, historiques) de &lt;strong&gt;n&amp;rsquo;importe quel compte&lt;/strong&gt; d&amp;rsquo;un domaine Active Directory — y compris le compte ultime : &lt;strong&gt;krbtgt&lt;/strong&gt; — sans jamais exécuter de code sur un contrôleur de domaine.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;attaque a été popularisée par Benjamin Delpy (auteur de Mimikatz) et Vincent Le Toux en 2015. Son originalité : elle ne nécessite &lt;strong&gt;aucun accès physique ou RDP&lt;/strong&gt; sur le DC. L&amp;rsquo;attaquant se fait passer pour un contrôleur de domaine légitime et demande une réplication.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Maîtriser l&#39;AS-REP Roasting : De la Vulnérabilité au Crack de Mot de Passe</title>
       <link>https://nyobemichel.me/posts/activedirectory/as-rep-roasting/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
