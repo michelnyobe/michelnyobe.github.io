@@ -15,6 +15,7 @@ tocOpen: true
 # Qu'est-ce que Microsoft Entra ID ?
 
 Microsoft Entra ID est un service cloud pour la gestion des identité et des accès que des employés peuvent utiliser pour accéder  a des ressources externes .
+Microsoft Entra ID les aide également à accéder aux ressources internes telles que les applications sur votre intranet d’entreprise et toutes les applications cloud développées pour votre propre organisation.
 
 ## Que sont les licences Microsoft Entra ID ?
 
@@ -30,9 +31,12 @@ Les identités gérées par Azure sont une fonctionnalité d'Azure qui permet au
 - **Invité interne** : ces utilisateurs possèdent un compte dans votre locataire, mais disposent de privilèges d'invité. Il est possible qu'ils aient été créés dans votre locataire avant la disponibilité de la collaboration B2B.
 - **Membre externe** : ces utilisateurs s'authentifient via un compte externe, mais disposent d'un accès membre à votre locataire. Ces types d'utilisateurs sont courants dans les organisations multilocataires.
 - **Invité externe** : ces utilisateurs sont de véritables invités de votre locataire qui s'authentifient à l'aide d'une méthode externe et qui disposent de privilèges de niveau invité.
+
 # les groupes Microsoft Entra
+
 Il existe deux types de groupes et trois types d'adhésion. Consultez les options pour trouver la combinaison adaptée à votre situation.
 ### Types de groupes
+
 **Sécurité**: utilisé pour gérer l'accès des utilisateurs et des ordinateurs aux ressources partagées.
 **Microsoft 365** : offre des opportunités de collaboration en donnant aux membres du groupe l’accès à une boîte aux lettres partagée, un calendrier, des fichiers, des sites SharePoint, etc.
 
@@ -57,3 +61,5 @@ Il peut également configurer le groupe pour qu'il accepte automatiquement tous 
 ## Microsoft Entra External ID
 
 Microsoft Entra External ID combine des solutions performantes pour collaborer avec des personnes extérieures à votre organisation. Grâce à ces fonctionnalités, vous pouvez autoriser des identités externes à accéder en toute sécurité à vos applications et ressources.
+
+Faca494214

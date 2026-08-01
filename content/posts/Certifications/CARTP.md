@@ -197,3 +197,6 @@ Liste des compétences et tâches à maîtriser pour la certification **Certifie
 https://www.youtube.com/watch?v=SK1zgqaAZ2E&list=PLyBFM3O1Pe7AB8WeKcieHmlewL6BZYWN6
 
 https://raucousthrone3.com/certified-azure-red-team-expert-carte-review/
+
+
+Vado344491

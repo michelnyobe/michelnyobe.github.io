@@ -8,4 +8,11 @@ summary: "Responder"
 showToc: true
 tocOpen: true
 ---
-LLMNR/NBT-NS/mDNS Poisoner
+Responder est un outil relativement simple, mais il est extrêmement puissant et possède de nombreuses fonctions différentes.
+
+Démarrer Responder avec les paramètres par défaut
+
+```
+sudo responder -I ens224
+```
+
