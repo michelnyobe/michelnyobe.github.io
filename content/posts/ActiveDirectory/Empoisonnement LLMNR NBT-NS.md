@@ -26,7 +26,8 @@ Comme aucune authentification n'est requise, n'importe quel appareil du sous-ré
 Lors d'une attaque par empoisonnement LLMNR , l'attaquant intercepte les requêtes de résolution de noms diffusées et y répond en fournissant sa propre adresse IP. La victime est alors amenée à établir une connexion avec le système de l'attaquant. Durant ce processus, elle transmet automatiquement des données d'authentification, telles que des hachages NTLMv2 .
 
 
-![llmnr](/images/LLMNR.svg)
+![llmnr](/images/LLMNR.png)
+
 
 Plusieurs outils peuvent être utilisés pour tenter l'empoisonnement LLMNR & NBT-NS  :
 

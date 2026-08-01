@@ -1,9 +1,16 @@
 ---
-title: "Mouvement lateral"
+title: Mouvement lateral
 date: 2026-07-26
-draft: false
-tags: ["pentest", "Active Directory", "Responder", "CPTS"]
-categories: ["CPTS", "pentester","AD"]
+draft: true
+tags:
+  - pentest
+  - Active Directory
+  - Responder
+  - CPTS
+categories:
+  - CPTS
+  - pentester
+  - AD
 summary: ""
 showToc: true
 tocOpen: true
