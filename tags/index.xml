@@ -9,16 +9,72 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo -- 0.164.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 06 Mar 2026 10:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Directory</title>
       <link>https://nyobemichel.me/tags/active-directory/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CPTS</title>
+      <link>https://nyobemichel.me/tags/cpts/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/cpts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pentest</title>
+      <link>https://nyobemichel.me/tags/pentest/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/pentest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Responder</title>
+      <link>https://nyobemichel.me/tags/responder/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/responder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BSCP</title>
+      <link>https://nyobemichel.me/tags/bscp/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/bscp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerView</title>
+      <link>https://nyobemichel.me/tags/powerview/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/powerview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reconnaissance</title>
+      <link>https://nyobemichel.me/tags/reconnaissance/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/reconnaissance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red Team</title>
+      <link>https://nyobemichel.me/tags/red-team/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/red-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>https://nyobemichel.me/tags/web/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/tags/web/</guid>
       <description></description>
     </item>
     <item>
@@ -26,34 +82,6 @@
       <link>https://nyobemichel.me/tags/crtp/</link>
       <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/crtp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pentest</title>
-      <link>https://nyobemichel.me/tags/pentest/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/pentest/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PowerView</title>
-      <link>https://nyobemichel.me/tags/powerview/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/powerview/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reconnaissance</title>
-      <link>https://nyobemichel.me/tags/reconnaissance/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/reconnaissance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Red Team</title>
-      <link>https://nyobemichel.me/tags/red-team/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/red-team/</guid>
       <description></description>
     </item>
     <item>
@@ -313,13 +341,6 @@
       <link>https://nyobemichel.me/tags/tryhackme/</link>
       <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/tags/tryhackme/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>https://nyobemichel.me/tags/web/</link>
-      <pubDate>Tue, 06 May 2025 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/tags/web/</guid>
       <description></description>
     </item>
     <item>

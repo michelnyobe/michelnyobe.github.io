@@ -9,30 +9,51 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo -- 0.164.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 06 Mar 2026 10:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Methodologie</title>
-      <link>https://nyobemichel.me/categories/methodologie/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
-      <guid>https://nyobemichel.me/categories/methodologie/</guid>
+      <title>AD</title>
+      <link>https://nyobemichel.me/categories/ad/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/ad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CPTS</title>
+      <link>https://nyobemichel.me/categories/cpts/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/cpts/</guid>
       <description></description>
     </item>
     <item>
       <title>Pentester</title>
       <link>https://nyobemichel.me/categories/pentester/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/categories/pentester/</guid>
       <description></description>
     </item>
     <item>
       <title>Red Team</title>
       <link>https://nyobemichel.me/categories/red-team/</link>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/categories/red-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WEB</title>
+      <link>https://nyobemichel.me/categories/web/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/categories/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Methodologie</title>
+      <link>https://nyobemichel.me/categories/methodologie/</link>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/categories/methodologie/</guid>
       <description></description>
     </item>
     <item>

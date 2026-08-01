@@ -9,11 +9,39 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo -- 0.164.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Fri, 06 Mar 2026 10:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Empoisonnement LLMNR NBT-NS</title>
+      <link>https://nyobemichel.me/posts/activedirectory/empoisonnement-llmnr-nbt-ns/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/activedirectory/empoisonnement-llmnr-nbt-ns/</guid>
+      <description>LLMNR et NBT-NS n&amp;rsquo;authentifient pas leurs réponses : cette faille de conception permet à un attaquant du réseau local d&amp;rsquo;usurper des hôtes légitimes, de capturer des hachages NTLMv2 avec Responder ou Inveigh, puis de les craquer hors ligne avec Hashcat.</description>
+    </item>
+    <item>
+      <title>Mouvement lateral</title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/mouvement-lateral/</link>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/mouvement-lateral/</guid>
+      <description>&lt;p&gt;Les trois piliers du mouvement latéral&lt;/p&gt;
+&lt;p&gt;Exécution à distance&lt;/p&gt;
+&lt;p&gt;Il s&amp;rsquo;agit de la forme la plus directe de déplacement latéral : l&amp;rsquo;exécution de commandes sur un hôte distant à l&amp;rsquo;aide des protocoles d&amp;rsquo;administration Windows légitimes.&lt;/p&gt;
+&lt;p&gt;Réutilisation des identifiants&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est là que ça devient intéressant. Dans un flux d&amp;rsquo;authentification standard, vous fournissez un mot de passe et le système le hache pour vérifier votre identité.&lt;/p&gt;
+&lt;p&gt;Pivotement&lt;/p&gt;
+&lt;p&gt;Les réseaux réels sont segmentés. Le VLAN serveur, le réseau de gestion et leDCLes sous-réseaux se situent souvent sur des segments de réseau inaccessibles directement depuis votre point d&amp;rsquo;entrée initial.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Burpsuite</title>
+      <link>https://nyobemichel.me/posts/outils/burpsuite/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/burpsuite/</guid>
+      <description>&lt;h1 id=&#34;web-fuzzer&#34;&gt;Web fuzzer&lt;/h1&gt;
+&lt;h2 id=&#34;burp-intruder&#34;&gt;Burp Intruder&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>Abuse GPO</title>
       <link>https://nyobemichel.me/posts/activedirectory/abuse-gpo/</link>
@@ -544,6 +572,24 @@ Ceci est une remarque&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/certifications/az-800/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/certifications/az-800/</guid>
+      <description>&lt;h1 id=&#34;administration-de-linfrastructure-principale-windows-server-hybride&#34;&gt;Administration de l’infrastructure principale Windows Server hybride&lt;/h1&gt;
+&lt;h2 id=&#34;competences-mésurées&#34;&gt;Competences mésurées&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Déployer et gérer services de domaine Active Directory (AD DS) dans des environnements locaux et cloud&lt;/li&gt;
+&lt;li&gt;Gérer des serveurs et des charges de travail Windows Server dans un environnement hybride&lt;/li&gt;
+&lt;li&gt;Gérer des machines virtuelles et des conteneurs&lt;/li&gt;
+&lt;li&gt;Implémenter et gérer une infrastructure réseau locale et hybride&lt;/li&gt;
+&lt;li&gt;Gérer les services de stockage et de fichiers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;déployer-et-gérer-une-infrastructure-didentité&#34;&gt;Déployer et gérer une infrastructure d’identité&lt;/h3&gt;
+&lt;h4 id=&#34;-définir-les-forêts-et-les-domaines-ad-ds&#34;&gt;# Définir les forêts et les domaines AD DS&lt;/h4&gt;
+&lt;p&gt;Les objets suivants existent dans le domaine racine de la forêt :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/certifications/cartp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/certifications/cartp/</guid>
@@ -733,6 +779,13 @@ Ceci est une remarque&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/certifications/sc-200/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/certifications/sc-200/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/certifications/scsc03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/certifications/scsc03/</guid>
@@ -750,45 +803,45 @@ Ceci est une remarque&lt;/p&gt;</description>
 &lt;hr&gt;
 &lt;h2 id=&#34;1-domaines--pondérations-scs-c03&#34;&gt;1. Domaines &amp;amp; pondérations (SCS-C03)&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Domaine&lt;/th&gt;
-          &lt;th&gt;Pondération&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;Detection&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;16 %&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;2&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;Incident Response&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;14 %&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;Infrastructure Security&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;18 %&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;Identity and Access Management&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;20 %&lt;/strong&gt; ⭐&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;Data Protection&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;18 %&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;6&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;Security Foundations and Governance&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;14 %&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;#&lt;/th&gt;
+					&lt;th&gt;Domaine&lt;/th&gt;
+					&lt;th&gt;Pondération&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;Detection&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;16 %&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;Incident Response&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;14 %&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;3&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;Infrastructure Security&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;18 %&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;4&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;Identity and Access Management&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;20 %&lt;/strong&gt; ⭐&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;5&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;Data Protection&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;18 %&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;6&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;Security Foundations and Governance&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;14 %&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;➡️ &lt;strong&gt;IAM + Data Protection + Infrastructure Security = 56 %&lt;/strong&gt; : c&amp;rsquo;est votre cœur de cible. ➡️ &lt;strong&gt;Detection + Incident Response = 30 %&lt;/strong&gt; : ne les négligez surtout pas, ils sont maintenant séparés et pèsent plus qu&amp;rsquo;avant.&lt;/p&gt;</description>
     </item>
@@ -815,6 +868,202 @@ Ceci est une remarque&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
+      <link>https://nyobemichel.me/posts/labs/ad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/labs/ad/</guid>
+      <description>&lt;h1 id=&#34;configuration-du-reseau&#34;&gt;configuration du reseau&lt;/h1&gt;
+&lt;h2 id=&#34;créer-les-vmnets-dans-vmware&#34;&gt;Créer les VMnets dans VMware&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;VMnet&lt;/th&gt;
+					&lt;th&gt;Mode&lt;/th&gt;
+					&lt;th&gt;Usage&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;VMnet10&lt;/td&gt;
+					&lt;td&gt;Host-only&lt;/td&gt;
+					&lt;td&gt;VLAN AD/LAN&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;VMnet11&lt;/td&gt;
+					&lt;td&gt;Host-only&lt;/td&gt;
+					&lt;td&gt;VLAN DMZ&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;VMnet12&lt;/td&gt;
+					&lt;td&gt;Host-only&lt;/td&gt;
+					&lt;td&gt;VLAN SOC&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;VMnet13&lt;/td&gt;
+					&lt;td&gt;Host-only&lt;/td&gt;
+					&lt;td&gt;VLAN DevOps&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;VMnet14&lt;/td&gt;
+					&lt;td&gt;Host-only&lt;/td&gt;
+					&lt;td&gt;VLAN Red Team&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;![[Pasted image 20260707155924.png]]&lt;/p&gt;
+&lt;h1 id=&#34;configuration-du-firewall&#34;&gt;configuration du firewall&lt;/h1&gt;
+&lt;p&gt;nous avons mis sur une vm un parefeu OPNSense&lt;/p&gt;
+&lt;h1 id=&#34;configuration-de-lad-ds&#34;&gt;configuration de l&amp;rsquo;AD DS&lt;/h1&gt;
+&lt;h4 id=&#34;déployer-des-contrôleurs-de-domaine-ad-ds&#34;&gt;Déployer des contrôleurs de domaine AD DS&lt;/h4&gt;
+&lt;p&gt;ip add : 10.10.0.10
+nom : DC01&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;VM&lt;/th&gt;
+					&lt;th&gt;VMnet correct&lt;/th&gt;
+					&lt;th&gt;IP attendue&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;DC01, CL01&lt;/td&gt;
+					&lt;td&gt;VMnet10&lt;/td&gt;
+					&lt;td&gt;10.10.0.x ✅&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Serveur Web (DMZ)&lt;/td&gt;
+					&lt;td&gt;VMnet11&lt;/td&gt;
+					&lt;td&gt;10.20.0.x ✅&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Kali (Red Team)&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;VMnet12&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;10.50.0.x&lt;/strong&gt; ✅&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Wazuh (SOC)&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;VMnet13&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;10.30.0.x&lt;/strong&gt; ✅&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Docker/K8s&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;VMnet14&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;10.40.0.x&lt;/strong&gt; ✅&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;architecture-lab-cybersécurité--nyomalocal&#34;&gt;Architecture Lab Cybersécurité — nyoma.local&lt;/h1&gt;
+&lt;h2 id=&#34;informations-générales&#34;&gt;Informations générales&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Élément&lt;/th&gt;
+					&lt;th&gt;Valeur&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Domaine AD&lt;/td&gt;
+					&lt;td&gt;lab.local&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Hyperviseur&lt;/td&gt;
+					&lt;td&gt;VMware Workstation Pro&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Hôte&lt;/td&gt;
+					&lt;td&gt;Intel i7-11850H · 32 Go RAM · 954 Go&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Firewall&lt;/td&gt;
+					&lt;td&gt;OPNsense 26.1.6_2 (amd64)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Contrôleur de domaine&lt;/td&gt;
+					&lt;td&gt;DC01 — Windows Server 2025&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;topologie-réseau&#34;&gt;Topologie réseau&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Internet (WiFi — Livebox)
+        │
+        │ NAT VMware (VMnet8 — 192.168.98.0/24)
+        │
+┌───────▼────────────────────────────────────────────┐
+│              OPNsense Firewall                      │
+│   WAN : em1 → 192.168.98.133/24 (DHCP NAT)        │
+│   OPT1: em0 → 10.10.0.1/24  (AD/LAN)              │
+│   OPT2: em2 → 10.20.0.1/24  (DMZ)                 │
+│   OPT3: em3 → 10.30.0.1/24  (SOC)                 │
+│   OPT4: em4 → 10.40.0.1/24  (DevOps)              │
+│   OPT5: em5 → 10.50.0.1/24  (Red Team)            │
+└────┬──────────┬──────────┬──────────┬──────────────┘
+     │          │          │          │
+  VMnet10    VMnet11    VMnet13    VMnet14
+  AD/LAN      DMZ        SOC      Red Team
+  10.10.0     10.20.0   10.30.0   10.50.0
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;plan-dadressage-vlan&#34;&gt;Plan d&amp;rsquo;adressage VLAN&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;VLAN&lt;/th&gt;
+					&lt;th&gt;Zone&lt;/th&gt;
+					&lt;th&gt;Subnet&lt;/th&gt;
+					&lt;th&gt;Gateway&lt;/th&gt;
+					&lt;th&gt;VMnet&lt;/th&gt;
+					&lt;th&gt;Plage DHCP&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;OPT1&lt;/td&gt;
+					&lt;td&gt;AD / LAN&lt;/td&gt;
+					&lt;td&gt;10.10.0.0/24&lt;/td&gt;
+					&lt;td&gt;10.10.0.1&lt;/td&gt;
+					&lt;td&gt;VMnet10&lt;/td&gt;
+					&lt;td&gt;10.10.0.100–200&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;OPT2&lt;/td&gt;
+					&lt;td&gt;DMZ&lt;/td&gt;
+					&lt;td&gt;10.20.0.0/24&lt;/td&gt;
+					&lt;td&gt;10.20.0.1&lt;/td&gt;
+					&lt;td&gt;VMnet11&lt;/td&gt;
+					&lt;td&gt;10.20.0.100–200&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;OPT3&lt;/td&gt;
+					&lt;td&gt;SOC / SIEM&lt;/td&gt;
+					&lt;td&gt;10.30.0.0/24&lt;/td&gt;
+					&lt;td&gt;10.30.0.1&lt;/td&gt;
+					&lt;td&gt;VMnet13&lt;/td&gt;
+					&lt;td&gt;10.30.0.100–200&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;OPT4&lt;/td&gt;
+					&lt;td&gt;DevOps&lt;/td&gt;
+					&lt;td&gt;10.40.0.0/24&lt;/td&gt;
+					&lt;td&gt;10.40.0.1&lt;/td&gt;
+					&lt;td&gt;VMnet14&lt;/td&gt;
+					&lt;td&gt;10.40.0.100–200&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;OPT5&lt;/td&gt;
+					&lt;td&gt;Red Team&lt;/td&gt;
+					&lt;td&gt;10.50.0.0/24&lt;/td&gt;
+					&lt;td&gt;10.50.0.1&lt;/td&gt;
+					&lt;td&gt;VMnet12&lt;/td&gt;
+					&lt;td&gt;10.50.0.100–200&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note mapping VMnet réel&lt;/strong&gt; : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://nyobemichel.me/posts/labs/lab---ad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/labs/lab---ad/</guid>
@@ -837,115 +1086,115 @@ departement / OU&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Nom complet&lt;/th&gt;
-          &lt;th&gt;Username&lt;/th&gt;
-          &lt;th&gt;Groupe&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Michel Nyobe&lt;/td&gt;
-          &lt;td&gt;mnyobe&lt;/td&gt;
-          &lt;td&gt;GG_IT_Admin&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Sarah Laurent&lt;/td&gt;
-          &lt;td&gt;slaurent&lt;/td&gt;
-          &lt;td&gt;GG_RH&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Thomas Dubois&lt;/td&gt;
-          &lt;td&gt;tdubois&lt;/td&gt;
-          &lt;td&gt;GG_Finance&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Julien Moreau&lt;/td&gt;
-          &lt;td&gt;jmoreau&lt;/td&gt;
-          &lt;td&gt;GG_IT_Support&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Clara Petit&lt;/td&gt;
-          &lt;td&gt;cpetit&lt;/td&gt;
-          &lt;td&gt;GG_Marketing&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Antoine Martin&lt;/td&gt;
-          &lt;td&gt;amartin&lt;/td&gt;
-          &lt;td&gt;GG_Sales&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Laura Bernard&lt;/td&gt;
-          &lt;td&gt;lbernard&lt;/td&gt;
-          &lt;td&gt;GG_Sales&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Kevin Robert&lt;/td&gt;
-          &lt;td&gt;krobert&lt;/td&gt;
-          &lt;td&gt;GG_Production&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Sophie Leroy&lt;/td&gt;
-          &lt;td&gt;sleroy&lt;/td&gt;
-          &lt;td&gt;GG_RH&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Hugo Fontaine&lt;/td&gt;
-          &lt;td&gt;hfontaine&lt;/td&gt;
-          &lt;td&gt;GG_IT_Admin&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Emma Rousseau&lt;/td&gt;
-          &lt;td&gt;erousseau&lt;/td&gt;
-          &lt;td&gt;GG_Finance&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Lucas Garnier&lt;/td&gt;
-          &lt;td&gt;lgarnier&lt;/td&gt;
-          &lt;td&gt;GG_IT_Support&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Inès Chevalier&lt;/td&gt;
-          &lt;td&gt;ichevalier&lt;/td&gt;
-          &lt;td&gt;GG_Marketing&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Nathan Girard&lt;/td&gt;
-          &lt;td&gt;ngirard&lt;/td&gt;
-          &lt;td&gt;GG_Production&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Camille Bonnet&lt;/td&gt;
-          &lt;td&gt;cbonnet&lt;/td&gt;
-          &lt;td&gt;GG_Direction&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Maxime Marchand&lt;/td&gt;
-          &lt;td&gt;mmarchand&lt;/td&gt;
-          &lt;td&gt;GG_Server_Admins&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Léa Dupont&lt;/td&gt;
-          &lt;td&gt;ldupont&lt;/td&gt;
-          &lt;td&gt;GG_Backup_Operators&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Enzo Mercier&lt;/td&gt;
-          &lt;td&gt;emergier&lt;/td&gt;
-          &lt;td&gt;GG_IT_Support&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Chloé Faure&lt;/td&gt;
-          &lt;td&gt;cfaure&lt;/td&gt;
-          &lt;td&gt;GG_Marketing&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Adam Noel&lt;/td&gt;
-          &lt;td&gt;anoel&lt;/td&gt;
-          &lt;td&gt;GG_Sales&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Nom complet&lt;/th&gt;
+					&lt;th&gt;Username&lt;/th&gt;
+					&lt;th&gt;Groupe&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Michel Nyobe&lt;/td&gt;
+					&lt;td&gt;mnyobe&lt;/td&gt;
+					&lt;td&gt;GG_IT_Admin&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sarah Laurent&lt;/td&gt;
+					&lt;td&gt;slaurent&lt;/td&gt;
+					&lt;td&gt;GG_RH&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Thomas Dubois&lt;/td&gt;
+					&lt;td&gt;tdubois&lt;/td&gt;
+					&lt;td&gt;GG_Finance&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Julien Moreau&lt;/td&gt;
+					&lt;td&gt;jmoreau&lt;/td&gt;
+					&lt;td&gt;GG_IT_Support&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Clara Petit&lt;/td&gt;
+					&lt;td&gt;cpetit&lt;/td&gt;
+					&lt;td&gt;GG_Marketing&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Antoine Martin&lt;/td&gt;
+					&lt;td&gt;amartin&lt;/td&gt;
+					&lt;td&gt;GG_Sales&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Laura Bernard&lt;/td&gt;
+					&lt;td&gt;lbernard&lt;/td&gt;
+					&lt;td&gt;GG_Sales&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Kevin Robert&lt;/td&gt;
+					&lt;td&gt;krobert&lt;/td&gt;
+					&lt;td&gt;GG_Production&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sophie Leroy&lt;/td&gt;
+					&lt;td&gt;sleroy&lt;/td&gt;
+					&lt;td&gt;GG_RH&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Hugo Fontaine&lt;/td&gt;
+					&lt;td&gt;hfontaine&lt;/td&gt;
+					&lt;td&gt;GG_IT_Admin&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Emma Rousseau&lt;/td&gt;
+					&lt;td&gt;erousseau&lt;/td&gt;
+					&lt;td&gt;GG_Finance&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Lucas Garnier&lt;/td&gt;
+					&lt;td&gt;lgarnier&lt;/td&gt;
+					&lt;td&gt;GG_IT_Support&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Inès Chevalier&lt;/td&gt;
+					&lt;td&gt;ichevalier&lt;/td&gt;
+					&lt;td&gt;GG_Marketing&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Nathan Girard&lt;/td&gt;
+					&lt;td&gt;ngirard&lt;/td&gt;
+					&lt;td&gt;GG_Production&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Camille Bonnet&lt;/td&gt;
+					&lt;td&gt;cbonnet&lt;/td&gt;
+					&lt;td&gt;GG_Direction&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Maxime Marchand&lt;/td&gt;
+					&lt;td&gt;mmarchand&lt;/td&gt;
+					&lt;td&gt;GG_Server_Admins&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Léa Dupont&lt;/td&gt;
+					&lt;td&gt;ldupont&lt;/td&gt;
+					&lt;td&gt;GG_Backup_Operators&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Enzo Mercier&lt;/td&gt;
+					&lt;td&gt;emergier&lt;/td&gt;
+					&lt;td&gt;GG_IT_Support&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Chloé Faure&lt;/td&gt;
+					&lt;td&gt;cfaure&lt;/td&gt;
+					&lt;td&gt;GG_Marketing&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Adam Noel&lt;/td&gt;
+					&lt;td&gt;anoel&lt;/td&gt;
+					&lt;td&gt;GG_Sales&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;1 compte service faible :
 svc-backup&lt;br&gt;
@@ -1101,6 +1350,109 @@ Nmap done: 1 IP address (1 host up) scanned in 195.90 seconds
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nyobemichel.me/posts/outils/splunk/</guid>
       <description>&lt;p&gt;sudo /opt/splunk/bin/splunk start &amp;ndash;accept-license &amp;ndash;run-as-root&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/introduction-a-windows-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/introduction-a-windows-cli/</guid>
+      <description>&lt;h1 id=&#34;les-bases-de-linvite-de-commande&#34;&gt;les bases de l&amp;rsquo;invite de commande&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/pivotement-tunnelage-et-redirection-de-ports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/pivotement-tunnelage-et-redirection-de-ports/</guid>
+      <description>&lt;h1 id=&#34;introduction-au-pivoting-au-tunneling-et-à-la-redirection-de-port&#34;&gt;Introduction au Pivoting, au Tunneling et à la Redirection de Port&lt;/h1&gt;
+&lt;p&gt;Il existe de nombreux termes différents pour décrire un hôte compromis que nous pouvons utiliser pour pivoter (pivot) vers un segment de réseau auparavant inaccessible. Certains des plus courants sont :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hôte Pivot (Pivot Host)&lt;/li&gt;
+&lt;li&gt;Proxy&lt;/li&gt;
+&lt;li&gt;Point d&amp;rsquo;ancrage (Foothold)&lt;/li&gt;
+&lt;li&gt;Système tête de pont (Beach Head system)&lt;/li&gt;
+&lt;li&gt;Hôte de rebond (Jump Host)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L&amp;rsquo;utilisation principale du pivoting est de contourner la segmentation (à la fois physique et virtuelle) pour accéder à un réseau isolé. Le tunneling, quant à lui, est un sous-ensemble du pivoting. Le tunneling encapsule le trafic réseau dans un autre protocole et l&amp;rsquo;achemine à travers celui-ci.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/redteam/infrastructure-c2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/redteam/infrastructure-c2/</guid>
+      <description>&lt;p&gt;listen&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/roadmap/cpts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/roadmap/cpts/</guid>
+      <description>&lt;h1 id=&#34;introduction-et-base-ok&#34;&gt;Introduction et base ok&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Penetration Testing Process  ok&lt;/li&gt;
+&lt;li&gt;Getting Started ok&lt;/li&gt;
+&lt;li&gt;Introduction to Networking ok&lt;/li&gt;
+&lt;li&gt;Linux Fundamentals ok&lt;/li&gt;
+&lt;li&gt;Windows Fundamentals ok&lt;/li&gt;
+&lt;li&gt;Introduction to Windows CLI&lt;/li&gt;
+&lt;li&gt;Introduction to Active Directory ok&lt;/li&gt;
+&lt;li&gt;Introduction to Web Applications ok&lt;/li&gt;
+&lt;li&gt;Web Requests ok&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;reconnaissance-et-enumeration-ok&#34;&gt;Reconnaissance et enumeration ok&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Network Enumeration with Nmap ok&lt;/li&gt;
+&lt;li&gt;Footprinting ok&lt;/li&gt;
+&lt;li&gt;Information Gathering - Web Edition ok&lt;/li&gt;
+&lt;li&gt;File Transfers ok&lt;/li&gt;
+&lt;li&gt;Vulnerability Assessment ok&lt;/li&gt;
+&lt;li&gt;Shells &amp;amp; Payloads ok&lt;/li&gt;
+&lt;li&gt;Using the Metasploit Framework ok&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;exploitation--mouvement-latéral&#34;&gt;Exploitation &amp;amp; Mouvement Latéral&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Password Attacks&lt;/li&gt;
+&lt;li&gt;Attacking Common Services ok&lt;/li&gt;
+&lt;li&gt;Pivoting, Tunneling, and Port Forwarding&lt;/li&gt;
+&lt;li&gt;Active Directory Enumeration &amp;amp; Attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;web-exploitation&#34;&gt;Web Exploitation&lt;/h1&gt;
+&lt;p&gt;Using Web Proxies
+21. Attacking Web Applications with Ffuf
+22. Login Brute Forcing
+23. SQL Injection Fundamentals ok
+24. SQLMap Essentials
+25. Cross-Site Scripting (XSS)
+26. File Inclusion
+27. File Upload Attacks
+28. Command Injections
+29. Web Attacks
+30. Attacking Common Applications&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://nyobemichel.me/posts/soc/opnsense/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/soc/opnsense/</guid>
+      <description>&lt;h2 id=&#34;sommaire&#34;&gt;Sommaire&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#1-introduction--pourquoi-&#34;&gt;Introduction — Pourquoi ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#2-pr%C3%A9sentation-de-la-solution--quoi-&#34;&gt;Présentation de la solution — Quoi ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#3-environnement-et-architecture--o%C3%B9-&#34;&gt;Environnement et architecture — Où ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#4-installation--comment--partie-1&#34;&gt;Installation — Comment ? (partie 1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#5-configuration--comment--partie-2&#34;&gt;Configuration — Comment ? (partie 2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#6-tests-et-validation&#34;&gt;Tests et validation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#7-exploitation-et-maintenance&#34;&gt;Exploitation et maintenance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/b6911413-e4fe-4152-95fd-514a6655b7b8#8-annexes&#34;&gt;Annexes&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-introduction--pourquoi-&#34;&gt;1. Introduction — Pourquoi ?&lt;/h2&gt;
+&lt;h3 id=&#34;11-contexte-du-projet&#34;&gt;1.1. Contexte du projet&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Décrire le contexte du déploiement réseau au sein de l&amp;rsquo;agence : besoins, situation existante, raisons du projet.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;12-objectifs-de-la-mise-en-place-dopnsense&#34;&gt;1.2. Objectifs de la mise en place d&amp;rsquo;OPNsense&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sécurisation du réseau, filtrage du trafic, segmentation (VLAN), accès distant (VPN), etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

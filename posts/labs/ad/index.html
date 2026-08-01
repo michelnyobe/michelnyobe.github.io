@@ -1,0 +1,441 @@
+<!doctype html><html lang=fr dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>larass0x04</title><meta name=keywords content><meta name=description content="configuration du reseau
+Créer les VMnets dans VMware
+
+	
+			
+					VMnet
+					Mode
+					Usage
+			
+	
+	
+			
+					VMnet10
+					Host-only
+					VLAN AD/LAN
+			
+			
+					VMnet11
+					Host-only
+					VLAN DMZ
+			
+			
+					VMnet12
+					Host-only
+					VLAN SOC
+			
+			
+					VMnet13
+					Host-only
+					VLAN DevOps
+			
+			
+					VMnet14
+					Host-only
+					VLAN Red Team
+			
+	
+
+![[Pasted image 20260707155924.png]]
+configuration du firewall
+nous avons mis sur une vm un parefeu OPNSense
+configuration de l&rsquo;AD DS
+Déployer des contrôleurs de domaine AD DS
+ip add : 10.10.0.10
+nom : DC01
+
+	
+			
+					VM
+					VMnet correct
+					IP attendue
+			
+	
+	
+			
+					DC01, CL01
+					VMnet10
+					10.10.0.x ✅
+			
+			
+					Serveur Web (DMZ)
+					VMnet11
+					10.20.0.x ✅
+			
+			
+					Kali (Red Team)
+					VMnet12
+					10.50.0.x ✅
+			
+			
+					Wazuh (SOC)
+					VMnet13
+					10.30.0.x ✅
+			
+			
+					Docker/K8s
+					VMnet14
+					10.40.0.x ✅
+			
+	
+
+Architecture Lab Cybersécurité — nyoma.local
+Informations générales
+
+	
+			
+					Élément
+					Valeur
+			
+	
+	
+			
+					Domaine AD
+					lab.local
+			
+			
+					Hyperviseur
+					VMware Workstation Pro
+			
+			
+					Hôte
+					Intel i7-11850H · 32 Go RAM · 954 Go
+			
+			
+					Firewall
+					OPNsense 26.1.6_2 (amd64)
+			
+			
+					Contrôleur de domaine
+					DC01 — Windows Server 2025
+			
+	
+
+
+Topologie réseau
+Internet (WiFi — Livebox)
+        │
+        │ NAT VMware (VMnet8 — 192.168.98.0/24)
+        │
+┌───────▼────────────────────────────────────────────┐
+│              OPNsense Firewall                      │
+│   WAN : em1 → 192.168.98.133/24 (DHCP NAT)        │
+│   OPT1: em0 → 10.10.0.1/24  (AD/LAN)              │
+│   OPT2: em2 → 10.20.0.1/24  (DMZ)                 │
+│   OPT3: em3 → 10.30.0.1/24  (SOC)                 │
+│   OPT4: em4 → 10.40.0.1/24  (DevOps)              │
+│   OPT5: em5 → 10.50.0.1/24  (Red Team)            │
+└────┬──────────┬──────────┬──────────┬──────────────┘
+     │          │          │          │
+  VMnet10    VMnet11    VMnet13    VMnet14
+  AD/LAN      DMZ        SOC      Red Team
+  10.10.0     10.20.0   10.30.0   10.50.0
+
+Plan d&rsquo;adressage VLAN
+
+	
+			
+					VLAN
+					Zone
+					Subnet
+					Gateway
+					VMnet
+					Plage DHCP
+			
+	
+	
+			
+					OPT1
+					AD / LAN
+					10.10.0.0/24
+					10.10.0.1
+					VMnet10
+					10.10.0.100–200
+			
+			
+					OPT2
+					DMZ
+					10.20.0.0/24
+					10.20.0.1
+					VMnet11
+					10.20.0.100–200
+			
+			
+					OPT3
+					SOC / SIEM
+					10.30.0.0/24
+					10.30.0.1
+					VMnet13
+					10.30.0.100–200
+			
+			
+					OPT4
+					DevOps
+					10.40.0.0/24
+					10.40.0.1
+					VMnet14
+					10.40.0.100–200
+			
+			
+					OPT5
+					Red Team
+					10.50.0.0/24
+					10.50.0.1
+					VMnet12
+					10.50.0.100–200
+			
+	
+
+
+Note mapping VMnet réel : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)"><meta name=author content="Michel NYOBE"><link rel=canonical href=https://nyobemichel.me/posts/labs/ad/><link crossorigin=anonymous href=/assets/css/stylesheet.ed42a47c2de72c05bf93ef053b29fa2dd6f1838928545be0be357c9ab66f8ec6.css integrity="sha256-7UKkfC3nLAW/k+8FOyn6Ldbxg4koVFvgvjV8mrZvjsY=" rel="preload stylesheet" as=style><link rel=icon href=https://nyobemichel.me/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://nyobemichel.me/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://nyobemichel.me/favicon-32x32.png><link rel=apple-touch-icon href=https://nyobemichel.me/apple-touch-icon.png><link rel=mask-icon href=https://nyobemichel.me/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=fr href=https://nyobemichel.me/posts/labs/ad/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-S1YCLX5573"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-S1YCLX5573")}</script><meta property="og:url" content="https://nyobemichel.me/posts/labs/ad/"><meta property="og:site_name" content="larass0x04"><meta property="og:title" content="larass0x04"><meta property="og:description" content="configuration du reseau Créer les VMnets dans VMware VMnet Mode Usage VMnet10 Host-only VLAN AD/LAN VMnet11 Host-only VLAN DMZ VMnet12 Host-only VLAN SOC VMnet13 Host-only VLAN DevOps VMnet14 Host-only VLAN Red Team ![[Pasted image 20260707155924.png]]
+configuration du firewall nous avons mis sur une vm un parefeu OPNSense
+configuration de l’AD DS Déployer des contrôleurs de domaine AD DS ip add : 10.10.0.10 nom : DC01
+VM VMnet correct IP attendue DC01, CL01 VMnet10 10.10.0.x ✅ Serveur Web (DMZ) VMnet11 10.20.0.x ✅ Kali (Red Team) VMnet12 10.50.0.x ✅ Wazuh (SOC) VMnet13 10.30.0.x ✅ Docker/K8s VMnet14 10.40.0.x ✅ Architecture Lab Cybersécurité — nyoma.local Informations générales Élément Valeur Domaine AD lab.local Hyperviseur VMware Workstation Pro Hôte Intel i7-11850H · 32 Go RAM · 954 Go Firewall OPNsense 26.1.6_2 (amd64) Contrôleur de domaine DC01 — Windows Server 2025 Topologie réseau Internet (WiFi — Livebox) │ │ NAT VMware (VMnet8 — 192.168.98.0/24) │ ┌───────▼────────────────────────────────────────────┐ │ OPNsense Firewall │ │ WAN : em1 → 192.168.98.133/24 (DHCP NAT) │ │ OPT1: em0 → 10.10.0.1/24 (AD/LAN) │ │ OPT2: em2 → 10.20.0.1/24 (DMZ) │ │ OPT3: em3 → 10.30.0.1/24 (SOC) │ │ OPT4: em4 → 10.40.0.1/24 (DevOps) │ │ OPT5: em5 → 10.50.0.1/24 (Red Team) │ └────┬──────────┬──────────┬──────────┬──────────────┘ │ │ │ │ VMnet10 VMnet11 VMnet13 VMnet14 AD/LAN DMZ SOC Red Team 10.10.0 10.20.0 10.30.0 10.50.0 Plan d’adressage VLAN VLAN Zone Subnet Gateway VMnet Plage DHCP OPT1 AD / LAN 10.10.0.0/24 10.10.0.1 VMnet10 10.10.0.100–200 OPT2 DMZ 10.20.0.0/24 10.20.0.1 VMnet11 10.20.0.100–200 OPT3 SOC / SIEM 10.30.0.0/24 10.30.0.1 VMnet13 10.30.0.100–200 OPT4 DevOps 10.40.0.0/24 10.40.0.1 VMnet14 10.40.0.100–200 OPT5 Red Team 10.50.0.0/24 10.50.0.1 VMnet12 10.50.0.100–200 Note mapping VMnet réel : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)"><meta property="og:locale" content="fr-fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="og:image" content="https://nyobemichel.me/images/papermod-cover.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://nyobemichel.me/images/papermod-cover.png"><meta name=twitter:title content><meta name=twitter:description content="configuration du reseau
+Créer les VMnets dans VMware
+
+	
+			
+					VMnet
+					Mode
+					Usage
+			
+	
+	
+			
+					VMnet10
+					Host-only
+					VLAN AD/LAN
+			
+			
+					VMnet11
+					Host-only
+					VLAN DMZ
+			
+			
+					VMnet12
+					Host-only
+					VLAN SOC
+			
+			
+					VMnet13
+					Host-only
+					VLAN DevOps
+			
+			
+					VMnet14
+					Host-only
+					VLAN Red Team
+			
+	
+
+![[Pasted image 20260707155924.png]]
+configuration du firewall
+nous avons mis sur une vm un parefeu OPNSense
+configuration de l&rsquo;AD DS
+Déployer des contrôleurs de domaine AD DS
+ip add : 10.10.0.10
+nom : DC01
+
+	
+			
+					VM
+					VMnet correct
+					IP attendue
+			
+	
+	
+			
+					DC01, CL01
+					VMnet10
+					10.10.0.x ✅
+			
+			
+					Serveur Web (DMZ)
+					VMnet11
+					10.20.0.x ✅
+			
+			
+					Kali (Red Team)
+					VMnet12
+					10.50.0.x ✅
+			
+			
+					Wazuh (SOC)
+					VMnet13
+					10.30.0.x ✅
+			
+			
+					Docker/K8s
+					VMnet14
+					10.40.0.x ✅
+			
+	
+
+Architecture Lab Cybersécurité — nyoma.local
+Informations générales
+
+	
+			
+					Élément
+					Valeur
+			
+	
+	
+			
+					Domaine AD
+					lab.local
+			
+			
+					Hyperviseur
+					VMware Workstation Pro
+			
+			
+					Hôte
+					Intel i7-11850H · 32 Go RAM · 954 Go
+			
+			
+					Firewall
+					OPNsense 26.1.6_2 (amd64)
+			
+			
+					Contrôleur de domaine
+					DC01 — Windows Server 2025
+			
+	
+
+
+Topologie réseau
+Internet (WiFi — Livebox)
+        │
+        │ NAT VMware (VMnet8 — 192.168.98.0/24)
+        │
+┌───────▼────────────────────────────────────────────┐
+│              OPNsense Firewall                      │
+│   WAN : em1 → 192.168.98.133/24 (DHCP NAT)        │
+│   OPT1: em0 → 10.10.0.1/24  (AD/LAN)              │
+│   OPT2: em2 → 10.20.0.1/24  (DMZ)                 │
+│   OPT3: em3 → 10.30.0.1/24  (SOC)                 │
+│   OPT4: em4 → 10.40.0.1/24  (DevOps)              │
+│   OPT5: em5 → 10.50.0.1/24  (Red Team)            │
+└────┬──────────┬──────────┬──────────┬──────────────┘
+     │          │          │          │
+  VMnet10    VMnet11    VMnet13    VMnet14
+  AD/LAN      DMZ        SOC      Red Team
+  10.10.0     10.20.0   10.30.0   10.50.0
+
+Plan d&rsquo;adressage VLAN
+
+	
+			
+					VLAN
+					Zone
+					Subnet
+					Gateway
+					VMnet
+					Plage DHCP
+			
+	
+	
+			
+					OPT1
+					AD / LAN
+					10.10.0.0/24
+					10.10.0.1
+					VMnet10
+					10.10.0.100–200
+			
+			
+					OPT2
+					DMZ
+					10.20.0.0/24
+					10.20.0.1
+					VMnet11
+					10.20.0.100–200
+			
+			
+					OPT3
+					SOC / SIEM
+					10.30.0.0/24
+					10.30.0.1
+					VMnet13
+					10.30.0.100–200
+			
+			
+					OPT4
+					DevOps
+					10.40.0.0/24
+					10.40.0.1
+					VMnet14
+					10.40.0.100–200
+			
+			
+					OPT5
+					Red Team
+					10.50.0.0/24
+					10.50.0.1
+					VMnet12
+					10.50.0.100–200
+			
+	
+
+
+Note mapping VMnet réel : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://nyobemichel.me/posts/"},{"@type":"ListItem","position":2,"name":"","item":"https://nyobemichel.me/posts/labs/ad/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"","name":"","description":"configuration du reseau Créer les VMnets dans VMware VMnet Mode Usage VMnet10 Host-only VLAN AD/LAN VMnet11 Host-only VLAN DMZ VMnet12 Host-only VLAN SOC VMnet13 Host-only VLAN DevOps VMnet14 Host-only VLAN Red Team ![[Pasted image 20260707155924.png]]\nconfiguration du firewall nous avons mis sur une vm un parefeu OPNSense\nconfiguration de l\u0026rsquo;AD DS Déployer des contrôleurs de domaine AD DS ip add : 10.10.0.10 nom : DC01\nVM VMnet correct IP attendue DC01, CL01 VMnet10 10.10.0.x ✅ Serveur Web (DMZ) VMnet11 10.20.0.x ✅ Kali (Red Team) VMnet12 10.50.0.x ✅ Wazuh (SOC) VMnet13 10.30.0.x ✅ Docker/K8s VMnet14 10.40.0.x ✅ Architecture Lab Cybersécurité — nyoma.local Informations générales Élément Valeur Domaine AD lab.local Hyperviseur VMware Workstation Pro Hôte Intel i7-11850H · 32 Go RAM · 954 Go Firewall OPNsense 26.1.6_2 (amd64) Contrôleur de domaine DC01 — Windows Server 2025 Topologie réseau Internet (WiFi — Livebox) │ │ NAT VMware (VMnet8 — 192.168.98.0/24) │ ┌───────▼────────────────────────────────────────────┐ │ OPNsense Firewall │ │ WAN : em1 → 192.168.98.133/24 (DHCP NAT) │ │ OPT1: em0 → 10.10.0.1/24 (AD/LAN) │ │ OPT2: em2 → 10.20.0.1/24 (DMZ) │ │ OPT3: em3 → 10.30.0.1/24 (SOC) │ │ OPT4: em4 → 10.40.0.1/24 (DevOps) │ │ OPT5: em5 → 10.50.0.1/24 (Red Team) │ └────┬──────────┬──────────┬──────────┬──────────────┘ │ │ │ │ VMnet10 VMnet11 VMnet13 VMnet14 AD/LAN DMZ SOC Red Team 10.10.0 10.20.0 10.30.0 10.50.0 Plan d\u0026rsquo;adressage VLAN VLAN Zone Subnet Gateway VMnet Plage DHCP OPT1 AD / LAN 10.10.0.0/24 10.10.0.1 VMnet10 10.10.0.100–200 OPT2 DMZ 10.20.0.0/24 10.20.0.1 VMnet11 10.20.0.100–200 OPT3 SOC / SIEM 10.30.0.0/24 10.30.0.1 VMnet13 10.30.0.100–200 OPT4 DevOps 10.40.0.0/24 10.40.0.1 VMnet14 10.40.0.100–200 OPT5 Red Team 10.50.0.0/24 10.50.0.1 VMnet12 10.50.0.100–200 Note mapping VMnet réel : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)\n","keywords":[],"articleBody":"configuration du reseau Créer les VMnets dans VMware VMnet Mode Usage VMnet10 Host-only VLAN AD/LAN VMnet11 Host-only VLAN DMZ VMnet12 Host-only VLAN SOC VMnet13 Host-only VLAN DevOps VMnet14 Host-only VLAN Red Team ![[Pasted image 20260707155924.png]]\nconfiguration du firewall nous avons mis sur une vm un parefeu OPNSense\nconfiguration de l’AD DS Déployer des contrôleurs de domaine AD DS ip add : 10.10.0.10 nom : DC01\nVM VMnet correct IP attendue DC01, CL01 VMnet10 10.10.0.x ✅ Serveur Web (DMZ) VMnet11 10.20.0.x ✅ Kali (Red Team) VMnet12 10.50.0.x ✅ Wazuh (SOC) VMnet13 10.30.0.x ✅ Docker/K8s VMnet14 10.40.0.x ✅ Architecture Lab Cybersécurité — nyoma.local Informations générales Élément Valeur Domaine AD lab.local Hyperviseur VMware Workstation Pro Hôte Intel i7-11850H · 32 Go RAM · 954 Go Firewall OPNsense 26.1.6_2 (amd64) Contrôleur de domaine DC01 — Windows Server 2025 Topologie réseau Internet (WiFi — Livebox) │ │ NAT VMware (VMnet8 — 192.168.98.0/24) │ ┌───────▼────────────────────────────────────────────┐ │ OPNsense Firewall │ │ WAN : em1 → 192.168.98.133/24 (DHCP NAT) │ │ OPT1: em0 → 10.10.0.1/24 (AD/LAN) │ │ OPT2: em2 → 10.20.0.1/24 (DMZ) │ │ OPT3: em3 → 10.30.0.1/24 (SOC) │ │ OPT4: em4 → 10.40.0.1/24 (DevOps) │ │ OPT5: em5 → 10.50.0.1/24 (Red Team) │ └────┬──────────┬──────────┬──────────┬──────────────┘ │ │ │ │ VMnet10 VMnet11 VMnet13 VMnet14 AD/LAN DMZ SOC Red Team 10.10.0 10.20.0 10.30.0 10.50.0 Plan d’adressage VLAN VLAN Zone Subnet Gateway VMnet Plage DHCP OPT1 AD / LAN 10.10.0.0/24 10.10.0.1 VMnet10 10.10.0.100–200 OPT2 DMZ 10.20.0.0/24 10.20.0.1 VMnet11 10.20.0.100–200 OPT3 SOC / SIEM 10.30.0.0/24 10.30.0.1 VMnet13 10.30.0.100–200 OPT4 DevOps 10.40.0.0/24 10.40.0.1 VMnet14 10.40.0.100–200 OPT5 Red Team 10.50.0.0/24 10.50.0.1 VMnet12 10.50.0.100–200 Note mapping VMnet réel : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)\nInventaire des machines virtuelles ✅ Déployées VM OS IP VMnet Zone RAM Statut OPNsense OPNsense 26.1.6 10.10.0.1 (LAN) NAT+tous Firewall 2 Go ✅ Opérationnel DC01 Windows Server 2025 10.10.0.10 VMnet10 AD/LAN 4 Go ✅ Opérationnel CL01 Windows 11 Pro 10.10.0.101 (DHCP) VMnet10 AD/LAN 4 Go ✅ Jointé au domaine Wazuh-SOC Ubuntu 22.04 LTS 10.30.0.10 VMnet13 SOC 8 Go 🔧 En cours Kali Linux Kali 2026.2 10.50.0.x VMnet12 Red Team 4 Go ⚠️ Internet KO ⏳ À déployer VM OS IP prévue VMnet Zone RAM DC02 Windows Server 2025 10.10.0.11 VMnet10 AD/LAN 2 Go Serveur Web Ubuntu 22.04 LTS 10.20.0.10 VMnet11 DMZ 2 Go Docker/K8s Ubuntu 22.04 LTS 10.40.0.10 VMnet14 DevOps 6 Go Active Directory Forêt et domaine Paramètre Valeur Forest Root lab.local NetBIOS LAB DC Principal DC01.lab.local (10.10.0.10) DC Secondaire DC02.child.lab.local (à déployer) OS DC Windows Server 2025 Datacenter Evaluation Rôles FSMO SchemaMaster, DomainNamingMaster, PDCEmulator, RIDMaster Structure OU DC=lab,DC=local └── OU=Corp ├── OU=Users │ ├── OU=Direction → Groupe: GG_Direction │ ├── OU=IT → Groupes: GG_IT_Admin, GG_IT_Support │ ├── OU=Finance → Groupe: GG_Finance │ ├── OU=RH → Groupe: GG_RH │ ├── OU=Marketing → Groupe: GG_Marketing │ └── OU=Support → Groupes: GG_Sales, GG_Production ├── OU=Servers ├── OU=Admins └── OU=ServiceAccounts → Groupe: GG_Backup_Operators Utilisateurs créés (25) Nom complet Username Groupe Département Michel Nyobe mnyobe GG_IT_Admin IT Sarah Laurent slaurent GG_Direction Direction Thomas Dubois tdubois GG_Direction Direction Julien Moreau jmoreau GG_IT_Support IT Clara Petit cpetit GG_Finance Finance Antoine Martin amartin GG_Marketing Marketing Laura Bernard lbernard GG_Finance Finance Kevin Robert krobert GG_Production Support Sophie Leroy sleroy GG_RH RH Hugo Fontaine hfontaine GG_IT_Admin IT Emma Rousseau erousseau GG_Marketing Marketing Lucas Garnier lgarnier GG_IT_Support IT Inès Chevalier ichevalier GG_Marketing Marketing Nathan Girard ngirard GG_IT_Support IT Camille Bonnet cbonnet GG_Finance Finance Maxime Marchand mmarchand GG_Server_Admins Finance Léa Dupont ldupont GG_Backup_Operators RH Enzo Mercier emergier GG_IT_Support Support Chloé Faure cfaure GG_Marketing Marketing Adam Noel anoel GG_Sales Support Comptes spéciaux (Red Team) Username Mot de passe Groupe Objectif jmoreau Welcome1 GG_IT_Support Password Spray svc-backup Backup123 GG_Backup_Operators Kerberoasting adm-tech Admin@Tech2024! Domain Admins Privilege escalation Services configurés OPNsense Service Statut Config Kea DHCPv4 ✅ Actif 5 subnets (10.x0.0.100-200) NAT Outbound ✅ Actif Hybrid mode — toutes interfaces Firewall Rules ✅ Actif Pass sur OPT1–OPT5 DNS Unbound ⏳ À configurer — NTP ⏳ À configurer pool.ntp.org SSH ✅ Actif Port 22 Active Directory (DC01) Service Statut AD DS ✅ Opérationnel DNS Server ✅ Opérationnel DHCP (Windows) Non utilisé (OPNsense gère) CL01 jointé ✅ LAB\\cpetit connecté Phases du projet Phase Description Statut Progression Phase 1 Infrastructure réseau (OPNsense + VLANs) 🔧 En cours 90% Phase 2 Active Directory (DC01 + users) ✅ Terminée 85% Phase 3 SOC / Blue Team (Wazuh + ELK) 🔧 En cours 5% Phase 4 DMZ \u0026 Applications web ⏳ À faire 0% Phase 5 DevOps (Docker + K8s) ⏳ À faire 0% Phase 6 Red Team (Kali + C2) ⏳ À faire 10% Machines Virtuelles — Lab Cybersécurité VMs déployées VM OS IP VMnet RAM CPU Disque Statut OPNsense OPNsense 26.1.6 10.10.0.1 NAT + tous 2 Go 2 vCPU 20 Go ✅ Opérationnel DC01 Windows Server 2025 10.10.0.10 VMnet10 4 Go 2 vCPU 60 Go ✅ Opérationnel CL01 Windows 11 Pro 10.10.0.101 VMnet10 4 Go 4 vCPU 80 Go ✅ Jointé au domaine Kali Linux Kali 2026.2 10.50.0.x VMnet12 8 Go 4 vCPU 80 Go ⚠️ Internet KO Wazuh-SOC Ubuntu 22.04 LTS 10.30.0.10 VMnet13 8 Go 2 vCPU 100 Go 🔧 En cours VMs à déployer VM OS IP prévue VMnet RAM CPU Disque Zone DC02 Windows Server 2025 10.10.0.11 VMnet10 2 Go 2 vCPU 60 Go AD/LAN Serveur Web Ubuntu 22.04 LTS 10.20.0.10 VMnet11 2 Go 2 vCPU 40 Go DMZ Zabbix Ubuntu 22.04 LTS 10.30.0.20 VMnet13 4 Go 2 vCPU 50 Go SOC Docker/K8s Ubuntu 22.04 LTS 10.40.0.10 VMnet14 6 Go 2 vCPU 100 Go DevOps Budget RAM total VM RAM CPU Statut OPNsense 2 Go 2 vCPU ✅ Active DC01 4 Go 2 vCPU ✅ Active DC02 2 Go 2 vCPU ⏳ À déployer CL01 4 Go 2 vCPU ✅ Active Wazuh 4 Go 2 vCPU ✅ Active Zabbix 3 Go 2 vCPU ✅ Active Kali Linux 8 Go 4 vCPU ✅ Active Serveur Web 1 Go 2 vCPU ✅ Active Docker/K8s 6 Go 2 vCPU ⏳ À déployer TOTAL 40 Go 22 vCPU ⚠️ Dépasse 32 Go ⚠️ Attention : Le total prévu (40 Go) dépasse la RAM de l’hôte (32 Go). Ne jamais démarrer toutes les VMs en même temps. Démarrer uniquement les VMs nécessaires à la phase en cours.\nRecommandation démarrage par phase Phase VMs à démarrer RAM utilisée Phase 1-2 (AD) OPNsense + DC01 + CL01 10 Go Phase 3 (SOC) + Wazuh + Zabbix 22 Go Phase 4 (DMZ) + Serveur Web 24 Go Phase 5 (DevOps) + Docker/K8s 30 Go Phase 6 (Red Team) + Kali (arrêter Docker) 28 Go Règles firewall inter-VLAN Source Destination Action Règle OPT1 (LAN) Any ✅ Pass Allow LAN to any OPT2 (DMZ) Any ✅ Pass Allow DMZ to any OPT3 (SOC) Any ✅ Pass Allow SOC to any OPT4 (DevOps) Any ✅ Pass Allow DevOps to any OPT5 (RedTeam) Any ✅ Pass Allow RedTeam to any WAN — NAT Hybrid outbound NAT Roadmap Lab Cybersécurité — Réaliste \u0026 Avancé Objectifs : CPTS (HTB) · CWES · CRTL (ZeroPoint) · Red Team · Exploit Dev · SOC Avancé Architecture finale visée Internet │ OPNsense (Firewall/Router) │ ├── VLAN 10 (AD/LAN) → DC01, DC02, CL01, Matrix (Jump) ├── VLAN 20 (DMZ) → Serveur Web vulnérable ├── VLAN 30 (SOC) → Wazuh, Zabbix ├── VLAN 40 (DevOps) → Docker/K8s (plus tard) └── VLAN 50 (Red Team) → Kali, C2 ÉTAT ACTUEL DES VMs VM Statut IP Rôle OPNsense ✅ Opérationnel 10.10.0.1 Firewall/Router DC01 ✅ Opérationnel 10.10.0.10 Forest lab.local CL01 ✅ Jointé domaine 10.10.0.101 Poste victime Kali Linux ✅ Opérationnel 10.50.0.x Attaquant Wazuh ✅ Opérationnel 10.30.0.100 SIEM/EDR Zabbix ✅ Opérationnel 10.30.0.101 Monitoring Matrix ✅ Opérationnel 10.20.0.101 Application web DC02 ⏳ À installer 10.10.0.11 Child domain PHASE 1 — Socle réseau et sécurité (FAIT À 90%) Objectif : infrastructure stable et sécurisée OPNsense installé et configuré 5 VLANs opérationnels (10/20/30/40/50) Kea DHCP fonctionnel sur tous les VLANs Règles firewall inter-VLAN NAT Outbound configuré DNS Unbound activé NTP configuré (pool.ntp.org) IDS/IPS Suricata activé sur OPNsense Réparer internet Kali (VMnet12) PHASE 2 — Active Directory réaliste (FAIT À 85%) Objectif : environnement AD d’entreprise avec vulnérabilités intentionnelles DC01 Windows Server 2025 — Forest lab.local 25 utilisateurs + groupes (script PowerShell) Structure OU réaliste (IT/Finance/RH/Direction…) CL01 jointé au domaine Comptes faibles : jmoreau (Welcome1) · svc-backup (Backup123) Domain Admin : adm-tech DC02 — Child domain child.lab.local GPO de sécurité de base Auditing activé (logon, object access, privilege use) Matrix — Jump server configuré Kerberoasting : SPN sur svc-backup AS-REP Roasting : compte sans pré-auth Kerberos ACL abusable : WriteDACL, GenericAll sur certains objets Délégation Kerberos non contrainte (unconstrained) AdminSDHolder mal configuré AD CS vulnérable (ESC1, ESC8) sur DC01 PHASE 3 — SOC \u0026 Monitoring (EN COURS) Objectif : détection en temps réel de toutes les attaques 3.1 Wazuh (SIEM/EDR) Wazuh Manager installé (Ubuntu 22.04 — 10.30.0.10) Internet fonctionnel sur Wazuh Dashboard Wazuh accessible Agent Wazuh sur DC01 Agent Wazuh sur CL01 Agent Wazuh sur DC02 (après install) Règles de détection AD : Kerberoasting (Event 4769) Pass-the-Hash (Event 4624 type 3) DCSync (Event 4662) Golden Ticket (Event 4768) BloodHound (LDAP massif) Mimikatz (lsass access) Alertes email/Slack configurées 3.2 Zabbix (Monitoring infrastructure) Zabbix Server installé (Ubuntu 22.04 — 10.30.0.20) Monitoring DC01 (CPU, RAM, services AD) Monitoring CL01 Monitoring OPNsense (SNMP) Monitoring Wazuh lui-même Dashboard personnalisé lab Alertes sur services critiques (AD DS, DNS, Kerberos) 3.3 ELK Stack (optionnel — avancé) Elasticsearch + Kibana sur Wazuh ou VM dédiée Intégration logs OPNsense → ELK Intégration logs DC01 → ELK Dashboards de visualisation PHASE 4 — Jump Server \u0026 Matrix (Pivoting) Objectif : simuler un accès réaliste au SI via un point d’entrée Matrix (Jump server — 10.10.0.50) VM Ubuntu ou Windows Server installée SSH/RDP accessible depuis Kali Connecté au VLAN AD/LAN (VMnet10) Agent Wazuh installé Pivot depuis Kali → Matrix → DC01 Scénarios de pivoting Port forwarding SSH (ssh -L, -R, -D) Chisel/Ligolo-ng pour tunneling Pivoting via SOCKS5 Double pivot : Kali → Matrix → CL01 → DC01 PHASE 5 — Red Team \u0026 C2 (Kali + C2) Objectif : attaques réalistes, techniques CPTS/CWES/CRTL 5.1 C2 Framework Réparer internet Kali (VMnet12 → 10.50.0.x) Havoc C2 installé sur Kali Team server configuré Listener HTTPS sur port 443 Payload généré pour CL01 Sliver C2 (backup/alternative) mTLS listener Implant généré 5.2 Attaques AD (CPTS/CRTL) Reconnaissance BloodHound + SharpHound (graphe AD) ldapdomaindump enum4linux-ng CrackMapExec / NetExec Initial Access Password Spray (jmoreau → Welcome1) AS-REP Roasting Phishing simulé (GoPhish) Privilege Escalation Kerberoasting (svc-backup → Backup123) ACL abuse (WriteDACL) Token impersonation Unconstrained delegation Lateral Movement Pass-the-Hash Pass-the-Ticket OverPass-the-Hash WMI / PSExec / SMBExec Domain Dominance DCSync (secretsdump) Golden Ticket Silver Ticket Diamond Ticket AD CS ESC1/ESC8 Cross-domain attack (lab.local → child.lab.local) Persistence Skeleton Key AdminSDHolder backdoor GPO abuse DCShadow 5.3 Développement d’exploit (CWES) VM dédiée exploit dev (Windows 10 + outils) Buffer overflow (x86/x64) SEH exploitation ROP chains Bypass DEP/ASLR Shellcode custom 5.4 Evasion EDR (CRTL) Bypass Wazuh/AV Process hollowing DLL sideloading AMSI bypass ETW patching Unhooking NTDLL Obfuscation payloads Encodage shellcode Payload chiffré AES In-memory execution Living off the Land (LOLBins) certutil, regsvr32, mshta PowerShell constrained mode bypass PHASE 6 — DMZ \u0026 Applications Web (après certifs) Objectif : pentest web réaliste Serveur Ubuntu en DMZ (VMnet11 — 10.20.0.10) Apache/Nginx installé DVWA (Damn Vulnerable Web App) WebGoat Juice Shop (OWASP) Application custom avec vulnérabilités : SQLi, XSS, SSRF, IDOR, LFI/RFI WAF OPNsense en frontal PHASE 7 — Docker \u0026 Kubernetes (PLUS TARD) VM Ubuntu DevOps (VMnet14 — 10.40.0.10) Docker installé Kubernetes K3s cluster Jenkins CI/CD Pipeline sécurisé avec scan SAST/DAST PLANNING RECOMMANDÉ Semaine 1-2 (maintenant) 1. Finir Phase 1 → DNS Unbound + NTP + Suricata 2. Réparer internet Kali 3. Installer Wazuh complètement + agents 4. Configurer Zabbix monitoring Semaine 3-4 5. DC02 child domain 6. Vulnérabilités AD intentionnelles 7. Jump server Matrix 8. BloodHound reconnaissance Semaine 5-6 9. C2 Havoc opérationnel 10. Premières attaques AD avec détection Wazuh 11. Password Spray + Kerberoasting 12. Exercice Red vs Blue Semaine 7-8 13. Lateral movement + Domain dominance 14. Evasion EDR 15. Développement exploit (CWES) 16. Préparation certifs CPTS/CRTL CERTIFICATIONS VISÉES Certif Organisme Compétences Lien avec le lab CPTS HackTheBox Pentest complet, AD, Web Phases 2+5+6 CWES HackTheBox Exploit Web avancé Phase 6 CRTL ZeroPoint Red Team, C2, Evasion Phase 5 RESSOURCES RAM — DÉMARRAGE PAR SCÉNARIO Scénario VMs actives RAM AD lab seul OPNsense+DC01+CL01 10 Go SOC actif +Wazuh+Zabbix 18 Go Red Team +Kali+C2 26 Go Avec DC02+Matrix +DC02+Matrix 30 Go Tout (max) Toutes ~40 Go ⚠️ Ne jamais dépasser 28-30 Go actifs simultanément sur 32 Go RAM hôte.\n","wordCount":"2063","inLanguage":"fr","image":"https://nyobemichel.me/images/papermod-cover.png","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Michel NYOBE"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyobemichel.me/posts/labs/ad/"},"publisher":{"@type":"Organization","name":"larass0x04","logo":{"@type":"ImageObject","url":"https://nyobemichel.me/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://nyobemichel.me/ accesskey=h title="larass0x04 (Alt + H)">larass0x04</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://nyobemichel.me/about title=Moi><span>Moi</span></a></li><li><a href=https://nyobemichel.me/posts/ title=Articles><span>Articles</span></a></li><li><a href=https://nyobemichel.me/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://nyobemichel.me/categories title=Categories><span>Categories</span></a></li><li><a href=https://nyobemichel.me/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://nyobemichel.me/>Accueil</a>&nbsp;»&nbsp;<a href=https://nyobemichel.me/posts/>Posts</a></div><h1 class="post-title entry-hint-parent"></h1><div class=post-meta>10 min&nbsp;·&nbsp;Michel NYOBE</div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table des matières</span></summary><div class=inner><ul><li><a href=#configuration-du-reseau aria-label="configuration du reseau">configuration du reseau</a><ul><li><a href=#cr%c3%a9er-les-vmnets-dans-vmware aria-label="Créer les VMnets dans VMware">Créer les VMnets dans VMware</a></li></ul></li><li><a href=#configuration-du-firewall aria-label="configuration du firewall">configuration du firewall</a></li><li><a href=#configuration-de-lad-ds aria-label="configuration de l&rsquo;AD DS">configuration de l&rsquo;AD DS</a><ul><ul><ul><li><a href=#d%c3%a9ployer-des-contr%c3%b4leurs-de-domaine-ad-ds aria-label="Déployer des contrôleurs de domaine AD DS">Déployer des contrôleurs de domaine AD DS</a></li></ul></ul></ul></li><li><a href=#architecture-lab-cybers%c3%a9curit%c3%a9--nyomalocal aria-label="Architecture Lab Cybersécurité — nyoma.local">Architecture Lab Cybersécurité — nyoma.local</a><ul><li><a href=#informations-g%c3%a9n%c3%a9rales aria-label="Informations générales">Informations générales</a></li><li><a href=#topologie-r%c3%a9seau aria-label="Topologie réseau">Topologie réseau</a></li><li><a href=#plan-dadressage-vlan aria-label="Plan d&rsquo;adressage VLAN">Plan d&rsquo;adressage VLAN</a></li><li><a href=#inventaire-des-machines-virtuelles aria-label="Inventaire des machines virtuelles">Inventaire des machines virtuelles</a><ul><li><a href=#-d%c3%a9ploy%c3%a9es aria-label="✅ Déployées">✅ Déployées</a></li><li><a href=#-%c3%a0-d%c3%a9ployer aria-label="⏳ À déployer">⏳ À déployer</a></li></ul></li><li><a href=#active-directory aria-label="Active Directory">Active Directory</a><ul><li><a href=#for%c3%aat-et-domaine aria-label="Forêt et domaine">Forêt et domaine</a></li><li><a href=#structure-ou aria-label="Structure OU">Structure OU</a></li><li><a href=#utilisateurs-cr%c3%a9%c3%a9s-25 aria-label="Utilisateurs créés (25)">Utilisateurs créés (25)</a></li><li><a href=#comptes-sp%c3%a9ciaux-red-team aria-label="Comptes spéciaux (Red Team)">Comptes spéciaux (Red Team)</a></li></ul></li><li><a href=#services-configur%c3%a9s aria-label="Services configurés">Services configurés</a><ul><li><a href=#opnsense aria-label=OPNsense>OPNsense</a></li><li><a href=#active-directory-dc01 aria-label="Active Directory (DC01)">Active Directory (DC01)</a></li></ul></li><li><a href=#phases-du-projet aria-label="Phases du projet">Phases du projet</a></li></ul></li><li><a href=#machines-virtuelles--lab-cybers%c3%a9curit%c3%a9 aria-label="Machines Virtuelles — Lab Cybersécurité">Machines Virtuelles — Lab Cybersécurité</a><ul><li><a href=#vms-d%c3%a9ploy%c3%a9es aria-label="VMs déployées">VMs déployées</a></li><li><a href=#vms-%c3%a0-d%c3%a9ployer aria-label="VMs à déployer">VMs à déployer</a></li><li><a href=#budget-ram-total aria-label="Budget RAM total">Budget RAM total</a></li><li><a href=#recommandation-d%c3%a9marrage-par-phase aria-label="Recommandation démarrage par phase">Recommandation démarrage par phase</a></li><li><a href=#r%c3%a8gles-firewall-inter-vlan aria-label="Règles firewall inter-VLAN">Règles firewall inter-VLAN</a></li></ul></li><li><a href=#roadmap-lab-cybers%c3%a9curit%c3%a9--r%c3%a9aliste--avanc%c3%a9 aria-label="Roadmap Lab Cybersécurité — Réaliste & Avancé">Roadmap Lab Cybersécurité — Réaliste & Avancé</a></li><li><a href=#objectifs--cpts-htb--cwes--crtl-zeropoint--red-team--exploit-dev--soc-avanc%c3%a9 aria-label="Objectifs : CPTS (HTB) · CWES · CRTL (ZeroPoint) · Red Team · Exploit Dev · SOC Avancé">Objectifs : CPTS (HTB) · CWES · CRTL (ZeroPoint) · Red Team · Exploit Dev · SOC Avancé</a><ul><li><a href=#architecture-finale-vis%c3%a9e aria-label="Architecture finale visée">Architecture finale visée</a></li><li><a href=#%c3%a9tat-actuel-des-vms aria-label="ÉTAT ACTUEL DES VMs">ÉTAT ACTUEL DES VMs</a></li><li><a href=#phase-1--socle-r%c3%a9seau-et-s%c3%a9curit%c3%a9-fait-%c3%a0-90 aria-label="PHASE 1 — Socle réseau et sécurité (FAIT À 90%)">PHASE 1 — Socle réseau et sécurité (FAIT À 90%)</a><ul><li><a href=#objectif--infrastructure-stable-et-s%c3%a9curis%c3%a9e aria-label="Objectif : infrastructure stable et sécurisée">Objectif : infrastructure stable et sécurisée</a></li></ul></li><li><a href=#phase-2--active-directory-r%c3%a9aliste-fait-%c3%a0-85 aria-label="PHASE 2 — Active Directory réaliste (FAIT À 85%)">PHASE 2 — Active Directory réaliste (FAIT À 85%)</a><ul><li><a href=#objectif--environnement-ad-dentreprise-avec-vuln%c3%a9rabilit%c3%a9s-intentionnelles aria-label="Objectif : environnement AD d&rsquo;entreprise avec vulnérabilités intentionnelles">Objectif : environnement AD d&rsquo;entreprise avec vulnérabilités intentionnelles</a></li></ul></li><li><a href=#phase-3--soc--monitoring-en-cours aria-label="PHASE 3 — SOC & Monitoring (EN COURS)">PHASE 3 — SOC & Monitoring (EN COURS)</a><ul><li><a href=#objectif--d%c3%a9tection-en-temps-r%c3%a9el-de-toutes-les-attaques aria-label="Objectif : détection en temps réel de toutes les attaques">Objectif : détection en temps réel de toutes les attaques</a><ul><li><a href=#31-wazuh-siemedr aria-label="3.1 Wazuh (SIEM/EDR)">3.1 Wazuh (SIEM/EDR)</a></li><li><a href=#32-zabbix-monitoring-infrastructure aria-label="3.2 Zabbix (Monitoring infrastructure)">3.2 Zabbix (Monitoring infrastructure)</a></li><li><a href=#33-elk-stack-optionnel--avanc%c3%a9 aria-label="3.3 ELK Stack (optionnel — avancé)">3.3 ELK Stack (optionnel — avancé)</a></li></ul></li></ul></li><li><a href=#phase-4--jump-server--matrix-pivoting aria-label="PHASE 4 — Jump Server & Matrix (Pivoting)">PHASE 4 — Jump Server & Matrix (Pivoting)</a><ul><li><a href=#objectif--simuler-un-acc%c3%a8s-r%c3%a9aliste-au-si-via-un-point-dentr%c3%a9e aria-label="Objectif : simuler un accès réaliste au SI via un point d&rsquo;entrée">Objectif : simuler un accès réaliste au SI via un point d&rsquo;entrée</a><ul><li><a href=#matrix-jump-server--1010050 aria-label="Matrix (Jump server — 10.10.0.50)">Matrix (Jump server — 10.10.0.50)</a></li><li><a href=#sc%c3%a9narios-de-pivoting aria-label="Scénarios de pivoting">Scénarios de pivoting</a></li></ul></li></ul></li><li><a href=#phase-5--red-team--c2-kali--c2 aria-label="PHASE 5 — Red Team & C2 (Kali + C2)">PHASE 5 — Red Team & C2 (Kali + C2)</a><ul><li><a href=#objectif--attaques-r%c3%a9alistes-techniques-cptscwescrtl aria-label="Objectif : attaques réalistes, techniques CPTS/CWES/CRTL">Objectif : attaques réalistes, techniques CPTS/CWES/CRTL</a><ul><li><a href=#51-c2-framework aria-label="5.1 C2 Framework">5.1 C2 Framework</a></li><li><a href=#52-attaques-ad-cptscrtl aria-label="5.2 Attaques AD (CPTS/CRTL)">5.2 Attaques AD (CPTS/CRTL)</a></li><li><a href=#53-d%c3%a9veloppement-dexploit-cwes aria-label="5.3 Développement d&rsquo;exploit (CWES)">5.3 Développement d&rsquo;exploit (CWES)</a></li><li><a href=#54-evasion-edr-crtl aria-label="5.4 Evasion EDR (CRTL)">5.4 Evasion EDR (CRTL)</a></li></ul></li></ul></li><li><a href=#phase-6--dmz--applications-web-apr%c3%a8s-certifs aria-label="PHASE 6 — DMZ & Applications Web (après certifs)">PHASE 6 — DMZ & Applications Web (après certifs)</a><ul><li><a href=#objectif--pentest-web-r%c3%a9aliste aria-label="Objectif : pentest web réaliste">Objectif : pentest web réaliste</a></li></ul></li><li><a href=#phase-7--docker--kubernetes-plus-tard aria-label="PHASE 7 — Docker & Kubernetes (PLUS TARD)">PHASE 7 — Docker & Kubernetes (PLUS TARD)</a></li><li><a href=#planning-recommand%c3%a9 aria-label="PLANNING RECOMMANDÉ">PLANNING RECOMMANDÉ</a><ul><li><a href=#semaine-1-2-maintenant aria-label="Semaine 1-2 (maintenant)">Semaine 1-2 (maintenant)</a></li><li><a href=#semaine-3-4 aria-label="Semaine 3-4">Semaine 3-4</a></li><li><a href=#semaine-5-6 aria-label="Semaine 5-6">Semaine 5-6</a></li><li><a href=#semaine-7-8 aria-label="Semaine 7-8">Semaine 7-8</a></li></ul></li><li><a href=#certifications-vis%c3%a9es aria-label="CERTIFICATIONS VISÉES">CERTIFICATIONS VISÉES</a></li><li><a href=#ressources-ram--d%c3%a9marrage-par-sc%c3%a9nario aria-label="RESSOURCES RAM — DÉMARRAGE PAR SCÉNARIO">RESSOURCES RAM — DÉMARRAGE PAR SCÉNARIO</a></li></ul></li></ul></div></details></div><div class=post-content><h1 id=configuration-du-reseau>configuration du reseau<a hidden class=anchor aria-hidden=true href=#configuration-du-reseau>#</a></h1><h2 id=créer-les-vmnets-dans-vmware>Créer les VMnets dans VMware<a hidden class=anchor aria-hidden=true href=#créer-les-vmnets-dans-vmware>#</a></h2><table><thead><tr><th>VMnet</th><th>Mode</th><th>Usage</th></tr></thead><tbody><tr><td>VMnet10</td><td>Host-only</td><td>VLAN AD/LAN</td></tr><tr><td>VMnet11</td><td>Host-only</td><td>VLAN DMZ</td></tr><tr><td>VMnet12</td><td>Host-only</td><td>VLAN SOC</td></tr><tr><td>VMnet13</td><td>Host-only</td><td>VLAN DevOps</td></tr><tr><td>VMnet14</td><td>Host-only</td><td>VLAN Red Team</td></tr></tbody></table><p>![[Pasted image 20260707155924.png]]</p><h1 id=configuration-du-firewall>configuration du firewall<a hidden class=anchor aria-hidden=true href=#configuration-du-firewall>#</a></h1><p>nous avons mis sur une vm un parefeu OPNSense</p><h1 id=configuration-de-lad-ds>configuration de l&rsquo;AD DS<a hidden class=anchor aria-hidden=true href=#configuration-de-lad-ds>#</a></h1><h4 id=déployer-des-contrôleurs-de-domaine-ad-ds>Déployer des contrôleurs de domaine AD DS<a hidden class=anchor aria-hidden=true href=#déployer-des-contrôleurs-de-domaine-ad-ds>#</a></h4><p>ip add : 10.10.0.10
+nom : DC01</p><table><thead><tr><th>VM</th><th>VMnet correct</th><th>IP attendue</th></tr></thead><tbody><tr><td>DC01, CL01</td><td>VMnet10</td><td>10.10.0.x ✅</td></tr><tr><td>Serveur Web (DMZ)</td><td>VMnet11</td><td>10.20.0.x ✅</td></tr><tr><td><strong>Kali (Red Team)</strong></td><td><strong>VMnet12</strong></td><td><strong>10.50.0.x</strong> ✅</td></tr><tr><td><strong>Wazuh (SOC)</strong></td><td><strong>VMnet13</strong></td><td><strong>10.30.0.x</strong> ✅</td></tr><tr><td><strong>Docker/K8s</strong></td><td><strong>VMnet14</strong></td><td><strong>10.40.0.x</strong> ✅</td></tr></tbody></table><h1 id=architecture-lab-cybersécurité--nyomalocal>Architecture Lab Cybersécurité — nyoma.local<a hidden class=anchor aria-hidden=true href=#architecture-lab-cybersécurité--nyomalocal>#</a></h1><h2 id=informations-générales>Informations générales<a hidden class=anchor aria-hidden=true href=#informations-générales>#</a></h2><table><thead><tr><th>Élément</th><th>Valeur</th></tr></thead><tbody><tr><td>Domaine AD</td><td>lab.local</td></tr><tr><td>Hyperviseur</td><td>VMware Workstation Pro</td></tr><tr><td>Hôte</td><td>Intel i7-11850H · 32 Go RAM · 954 Go</td></tr><tr><td>Firewall</td><td>OPNsense 26.1.6_2 (amd64)</td></tr><tr><td>Contrôleur de domaine</td><td>DC01 — Windows Server 2025</td></tr></tbody></table><hr><h2 id=topologie-réseau>Topologie réseau<a hidden class=anchor aria-hidden=true href=#topologie-réseau>#</a></h2><pre tabindex=0><code>Internet (WiFi — Livebox)
+        │
+        │ NAT VMware (VMnet8 — 192.168.98.0/24)
+        │
+┌───────▼────────────────────────────────────────────┐
+│              OPNsense Firewall                      │
+│   WAN : em1 → 192.168.98.133/24 (DHCP NAT)        │
+│   OPT1: em0 → 10.10.0.1/24  (AD/LAN)              │
+│   OPT2: em2 → 10.20.0.1/24  (DMZ)                 │
+│   OPT3: em3 → 10.30.0.1/24  (SOC)                 │
+│   OPT4: em4 → 10.40.0.1/24  (DevOps)              │
+│   OPT5: em5 → 10.50.0.1/24  (Red Team)            │
+└────┬──────────┬──────────┬──────────┬──────────────┘
+     │          │          │          │
+  VMnet10    VMnet11    VMnet13    VMnet14
+  AD/LAN      DMZ        SOC      Red Team
+  10.10.0     10.20.0   10.30.0   10.50.0
+</code></pre><hr><h2 id=plan-dadressage-vlan>Plan d&rsquo;adressage VLAN<a hidden class=anchor aria-hidden=true href=#plan-dadressage-vlan>#</a></h2><table><thead><tr><th>VLAN</th><th>Zone</th><th>Subnet</th><th>Gateway</th><th>VMnet</th><th>Plage DHCP</th></tr></thead><tbody><tr><td>OPT1</td><td>AD / LAN</td><td>10.10.0.0/24</td><td>10.10.0.1</td><td>VMnet10</td><td>10.10.0.100–200</td></tr><tr><td>OPT2</td><td>DMZ</td><td>10.20.0.0/24</td><td>10.20.0.1</td><td>VMnet11</td><td>10.20.0.100–200</td></tr><tr><td>OPT3</td><td>SOC / SIEM</td><td>10.30.0.0/24</td><td>10.30.0.1</td><td>VMnet13</td><td>10.30.0.100–200</td></tr><tr><td>OPT4</td><td>DevOps</td><td>10.40.0.0/24</td><td>10.40.0.1</td><td>VMnet14</td><td>10.40.0.100–200</td></tr><tr><td>OPT5</td><td>Red Team</td><td>10.50.0.0/24</td><td>10.50.0.1</td><td>VMnet12</td><td>10.50.0.100–200</td></tr></tbody></table><blockquote><p><strong>Note mapping VMnet réel</strong> : VMnet12→OPT5 (Red Team), VMnet13→OPT3 (SOC), VMnet14→OPT4 (DevOps)</p></blockquote><hr><h2 id=inventaire-des-machines-virtuelles>Inventaire des machines virtuelles<a hidden class=anchor aria-hidden=true href=#inventaire-des-machines-virtuelles>#</a></h2><h3 id=-déployées>✅ Déployées<a hidden class=anchor aria-hidden=true href=#-déployées>#</a></h3><table><thead><tr><th>VM</th><th>OS</th><th>IP</th><th>VMnet</th><th>Zone</th><th>RAM</th><th>Statut</th></tr></thead><tbody><tr><td>OPNsense</td><td>OPNsense 26.1.6</td><td>10.10.0.1 (LAN)</td><td>NAT+tous</td><td>Firewall</td><td>2 Go</td><td>✅ Opérationnel</td></tr><tr><td>DC01</td><td>Windows Server 2025</td><td>10.10.0.10</td><td>VMnet10</td><td>AD/LAN</td><td>4 Go</td><td>✅ Opérationnel</td></tr><tr><td>CL01</td><td>Windows 11 Pro</td><td>10.10.0.101 (DHCP)</td><td>VMnet10</td><td>AD/LAN</td><td>4 Go</td><td>✅ Jointé au domaine</td></tr><tr><td>Wazuh-SOC</td><td>Ubuntu 22.04 LTS</td><td>10.30.0.10</td><td>VMnet13</td><td>SOC</td><td>8 Go</td><td>🔧 En cours</td></tr><tr><td>Kali Linux</td><td>Kali 2026.2</td><td>10.50.0.x</td><td>VMnet12</td><td>Red Team</td><td>4 Go</td><td>⚠️ Internet KO</td></tr></tbody></table><h3 id=-à-déployer>⏳ À déployer<a hidden class=anchor aria-hidden=true href=#-à-déployer>#</a></h3><table><thead><tr><th>VM</th><th>OS</th><th>IP prévue</th><th>VMnet</th><th>Zone</th><th>RAM</th></tr></thead><tbody><tr><td>DC02</td><td>Windows Server 2025</td><td>10.10.0.11</td><td>VMnet10</td><td>AD/LAN</td><td>2 Go</td></tr><tr><td>Serveur Web</td><td>Ubuntu 22.04 LTS</td><td>10.20.0.10</td><td>VMnet11</td><td>DMZ</td><td>2 Go</td></tr><tr><td>Docker/K8s</td><td>Ubuntu 22.04 LTS</td><td>10.40.0.10</td><td>VMnet14</td><td>DevOps</td><td>6 Go</td></tr></tbody></table><hr><h2 id=active-directory>Active Directory<a hidden class=anchor aria-hidden=true href=#active-directory>#</a></h2><h3 id=forêt-et-domaine>Forêt et domaine<a hidden class=anchor aria-hidden=true href=#forêt-et-domaine>#</a></h3><table><thead><tr><th>Paramètre</th><th>Valeur</th></tr></thead><tbody><tr><td>Forest Root</td><td>lab.local</td></tr><tr><td>NetBIOS</td><td>LAB</td></tr><tr><td>DC Principal</td><td>DC01.lab.local (10.10.0.10)</td></tr><tr><td>DC Secondaire</td><td>DC02.child.lab.local (à déployer)</td></tr><tr><td>OS DC</td><td>Windows Server 2025 Datacenter Evaluation</td></tr><tr><td>Rôles FSMO</td><td>SchemaMaster, DomainNamingMaster, PDCEmulator, RIDMaster</td></tr></tbody></table><h3 id=structure-ou>Structure OU<a hidden class=anchor aria-hidden=true href=#structure-ou>#</a></h3><pre tabindex=0><code>DC=lab,DC=local
+└── OU=Corp
+    ├── OU=Users
+    │   ├── OU=Direction    → Groupe: GG_Direction
+    │   ├── OU=IT           → Groupes: GG_IT_Admin, GG_IT_Support
+    │   ├── OU=Finance      → Groupe: GG_Finance
+    │   ├── OU=RH           → Groupe: GG_RH
+    │   ├── OU=Marketing    → Groupe: GG_Marketing
+    │   └── OU=Support      → Groupes: GG_Sales, GG_Production
+    ├── OU=Servers
+    ├── OU=Admins
+    └── OU=ServiceAccounts  → Groupe: GG_Backup_Operators
+</code></pre><h3 id=utilisateurs-créés-25>Utilisateurs créés (25)<a hidden class=anchor aria-hidden=true href=#utilisateurs-créés-25>#</a></h3><table><thead><tr><th>Nom complet</th><th>Username</th><th>Groupe</th><th>Département</th></tr></thead><tbody><tr><td>Michel Nyobe</td><td>mnyobe</td><td>GG_IT_Admin</td><td>IT</td></tr><tr><td>Sarah Laurent</td><td>slaurent</td><td>GG_Direction</td><td>Direction</td></tr><tr><td>Thomas Dubois</td><td>tdubois</td><td>GG_Direction</td><td>Direction</td></tr><tr><td>Julien Moreau</td><td>jmoreau</td><td>GG_IT_Support</td><td>IT</td></tr><tr><td>Clara Petit</td><td>cpetit</td><td>GG_Finance</td><td>Finance</td></tr><tr><td>Antoine Martin</td><td>amartin</td><td>GG_Marketing</td><td>Marketing</td></tr><tr><td>Laura Bernard</td><td>lbernard</td><td>GG_Finance</td><td>Finance</td></tr><tr><td>Kevin Robert</td><td>krobert</td><td>GG_Production</td><td>Support</td></tr><tr><td>Sophie Leroy</td><td>sleroy</td><td>GG_RH</td><td>RH</td></tr><tr><td>Hugo Fontaine</td><td>hfontaine</td><td>GG_IT_Admin</td><td>IT</td></tr><tr><td>Emma Rousseau</td><td>erousseau</td><td>GG_Marketing</td><td>Marketing</td></tr><tr><td>Lucas Garnier</td><td>lgarnier</td><td>GG_IT_Support</td><td>IT</td></tr><tr><td>Inès Chevalier</td><td>ichevalier</td><td>GG_Marketing</td><td>Marketing</td></tr><tr><td>Nathan Girard</td><td>ngirard</td><td>GG_IT_Support</td><td>IT</td></tr><tr><td>Camille Bonnet</td><td>cbonnet</td><td>GG_Finance</td><td>Finance</td></tr><tr><td>Maxime Marchand</td><td>mmarchand</td><td>GG_Server_Admins</td><td>Finance</td></tr><tr><td>Léa Dupont</td><td>ldupont</td><td>GG_Backup_Operators</td><td>RH</td></tr><tr><td>Enzo Mercier</td><td>emergier</td><td>GG_IT_Support</td><td>Support</td></tr><tr><td>Chloé Faure</td><td>cfaure</td><td>GG_Marketing</td><td>Marketing</td></tr><tr><td>Adam Noel</td><td>anoel</td><td>GG_Sales</td><td>Support</td></tr></tbody></table><h3 id=comptes-spéciaux-red-team>Comptes spéciaux (Red Team)<a hidden class=anchor aria-hidden=true href=#comptes-spéciaux-red-team>#</a></h3><table><thead><tr><th>Username</th><th>Mot de passe</th><th>Groupe</th><th>Objectif</th></tr></thead><tbody><tr><td>jmoreau</td><td>Welcome1</td><td>GG_IT_Support</td><td>Password Spray</td></tr><tr><td>svc-backup</td><td>Backup123</td><td>GG_Backup_Operators</td><td>Kerberoasting</td></tr><tr><td>adm-tech</td><td>Admin@Tech2024!</td><td>Domain Admins</td><td>Privilege escalation</td></tr></tbody></table><hr><h2 id=services-configurés>Services configurés<a hidden class=anchor aria-hidden=true href=#services-configurés>#</a></h2><h3 id=opnsense>OPNsense<a hidden class=anchor aria-hidden=true href=#opnsense>#</a></h3><table><thead><tr><th>Service</th><th>Statut</th><th>Config</th></tr></thead><tbody><tr><td>Kea DHCPv4</td><td>✅ Actif</td><td>5 subnets (10.x0.0.100-200)</td></tr><tr><td>NAT Outbound</td><td>✅ Actif</td><td>Hybrid mode — toutes interfaces</td></tr><tr><td>Firewall Rules</td><td>✅ Actif</td><td>Pass sur OPT1–OPT5</td></tr><tr><td>DNS Unbound</td><td>⏳ À configurer</td><td>—</td></tr><tr><td>NTP</td><td>⏳ À configurer</td><td>pool.ntp.org</td></tr><tr><td>SSH</td><td>✅ Actif</td><td>Port 22</td></tr></tbody></table><h3 id=active-directory-dc01>Active Directory (DC01)<a hidden class=anchor aria-hidden=true href=#active-directory-dc01>#</a></h3><table><thead><tr><th>Service</th><th>Statut</th></tr></thead><tbody><tr><td>AD DS</td><td>✅ Opérationnel</td></tr><tr><td>DNS Server</td><td>✅ Opérationnel</td></tr><tr><td>DHCP (Windows)</td><td>Non utilisé (OPNsense gère)</td></tr><tr><td>CL01 jointé</td><td>✅ LAB\cpetit connecté</td></tr></tbody></table><hr><h2 id=phases-du-projet>Phases du projet<a hidden class=anchor aria-hidden=true href=#phases-du-projet>#</a></h2><table><thead><tr><th>Phase</th><th>Description</th><th>Statut</th><th>Progression</th></tr></thead><tbody><tr><td>Phase 1</td><td>Infrastructure réseau (OPNsense + VLANs)</td><td>🔧 En cours</td><td>90%</td></tr><tr><td>Phase 2</td><td>Active Directory (DC01 + users)</td><td>✅ Terminée</td><td>85%</td></tr><tr><td>Phase 3</td><td>SOC / Blue Team (Wazuh + ELK)</td><td>🔧 En cours</td><td>5%</td></tr><tr><td>Phase 4</td><td>DMZ & Applications web</td><td>⏳ À faire</td><td>0%</td></tr><tr><td>Phase 5</td><td>DevOps (Docker + K8s)</td><td>⏳ À faire</td><td>0%</td></tr><tr><td>Phase 6</td><td>Red Team (Kali + C2)</td><td>⏳ À faire</td><td>10%</td></tr></tbody></table><hr><h1 id=machines-virtuelles--lab-cybersécurité>Machines Virtuelles — Lab Cybersécurité<a hidden class=anchor aria-hidden=true href=#machines-virtuelles--lab-cybersécurité>#</a></h1><h2 id=vms-déployées>VMs déployées<a hidden class=anchor aria-hidden=true href=#vms-déployées>#</a></h2><table><thead><tr><th>VM</th><th>OS</th><th>IP</th><th>VMnet</th><th>RAM</th><th>CPU</th><th>Disque</th><th>Statut</th></tr></thead><tbody><tr><td>OPNsense</td><td>OPNsense 26.1.6</td><td>10.10.0.1</td><td>NAT + tous</td><td>2 Go</td><td>2 vCPU</td><td>20 Go</td><td>✅ Opérationnel</td></tr><tr><td>DC01</td><td>Windows Server 2025</td><td>10.10.0.10</td><td>VMnet10</td><td>4 Go</td><td>2 vCPU</td><td>60 Go</td><td>✅ Opérationnel</td></tr><tr><td>CL01</td><td>Windows 11 Pro</td><td>10.10.0.101</td><td>VMnet10</td><td>4 Go</td><td>4 vCPU</td><td>80 Go</td><td>✅ Jointé au domaine</td></tr><tr><td>Kali Linux</td><td>Kali 2026.2</td><td>10.50.0.x</td><td>VMnet12</td><td>8 Go</td><td>4 vCPU</td><td>80 Go</td><td>⚠️ Internet KO</td></tr><tr><td>Wazuh-SOC</td><td>Ubuntu 22.04 LTS</td><td>10.30.0.10</td><td>VMnet13</td><td>8 Go</td><td>2 vCPU</td><td>100 Go</td><td>🔧 En cours</td></tr></tbody></table><h2 id=vms-à-déployer>VMs à déployer<a hidden class=anchor aria-hidden=true href=#vms-à-déployer>#</a></h2><table><thead><tr><th>VM</th><th>OS</th><th>IP prévue</th><th>VMnet</th><th>RAM</th><th>CPU</th><th>Disque</th><th>Zone</th></tr></thead><tbody><tr><td>DC02</td><td>Windows Server 2025</td><td>10.10.0.11</td><td>VMnet10</td><td>2 Go</td><td>2 vCPU</td><td>60 Go</td><td>AD/LAN</td></tr><tr><td>Serveur Web</td><td>Ubuntu 22.04 LTS</td><td>10.20.0.10</td><td>VMnet11</td><td>2 Go</td><td>2 vCPU</td><td>40 Go</td><td>DMZ</td></tr><tr><td>Zabbix</td><td>Ubuntu 22.04 LTS</td><td>10.30.0.20</td><td>VMnet13</td><td>4 Go</td><td>2 vCPU</td><td>50 Go</td><td>SOC</td></tr><tr><td>Docker/K8s</td><td>Ubuntu 22.04 LTS</td><td>10.40.0.10</td><td>VMnet14</td><td>6 Go</td><td>2 vCPU</td><td>100 Go</td><td>DevOps</td></tr></tbody></table><h2 id=budget-ram-total>Budget RAM total<a hidden class=anchor aria-hidden=true href=#budget-ram-total>#</a></h2><table><thead><tr><th>VM</th><th>RAM</th><th>CPU</th><th>Statut</th></tr></thead><tbody><tr><td>OPNsense</td><td>2 Go</td><td>2 vCPU</td><td>✅ Active</td></tr><tr><td>DC01</td><td>4 Go</td><td>2 vCPU</td><td>✅ Active</td></tr><tr><td>DC02</td><td>2 Go</td><td>2 vCPU</td><td>⏳ À déployer</td></tr><tr><td>CL01</td><td>4 Go</td><td>2 vCPU</td><td>✅ Active</td></tr><tr><td>Wazuh</td><td>4 Go</td><td>2 vCPU</td><td>✅ Active</td></tr><tr><td>Zabbix</td><td>3 Go</td><td>2 vCPU</td><td>✅ Active</td></tr><tr><td>Kali Linux</td><td>8 Go</td><td>4 vCPU</td><td>✅ Active</td></tr><tr><td>Serveur Web</td><td>1 Go</td><td>2 vCPU</td><td>✅ Active</td></tr><tr><td>Docker/K8s</td><td>6 Go</td><td>2 vCPU</td><td>⏳ À déployer</td></tr><tr><td><strong>TOTAL</strong></td><td><strong>40 Go</strong></td><td><strong>22 vCPU</strong></td><td>⚠️ Dépasse 32 Go</td></tr></tbody></table><blockquote><p>⚠️ <strong>Attention</strong> : Le total prévu (40 Go) dépasse la RAM de l&rsquo;hôte (32 Go). Ne jamais démarrer toutes les VMs en même temps. Démarrer uniquement les VMs nécessaires à la phase en cours.</p></blockquote><h2 id=recommandation-démarrage-par-phase>Recommandation démarrage par phase<a hidden class=anchor aria-hidden=true href=#recommandation-démarrage-par-phase>#</a></h2><table><thead><tr><th>Phase</th><th>VMs à démarrer</th><th>RAM utilisée</th></tr></thead><tbody><tr><td>Phase 1-2 (AD)</td><td>OPNsense + DC01 + CL01</td><td>10 Go</td></tr><tr><td>Phase 3 (SOC)</td><td>+ Wazuh + Zabbix</td><td>22 Go</td></tr><tr><td>Phase 4 (DMZ)</td><td>+ Serveur Web</td><td>24 Go</td></tr><tr><td>Phase 5 (DevOps)</td><td>+ Docker/K8s</td><td>30 Go</td></tr><tr><td>Phase 6 (Red Team)</td><td>+ Kali (arrêter Docker)</td><td>28 Go</td></tr></tbody></table><hr><h2 id=règles-firewall-inter-vlan>Règles firewall inter-VLAN<a hidden class=anchor aria-hidden=true href=#règles-firewall-inter-vlan>#</a></h2><table><thead><tr><th>Source</th><th>Destination</th><th>Action</th><th>Règle</th></tr></thead><tbody><tr><td>OPT1 (LAN)</td><td>Any</td><td>✅ Pass</td><td>Allow LAN to any</td></tr><tr><td>OPT2 (DMZ)</td><td>Any</td><td>✅ Pass</td><td>Allow DMZ to any</td></tr><tr><td>OPT3 (SOC)</td><td>Any</td><td>✅ Pass</td><td>Allow SOC to any</td></tr><tr><td>OPT4 (DevOps)</td><td>Any</td><td>✅ Pass</td><td>Allow DevOps to any</td></tr><tr><td>OPT5 (RedTeam)</td><td>Any</td><td>✅ Pass</td><td>Allow RedTeam to any</td></tr><tr><td>WAN</td><td>—</td><td>NAT</td><td>Hybrid outbound NAT</td></tr></tbody></table><hr><h1 id=roadmap-lab-cybersécurité--réaliste--avancé>Roadmap Lab Cybersécurité — Réaliste & Avancé<a hidden class=anchor aria-hidden=true href=#roadmap-lab-cybersécurité--réaliste--avancé>#</a></h1><h1 id=objectifs--cpts-htb--cwes--crtl-zeropoint--red-team--exploit-dev--soc-avancé>Objectifs : CPTS (HTB) · CWES · CRTL (ZeroPoint) · Red Team · Exploit Dev · SOC Avancé<a hidden class=anchor aria-hidden=true href=#objectifs--cpts-htb--cwes--crtl-zeropoint--red-team--exploit-dev--soc-avancé>#</a></h1><hr><h2 id=architecture-finale-visée>Architecture finale visée<a hidden class=anchor aria-hidden=true href=#architecture-finale-visée>#</a></h2><pre tabindex=0><code>Internet
+    │
+OPNsense (Firewall/Router)
+    │
+    ├── VLAN 10 (AD/LAN)     → DC01, DC02, CL01, Matrix (Jump)
+    ├── VLAN 20 (DMZ)        → Serveur Web vulnérable
+    ├── VLAN 30 (SOC)        → Wazuh, Zabbix
+    ├── VLAN 40 (DevOps)     → Docker/K8s (plus tard)
+    └── VLAN 50 (Red Team)   → Kali, C2
+</code></pre><hr><h2 id=état-actuel-des-vms>ÉTAT ACTUEL DES VMs<a hidden class=anchor aria-hidden=true href=#état-actuel-des-vms>#</a></h2><table><thead><tr><th>VM</th><th>Statut</th><th>IP</th><th>Rôle</th></tr></thead><tbody><tr><td>OPNsense</td><td>✅ Opérationnel</td><td>10.10.0.1</td><td>Firewall/Router</td></tr><tr><td>DC01</td><td>✅ Opérationnel</td><td>10.10.0.10</td><td>Forest lab.local</td></tr><tr><td>CL01</td><td>✅ Jointé domaine</td><td>10.10.0.101</td><td>Poste victime</td></tr><tr><td>Kali Linux</td><td>✅ Opérationnel</td><td>10.50.0.x</td><td>Attaquant</td></tr><tr><td>Wazuh</td><td>✅ Opérationnel</td><td>10.30.0.100</td><td>SIEM/EDR</td></tr><tr><td>Zabbix</td><td>✅ Opérationnel</td><td>10.30.0.101</td><td>Monitoring</td></tr><tr><td>Matrix</td><td>✅ Opérationnel</td><td>10.20.0.101</td><td>Application web</td></tr><tr><td>DC02</td><td>⏳ À installer</td><td>10.10.0.11</td><td>Child domain</td></tr></tbody></table><hr><h2 id=phase-1--socle-réseau-et-sécurité-fait-à-90>PHASE 1 — Socle réseau et sécurité (FAIT À 90%)<a hidden class=anchor aria-hidden=true href=#phase-1--socle-réseau-et-sécurité-fait-à-90>#</a></h2><h3 id=objectif--infrastructure-stable-et-sécurisée>Objectif : infrastructure stable et sécurisée<a hidden class=anchor aria-hidden=true href=#objectif--infrastructure-stable-et-sécurisée>#</a></h3><ul><li><input checked disabled type=checkbox> OPNsense installé et configuré</li><li><input checked disabled type=checkbox> 5 VLANs opérationnels (10/20/30/40/50)</li><li><input checked disabled type=checkbox> Kea DHCP fonctionnel sur tous les VLANs</li><li><input checked disabled type=checkbox> Règles firewall inter-VLAN</li><li><input checked disabled type=checkbox> NAT Outbound configuré</li><li><input disabled type=checkbox> DNS Unbound activé</li><li><input disabled type=checkbox> NTP configuré (pool.ntp.org)</li><li><input disabled type=checkbox> IDS/IPS Suricata activé sur OPNsense</li><li><input disabled type=checkbox> Réparer internet Kali (VMnet12)</li></ul><hr><h2 id=phase-2--active-directory-réaliste-fait-à-85>PHASE 2 — Active Directory réaliste (FAIT À 85%)<a hidden class=anchor aria-hidden=true href=#phase-2--active-directory-réaliste-fait-à-85>#</a></h2><h3 id=objectif--environnement-ad-dentreprise-avec-vulnérabilités-intentionnelles>Objectif : environnement AD d&rsquo;entreprise avec vulnérabilités intentionnelles<a hidden class=anchor aria-hidden=true href=#objectif--environnement-ad-dentreprise-avec-vulnérabilités-intentionnelles>#</a></h3><ul><li><input checked disabled type=checkbox> DC01 Windows Server 2025 — Forest lab.local</li><li><input checked disabled type=checkbox> 25 utilisateurs + groupes (script PowerShell)</li><li><input checked disabled type=checkbox> Structure OU réaliste (IT/Finance/RH/Direction&mldr;)</li><li><input checked disabled type=checkbox> CL01 jointé au domaine</li><li><input checked disabled type=checkbox> Comptes faibles : jmoreau (Welcome1) · svc-backup (Backup123)</li><li><input checked disabled type=checkbox> Domain Admin : adm-tech</li><li><input disabled type=checkbox> DC02 — Child domain child.lab.local</li><li><input disabled type=checkbox> GPO de sécurité de base</li><li><input disabled type=checkbox> Auditing activé (logon, object access, privilege use)</li><li><input disabled type=checkbox> Matrix — Jump server configuré</li><li><input disabled type=checkbox> Kerberoasting : SPN sur svc-backup</li><li><input disabled type=checkbox> AS-REP Roasting : compte sans pré-auth Kerberos</li><li><input disabled type=checkbox> ACL abusable : WriteDACL, GenericAll sur certains objets</li><li><input disabled type=checkbox> Délégation Kerberos non contrainte (unconstrained)</li><li><input disabled type=checkbox> AdminSDHolder mal configuré</li><li><input disabled type=checkbox> AD CS vulnérable (ESC1, ESC8) sur DC01</li></ul><hr><h2 id=phase-3--soc--monitoring-en-cours>PHASE 3 — SOC & Monitoring (EN COURS)<a hidden class=anchor aria-hidden=true href=#phase-3--soc--monitoring-en-cours>#</a></h2><h3 id=objectif--détection-en-temps-réel-de-toutes-les-attaques>Objectif : détection en temps réel de toutes les attaques<a hidden class=anchor aria-hidden=true href=#objectif--détection-en-temps-réel-de-toutes-les-attaques>#</a></h3><h4 id=31-wazuh-siemedr>3.1 Wazuh (SIEM/EDR)<a hidden class=anchor aria-hidden=true href=#31-wazuh-siemedr>#</a></h4><ul><li><input checked disabled type=checkbox> Wazuh Manager installé (Ubuntu 22.04 — 10.30.0.10)</li><li><input disabled type=checkbox> Internet fonctionnel sur Wazuh</li><li><input checked disabled type=checkbox> Dashboard Wazuh accessible</li><li><input disabled type=checkbox> Agent Wazuh sur DC01</li><li><input disabled type=checkbox> Agent Wazuh sur CL01</li><li><input disabled type=checkbox> Agent Wazuh sur DC02 (après install)</li><li><input disabled type=checkbox> Règles de détection AD :<ul><li><input disabled type=checkbox> Kerberoasting (Event 4769)</li><li><input disabled type=checkbox> Pass-the-Hash (Event 4624 type 3)</li><li><input disabled type=checkbox> DCSync (Event 4662)</li><li><input disabled type=checkbox> Golden Ticket (Event 4768)</li><li><input disabled type=checkbox> BloodHound (LDAP massif)</li><li><input disabled type=checkbox> Mimikatz (lsass access)</li></ul></li><li><input disabled type=checkbox> Alertes email/Slack configurées</li></ul><h4 id=32-zabbix-monitoring-infrastructure>3.2 Zabbix (Monitoring infrastructure)<a hidden class=anchor aria-hidden=true href=#32-zabbix-monitoring-infrastructure>#</a></h4><ul><li><input disabled type=checkbox> Zabbix Server installé (Ubuntu 22.04 — 10.30.0.20)</li><li><input disabled type=checkbox> Monitoring DC01 (CPU, RAM, services AD)</li><li><input disabled type=checkbox> Monitoring CL01</li><li><input disabled type=checkbox> Monitoring OPNsense (SNMP)</li><li><input disabled type=checkbox> Monitoring Wazuh lui-même</li><li><input disabled type=checkbox> Dashboard personnalisé lab</li><li><input disabled type=checkbox> Alertes sur services critiques (AD DS, DNS, Kerberos)</li></ul><h4 id=33-elk-stack-optionnel--avancé>3.3 ELK Stack (optionnel — avancé)<a hidden class=anchor aria-hidden=true href=#33-elk-stack-optionnel--avancé>#</a></h4><ul><li><input disabled type=checkbox> Elasticsearch + Kibana sur Wazuh ou VM dédiée</li><li><input disabled type=checkbox> Intégration logs OPNsense → ELK</li><li><input disabled type=checkbox> Intégration logs DC01 → ELK</li><li><input disabled type=checkbox> Dashboards de visualisation</li></ul><hr><h2 id=phase-4--jump-server--matrix-pivoting>PHASE 4 — Jump Server & Matrix (Pivoting)<a hidden class=anchor aria-hidden=true href=#phase-4--jump-server--matrix-pivoting>#</a></h2><h3 id=objectif--simuler-un-accès-réaliste-au-si-via-un-point-dentrée>Objectif : simuler un accès réaliste au SI via un point d&rsquo;entrée<a hidden class=anchor aria-hidden=true href=#objectif--simuler-un-accès-réaliste-au-si-via-un-point-dentrée>#</a></h3><h4 id=matrix-jump-server--1010050>Matrix (Jump server — 10.10.0.50)<a hidden class=anchor aria-hidden=true href=#matrix-jump-server--1010050>#</a></h4><ul><li><input disabled type=checkbox> VM Ubuntu ou Windows Server installée</li><li><input disabled type=checkbox> SSH/RDP accessible depuis Kali</li><li><input disabled type=checkbox> Connecté au VLAN AD/LAN (VMnet10)</li><li><input disabled type=checkbox> Agent Wazuh installé</li><li><input disabled type=checkbox> Pivot depuis Kali → Matrix → DC01</li></ul><h4 id=scénarios-de-pivoting>Scénarios de pivoting<a hidden class=anchor aria-hidden=true href=#scénarios-de-pivoting>#</a></h4><ul><li><input disabled type=checkbox> Port forwarding SSH (ssh -L, -R, -D)</li><li><input disabled type=checkbox> Chisel/Ligolo-ng pour tunneling</li><li><input disabled type=checkbox> Pivoting via SOCKS5</li><li><input disabled type=checkbox> Double pivot : Kali → Matrix → CL01 → DC01</li></ul><hr><h2 id=phase-5--red-team--c2-kali--c2>PHASE 5 — Red Team & C2 (Kali + C2)<a hidden class=anchor aria-hidden=true href=#phase-5--red-team--c2-kali--c2>#</a></h2><h3 id=objectif--attaques-réalistes-techniques-cptscwescrtl>Objectif : attaques réalistes, techniques CPTS/CWES/CRTL<a hidden class=anchor aria-hidden=true href=#objectif--attaques-réalistes-techniques-cptscwescrtl>#</a></h3><h4 id=51-c2-framework>5.1 C2 Framework<a hidden class=anchor aria-hidden=true href=#51-c2-framework>#</a></h4><ul><li><input checked disabled type=checkbox> Réparer internet Kali (VMnet12 → 10.50.0.x)</li><li><input disabled type=checkbox> Havoc C2 installé sur Kali<ul><li><input disabled type=checkbox> Team server configuré</li><li><input disabled type=checkbox> Listener HTTPS sur port 443</li><li><input disabled type=checkbox> Payload généré pour CL01</li></ul></li><li><input disabled type=checkbox> Sliver C2 (backup/alternative)<ul><li><input disabled type=checkbox> mTLS listener</li><li><input disabled type=checkbox> Implant généré</li></ul></li></ul><h4 id=52-attaques-ad-cptscrtl>5.2 Attaques AD (CPTS/CRTL)<a hidden class=anchor aria-hidden=true href=#52-attaques-ad-cptscrtl>#</a></h4><ul><li><input disabled type=checkbox> Reconnaissance<ul><li><input disabled type=checkbox> BloodHound + SharpHound (graphe AD)</li><li><input disabled type=checkbox> ldapdomaindump</li><li><input disabled type=checkbox> enum4linux-ng</li><li><input disabled type=checkbox> CrackMapExec / NetExec</li></ul></li><li><input disabled type=checkbox> Initial Access<ul><li><input disabled type=checkbox> Password Spray (jmoreau → Welcome1)</li><li><input disabled type=checkbox> AS-REP Roasting</li><li><input disabled type=checkbox> Phishing simulé (GoPhish)</li></ul></li><li><input disabled type=checkbox> Privilege Escalation<ul><li><input disabled type=checkbox> Kerberoasting (svc-backup → Backup123)</li><li><input disabled type=checkbox> ACL abuse (WriteDACL)</li><li><input disabled type=checkbox> Token impersonation</li><li><input disabled type=checkbox> Unconstrained delegation</li></ul></li><li><input disabled type=checkbox> Lateral Movement<ul><li><input disabled type=checkbox> Pass-the-Hash</li><li><input disabled type=checkbox> Pass-the-Ticket</li><li><input disabled type=checkbox> OverPass-the-Hash</li><li><input disabled type=checkbox> WMI / PSExec / SMBExec</li></ul></li><li><input disabled type=checkbox> Domain Dominance<ul><li><input disabled type=checkbox> DCSync (secretsdump)</li><li><input disabled type=checkbox> Golden Ticket</li><li><input disabled type=checkbox> Silver Ticket</li><li><input disabled type=checkbox> Diamond Ticket</li><li><input disabled type=checkbox> AD CS ESC1/ESC8</li><li><input disabled type=checkbox> Cross-domain attack (lab.local → child.lab.local)</li></ul></li><li><input disabled type=checkbox> Persistence<ul><li><input disabled type=checkbox> Skeleton Key</li><li><input disabled type=checkbox> AdminSDHolder backdoor</li><li><input disabled type=checkbox> GPO abuse</li><li><input disabled type=checkbox> DCShadow</li></ul></li></ul><h4 id=53-développement-dexploit-cwes>5.3 Développement d&rsquo;exploit (CWES)<a hidden class=anchor aria-hidden=true href=#53-développement-dexploit-cwes>#</a></h4><ul><li><input disabled type=checkbox> VM dédiée exploit dev (Windows 10 + outils)</li><li><input disabled type=checkbox> Buffer overflow (x86/x64)</li><li><input disabled type=checkbox> SEH exploitation</li><li><input disabled type=checkbox> ROP chains</li><li><input disabled type=checkbox> Bypass DEP/ASLR</li><li><input disabled type=checkbox> Shellcode custom</li></ul><h4 id=54-evasion-edr-crtl>5.4 Evasion EDR (CRTL)<a hidden class=anchor aria-hidden=true href=#54-evasion-edr-crtl>#</a></h4><ul><li><input disabled type=checkbox> Bypass Wazuh/AV<ul><li><input disabled type=checkbox> Process hollowing</li><li><input disabled type=checkbox> DLL sideloading</li><li><input disabled type=checkbox> AMSI bypass</li><li><input disabled type=checkbox> ETW patching</li><li><input disabled type=checkbox> Unhooking NTDLL</li></ul></li><li><input disabled type=checkbox> Obfuscation payloads<ul><li><input disabled type=checkbox> Encodage shellcode</li><li><input disabled type=checkbox> Payload chiffré AES</li><li><input disabled type=checkbox> In-memory execution</li></ul></li><li><input disabled type=checkbox> Living off the Land (LOLBins)<ul><li><input disabled type=checkbox> certutil, regsvr32, mshta</li><li><input disabled type=checkbox> PowerShell constrained mode bypass</li></ul></li></ul><hr><h2 id=phase-6--dmz--applications-web-après-certifs>PHASE 6 — DMZ & Applications Web (après certifs)<a hidden class=anchor aria-hidden=true href=#phase-6--dmz--applications-web-après-certifs>#</a></h2><h3 id=objectif--pentest-web-réaliste>Objectif : pentest web réaliste<a hidden class=anchor aria-hidden=true href=#objectif--pentest-web-réaliste>#</a></h3><ul><li><input disabled type=checkbox> Serveur Ubuntu en DMZ (VMnet11 — 10.20.0.10)</li><li><input disabled type=checkbox> Apache/Nginx installé</li><li><input disabled type=checkbox> DVWA (Damn Vulnerable Web App)</li><li><input disabled type=checkbox> WebGoat</li><li><input disabled type=checkbox> Juice Shop (OWASP)</li><li><input disabled type=checkbox> Application custom avec vulnérabilités :<ul><li><input disabled type=checkbox> SQLi, XSS, SSRF, IDOR, LFI/RFI</li></ul></li><li><input disabled type=checkbox> WAF OPNsense en frontal</li></ul><hr><h2 id=phase-7--docker--kubernetes-plus-tard>PHASE 7 — Docker & Kubernetes (PLUS TARD)<a hidden class=anchor aria-hidden=true href=#phase-7--docker--kubernetes-plus-tard>#</a></h2><ul><li><input disabled type=checkbox> VM Ubuntu DevOps (VMnet14 — 10.40.0.10)</li><li><input disabled type=checkbox> Docker installé</li><li><input disabled type=checkbox> Kubernetes K3s cluster</li><li><input disabled type=checkbox> Jenkins CI/CD</li><li><input disabled type=checkbox> Pipeline sécurisé avec scan SAST/DAST</li></ul><hr><h2 id=planning-recommandé>PLANNING RECOMMANDÉ<a hidden class=anchor aria-hidden=true href=#planning-recommandé>#</a></h2><h3 id=semaine-1-2-maintenant>Semaine 1-2 (maintenant)<a hidden class=anchor aria-hidden=true href=#semaine-1-2-maintenant>#</a></h3><pre tabindex=0><code>1. Finir Phase 1 → DNS Unbound + NTP + Suricata
+2. Réparer internet Kali
+3. Installer Wazuh complètement + agents
+4. Configurer Zabbix monitoring
+</code></pre><h3 id=semaine-3-4>Semaine 3-4<a hidden class=anchor aria-hidden=true href=#semaine-3-4>#</a></h3><pre tabindex=0><code>5. DC02 child domain
+6. Vulnérabilités AD intentionnelles
+7. Jump server Matrix
+8. BloodHound reconnaissance
+</code></pre><h3 id=semaine-5-6>Semaine 5-6<a hidden class=anchor aria-hidden=true href=#semaine-5-6>#</a></h3><pre tabindex=0><code>9. C2 Havoc opérationnel
+10. Premières attaques AD avec détection Wazuh
+11. Password Spray + Kerberoasting
+12. Exercice Red vs Blue
+</code></pre><h3 id=semaine-7-8>Semaine 7-8<a hidden class=anchor aria-hidden=true href=#semaine-7-8>#</a></h3><pre tabindex=0><code>13. Lateral movement + Domain dominance
+14. Evasion EDR
+15. Développement exploit (CWES)
+16. Préparation certifs CPTS/CRTL
+</code></pre><hr><h2 id=certifications-visées>CERTIFICATIONS VISÉES<a hidden class=anchor aria-hidden=true href=#certifications-visées>#</a></h2><table><thead><tr><th>Certif</th><th>Organisme</th><th>Compétences</th><th>Lien avec le lab</th></tr></thead><tbody><tr><td>CPTS</td><td>HackTheBox</td><td>Pentest complet, AD, Web</td><td>Phases 2+5+6</td></tr><tr><td>CWES</td><td>HackTheBox</td><td>Exploit Web avancé</td><td>Phase 6</td></tr><tr><td>CRTL</td><td>ZeroPoint</td><td>Red Team, C2, Evasion</td><td>Phase 5</td></tr></tbody></table><hr><h2 id=ressources-ram--démarrage-par-scénario>RESSOURCES RAM — DÉMARRAGE PAR SCÉNARIO<a hidden class=anchor aria-hidden=true href=#ressources-ram--démarrage-par-scénario>#</a></h2><table><thead><tr><th>Scénario</th><th>VMs actives</th><th>RAM</th></tr></thead><tbody><tr><td>AD lab seul</td><td>OPNsense+DC01+CL01</td><td>10 Go</td></tr><tr><td>SOC actif</td><td>+Wazuh+Zabbix</td><td>18 Go</td></tr><tr><td>Red Team</td><td>+Kali+C2</td><td>26 Go</td></tr><tr><td>Avec DC02+Matrix</td><td>+DC02+Matrix</td><td>30 Go</td></tr><tr><td>Tout (max)</td><td>Toutes</td><td>~40 Go ⚠️</td></tr></tbody></table><blockquote><p>Ne jamais dépasser 28-30 Go actifs simultanément sur 32 Go RAM hôte.</p></blockquote></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://nyobemichel.me/posts/enumeration/enumeration---snmp/><span class=title>« Précédent</span><br><span></span>
+</a><a class=next href=https://nyobemichel.me/posts/labs/lab---ad/><span class=title>Suivant »</span><br><span></span></a></nav><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share  on x" href="https://x.com/intent/tweet/?text=&amp;url=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f&amp;hashtags="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share  on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f&amp;title=&amp;summary=&amp;source=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share  on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f&title="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share  on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share  on whatsapp" href="https://api.whatsapp.com/send?text=%20-%20https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share  on telegram" href="https://telegram.me/share/url?text=&amp;url=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentColor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share  on ycombinator" href="https://news.ycombinator.com/submitlink?t=&u=https%3a%2f%2fnyobemichel.me%2fposts%2flabs%2fad%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="Copier";function s(){t.innerHTML="Copié !",setTimeout(()=>{t.innerHTML="Copier"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
