@@ -2,10 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nyobemichel.me/posts/penetrationtesting/attaque-par-force-brute/</loc>
-    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/cisco/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/encapsulation/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/reseaux/encapsulation-hdlc/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/hdlc/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/reseaux/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/reseaux/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/wan/</loc>
+    <lastmod>2026-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/attaque-par-force-brute/</loc>
     <lastmod>2026-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/cpts/</loc>
@@ -14,19 +44,10 @@
     <loc>https://nyobemichel.me/tags/cpts/</loc>
     <lastmod>2026-08-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/</loc>
-    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/posts/outils/medusa/</loc>
     <lastmod>2026-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/pentester/</loc>
-    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2026-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/active-directory/</loc>
