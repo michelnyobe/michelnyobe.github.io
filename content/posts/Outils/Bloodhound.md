@@ -44,6 +44,10 @@ Bloodhound
 
 ```
 sudo ./bloodhound-cli up
+
+ou 
+
+bloodhound-start
 ```
 
 

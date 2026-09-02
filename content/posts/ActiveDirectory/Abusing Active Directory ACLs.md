@@ -14,6 +14,51 @@ tocOpen: true
  `DAC` La méthode traditionnelle de mise en œuvre du contrôle d'accès contrôle l'accès en fonction de l'identité du demandeur et des règles d'accès qui précisent ce que les demandeurs sont autorisés à faire (ou non). Ce contrôle d'accès est discrétionnaire , car une entité peut disposer de droits d'accès lui permettant, de son propre chef, d'autoriser une autre entité à accéder à une ressource ; contrairement à MAC , où l'entité ayant accès à une ressource ne peut pas, de son propre chef, autoriser une autre entité à y accéder. Windows est un exemple de système d'exploitation DAC , qui utilise des listes de contrôle d'accès discrétionnaires ( DACL ).
 
 
+## Enumeration des ACL 
+
+Passons à l'énumération des listes de contrôle d'accès (ACLs) à l'aide de PowerView et examinons quelques représentations graphiques avec BloodHound.
+### Énumération des ACL avec PowerView
+
+Nous pouvons utiliser PowerView pour énumérer les ACL, mais la tâche de fouiller dans tous les résultats sera extrêmement chronophage et probablement imprécise.
+Utilisation de Find-InterestingDomainAcl
+
+```
+Find-InterestingDomainAcl
+```
+
+```powershell
+Get-DomainObjectACL pour effectuer notre recherche ciblée
+
+Import-Module .\PowerView.ps1
+$sid = Convert-NameToSid wley
+Get-DomainObjectACL -Identity * | ? {$_.SecurityIdentifier -eq $sid}
+
+$guid= "00299570-246d-11d0-a768-00aa006e0529"
+Get-ADObject -SearchBase "CN=Extended-Rights,$((Get-ADRootDSE).ConfigurationNamingContext)" -Filter {ObjectClass -like 'ControlAccessRight'} -Properties * |Select Name,DisplayName,DistinguishedName,rightsGuid| ?{$_.rightsGuid -eq $guid} | fl
+```
+
+Création d'une liste des utilisateurs du domaine
+
+```
+Get-ADUser -Filter * | Select-Object -ExpandProperty SamAccountName > ad_users.txt
+```
+
+Nous lisons ensuite chaque ligne du fichier à l'aide d'une boucle foreach, et utilisons le cmdlet Get-Acl pour récupérer les informations d'ACL pour chaque utilisateur du domaine en fournissant chaque ligne du fichier ad_users.txt au cmdlet Get-ADUser.
+
+```
+foreach($line in [System.IO.File]::ReadLines("C:\Users\htb-student\Desktop\ad_users.txt")) {get-acl  "AD:\$(Get-ADUser $line)" | Select-Object Path -ExpandProperty Access | Where-Object {$_.IdentityReference -match 'INLANEFREIGHT\\wley'}}
+```
+
+Effectuer une recherche inversée et un mappage vers une valeur GUID
+
+```
+$guid= "00299570-246d-11d0-a768-00aa006e0529"
+Get-ADObject -SearchBase "CN=Extended-Rights,$((Get-ADRootDSE).ConfigurationNamingContext)" -Filter {ObjectClass -like 'ControlAccessRight'} -Properties * |Select Name,DisplayName,DistinguishedName,rightsGuid| ?{$_.rightsGuid -eq $guid} | fl
+```
+
+
+
+
 #  Abus d'AD-DACL : WriteOwner
 
 ![writeOwner](/images/20250803200607.png)

