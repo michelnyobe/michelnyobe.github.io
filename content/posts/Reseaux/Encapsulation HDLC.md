@@ -11,7 +11,7 @@ tocOpen: true
 
 ## Introduction 
 
-![Encapsulation HDLC](/images/20260902165216.pn)
+![Encapsulation HDLC](/images/20260902165216.png)
 
 Cisco définit HDLC (High-level Data Link Control) comme un groupe de protocoles de liaison de données (couche 2) utilisés pour transmettre des paquets de données synchrones entre des nœuds point à point. 
 
@@ -44,3 +44,5 @@ Bien que Cisco HDLC (également appelé **cHDLC**) soit une norme propriétaire,
 ## Références 
 
 - [ISO 13239 — Norme officielle HDLC](https://www.iso.org/fr/standard/8561.html)
+- https://youtu.be/LsLKs2yPmBI?si=Pzw0oaPY_7VbpNqm
+- https://github.com/vladimirlarass/lab-CCNA
