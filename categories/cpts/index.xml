@@ -9,11 +9,25 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.164.0</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
-    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nyobemichel.me/categories/cpts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attaque par force brute</title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/attaque-par-force-brute/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/attaque-par-force-brute/</guid>
+      <description>Atttaque par force brute</description>
+    </item>
+    <item>
+      <title>Medusa</title>
+      <link>https://nyobemichel.me/posts/outils/medusa/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://nyobemichel.me/posts/outils/medusa/</guid>
+      <description>Atttaque par force brute</description>
+    </item>
     <item>
       <title>Empoisonnement LLMNR NBT-NS</title>
       <link>https://nyobemichel.me/posts/activedirectory/empoisonnement-llmnr-nbt-ns/</link>

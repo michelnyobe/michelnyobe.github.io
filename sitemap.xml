@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/attaque-par-force-brute/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/categories/cpts/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/cpts/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/medusa/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/pentester/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/tags/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nyobemichel.me/tags/active-directory/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/ad/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/categories/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/categories/cpts/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/cpts/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/posts/activedirectory/empoisonnement-llmnr-nbt-ns/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/pentest/</loc>
@@ -29,13 +44,7 @@
     <loc>https://nyobemichel.me/categories/pentester/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nyobemichel.me/posts/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nyobemichel.me/tags/responder/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/bscp/</loc>
@@ -99,9 +108,6 @@
     <lastmod>2026-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/tags/outils/</loc>
-    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nyobemichel.me/tags/pentester/</loc>
     <lastmod>2026-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/categories/azure/</loc>
@@ -270,6 +276,9 @@
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/hydra/</loc>
+    <lastmod>2025-05-07T15:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/inclusion-de-fichier-local/</loc>
     <lastmod>2025-05-07T15:00:00+02:00</lastmod>
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/kerbrute/</loc>
@@ -443,7 +452,11 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/labs/ad/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/labs/certified-active-directory-pentest-cadp/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/labs/lab---ad/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/labs/lab-automatis%C3%A9/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/labs/tp---iris/</loc>
   </url><url>
@@ -451,11 +464,27 @@
   </url><url>
     <loc>https://nyobemichel.me/posts/outils/enum4linux/</loc>
   </url><url>
+    <loc>https://nyobemichel.me/posts/outils/eyewitness/</loc>
+  </url><url>
     <loc>https://nyobemichel.me/posts/outils/splunk/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/outils/tmux/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/attacking-common-applications/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/enum%C3%A9ration-des-contr%C3%B4les-de-s%C3%A9curit%C3%A9/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/escalade-de-privil%C3%A8ges-sous-linux/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/injection-de-commande/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/penetrationtesting/introduction-a-windows-cli/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/penetrationtesting/pivotement-tunnelage-et-redirection-de-ports/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/redaction-du-rapport/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/penetrationtesting/sans-titre/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/redteam/infrastructure-c2/</loc>
   </url><url>
@@ -464,6 +493,8 @@
     <loc>https://nyobemichel.me/posts/soc/opnsense/</loc>
   </url><url>
     <loc>https://nyobemichel.me/posts/soc/zabbix/</loc>
+  </url><url>
+    <loc>https://nyobemichel.me/posts/web/idor/</loc>
   </url><url>
     <loc>https://nyobemichel.me/archives/</loc>
   </url><url>

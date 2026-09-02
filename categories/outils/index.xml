@@ -9,7 +9,7 @@
       <url>https://nyobemichel.me/images/papermod-cover.png</url>
       <link>https://nyobemichel.me/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.164.0</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>fr-fr</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
@@ -76,6 +76,13 @@
       <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
       <guid>https://nyobemichel.me/posts/outils/hydra/</guid>
       <description>Hydra</description>
+    </item>
+    <item>
+      <title>Inclusion de Fichier Local</title>
+      <link>https://nyobemichel.me/posts/penetrationtesting/inclusion-de-fichier-local/</link>
+      <pubDate>Wed, 07 May 2025 15:00:00 +0200</pubDate>
+      <guid>https://nyobemichel.me/posts/penetrationtesting/inclusion-de-fichier-local/</guid>
+      <description>SQLMAp</description>
     </item>
     <item>
       <title>kerbrute</title>
